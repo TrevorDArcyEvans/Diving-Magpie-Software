@@ -1,0 +1,93 @@
+# Microsoft Developer Studio Generated Dependency File, included by UnfragWorks.mak
+
+.\About.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\UnfragWorks.h"\
+	
+
+.\CcItem.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\crc_32.cpp : \
+	".\crc_32.h"\
+	".\StdAfx.h"\
+	
+
+.\Debug.cpp : \
+	".\StdAfx.h"\
+	
+
+.\ExampleApp.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\debug.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\UnfragWorks.h"\
+	
+
+.\HandleEvents.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\UnfragWorks.h"\
+	
+
+.\Register.cpp : \
+	".\crc_32.h"\
+	".\Register.h"\
+	".\StdAfx.h"\
+	".\UnfragWorks.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+.\UnfragWorks.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\ExampleApp.h"\
+	".\Register.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\UnfragWorks.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\UnfragWorks.rc : \
+	".\res\UnfragWorks.rc2"\
+	
+
+.\utils.cpp : \
+	".\crc_32.h"\
+	".\StdAfx.h"\
+	".\utils.h"\
+	
+
+.\WinUtil.cpp : \
+	".\StdAfx.h"\
+	".\WinUtil.h"\
+	

@@ -1,0 +1,19 @@
+; --------------------------------------------------------------------
+;  UnfragWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "UnfragWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+    UW_About            @2
+    UW_Help             @3
+    UW_Register         @4
+    UW_RegisterUpdate   @5
+    UW_Config           @7
+
+; ---------------------------------
+;  End of UnfragWorks.def
+; ---------------------------------

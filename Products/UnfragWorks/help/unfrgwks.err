@@ -1,0 +1,6 @@
+Microsoft (R) Help Compiler Version 3.10.505
+Copyright (c) Microsoft Corp 1990 - 1992. All rights reserved.
+C:\WOMBAT\PRO\UNFRAG~1\HELP\UNFRGWKS.HPJ
+
+Warning 2511: line...7 of C:\WOMBAT\PRO\UNFRAG~1\HELP\UNFRGWKS.HPJ : Unrecognized option 'DBCS' in [OPTIONS] section.
+Warning 2401: line...23 of C:\WOMBAT\PRO\UNFRAG~1\HELP\UNFRGWKS.HPJ : Window maximization state must be 0 or 1.

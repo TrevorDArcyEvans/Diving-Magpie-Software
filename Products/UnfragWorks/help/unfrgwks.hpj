@@ -1,0 +1,23 @@
+[Options]
+Root=c:\wombat\pro\pointe~1,c:\wombat\pro\pointe~1\help,c:\wombat\pro\unfrag~1\help
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=UNFRGWKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=UnfragWorks v2.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\UNFRAG~1\HELP\UNFRGWKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <UNFRGWKS.H>
+
+[Windows]
+main="UnfragWorks v2.x",,4,,
