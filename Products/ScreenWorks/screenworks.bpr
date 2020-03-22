@@ -1,0 +1,230 @@
+# ---------------------------------------------------------------------------
+!if !$d(BCB)
+BCB = $(MAKEDIR)\..
+!endif
+
+# ---------------------------------------------------------------------------
+# IDE SECTION
+# ---------------------------------------------------------------------------
+# The following section of the project makefile is managed by the BCB IDE.
+# It is recommended to use the IDE to change any of the values in this
+# section.
+# ---------------------------------------------------------------------------
+
+VERSION = BCB.04.04
+# ---------------------------------------------------------------------------
+PROJECT = obj\screenworks.scr
+OBJFILES = obj\screenworks.obj obj\main.obj obj\about.obj obj\config.obj obj\preview.obj \
+  obj\saver.obj obj\SWutils.obj
+RESFILES = ScreenWorks.res
+DEFFILE =
+RESDEPEN = $(RESFILES) main.dfm about.dfm config.dfm preview.dfm saver.dfm
+LIBFILES =
+LIBRARIES = scrb4.lib dclusr40.lib Vclx40.lib XView3D.lib vcl40.lib
+SPARELIBS = vcl40.lib XView3D.lib Vclx40.lib dclusr40.lib scrb4.lib
+PACKAGES = vcl40.bpi vclx40.bpi scrb4.bpi
+# ---------------------------------------------------------------------------
+PATHCPP = .;
+PATHPAS = .;
+PATHASM = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+SYSDEFINES = NO_STRICT
+USERDEFINES =
+# ---------------------------------------------------------------------------
+CFLAG1 = -I$(BCB)\source\browsefolder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb4\lib;$(BCB)\source\regi1632 \
+  -Od -Hc -H=v:\vcl40.csm -w -Ve -Tkh30000 -r- -a8 -k -y -v -vi- \
+  -D$(SYSDEFINES);$(USERDEFINES) -c -b- -w-par -w-inl -Vx -tWM
+CFLAG2 =
+CFLAG3 =
+PFLAGS = -U$(BCB)\source\browsefolder;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb4\Lib;$(BCB)\source\regi1632;$(RELEASELIBPATH) \
+  -I$(BCB)\source\browsefolder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb4\lib;$(BCB)\source\regi1632 \
+  -N2obj -N0obj -$YD -$W -$O- -v -M -JPHNE
+RFLAGS = -i$(BCB)\source\browsefolder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb4\lib;$(BCB)\source\regi1632
+AFLAGS = /i$(BCB)\source\browsefolder /i$(BCB)\include /i$(BCB)\include\vcl \
+  /i$(BCB)\projects /i$(BCB)\imports\xview /i..\..\..\scrb4\lib \
+  /i$(BCB)\source\regi1632 /mx /w2 /zd /d_RTLDLL /dUSEPACKAGES
+LFLAGS = -L$(BCB)\source\browsefolder;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb4\Lib;$(BCB)\source\regi1632;$(RELEASELIBPATH) \
+  -l"C:\Wombat\Pro\ScreenWorks\obj\" -D"Scrb4 screen saver" -aa -Tpe -x -Gn -Gl \
+  -Gi -v
+IFLAGS =
+# ---------------------------------------------------------------------------
+ALLOBJ = c0w32.obj sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+# ---------------------------------------------------------------------------
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=10
+Item0=$(BCB)\source\browsefolder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb4\lib;$(BCB)\source\regi1632
+Item1=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb4\lib;$(BCB)\source\regi1632
+Item2=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;\scrb4;$(BCB)\source\regi1632
+Item3=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\Lib;$(BCB)\source\regi1632
+Item4=$(BCB)\source\regi1632;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\Lib
+Item5=$(BCB)\source\regi1632;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;C:\scrb3-bcb4\Lib
+Item6=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\lib
+Item7=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;..\..\..\scrb3-bcb4\lib
+Item8=$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl;c:\scrb3-bcb4\lib
+Item9=..\..\lib;$(BCB)\projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=16
+Item0=$(BCB)\source\browsefolder;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb4\Lib;$(BCB)\source\regi1632
+Item1=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb4\Lib;$(BCB)\source\regi1632
+Item2=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;\scrb4\Lib;$(BCB)\source\regi1632
+Item3=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;C:\scrb3-bcb4\Lib;$(BCB)\source\regi1632
+Item4=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\Lib\;$(BCB)\source\regi1632
+Item5=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\Lib;$(BCB)\source\regi1632
+Item6=$(BCB)\source\regi1632;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\Lib
+Item7=$(BCB)\source\regi1632;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;C:\scrb3-bcb4\Lib
+Item8=$(BCB)\source\regi1632;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4
+Item9=$(BCB)\source\regi1632;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4;..\..\..\scrb3-bcb4\lib
+Item10=$(BCB)\source\regi1632;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\lib;C:\scrb3-bcb4
+Item11=$(BCB)\source\regi1632;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\lib;..\..\..\scrb3-bcb4
+Item12=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\Projects\Lib;$(BCB)\imports\xview;..\..\..\scrb3-bcb4\lib
+Item13=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;..\..\..\scrb3-bcb4\lib
+Item14=$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib;c:\scrb3-bcb4\lib
+Item15=..\..\lib;$(BCB)\projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_RTLDLL;USEPACKAGES
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=obj
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=obj\
+Item1=obj
+
+[HistoryLists\hIBPIOutputDir]
+Count=2
+Item0=C:\Wombat\Pro\ScreenWorks\obj\
+Item1=obj
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+InMemoryExe=0
+ShowInfoMsgs=0
+
+!endif
+
+# ---------------------------------------------------------------------------
+# MAKE SECTION
+# ---------------------------------------------------------------------------
+# This section of the project file is not used by the BCB IDE.  It is for
+# the benefit of building from the command-line using the MAKE utility.
+# ---------------------------------------------------------------------------
+
+.autodepend
+# ---------------------------------------------------------------------------
+!if !$d(BCC32)
+BCC32 = bcc32
+!endif
+
+!if !$d(DCC32)
+DCC32 = dcc32
+!endif
+
+!if !$d(TASM32)
+TASM32 = tasm32
+!endif
+
+!if !$d(LINKER)
+LINKER = ilink32
+!endif
+
+!if !$d(BRCC32)
+BRCC32 = brcc32
+!endif
+# ---------------------------------------------------------------------------
+!if $d(PATHCPP)
+.PATH.CPP = $(PATHCPP)
+.PATH.C   = $(PATHCPP)
+!endif
+
+!if $d(PATHPAS)
+.PATH.PAS = $(PATHPAS)
+!endif
+
+!if $d(PATHASM)
+.PATH.ASM = $(PATHASM)
+!endif
+
+!if $d(PATHRC)
+.PATH.RC  = $(PATHRC)
+!endif
+# ---------------------------------------------------------------------------
+$(PROJECT): $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES)
+!
+# ---------------------------------------------------------------------------
+.pas.hpp:
+    $(BCB)\BIN\$(DCC32) $(PFLAGS) {$< }
+
+.pas.obj:
+    $(BCB)\BIN\$(DCC32) $(PFLAGS) {$< }
+
+.cpp.obj:
+    $(BCB)\BIN\$(BCC32) $(CFLAG1) $(CFLAG2) $(CFLAG3) -n$(@D) {$< }
+
+.c.obj:
+    $(BCB)\BIN\$(BCC32) $(CFLAG1) $(CFLAG2) $(CFLAG3) -n$(@D) {$< }
+
+.asm.obj:
+    $(BCB)\BIN\$(TASM32) $(AFLAGS) $<, $@
+
+.rc.res:
+    $(BCB)\BIN\$(BRCC32) $(RFLAGS) -fo$@ $<
+# ---------------------------------------------------------------------------
+

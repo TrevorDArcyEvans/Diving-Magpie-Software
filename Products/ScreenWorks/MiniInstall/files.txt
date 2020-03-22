@@ -1,0 +1,29 @@
+install.bat
+uninstall.bat
+
+license.txt
+README.TXT
+
+ScrInstall.exe
+ScrWorks.bmp
+ScrWorks.ini
+
+ScrWorks95.reg
+ScrWorksNT.reg
+
+unzip.exe
+
+ScreenWorks.zip
+    ScreenWorks.scr
+    ScrHots.dll
+
+    readme
+    copying
+    where
+    unzip.doc
+
+    XView3D.dll
+    IM.dll
+    SG2.dll
+    SWRKS.dll
+

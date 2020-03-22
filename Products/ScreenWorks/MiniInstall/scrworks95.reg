@@ -1,0 +1,23 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\SolidPartners\ScreenWorks]
+"SubDir"=dword:00000001
+"FileChange"=dword:00000001
+"SW_DirName"="C:\\Wombat\\Pro\\PipeWorks\\parts"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{9CB48109-E0FC-11D0-8E0C-C52523886C3B}]
+@="ScrHots"
+[HKEY_CLASSES_ROOT\CLSID\{9CB48109-E0FC-11D0-8E0C-C52523886C3B}\InProcServer32]
+@="C:\\Windows\\SCRHOTS.DLL"
+"ThreadingModel"="Apartment"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Controls Folder\Display\shellex\PropertySheetHandlers\ScrHots Properties]
+@="{9CB48109-E0FC-11D0-8E0C-C52523886C3B}"
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Screen Savers]
+"Mouse Corners"="YNN-"
+"Corner Popups"=dword:00000001
+"Hot corners tray"=dword:00000001
