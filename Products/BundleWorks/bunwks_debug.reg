@@ -1,0 +1,13 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\BundleWorks]
+"CLSID"="{1abfdb54-ef9e-11d3-ac6f-000086502510}"
+
+[HKEY_CLASSES_ROOT\CLSID\{1abfdb54-ef9e-11d3-ac6f-000086502510}]
+@="collect all dependent files into a zip file"
+
+[HKEY_CLASSES_ROOT\CLSID\{1abfdb54-ef9e-11d3-ac6f-000086502510}\InProcServer32]
+@="C:\\Wombat\\Pro\\BundleWorks\\DebugUNICODE\\BunWksNT.dll"
+

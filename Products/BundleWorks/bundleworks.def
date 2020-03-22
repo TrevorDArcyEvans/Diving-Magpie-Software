@@ -1,0 +1,24 @@
+; --------------------------------------------------------------------
+;  BundleWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "BundleWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3            @1
+    BunWks_SaveAsZip        @2
+    BunWks_OpenZip          @3
+    BunWks_Help             @4
+    BunWks_Register         @5
+    BunWks_RegisterUpdate   @6
+    BunWks_About            @7
+    BunWks_Recurse          @8
+    BunWks_RecurseUpdate    @9
+    BunWks_DirStruct        @10
+    BunWks_DirStructUpdate  @11
+
+; ---------------------------------
+;  End of BundleWorks.def
+; ---------------------------------
