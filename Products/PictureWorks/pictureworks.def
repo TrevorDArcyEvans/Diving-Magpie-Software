@@ -1,0 +1,16 @@
+; --------------------------------------------------------------------
+;  PictureWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "PictureWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+	PW_Copy			    @2
+    PW_Help             @3
+    PW_About            @4
+; ---------------------------------
+;  End of PictureWorks.def
+; ---------------------------------

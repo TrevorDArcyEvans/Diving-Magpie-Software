@@ -1,0 +1,12 @@
+Disk build process started.
+Validating setup data.
+Building setup data file.
+Compressing data files.
+Compressing the Program Files group.
+Compressing the NT Files group.
+Compressing the 95 Files group.
+Compressing the User Enhanced Uninstall Files group.
+Creating disk packaging list.
+Building disk images.
+1 disk(s) were created.
+Done  -  0 warning(s).

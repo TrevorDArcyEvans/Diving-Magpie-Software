@@ -1,0 +1,50 @@
+# Microsoft Developer Studio Generated Dependency File, included by PictureWorks.mak
+
+.\About.cpp : \
+	".\About.h"\
+	
+
+.\CcItem.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\SldWorks.h"\
+	
+
+.\ExampleApp.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\PictureWorks.h"\
+	".\SldWorks.h"\
+	
+
+.\HandleEvents.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	
+
+.\PictureWorks.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\ExampleApp.h"\
+	".\PictureWorks.h"\
+	".\SldWorks.h"\
+	
+
+.\PictureWorks.rc : \
+	".\res\PictureWorks.rc2"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
