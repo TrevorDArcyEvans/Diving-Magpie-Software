@@ -1,0 +1,52 @@
+LIBRARY     MSVFW32.DLL
+
+EXPORTS
+    DitherInit
+    DitherTerm
+    DrawDibBegin
+    DrawDibChangePalette
+    DrawDibClose
+    DrawDibDraw
+    DrawDibEnd
+    DrawDibGetBuffer
+    DrawDibGetBufferOld
+    DrawDibGetPalette
+    DrawDibInit
+    DrawDibOpen
+    DrawDibProfileDisplay
+    DrawDibRealize
+    DrawDibSetPalette
+    DrawDibStart
+    DrawDibStop
+    DrawDibTerm
+    DrawDibTime
+    GetOpenFileNamePreview
+    GetOpenFileNamePreviewA
+    GetOpenFileNamePreviewW
+    ICClose
+    _ICCompress = ICCompress
+    ICCompressorChoose
+    ICCompressorFree
+    _ICDecompress = ICDecompress
+    _ICDraw = ICDraw
+    _ICDrawBegin = ICDrawBegin
+    ICGetDisplayFormat
+    ICGetInfo
+    ICImageCompress
+    ICImageDecompress
+    ICInfo
+    ICInstall
+    ICLocate
+    ICMThunk32
+    ICOpen
+    ICOpenFunction
+    ICRemove
+    ICSendMessage
+    ICSeqCompressFrame
+    ICSeqCompressFrameEnd
+    ICSeqCompressFrameStart
+    _MCIWndCreateA = MCIWndCreateA
+    _MCIWndCreateW = MCIWndCreateW
+    _MCIWndRegisterClass = MCIWndRegisterClass
+    StretchDIB
+    VideoForWindowsVersion
