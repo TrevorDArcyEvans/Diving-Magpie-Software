@@ -1,0 +1,6 @@
+Microsoft (R) Help Compiler Version 3.10.505
+Copyright (c) Microsoft Corp 1990 - 1992. All rights reserved.
+C:\WOMBAT\PRO\SCALEW~1\HELP\SCALEWKS.HPJ
+
+Warning 2511: line...6 of C:\WOMBAT\PRO\SCALEW~1\HELP\SCALEWKS.HPJ : Unrecognized option 'DBCS' in [OPTIONS] section.
+Warning 2401: line...22 of C:\WOMBAT\PRO\SCALEW~1\HELP\SCALEWKS.HPJ : Window maximization state must be 0 or 1.

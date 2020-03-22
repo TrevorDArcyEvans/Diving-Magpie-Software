@@ -1,0 +1,22 @@
+[Options]
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=SCALEWKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=ScaleWorks v1.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\SCALEW~1\HELP\SCALEWKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <SCALEWKS.H>
+
+[Windows]
+main="ScaleWorks v1.x",,4,,
