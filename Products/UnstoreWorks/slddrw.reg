@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\SldDraw.Document\shell\Unstore]
+
+[HKEY_CLASSES_ROOT\SldDraw.Document\shell\Unstore\command]
+@="unstore.exe \"%1\""
+
