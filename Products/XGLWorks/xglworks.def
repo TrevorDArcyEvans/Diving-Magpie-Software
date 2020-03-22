@@ -1,0 +1,20 @@
+; --------------------------------------------------------------------
+;  XGLWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "XGLWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3                @1
+    XGL_OpenFile                @2
+    XGL_Register                @3
+    XGL_RegisterUpdate          @4
+    XGL_Help                    @5
+    XGL_About                   @6
+    XGL_RealityWave             @7
+
+; ---------------------------------
+;  End of XGLWorks.def
+; ---------------------------------

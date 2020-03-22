@@ -1,0 +1,13 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\XGLWorks]
+"CLSID"="{8a064f9d-d747-11d4-8e9d-0020afcc5695}"
+
+[HKEY_CLASSES_ROOT\CLSID\{8a064f9d-d747-11d4-8e9d-0020afcc5695}]
+@="import XGL and ZGL files"
+
+[HKEY_CLASSES_ROOT\CLSID\{8a064f9d-d747-11d4-8e9d-0020afcc5695}\InProcServer32]
+@="C:\\Wombat\\Pro\\XGLWorks\\DebugUNICODE\\XGLWksNT.dll"
+
