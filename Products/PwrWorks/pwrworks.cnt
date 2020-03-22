@@ -1,0 +1,15 @@
+:Base PWRWORKS.HLP
+:Title PowerWorks v1.0
+1 Contents
+2 Enable Email=Enable_Email
+2 Enable MCD=Enable_MCD
+2 Enable Model Changes from Drawing=Enable_Model_Changes_from_Drawing
+2 Show Tips at Start=Show_Tips_at_Start
+2 Remove=Remove
+2 Read=Read
+2 Write=Write
+2 Install/Uninstall=Install_Uninstall
+2 grayed controls=grayed_controls
+2 Known Bugs or Problems=Known_Bugs_or_Problems
+2 Issues=Issues
+2 About=About

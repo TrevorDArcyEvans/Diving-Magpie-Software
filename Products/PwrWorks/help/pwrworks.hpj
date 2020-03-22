@@ -1,0 +1,23 @@
+[Options]
+Root=c:\wombat\pro\pointe~1,c:\wombat\pro\pointe~1\help,c:\wombat\pro\pwrworks\help,v:\
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=PWRWORKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=PowerWorks v1.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\PWRWORKS\HELP\PWRWORKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <PWRWORKS.H>
+
+[Windows]
+main="PowerWorks v1.x",,4,,

@@ -1,0 +1,22 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\SolidWorks 98\SW Event Log]
+"Email Enabled"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\General]
+"Disable model changes from drawings"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\SolidWorks\General]
+"Disable model changes from drawings"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\SolidWorks\TipOfDay]
+"ShowTipsAtStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Performance]
+"Enable MCD"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\SolidWorks\Performance]
+"Enable MCD"=dword:00000001
