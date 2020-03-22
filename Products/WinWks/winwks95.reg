@@ -1,0 +1,15 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\WindowWorks]
+"CLSID"="{e2320698-d4de-11d3-ac33-000086502510}"
+
+[HKEY_CLASSES_ROOT\CLSID\{e2320698-d4de-11d3-ac33-000086502510}]
+@="WindowWorks"
+
+[HKEY_CLASSES_ROOT\CLSID\{e2320698-d4de-11d3-ac33-000086502510}\InProcServer32]
+@="C:\\Program Files\\SolidPartners\\WindowWorks\\WinWks95.dll"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\Startup\Applications\WindowWorks]
+@="{e2320698-d4de-11d3-ac33-000086502510}"

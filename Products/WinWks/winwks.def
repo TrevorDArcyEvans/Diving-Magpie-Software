@@ -1,0 +1,19 @@
+; --------------------------------------------------------------------
+;  WinWks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "WinWks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+	WW_CloseAll			@2
+    WW_SaveAll          @3
+	WW_Register         @4
+	WW_RegisterUpdate   @5
+	WW_Help             @6
+	WW_About            @7
+; ---------------------------------
+;  End of WinWks.def
+; ---------------------------------
