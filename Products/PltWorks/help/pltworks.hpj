@@ -1,0 +1,23 @@
+[Options]
+Root=C:\WOMBAT,c:\wombat\pro\stkworks,c:\wombat\pro\stkworks\help,c:\wombat\pro\pltworks\help,v:\
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=PLTWORKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=PlotWorks v2.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\PLTWORKS\HELP\PLTWORKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <PLTWORKS.H>
+
+[Windows]
+main="PlotWorks v2.x",,4,,

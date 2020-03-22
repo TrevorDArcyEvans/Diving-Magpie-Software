@@ -1,0 +1,7 @@
+Microsoft (R) Help Compiler Version 3.10.505
+Copyright (c) Microsoft Corp 1990 - 1992. All rights reserved.
+C:\Wombat\Pro\PltWorks\help\PltWorks.hpj
+
+Warning 2511: line...7 of C:\Wombat\Pro\PltWorks\help\PltWorks.hpj : Unrecognized option 'DBCS' in [OPTIONS] section.
+Warning 2401: line...23 of C:\Wombat\Pro\PltWorks\help\PltWorks.hpj : Window maximization state must be 0 or 1.
+Warning 4011: topic...5 of C:\WOMBAT\PRO\PLTWORKS\HELP\PLTWORKS.RTF : Context string 'Print' already used.
