@@ -1,0 +1,20 @@
+; --------------------------------------------------------------------
+;  STLWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "STLWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3                @1
+    STL_OpenFile                @2
+    STL_Register                @3
+    STL_RegisterUpdate          @4
+    STL_Help                    @5
+    STL_About                   @6
+
+
+; ---------------------------------
+;  End of STLWorks.def
+; ---------------------------------
