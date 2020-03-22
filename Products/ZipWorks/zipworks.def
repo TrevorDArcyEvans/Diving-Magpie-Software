@@ -1,0 +1,25 @@
+; --------------------------------------------------------------------
+;  ZipWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "ZipWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+	ZW_About			@2
+    ZW_Help             @3
+	ZW_FileName			@4
+	ZW_Options			@5
+	ZW_FileAdd			@6
+	ZW_FileAddRecur		@7
+	ZW_FileAddAll		@8
+	ZW_FileAddAllRecur	@9
+    ZW_Password         @10
+    ZW_Compression      @11
+    ZW_Register			@12
+    ZW_RegisterUpdate   @13
+; ---------------------------------
+;  End of ZipWorks.def
+; ---------------------------------

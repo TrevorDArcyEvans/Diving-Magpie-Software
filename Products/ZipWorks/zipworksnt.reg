@@ -1,0 +1,16 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\ZipWorks]
+"CLSID"="{f3cc0f94-5545-11d2-896f-08002b935393}"
+
+[HKEY_CLASSES_ROOT\CLSID\{f3cc0f94-5545-11d2-896f-08002b935393}]
+@="ZipWorks"
+
+[HKEY_CLASSES_ROOT\CLSID\{f3cc0f94-5545-11d2-896f-08002b935393}\InProcServer32]
+@="C:\\Program Files\\SolidPartners\\ZipWorks\\ZipWorksNT.dll"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\Startup\Applications\ZipWorks]
+@="{f3cc0f94-5545-11d2-896f-08002b935393}"
+
