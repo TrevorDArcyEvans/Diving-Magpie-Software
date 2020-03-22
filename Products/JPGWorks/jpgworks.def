@@ -1,0 +1,18 @@
+; --------------------------------------------------------------------
+;  JPGWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "JPGWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3            @1
+    JPG_SaveAs              @2
+    JPG_Configure           @3
+    JPG_Help                @4
+    JPG_About               @5
+
+; ---------------------------------
+;  End of JPGWorks.def
+; ---------------------------------

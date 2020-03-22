@@ -1,0 +1,15 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\JPGWorks]
+"CLSID"="{ed586101-d825-11d4-8e9e-0020afcc5695}"
+
+[HKEY_CLASSES_ROOT\CLSID\{ed586101-d825-11d4-8e9e-0020afcc5695}]
+@="JPEG file output"
+
+[HKEY_CLASSES_ROOT\CLSID\{ed586101-d825-11d4-8e9e-0020afcc5695}\InProcServer32]
+@="C:\\Program Files\\SolidPartners\\JPGWorks\\JPGWks95.dll"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\Startup\Applications\JPGWorks]
+@="{ed586101-d825-11d4-8e9e-0020afcc5695}"
