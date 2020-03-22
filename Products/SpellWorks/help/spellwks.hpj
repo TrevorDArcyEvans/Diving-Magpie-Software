@@ -1,0 +1,23 @@
+[Options]
+Root=C:\WOMBAT,c:\wombat\pro\stkworks,c:\wombat\pro\stkworks\help,c:\wombat\pro\spellw~1\help,v:\
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=SPELLWKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=SpellWorks v1.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\SPELLW~1\HELP\SPELLWKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <SPELLWKS.H>
+
+[Windows]
+main="SpellWorks v1.x",,4,,

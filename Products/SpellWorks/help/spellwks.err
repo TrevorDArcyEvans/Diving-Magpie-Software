@@ -1,0 +1,6 @@
+Microsoft (R) Help Compiler Version 3.10.505
+Copyright (c) Microsoft Corp 1990 - 1992. All rights reserved.
+C:\Wombat\Pro\SpellWorks\help\SpellWks.hpj
+
+Warning 2511: line...7 of C:\Wombat\Pro\SpellWorks\help\SpellWks.hpj : Unrecognized option 'DBCS' in [OPTIONS] section.
+Warning 2401: line...23 of C:\Wombat\Pro\SpellWorks\help\SpellWks.hpj : Window maximization state must be 0 or 1.
