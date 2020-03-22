@@ -1,0 +1,20 @@
+; --------------------------------------------------------------------
+;  DiffWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "DiffWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3            @1
+    DW_CompareFiles         @2
+    DW_ShowLast             @3
+    DW_Register             @4
+    DW_RegisterUpdate       @5
+    DW_Help                 @6
+    DW_About                @7
+
+; ---------------------------------
+;  End of DiffWorks.def
+; ---------------------------------

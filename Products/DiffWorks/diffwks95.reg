@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\DiffWorks]
+"CLSID"="{09f08da1-484d-4b60-80e7-9c803aacfbf2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{09f08da1-484d-4b60-80e7-9c803aacfbf2}]
+@="shows changes between part files"
+
+[HKEY_CLASSES_ROOT\CLSID\{09f08da1-484d-4b60-80e7-9c803aacfbf2}\InProcServer32]
+@="C:\\Program Files\\SolidPartners\\DiffWorks\\DiffWks95.dll"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\Startup\Applications\DiffWorks]
+@="{09f08da1-484d-4b60-80e7-9c803aacfbf2}"
