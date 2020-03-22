@@ -1,0 +1,89 @@
+[PackageForTheWeb]
+Version=2.0
+
+[Options]
+Title=UnfragWorksServer
+Company=SolidPartners
+CompanyEMail=support@SolidPartners.com
+BasePath=C:\Wombat\Pro\UnfragWorks_Server\install\UnfragWorks Server\Build Label 1\My Release-1\DiskImages\DISK1
+ImportPath=
+UseRTF=1
+SaveFiles=0
+SubFolders=0
+ApplicationName=UnfragWorks Server
+Description=reclaim disk space for SolidWorks files
+Comments=
+Notice=
+Version=2.000.000
+OutputSpec=C:\Wombat\Pro\UnfragWorks_Server\install\PFTW\UnfragWorksServer.exe
+GUIDs=0
+Type=2
+Compress=1
+Sign=0
+Transfer=0
+Files=5
+
+[Engine]
+Setup=setup.exe
+
+[Web Page]
+Generate=1
+Template=
+MSClient=
+NClient=
+
+[Runtime]
+Welcome=
+License=
+Prompt=
+Password=
+DefaultPath=%TEMP%\UnfragWorks_Server
+Language=English
+WindowStyle=0
+Options=32
+Execute=setup.exe
+CmdLine=
+
+[Extension]
+Server=
+Calls=0
+
+[Code Signing]
+CompanyURL=
+SpecFile=
+KeyFile=
+Method=0
+
+; ~~~~~~~~~~ File Section ~~~~~~~~~~~
+[SubFolders]
+Count=0
+
+[File 1]
+Name=Data.Cab
+Path=C:\Wombat\Pro\UnfragWorks_Server\install\UnfragWorks Server\Build Label 1\My Release-1\DiskImages\DISK1\
+Flags=1048577
+Disk=0
+
+[File 2]
+Name=instmsiw.exe
+Path=C:\Wombat\Pro\UnfragWorks_Server\install\UnfragWorks Server\Build Label 1\My Release-1\DiskImages\DISK1\
+Flags=65537
+Disk=0
+
+[File 3]
+Name=setup.exe
+Path=C:\Wombat\Pro\UnfragWorks_Server\install\UnfragWorks Server\Build Label 1\My Release-1\DiskImages\DISK1\
+Flags=65537
+Disk=0
+
+[File 4]
+Name=setup.ini
+Path=C:\Wombat\Pro\UnfragWorks_Server\install\UnfragWorks Server\Build Label 1\My Release-1\DiskImages\DISK1\
+Flags=1
+Disk=0
+
+[File 5]
+Name=UnfragWorks Server.msi
+Path=C:\Wombat\Pro\UnfragWorks_Server\install\UnfragWorks Server\Build Label 1\My Release-1\DiskImages\DISK1\
+Flags=1
+Disk=0

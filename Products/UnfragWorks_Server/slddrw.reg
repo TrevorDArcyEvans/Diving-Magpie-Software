@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\SldDraw.Document\shell\Unfrag]
+
+[HKEY_CLASSES_ROOT\SldDraw.Document\shell\Unfrag\command]
+@="UnfragWorks.exe trevorde 1 \"%1\""
+

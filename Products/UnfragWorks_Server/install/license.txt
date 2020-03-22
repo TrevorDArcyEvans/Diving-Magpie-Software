@@ -1,0 +1,153 @@
+UnfragWorks Server (tm) --   SOFTWARE AGREEMENT
+
+IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS 
+OF THIS AGREEMENT (THE "AGREEMENT"), DO NOT INSTALL 
+THE SOFTWARE AND RETURN THIS ENTIRE PACKAGE WITHIN 
+30 DAYS OF YOUR PURCHASE FOR A FULL REFUND.  
+INSTALLING THIS SOFTWARE CONSTITUTES YOUR ACCEPTANCE 
+OF THIS AGREEMENT.	
+
+1. USE
+ You (an entity or a person) are granted a 
+non-exclusive nonsublicensable right to use the 
+software product(s) identified above and any other 
+software provided by SolidPartners, Inc., and 
+documentation included in this package (collectively, 
+the "Software") in the quantity stated above if you 
+meet the following conditions:
+
+For Client Software ("Client(s)"). You must purchase 
+one copy of the Software for each user of SolidWorks.  
+Each assigned user may install one (1) copy of the 
+Software on a home and/or laptop computer.  A 
+non-exclusive license of the server software is 
+available for each client user to run on the client 
+or server computer.
+
+Upgrades
+If the Software is an upgrade, you are authorized 
+to use the Software only if you are an authorized 
+user of a qualifying product as determined by 
+SolidPartners, Inc.
+ 
+2. RESTRICTIONS
+ Except as expressly authorized by this Agreement 
+or the Release Notes, you may not copy (except for 
+one (1) copy for archival purposes), alter, merge, 
+modify or adapt the Software in any way.  You may 
+not reverse engineer, disassemble, decompile, or 
+otherwise attempt to reconstruct or discover any 
+source code, underlying ideas, algorithms, file 
+formats or programming interfaces of the Software.  
+You may not loan, rent, lease or license the 
+Software or any copy.  However, you may transfer 
+the Software on a permanent basis provided you 
+transfer the Software, Agreement and all 
+documentation and media and you do not retain any 
+copies.  Any transfer of the Software must include 
+the most recent update and all prior versions.
+ 
+3. COPYRIGHT
+ All ownership and intellectual property rights in 
+the Software and user documentation are retained by 
+SolidPartners or its suppliers and are protected by 
+United States and international copyright laws, 
+other applicable intellectual property laws, and 
+international treaty provisions.  SolidPartners 
+retains all rights not expressly granted. 
+ 
+4. LIMITED WARRANTY
+ For ninety (90) days from your date of purchase, 
+SolidPartners warrants that (i) the Software will 
+substantially conform to the applicable user 
+documentation and (ii) that the magnetic media on 
+which the Software is distributed and the user 
+documentation (if any) are free from defects in 
+materials and workmanship.  SolidPartners will, 
+at its option, refund the amount you paid for the 
+Software or provide you with corrected items at no 
+charge provided that the defective item(s) is 
+returned to SolidPartners within ninety (90) days 
+from the date of purchase.  Any misuse or 
+unauthorized modification of the Software will 
+void this limited warranty.
+ 
+ EXCEPT AS SPECIFICALLY PROVIDED HEREIN, THE 
+SOFTWARE IS PROVIDED "AS IS" AND SOLIDPARTNERS 
+MAKES NO WARRANTY, REPRESENTATION, PROMISE OR 
+GUARANTEE, EITHER EXPRESS OR IMPLIED, STATUTORY 
+OR OTHERWISE, WITH RESPECT TO THE SOFTWARE, USER 
+DOCUMENTATION OR RELATED TECHNICAL SUPPORT, 
+INCLUDING THEIR QUALITY, PERFORMANCE, MERCHANTABILITY 
+OR FITNESS FOR A PARTICULAR PURPOSE.
+ 
+ The warranty and remedies set forth herein are 
+exclusive and in lieu of all others, oral or 
+written, expressed or implied.  No SolidPartners 
+reseller, agent or employee is authorized to 
+make modifications or additions to this warranty.  
+This warranty gives you specific legal rights, and 
+you may also have other rights which vary from 
+place to place.
+ 
+5. LIMITATION OF LIABILITY
+ Because software is inherently complex and may 
+not be completely free from errors, it is your 
+responsibility to verify your work and to make 
+backup copies, and SolidPartners will not be 
+responsible for your failure to do so.  IN NO 
+EVENT WILL SOLIDPARTNERS BE LIABLE FOR INDIRECT, 
+SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES 
+ARISING OUT OF THIS AGREEMENT OR OUT OF THE USE 
+OF SOLIDPARTNERS PRODUCTS OR SERVICES, INCLUDING, 
+WITHOUT LIMITATION, DAMAGES OR COSTS RELATING TO 
+THE LOSS OF PROFITS, BUSINESS, GOODWILL, DATA OR 
+COMPUTER PROGRAMS, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGES.  IN NO CASE SHALL 
+SOLIDPARTNERS'S LIABILITY FOR MONEY DAMAGES EXCEED 
+THE AMOUNT PAID BY YOU FOR THE SOFTWARE OUT OF 
+WHICH SUCH CLAIM AROSE.  The forgoing limitations 
+shall not apply to claims relating to death or 
+personal injury which arise out of products deemed 
+to be consumer goods under applicable law.  Some 
+states or localities do not allow the exclusions 
+or limitation of implied warranties or limitation 
+of liability for incidental or consequential 
+damages, so the above exclusion or limitation 
+may not apply to you. 
+
+6. Term And Termination
+ This Agreement is effective until terminated.  
+SolidPartners may terminate this Agreement if 
+you fail to cure any material breach of this 
+Agreement within thirty (30) days of receiving 
+notice of such breach.  Upon termination, you 
+shall immediately cease all use of the Software 
+and return or destroy all copies of the Software 
+and so certify to SolidPartners.
+
+7. General
+ This is the entire agreement regarding the 
+Software.  This Agreement shall not be assigned 
+by you without SolidPartners's prior written 
+consent.  No waiver or amendments to this Agreement 
+shall be effective unless in writing and signed by 
+the parties.  If any provision of this "Agreement"
+is found to be unenforceable or invalid, the balance 
+of this "Agreement" shall remain enforceable 
+according to its terms.  This "Agreement" shall 
+be governed by the laws of the State of California 
+and the United States without regard to conflicts 
+of laws provisions thereof and without regard to 
+United Nations Convention on Contracts for 
+International Sale of Goods.  The prevailing party 
+in any action to enforce this "Agreement" shall be 
+entitled to recover costs and expenses, including 
+attorney's fees.  The export of the International 
+Version of Software and other SolidPartners products 
+is governed by and you shall comply with the rules 
+of the U.S. Department of Commerce under the expor
+ administration regulations.
+
+All Trademarks acknowledged -- www.solidpartners.com
+

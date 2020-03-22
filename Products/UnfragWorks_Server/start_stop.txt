@@ -1,0 +1,94 @@
+install:
+----------------------
+UnfragWorksSrvc.exe /install
+
+
+
+start:
+----------------------
+sc start UnfragWorks
+
+
+
+stop:
+----------------------
+sc stop UnfragWorks
+
+
+
+uninstall:
+----------------------
+UnfragWorksSrvc.exe /uninstall
+
+
+
+registry settings:
+----------------------
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UnfragWorks]
+"Type"=dword:00000110
+"Start"=dword:00000003
+"ErrorControl"=dword:00000001
+"ImagePath"=hex(2):43,3a,5c,57,6f,6d,62,61,74,5c,50,72,6f,5c,55,6e,66,72,61,67,\
+  57,6f,72,6b,73,5f,53,65,72,76,65,72,5c,55,6e,66,72,61,67,57,6f,72,6b,73,53,\
+  72,76,63,2e,65,78,65,00
+"DisplayName"="UnfragWorks"
+"ObjectName"="LocalSystem"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UnfragWorks\Security]
+"Security"=hex:01,00,14,80,c0,00,00,00,cc,00,00,00,14,00,00,00,34,00,00,00,02,\
+  00,20,00,01,00,00,00,02,80,18,00,ff,01,0f,00,01,01,00,00,00,00,00,01,00,00,\
+  00,00,20,02,00,00,02,00,8c,00,05,00,00,00,00,00,18,00,8d,01,02,00,01,01,00,\
+  00,00,00,00,01,00,00,00,00,70,00,63,00,00,00,1c,00,fd,01,02,00,01,02,00,00,\
+  00,00,00,05,20,00,00,00,23,02,00,00,00,00,14,00,00,00,1c,00,ff,01,0f,00,01,\
+  02,00,00,00,00,00,05,20,00,00,00,20,02,00,00,00,00,14,00,00,00,1c,00,ff,01,\
+  0f,00,01,02,00,00,00,00,00,05,20,00,00,00,25,02,00,00,00,00,14,00,00,00,18,\
+  00,fd,01,02,00,01,01,00,00,00,00,00,05,12,00,00,00,25,02,00,00,01,01,00,00,\
+  00,00,00,05,12,00,00,00,01,01,00,00,00,00,00,05,12,00,00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UnfragWorks\Enum]
+"0"="Root\\LEGACY_UNFRAGWORKS\\0000"
+"Count"=dword:00000001
+"NextInstance"=dword:00000001
+
+
+
+ImagePath is actually:
+
+	"C:\Wombat\Pro\UnfragWorks_Server\UnfragWorksSrvc.exe"
+
+but comes through in hex - annoying
+
+
+start type:
+----------------------
+enum TStartType { stBoot, stSystem, stAuto, stManual, stDisabled };
+StartType value		Service is started
+
+stBoot			by the operating system loader (used only when ServiceType is not stWin32)
+stSystem		after boot systems are initialized (used only when ServiceType is not stWin32)
+stAuto			automatically during system startup
+stManual		when a process calls the Windows StartService function
+stDisabled		the service can’t be started except by an administrator
+
+
+
+debugging:
+----------------------
+1) modify code
+2) stop service with SCP
+3) place a breakpoint on a line of code and press Run button in the IDE
+4) start the service with the SCP
+5) when the breakpoint is hit, step through the code in the usual ways
+6) use Run, Program Reset to terminate the process in the debugger
+
+debugging:
+----------------------
+1) open command prompt
+2) set breakpoints in IDE
+3) start program from IDE
+4) at command prompt, start service:
+    sc start UnfragWorks
+5) when the breakpoint is hit, step through the code in the usual ways
+6) use Run, Program Reset to terminate the process in the debugger

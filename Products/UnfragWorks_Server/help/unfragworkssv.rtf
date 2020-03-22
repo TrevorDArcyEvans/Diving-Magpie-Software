@@ -1,0 +1,151 @@
+{\rtf1\ansi\deff11
+{\fonttbl
+\f0\fswiss System;
+\f1\fmodern Terminal;
+\f2\fmodern Fixedsys;
+\f3\fmodern Courier;
+\f4\fswiss MS Sans Serif;
+\f5\froman MS Serif;
+\f6\froman Roman;
+\f7\fscript Script;
+\f8\fmodern Modern;
+\f9\fswiss Small Fonts;
+\f10\fnil Marlett;
+\f11\fswiss Arial;
+\f12\fmodern Courier New;
+\f13\fmodern Lucida Console;
+\f14\fswiss Lucida Sans Unicode;
+\f15\froman Times New Roman;
+\f16\fnil Wingdings;
+\f17\froman Symbol;
+\f18\fswiss Arial Black;
+\f19\fscript Comic Sans MS;
+\f20\fswiss Impact;
+\f21\fswiss Verdana;
+\f22\froman Webdings;
+\f23\fswiss Century Gothic;
+\f24\fmodern Arial Alternative Symbol;
+\f25\fmodern Arial Alternative;
+\f26\fswiss Tahoma;
+}
+{\colortbl;
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red128\green128\blue128;
+\red192\green192\blue192;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+${\footnote $ Contents}
+#{\footnote # Contents}
++{\footnote + 00001}
+K{\footnote K Contents}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 \b0 Contents\f4 \cf1 \fs24 \par \pard \f15 \fs28 \pard \f15 \uldb \cf0 Getting Started\uldb0 \v Getting_Started\v0 \par \uldb Directories\uldb0 \v Directories\v0 \par \uldb Server\uldb0 \v Server\v0 \par \uldb Logging\uldb0 \v Logging\v0 \par \uldb Scheduling\uldb0 \v Scheduling\v0 \par \uldb Administration\uldb0 \v Administration\v0 \par \uldb Read/Write\uldb0 \v Read_Write\v0 \par \uldb Unfragmenting\uldb0 \v Unfragmenting\v0 \par \uldb Install Uninstall\uldb0 \v Install_Uninstall\v0 \par \uldb Registration\uldb0 \v Registration\v0 \par \uldb Known Bugs or Problems\uldb0 \v Known_Bugs_or_Problems\v0 \par \uldb Issues\uldb0 \v Issues\v0 \par \uldb About\uldb0 \v About\v0 \par \par \page 
+${\footnote $ Getting Started}
+#{\footnote # Getting_Started}
++{\footnote + A:00001}
+K{\footnote K Getting Started}
+K{\footnote K directories }
+K{\footnote K subdirectories }
+K{\footnote K NT service}
+K{\footnote K system tray}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Getting Started\par \b0 \pard \f15 \fs28 \pard \f15 \fs36 \b \cf0 What is UnfragWorks Server?\fs28 \b0 \par UnfragWorks Server is a utility to remove the redundant space from SolidWorks files.  UnfragWorks Server can reduce the size of SolidWorks files by up to 50% with absolutely no loss of data or information.  UnfragWorks Server will constantly save you hard disk space by continually removing redundant space from SolidWorks files.\par \par When first started, UnfragWorks Server will scan all the specified directories and subdirectories for SolidWorks files.  These are added to an initial list of files for unfragging.  During it's first unfragging run, UnfragWorks Server will attempt to unfrag all of these files.  These are then marked as unfragged and no further attempts will be made to unfrag them unless they change.\par \par UnfragWorks Server then keeps watches over user specified directories and subdirectories for changes in SolidWorks files.  When UnfragWorks Server detects a changed file, it notes this and will unfragment all changed files at a user specified time.\par \par \par see also:\tab \b \uldb Unfragmenting\b0 \uldb0 \v Unfragmenting\v0 \par \par \par UnfragWorks Server installs as an NT service and runs transparently in the background.  An icon with a right mouse button menu (figure below) is installed in the system tray.\par \par \pard \fs0 \{bml ICON.BMP\}\fs28 \par \pard \par \par \pard \fs0 \{bml RMB.SHG\}\fs28 \par \pard \par Move cursor over figure to go to links.\par \par \par \fs36 \b When does UnfragWorks Server run?\fs28 \b0 \par UnfragWorks Server runs at the time, frequency and priority which you specify.  The configuration settings may be accessed by right clicking on the UnfragWorks Server icon in the system tray and selecting the 'Configure' menu.  This will bring up the configuration dialog page.  Note that this will temporarily stop UnfragWorks Server.  When the configuration dialog is closed, UnfragWorks Server will be restarted.\par \par \par see also:\tab \b \uldb Scheduling\b0 \uldb0 \v Scheduling\v0 \par \par \page 
+${\footnote $ Directories}
+#{\footnote # Directories}
++{\footnote + A:00002}
+K{\footnote K Directories}
+K{\footnote K enabled}
+K{\footnote K sub-directories}
+K{\footnote K directory}
+K{\footnote K browse}
+K{\footnote K network }
+K{\footnote K mapped drive}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Directories\par \b0 \pard \f15 \fs28 \pard \f15 \fs0 \cf0 \{bml DIRECT.SHG\}\fs28 \par \pard \par Move cursor over figure to go to links.\par \par \par \fs36 \b Enabled:\fs28 \b0 \par check this box for Unfragworks Server to watch over the specified directory and subdirectories.\par \par \par \fs36 \b Sub-directories:\fs28 \b0 \par check this box to have UnfragWorks Server monitor subdirectories in addition to the specified directory.\par \par \par \fs36 \b Directory:\fs28 \b0 \par the directory being unfragged.  This is specified with the Browse button described below.\par \par \par \fs36 \b Browse:\fs28 \b0 \par this will bring up a directory browser below to navigate to a directory:\par \par \par \pard \fs0 \{bml BROWSE1.BMP\}\fs28 \par \pard \par \par \pard \fs0 \{bml BROWSE2.BMP\}\fs28 \par \pard \par \par see also:\tab \b \uldb Read/Write\b0 \uldb0 \v Read_Write\v0 \par \par \page 
+${\footnote $ Server}
+#{\footnote # Server}
++{\footnote + A:00003}
+K{\footnote K Server}
+K{\footnote K timeout}
+K{\footnote K priority}
+K{\footnote K locked file}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Server\par \b0 \pard \f15 \fs28 \pard \f15 \fs0 \cf0 \{bml SERVER.SHG\}\fs28 \par \pard \par Move cursor over figure to go to links.\par \par \par \fs36 \b Timeout:\fs28 \b0 \par sometimes files may be locked when UnfragWorks Server attempts to unfrag them.  Adjust this value to decide how long to wait before the file becomes free.\par \par \par \fs36 \b Priority:\fs28 \b0 \par select from:\par \par \li567 high\par normal\par idle\par \pard \par to increase or decrease the amount of processor time that Windows NT allocates to UnfragWorks Server.  If you are unfragging during work hours, you can set this to 'idle' to minimise the impact on server performance.  Similarly, you can set this to 'high' if unfragging takes place when no-one is connected to the machine.\par \par \par see also:\tab \b \uldb Read/Write\b0 \uldb0 \v Read_Write\v0 \par \par \page 
+${\footnote $ Logging}
+#{\footnote # Logging}
++{\footnote + A:00004}
+K{\footnote K Logging}
+K{\footnote K Start/Stop Service}
+K{\footnote K Start/Stop Unfragging}
+K{\footnote K Files Examined/Unfragged}
+K{\footnote K Bytes Saved}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Logging\par \b0 \pard \f15 \fs28 \pard \f15 \fs0 \cf0 \{bml LOG.SHG\}\fs28 \par \pard \par Move cursor over figure to go to links.\par \par \par \fs36 \b Start/Stop Service:\fs28 \b0 \par record UnfragWorks Server is stopped or started.\par \par \par \fs36 \b Start/Stop Unfragging:\fs28 \b0 \par record the start and stop of unfragging.  This may be useful to determine when to best unfrag files.\par \par \par \fs36 \b Number of Files Examined/Unfragged:\fs28 \b0 \par records how many files were attempted to be unfragged and how many were successfully reduced in size.  These numbers will generally be fairly close.\par \par Note that this will be disabled if UnfragWorks Server is set to 'continuously'.\par \par \par \fs36 \b Number of Bytes Saved:\fs28 \b0 \par records how much disk space is saved on the just completed unfragging run.  A good way to see how much your investment in UnfragWorks Server is saving you!\par \par Note that this will be disabled if UnfragWorks Server is set to 'continuously'.\par \par \par see also:\tab \b \uldb Read/Write\b0 \uldb0 \v Read_Write\v0 \par \tab \tab \b \uldb Scheduling\b0 \uldb0 \v Scheduling\v0 \par \par \page 
+${\footnote $ Scheduling}
+#{\footnote # Scheduling}
++{\footnote + A:00005}
+K{\footnote K Scheduling}
+K{\footnote K run}
+K{\footnote K every}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Scheduling\par \b0 \pard \f15 \fs28 \pard \f15 \fs0 \cf0 \{bml SCHED.SHG\}\fs28 \par \pard \par Move cursor over figure to go to links.\par \par \par \fs36 \b Run:\fs28 \b0 \par select how often during the day unfragging should occur.  You may choose from the following options:\par \par \li567 continuously\par 1 hourly\par 2 hourly\par 4 hourly\par 6 hourly\par 8 hourly\par 12 hourly\par 24 hourly\par \pard \par Note that 'continuously' will immediately unfragment a file as soon as it is required.  It is not recommended that UnfragWorks Server be set to 'continuously' because this will slow down performance considerably.  For this reason, certain logging options will be disabled if UnfragWorks Server is set to 'continuously'.\par \par \par \fs36 \b Every:\par \fs28 \b0 specify the days on which unfragging should take place.  You can select from the following options:\par \par \li567 every day\par weekdays\par weekends\par every Monday\par every Tuesday\par every Wednesday\par every Thursday\par every Friday\par every Saturday\par every Sunday\par except Monday\par except Tuesday\par except Wednesday\par except Thursday\par except Friday\par except Saturday\par except Sunday\par \pard \par \par \fs36 \b At:\fs28 \b0 \par specify the starting time when unfragging should commence.  The time is specified in 24 hour format.  Unfragging will then take place at every interval specified in the 'Run' and 'Every' options.\par \par \par see also:\tab \b \uldb Read/Write\b0 \uldb0 \v Read_Write\v0 \par \tab \tab \b \uldb Logging\b0 \uldb0 \v Logging\v0 \par \page 
+${\footnote $ Administration}
+#{\footnote # Administration}
++{\footnote + A:00006}
+K{\footnote K Administration}
+K{\footnote K machine ID}
+K{\footnote K code}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Administration\par \b0 \pard \f15 \fs28 \pard \f15 \fs0 \cf0 \{bml ADMIN.SHG\}\fs28 \par \pard \par Move cursor over figure to go to links.\par \par \par \fs36 \b Machine ID:\fs28 \b0 \par This is a unique number to identify the machine from other machines.  The software registration code is licensed to this machine only.\par \par If you have to reinstall the operating system, please contact \cf10 Solid\cf1 Partners for another software registration code.\par \par You may copy this number to the Windows clipboard using ctrl-insert.  You may then paste it into an email or fax to obtain your registration code.\par \par This field is not editable since it is unique to the machine.\par \par \li567 \fs48 Please note that the machine ID code is case sensitive.\par \pard \fs28 \par \par \fs36 \b Code:\fs28 \b0 \par Enter the unique software registration code for your machine.  If successful, this will write the code to a file.\par \par If you have to reinstall the operating system, please contact \cf10 Solid\cf1 Partners for another software registration code.\par \par \li567 \fs48 Please note that the software registration code is case sensitive.\fs28 \par \pard \par see also:\cf5 \b \tab \cf1 \uldb Registration\b0 \uldb0 \v Registration\v0 \par \tab \tab \b \uldb Read/Write\b0 \uldb0 \v Read_Write\v0 \par \par \page 
+${\footnote $ Read/Write}
+#{\footnote # Read_Write}
++{\footnote + A:00007}
+K{\footnote K Read/Write}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Read/Write\par \b0 \pard \f15 \fs28 \pard \f15 \fs36 \b \cf0 Read:\fs28 \b0 \par this will read ALL the current settings from the 'UWSV.ini' file in your Windows directory.  Any changes you made to the settings will be lost, if they have not been written.\par \par \par \fs36 \b Write:\fs28 \b0 \par this will write ALL the settings on every tab of the configuration page.\par \par \page 
+${\footnote $ Unfragmenting}
+#{\footnote # Unfragmenting}
++{\footnote + A:00008}
+K{\footnote K Is it safe?}
+K{\footnote K What is 'Unfragmenting'?}
+K{\footnote K How does it work?}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Unfragmenting\par \b0 \pard \f15 \fs28 \pard \f15 \b \cf0 What is 'Unfragmenting'?\par \b0 'Unfragmenting' is probably a slight misdescription.  Fragmented files are generally spread over a number of physical locations on a hard disk.  Conventional disk 'defragmentation' collects all these separate pieces and joins them into one single piece. The file is contiguous but it's size is the same.\par \par In contrast, UnfragWorks reduces the file size by removing redundant information whilst retaining the document information.\par \par \par \b How does it work?\par \b0 Every Microsoft compound document, that supports Object Linking and Embedding (OLE), such as SolidWorks files, can contain redundant information.  UnfragWorks removes this redundancy to dramatically reduce the overall file size.\par \par \par \b Is it safe?\par \b0 UnfragWorks Server has been tested, and works correctly, with the latest version of SolidWorks.  The only change to the SolidWorks file is in the file size.  All parametric information is preserved and no data is altered in any way.  UnfragWorks Server is 100% safe to use in a production environment.\par \par \page 
+${\footnote $ Install/Uninstall}
+#{\footnote # Install_Uninstall}
++{\footnote + A:00009}
+K{\footnote K Install/Uninstall}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Install/Uninstall\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \cf0 UnfragWorks Server runs as a Windows NT service.  This requires several entries to be made in the registry. It is highly recommended that this be left to the installation program.\par \par \par see also:\tab \b \uldb Issues\b0 \uldb0 \v Issues\v0 \par \f4 \fs24 \par \page 
+${\footnote $ Registration}
+#{\footnote # Registration}
++{\footnote + A:00010}
+K{\footnote K Software Registration Code}
+K{\footnote K Register}
+K{\footnote K Machine ID}
+K{\footnote K case sensitive}
+K{\footnote K reinstall}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Registration\par \b0 \pard \f15 \fs28 \pard \tx360 \fi-360 \li360 \f15 \b \cf0 Limitations of Software\b0 \par \pard Without a valid software registration code, the software will only function for five (5) scheduled runs at a time.  The service may be restarted for additional lots of 5 runs.\par \par \b Getting a Software Registration Code\b0 \par \pard \tx360 \fi-360 \li360 \tab \f17 \'b7\f15 \tab right click on the UnfragWorks Server icon in the system tray\par \tab \f17 \'b7\f15 \tab select "Configure" from the popup menu\par \tab \f17 \'b7\f15 \tab this will bring up the configuration dialog\par \tab \f17 \'b7\f15 \tab go to the "Administration" tab\par \tab \f17 \'b7\f15 \tab copy "Machine ID" to clipboard by pressing ctrl-insert\par \tab \f17 \'b7\f15 \tab paste into email or fax by pressing shift-insert, type or write in manually\par \tab \f17 \'b7\f15 \tab send to \cf10 Solid\cf1 Partners with payment\par \tab \f17 \'b7\f15 \tab a software registration code will be sent by return email or fax\par \pard \par \b Entering the Software Registration Code\b0 \par \pard \tx360 \fi-360 \li360 \tab \f17 \'b7\f15 \tab right click on the icon\par \tab \f17 \'b7\f15 \tab select "Configure" from the popup menu\par \tab \f17 \'b7\f15 \tab this will bring up the configuration dialog\par \tab \f17 \'b7\f15 \tab go to the "Administration" tab\par \tab \f17 \'b7\f15 \tab if software registration code has been received by email, copy software registration code to clipboard by pressing ctrl-insert\par \tab \f17 \'b7\f15 \tab paste software registration code from clipboard by pressing shift-insert or  typing in manually\par \tab \f17 \'b7\f15 \tab press "Register" button\par \tab \f17 \'b7\f15 \tab if successful, this will write the software registration code to the UWSV.ini file in your Windows directory, usually C:\\WinNT.\par \pard \par If you have to reinstall the operating system, please contact \cf10 Solid\cf1 Partners for another software registration code.\par \par \li567 \fs48 Please note that the machine ID and software registration codes are case sensitive.\fs28 \par \pard \par \par see also:\tab \b \uldb Administration\uldb0 \v Administration\b0 \v0 \par \par \page 
+${\footnote $ Known Bugs or Problems}
+#{\footnote # Known_Bugs_or_Problems}
++{\footnote + A:00011}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Known Bugs or Problems\par \b0 \pard \f15 \fs28 \pard \cf0 At the moment, UnfragWorks Server will not unfragment a directory starting at the root directory.\par ------------------------------------------------------------------------------------\par \par \page 
+${\footnote $ Issues}
+#{\footnote # Issues}
++{\footnote + A:00012}
+K{\footnote K Issues}
+K{\footnote K Windows NT Server}
+K{\footnote K Windows NT Workstation}
+K{\footnote K Windows 95}
+K{\footnote K Windows 98}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Issues\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \cf0 Unfragworks Server only runs under Windows NT Server or Windows NT Workstation.  Unfragworks Server does NOT run under Windows 95 or Windows 98.\par \par \par see also:\tab \b \uldb Install Uninstall\uldb0 \v Install_Uninstall\b0 \v0 \par \par \page 
+${\footnote $ About}
+#{\footnote # About}
++{\footnote + A:00013}
+K{\footnote K About}
+K{\footnote K email}
+K{\footnote K web}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 About\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \cf0 Commercial Version\par \par Support:\par \tab \cf10 Solid\cf1 Partners, Inc.\par \tab 2155  Las Positas Ct, Suite D\par  \tab Livermore, California  94550\par  \tab USA\par \par \tab tel:     925-373-3443\par \tab fax:    925-373-3445\par \tab email:  sales@\cf10 Solid\cf1 Partners.com \tab \par \tab web:    www.\cf10 Solid\cf1 Partners.com\par \par \page 
+}
