@@ -1,0 +1,24 @@
+[Options]
+Root=c:\wombat\pro\orbworks,c:\wombat\pro\orbworks\help
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=ORBWORKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=OrbWorks v2.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\ORBWORKS\HELP\ORBWORKS.RTF
+[Baggage]
+C:\WOMBAT\WEB\ORBWORKS.GIF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <ORBWORKS.H>
+[Windows]
+main="OrbWorks v2.x",,4,,

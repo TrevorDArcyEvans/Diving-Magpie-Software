@@ -1,0 +1,7 @@
+Microsoft (R) Help Compiler Version 3.10.505
+Copyright (c) Microsoft Corp 1990 - 1992. All rights reserved.
+C:\WOMBAT\PRO\ORBWORKS\HELP\ORBWORKS.HPJ
+
+Warning 2511: line...7 of C:\WOMBAT\PRO\ORBWORKS\HELP\ORBWORKS.HPJ : Unrecognized option 'DBCS' in [OPTIONS] section.
+Error 1230: line...15 of C:\WOMBAT\PRO\ORBWORKS\HELP\ORBWORKS.HPJ : File 'C:\WOMBAT\WEB\ORBWORKS.GIF' not found.
+Warning 2401: line...24 of C:\WOMBAT\PRO\ORBWORKS\HELP\ORBWORKS.HPJ : Window maximization state must be 0 or 1.

@@ -1,0 +1,23 @@
+:Base ORBWORKS.HLP
+:Title OrbWorks v2.0
+1 Contents
+2 Enabled=Enabled
+2 Normal=Normal
+2 Threshold=Threshold
+2 Opposite Sense=Opposite_Sense
+2 Communications Port=Communications_Port
+2 Update Frequency=Update_Frequency
+2 Start Minimised=Start_Minimised
+2 Auto Save=Auto_Save
+2 Auto Save Interval=Auto_Save_Interval
+2 Open=Open
+2 Save=Save
+2 Save As=Save_As
+2 Exit=Exit
+2 Calibration=Calibration
+2 Install Uninstall=Install_Uninstall
+2 Axes and Buttons=Axes_and_Buttons
+2 OrbWorks as a Service=OrbWorks_as_a_Service
+2 Known Bugs or Problems=Known_Bugs_or_Problems
+2 Issues=Issues
+2 About=About
