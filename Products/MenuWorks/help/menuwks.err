@@ -1,0 +1,6 @@
+Microsoft (R) Help Compiler Version 3.10.505
+Copyright (c) Microsoft Corp 1990 - 1992. All rights reserved.
+C:\Wombat\Pro\MenuWorks\help\MenuWks.hpj
+
+Warning 2511: line...6 of C:\Wombat\Pro\MenuWorks\help\MenuWks.hpj : Unrecognized option 'DBCS' in [OPTIONS] section.
+Warning 2401: line...26 of C:\Wombat\Pro\MenuWorks\help\MenuWks.hpj : Window maximization state must be 0 or 1.

@@ -1,0 +1,100 @@
+# Microsoft Developer Studio Generated Dependency File, included by MenuWorks.mak
+
+.\About.cpp : \
+	".\About.h"\
+	".\StdAfx.h"\
+	
+
+.\CcItem.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\crc_32.cpp : \
+	".\crc_32.h"\
+	".\StdAfx.h"\
+	
+
+.\ExampleApp.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\init.h"\
+	".\MenuWorks.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\HandleEvents.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\init.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\ExampleApp.h"\
+	".\init.h"\
+	".\MenuWorks.h"\
+	".\Register.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\MenuWorks.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\ExampleApp.h"\
+	".\init.h"\
+	".\MenuWorks.h"\
+	".\Register.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\MenuWorks.rc : \
+	".\res\MenuWorks.rc2"\
+	
+
+.\Register.cpp : \
+	".\crc_32.h"\
+	".\MenuWorks.h"\
+	".\Register.h"\
+	".\StdAfx.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+.\utils.cpp : \
+	".\crc_32.h"\
+	".\StdAfx.h"\
+	".\utils.h"\
+	
+
+.\WinUtil.cpp : \
+	".\StdAfx.h"\
+	".\WinUtil.h"\
+	

@@ -1,0 +1,29 @@
+; --------------------------------------------------------------------
+;  MenuWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "MenuWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+	ProgExec0			@2
+	ProgExec1			@3
+	ProgExec2			@4
+	ProgExec3			@5
+	ProgExec4			@6
+	ProgExec5			@7
+	ProgExec6			@8
+	ProgExec7			@9
+	ProgExec8			@10
+	ProgExec9			@11
+    MW_Config           @12
+    MW_About            @13
+    MW_Help             @14
+    MW_Register         @15
+    MW_RegisterUpdate   @16
+
+; ---------------------------------
+;  End of MenuWorks.def
+; ---------------------------------

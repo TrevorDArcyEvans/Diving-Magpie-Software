@@ -1,0 +1,26 @@
+[Options]
+Root=c:\wombat\pro\menuwo~1\help,v:\
+Compress=Off
+Contents=Contents
+Errorlog=MENUWKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=MenuWorks v2.x
+Warning=1
+[Files]
+C:\WOMBAT\PRO\MENUWO~1\HELP\MENUWKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_search',`&Index',`Search()')
+CreateButton(`btn_print',`&Print',`Print()')
+CreateButton(`btn_back',`&Back',`Back()')
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_search',`&Index',`Search()')
+CreateButton(`btn_print',`&Print',`Print()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <MENUWKS.H>
+[Windows]
+main="MenuWorks v2.x",,4,,

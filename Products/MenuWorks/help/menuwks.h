@@ -1,0 +1,10 @@
+#define Getting_Started 21
+#define Read 10
+#define Write 20
+#define Read_All 30
+#define Write_All 40
+#define Main_Menu 60
+#define Path_To_Program 70
+#define Browse 50
+#define Menu_Text 80
+#define Hint_Text 90
