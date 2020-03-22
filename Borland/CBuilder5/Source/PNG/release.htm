@@ -1,0 +1,209 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Portable Graphics Network</title>
+</head>
+
+<body topmargin="0" leftmargin="0">
+
+<table border="0" width="640" height="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20" bgcolor="#0099FF" valign="top">&nbsp;</td>
+    <td width="620" valign="top">&nbsp;
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font face="Terminal" size="5" color="#FFFFFF">Portable
+            Graphics Network</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">release
+      notes for the PNG encoder and decoder for Delphi 5 version 1.2</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This is version 1.2 of
+        the encoder and decoder to the <i>Portable Graphics Network </i>format
+        for Delphi 5. This implementation is capable of reading and saving
+        images with <i>Gamma</i> correction and direct access to all the PNG
+        chunks. This implementation was all worked on Delphi 5 and it can show
+        images progressively, as it is being decoded.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">The unit was tested in
+        all the images Willem van Schaik <a href="http://www.schaik.com/pngsuite/pngsuite.html">test</a>
+        page, and, it worked with 100% of the images.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3">&nbsp;Delphi
+            5 integration&nbsp;&nbsp;</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">This
+      implementation integrates with Delphi</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">As the implementation
+        derivates from the class <i>TGraphic</i>, TPNGImage integrates with
+        Delphi booth in run-time and design-time allowing reading PNG images in
+        components like TImage, TOpenPictureDialog thru the class <i>TPicture. </i>This
+        allows, for instance, conversion from any other formats to PNG or from
+        PNG.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3">Installing
+            the component</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Step
+      by step on how to install TPNGImage in your Delphi 5</font></b></p>
+      <blockquote>
+        <ol>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Execute delphi
+            5</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Go to the menu
+            item <u>T</u>ools&gt;Enviroment <u>O</u>ptions...</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Select the page
+            Library</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Add the unit
+            directory in the field path (put a ; before the path)</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Click OK</font></b></li>
+        </ol>
+        <p align="justify"><b><font face="Verdana" size="1">Now to install the
+        component:</font></b></p>
+        <ol>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Go to the
+            menu&nbsp; <u>C</u>omponent&gt;<u>I</u>nstall
+            Component</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">In the unit file
+            name field, add the path and name for the PNGImage.DCU</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Click OK</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">To the message
+            Package will be rebuilt, select No</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Click on the
+            button Add on the window toolbar</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">In the next
+            window, put the path and name for PNGZLIB.DCU in the unit file name
+            field</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Click OK</font></b></li>
+          <li>
+            <p align="justify"><b><font face="Verdana" size="1">Now press the
+            button Compile</font></b></li>
+        </ol>
+        <p align="justify"><b><font face="Verdana" size="1">Now, the component
+        is installed in Delphi and now you add PNGImage in the uses field inside
+        your form units to use the component.<br>
+        </font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3">Using
+            the Component</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">It
+      is really easy to use TPNGImage, here goes an example:</font></b></p>
+      <blockquote>
+        <p align=justify><font face="Courier New" size="1"><font color="#000080">{*********************************************}<br>
+        {* The following app allows to convert BMP&nbsp;&nbsp; *}<br>
+        {* images into PNG. To use, call the program *}<br>
+        {* from MS-DOS
+        prompt:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        *}<br>
+        {*&nbsp;&nbsp; CONVERT.EXE [BMP File]&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        *}<br>
+        {*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        *}<br>
+        {* And the image in the parameter will be&nbsp;&nbsp;&nbsp; *}<br>
+        {* converted to a PNG image with same name.&nbsp; *}</font><b><br>
+        </b><font color="#000080">{*********************************************}</font><b><br>
+        program </b>convert;<br>
+        <font color="#000080">{$APPTYPE CONSOLE}<br>
+        </font><b>uses </b>SysUtils, Windows, Graphics, PNGImage;<b><br>
+        <br>
+        &nbsp; procedure </b>CallError(Msg: <b>string</b>);<br>
+        &nbsp; <b>begin<br>
+        &nbsp;&nbsp; </b>WriteLn(Msg);<br>
+        &nbsp;&nbsp; WriteLn('');<br>
+        &nbsp;&nbsp; WriteLn('Use:');<br>
+        <b>&nbsp;&nbsp; </b>WriteLn(ExtractFileName(ParamStr(0)) + ' [File name.BMP]');<b><br>
+        </b>&nbsp;&nbsp; WriteLn('');<br>
+        <b>&nbsp;&nbsp; </b>WriteLn('To convert the specified file to PNG
+        format.');<br>
+        &nbsp;&nbsp;<b> </b><font color="#000080">{Quits the program}</font><b><br>
+        </b>&nbsp;&nbsp; Halt;<b><br>
+        &nbsp; end;</b></font></p>
+        <p align=justify><font size="1"><b><font face="Courier New">var<br>
+        &nbsp;</font></b><font face="Courier New">PNG: TPNGImage;<br>
+        &nbsp;BMP: TBitmap;<br>
+        &nbsp;Filename: <b>String</b>;<br>
+        <b>begin<br>
+        &nbsp;</b><font color="#000080">{Get the file in the command line}</font><b><br>
+        </b>&nbsp;Filename := GetCommandLine;<br>
+        &nbsp;Filename := Copy(Arquivo, Pos(' ', Filename) + 1, Length(Filename));<br>
+        &nbsp;<br>
+        <b>&nbsp;</b><font color="#000080">{Test if the specified file exits}<br>
+        &nbsp;</font><b>if </b>(Filename = '') <b>or </b>(<b>not </b>FileExists(Filename))
+        <b>then<br>
+        </b>&nbsp; CallError('No file was specified, or the specified file does
+        not exists!');&nbsp;<b><br>
+        &nbsp;</b><font color="#000080">{Creates the TPNGImage and TBitmap}</font><b><br>
+        &nbsp;</b>PNG := TPNGImage.Create;<br>
+        &nbsp;BMP := TBitmap.Create;<br>
+        <font color="#000080">&nbsp;{Do the work}</font><br>
+        &nbsp;BMP.LoadFromFile(Filename);<br>
+        &nbsp;PNG.Assign(BMP);<br>
+        &nbsp;PNG.SaveToFile(ChangeFileExt(Filename, '.PNG'));<br>
+        <b>&nbsp;</b><font color="#000080">{Destroy the objects}<br>
+        </font>&nbsp;BMP.Free;<b><br>
+        </b>&nbsp;PNG.Free;<b><br>
+        <font color="#000080">&nbsp;</font></b><font color="#000080">{Shows a
+        message}<br>
+        &nbsp;</font>WriteLn(Format('The file:%s%s%sWas successfully saved as::%s%s',&nbsp;<br>
+        &nbsp; [#13#10, Filename, #13#10#13#10, #13#10, ChangeFileExt(Filename,
+        '.PNG')]));<b><br>
+        end.</b></font></font></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3">Contact
+            the author</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">How
+      to contact the component author to get more </font></b><b><font face="Terminal" size="1">information</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">You may contact the
+        author to answer any doubts you have about the component or to report
+        bugs you find, or even to give ideas for future versions.</font></b></p>
+        <p align=justify><b><a href="mailto:GUSTAVODAUD@UOL.COM.BR"><font face="Verdana" size="2">GUSTAVODAUD@UOL.COM.BR</font></a><font face="Verdana" size="1">
+        <br>
+        </font></b><font face="Verdana" size="2"><i>Gustavo Huffenbacher Daud</i></font></p>
+        <p align=justify><font face="Verdana" size="2"><b>Website:</b><br>
+        <a href="http://www.overpower.com.br/png">http://www.overpower.com.br/png</a>
+        </font></p>
+      </blockquote>
+        <p align=justify>&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="20" bgcolor="#0099FF">&nbsp;</td>
+    <td width="620" valign="top">
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

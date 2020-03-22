@@ -1,0 +1,26 @@
+[DSP upload]
+Filename=regi1632.zip
+Replacements=regi1632.zip
+Version=2.0
+FileURL=
+Description=Regi1632 gives you access to the Win95/NT. If you're running on 16 bit it will write/read the registry-entries from an Inifile;if you're running on a 32 bit system (even if it is a 16bit program) the registry will be used. Helpfile&Example  included!
+Delphi 1.0=Y
+Delphi 2.0=Y
+Delphi 3.0=Y
+C++Builder 1.0=N
+File Status=Freeware
+Full Source=Included
+Category=InVisible Components
+Note=
+Additional info=
+[DSP Support]
+DSP Support=Y
+[Versions available]
+Delphi 1.0=
+Delphi 2.0=
+Delphi 3.0=
+C++Builder 1.0=
+[Uploader]
+Author name=Hannes Danzl
+Author E-mail=e9026733@stud3.tuwien.ac.at
+Author URL=http://stud3.tuwien.ac.at/~e9026733/

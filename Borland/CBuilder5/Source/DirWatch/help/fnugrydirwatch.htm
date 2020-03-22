@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="edlin for Windows NT, Professional Edition">
+<TITLE>FnugryDirWatch</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<FONT FACE="Arial" SIZE=2>
+<P ALIGN="LEFT">
+FnugryDirWatch Component<BR>
+Copyright (C) 1998 Gleb Yourchenko<BR>
+Version 1.0<BR>
+<BR>
+Contact:<BR>
+Gleb Yourchenko<BR>
+E-mail: </FONT><A HREF="mailto:eip__@hotmail.com"><FONT FACE="Arial" SIZE=2>eip__@hotmail.com</FONT></A>
+</P>
+
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">&nbsp;</P>
+<P ALIGN="LEFT">Please read the </FONT><A HREF="legal.txt"><FONT FACE="Arial" SIZE=2>disclaimer</FONT></A><FONT FACE="Arial" SIZE=2>.</P>
+</FONT><B><FONT FACE="Arial" SIZE=4><P ALIGN="LEFT">FnugryDirWatch Component Reference</P>
+</B></FONT><I><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">FnugryDirWatch Component </I>wraps the </FONT><A HREF="ReadDirectoryChangeW.txt"><FONT FACE="Arial" SIZE=2>ReadDirectoryChangesW</FONT></A><FONT FACE="Arial" SIZE=2> API function that allows applications to respond to changes in the file system, such as new file and/or directory creation, renaming, size, attribute, and time changes, etc. FnugryDirWatch hides all the utility code and asynchronous event processing routine behind a simple, easy to use interface, that makes change processing as simple as dropping the component onto the form, setting up event filter and assigning notification event handler.</P>
+<P ALIGN="LEFT">Name:&#9;<B>TFnugryDirWatch</P>
+</B><P ALIGN="LEFT">Unit:&#9;<B>fngdirwatch</P>
+</B><P ALIGN="LEFT"></P></FONT>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=426>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<B><U><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Properties</B></U></FONT></TD>
+<TD WIDTH="28%" VALIGN="TOP">
+<B><U><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Methods</B></U></FONT></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<B><U><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Events</B></U></FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="#directory"><FONT FACE="Arial" SIZE=2>Directory</FONT></A></TD>
+<TD WIDTH="28%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#actionname"><FONT FACE="Arial" SIZE=2>ActionName</FONT></A></TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#onchange"><FONT FACE="Arial" SIZE=2>OnChange</FONT></A></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#enabled"><FONT FACE="Arial" SIZE=2>Enabled</FONT></A></TD>
+<TD WIDTH="28%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="42%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#onnotify"><FONT FACE="Arial" SIZE=2>OnNotify</FONT></A></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#errormsg"><FONT FACE="Arial" SIZE=2>ErrorMsg</FONT></A></TD>
+<TD WIDTH="28%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="42%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#options"><FONT FACE="Arial" SIZE=2>Options</FONT></A></TD>
+<TD WIDTH="28%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="42%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"></FONT><A HREF="FnugryDirWatch.htm#watchsubtree"><FONT FACE="Arial" SIZE=2>WatchSubtree</FONT></A></TD>
+<TD WIDTH="28%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="42%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="28%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="42%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+</TABLE>
+
+<U><FONT FACE="Arial"><P ALIGN="LEFT">Properties</P>
+</U></FONT><B><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"><A NAME="directory">Directory</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">property Directory :String;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Use the Directory property to specify a directory to watch. If specified directory does not exist, or cannot be opened (for example if other process uses it exclusively), then notification is desabled and exception is raised and a EDirWatch exception raised.</P>
+<B><P ALIGN="LEFT"><A NAME="enabled">Enabled</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">property Enabled :Boolean;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Set the Enabled property to TRUE to enable directory change notifications, or to FALSE to disable notification processing. Note, if specified by the Directory property folder is not accessible, setting Enabled to TRUE will result into EDirWatch exception.</P>
+<B><P ALIGN="LEFT"><A NAME="errormsg">ErrorMsg</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">property ErrorMsg :String;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The ErrorMsg property returns last error message. For more information about error handling see the </FONT><A HREF="FnugryDirWatch.htm#remarks"><FONT FACE="Arial" SIZE=2>remarks</FONT></A><FONT FACE="Arial" SIZE=2> section below.</P>
+<B><P ALIGN="LEFT"><A NAME="options">Options</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT"></P>
+<P ALIGN="LEFT">TDirWatchOption = (</P>
+<P ALIGN="LEFT">      dw_file_name,</P>
+<P ALIGN="LEFT">      dw_dir_name,</P>
+<P ALIGN="LEFT">      dw_file_attr,</P>
+<P ALIGN="LEFT">      dw_file_size,</P>
+<P ALIGN="LEFT">      dw_file_write_date,</P>
+<P ALIGN="LEFT">      dw_file_access_date,</P>
+<P ALIGN="LEFT">      dw_file_creation_date,</P>
+<P ALIGN="LEFT">      dw_file_security</P>
+<P ALIGN="LEFT">   );</P>
+<P ALIGN="LEFT"></P>
+<P ALIGN="LEFT">TDirWatchOptions = set of TDirWatchOption;</P>
+<P ALIGN="LEFT"></P>
+<P ALIGN="LEFT">property Options :TDirWatchOptions</P>
+</FONT><B><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">&nbsp;</P>
+</B><P ALIGN="LEFT">Use the Options property to specify what events your application will respond to. Following values are allowed:</P></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=570>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_file_name</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any filename change in the watched directory or subtree causes a change notification wait operation to return. Changes include renaming, creating, or deleting a file.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_dir_name</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any directory-name change in the watched directory or subtree causes a change notification wait operation to return. Changes include creating or deleting a directory.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_file_attr</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any attribute change in the watched directory or subtree causes a change notification wait operation to return.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_file_size</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any file-size change in the watched directory or subtree causes a change notification wait operation to return. The operating system detects a change in file size only when the file is written to the disk. For operating stems that use extensive caching, detection occurs only when the cache is sufficiently flushed.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_file_write_date</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any change to the last write-time of files in the watched directory or subtree causes a change notification wait operation to return. The operating system detects a change to the last write-time only when the file is written to the disk. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed. </FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_file_access_date</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any change to the last access time of files in the watched directory or subtree causes a change notification wait operation to return.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">dw_file_creation_date</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any change to the creation time of files in the watched directory or subtree causes a change notification wait operation to return.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">Dw_file_security</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Any security-descriptor change in the watched Directory or subtree causes a change notification wait operation to return. </FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">&nbsp;</P>
+<P ALIGN="LEFT">&nbsp;</P>
+<B><P ALIGN="LEFT"><A NAME="watchsubtree">WatchSubtree</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">property WatchSubtree :Boolean;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Specifies whether the component will monitor the directory or the directory tree. If TRUE is specified, FnugryDirWatch monitors the directory tree rooted at the directory specified by the Directory property. If FALSE is specified, the component monitors only the directory specified.</P>
+</FONT><U><FONT FACE="Arial"><P ALIGN="LEFT">Methods</P>
+</U></FONT><B><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"><A NAME="actionname">ActionName</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">function ActionName(Action :Integer):String;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Returns text name of the action code. See also: </FONT><A HREF="FnugryDirWatch.htm#onnotify"><FONT FACE="Arial" SIZE=2>OnNotify</FONT></A><FONT FACE="Arial" SIZE=2> event.</P>
+</FONT><U><FONT FACE="Arial"><P ALIGN="LEFT">Events</P>
+</U></FONT><B><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT"><A NAME="onchange">OnChange</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">property OnChange :TNotifyEvent;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The OnChange event occurs whenever component properties' value changes. </P>
+<B><P ALIGN="LEFT"><A NAME="onnotify">OnNotify</A></P>
+</B></FONT><FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">TFileChangeNotifyEvent = procedure(Sender :TObject;</P>
+<P ALIGN="LEFT">   Action :Integer; const FileName :string) of object;</P>
+<P ALIGN="LEFT"></P>
+<P ALIGN="LEFT">property OnNotify :TFileChangeNotifyEvent;</P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">&nbsp;</P>
+<P ALIGN="LEFT">The OnNotify event handler is called every time a change specified by the options property occurs. The FileName parameter of event contains name of the changed file, and the Action parameter specifies what kind of change occurred:</P></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=570>
+<TR><TD WIDTH="45%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">FILE_ACTION_ADDED</FONT></TD>
+<TD WIDTH="55%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The file was added to the directory.</FONT></TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="55%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">FILE_ACTION_REMOVED</FONT></TD>
+<TD WIDTH="55%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The file was removed from the directory.</FONT></TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="55%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">FILE_ACTION_MODIFIED</FONT></TD>
+<TD WIDTH="55%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The file was modified. This can be a change in the time stamp, size or attributes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="55%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">FILE_ACTION_RENAMED_OLD_NAME</FONT></TD>
+<TD WIDTH="55%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The file was renamed and this is the old name.</FONT></TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="55%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="45%" VALIGN="TOP">
+<FONT FACE="Courier New" SIZE=2><P ALIGN="LEFT">FILE_ACTION_RENAMED_NEW_NAME</FONT></TD>
+<TD WIDTH="55%" VALIGN="TOP">
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">The file was renamed and this is the new name.</FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">&nbsp;</P>
+<P ALIGN="LEFT">See also: </FONT><A HREF="FnugryDirWatch.htm#options"><FONT FACE="Arial" SIZE=2>TFnugryDirWatch.Options</FONT></A><FONT FACE="Arial" SIZE=2>, </FONT><A HREF="FnugryDirWatch.htm#directory"><FONT FACE="Arial" SIZE=2>TFnugryDirWatch.Directory</FONT></A><FONT FACE="Arial" SIZE=2>, </FONT><A HREF="FnugryDirWatch.htm#enabled"><FONT FACE="Arial" SIZE=2>TFnugryDirWatch.Enabled</FONT></A><FONT FACE="Arial" SIZE=2>.</P>
+</FONT><B><I><FONT FACE="Arial"><P ALIGN="LEFT"><A NAME="remarks">Remarks</A></P>
+</B></I></FONT><U><FONT FACE="Arial" SIZE=2><P ALIGN="LEFT">Supported Platforms</P>
+</U><P ALIGN="LEFT">TFnugryDirWatch encapsulates </FONT><A HREF="ReadDirectoryChangeW.txt"><FONT FACE="Arial" SIZE=2>ReadDirectoryChangesW</FONT></A><FONT FACE="Arial" SIZE=2> API functionality, which is only available on Windows NT 4.0 or higher. A EDirWatch exception will be raised on attempt to create FnugryDirWatch instance in application running under any other OS. Undefining the CheckPlatform in fngdirwatch.pas can skip in the platform check. In this case, application will still be able to allocate an instance but will fail to set the Enabled property to true. </P>
+<U><P ALIGN="LEFT">Error Handling</P>
+</U><P ALIGN="LEFT">When an error occurs, FnugryDirWatch automatically sets Enabled to false and raises an exception. An application can perform necessary recovery actions, for example correcting the Directory property, and try to re-enable notifications. </P></FONT></BODY>
+</HTML>

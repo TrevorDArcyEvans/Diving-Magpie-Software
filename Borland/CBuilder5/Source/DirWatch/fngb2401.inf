@@ -1,0 +1,26 @@
+[DSP upload]
+Filename=fngb2401.exe
+Replacements=
+Version=1.0
+FileURL=
+Description=FnugryDirWatch Component wraps the  ReadDirectoryChangesW API (NT Only) function that allows  applications to respond to changes in the file system, such as  new file and/or directory creation, renaming, size, attribute,  and time changes, etc.
+Delphi 1.0=N
+Delphi 2.0=N
+Delphi 3.0=Y
+C++Builder 1.0=N
+File Status=Freeware
+Full Source=Included
+Category=InVisible Components
+Note=See LEGAL.TXT for information about usage and  redistribution conditions.
+Additional info=
+[DSP Support]
+DSP Support=N
+[Versions available]
+Delphi 1.0=
+Delphi 2.0=
+Delphi 3.0=
+C++Builder 1.0=
+[Uploader]
+Author name=Gleb Yourchenko
+Author E-mail=eip__@hotmail.com
+Author URL=

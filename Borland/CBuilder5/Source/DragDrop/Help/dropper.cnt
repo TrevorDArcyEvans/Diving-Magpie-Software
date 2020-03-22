@@ -1,0 +1,16 @@
+:Base DROPPER.HLP>main
+:Title TFileDropper Reference
+1 General Information
+2 About=1008
+2 Contacting Information=1009
+2 Warranty=1010
+2 Liability=1011
+2 Technical Support=1012
+1 TFileDropper Reference
+2 TFileDropper=1000
+2 Properties
+3 AllowDir=1004
+3 DropSite=1005
+3 SubFolders=1006
+2 Events
+3 OnDrop=1007

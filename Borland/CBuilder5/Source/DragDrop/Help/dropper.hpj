@@ -1,0 +1,13 @@
+[OPTIONS]
+HCW=0
+COMPRESS=12 Hall Zeck
+LCID=0x809 0x0 0x0 ;English (British)
+REPORT=Yes
+CONTENTS=1000
+TITLE=TFileDropper Reference
+COPYRIGHT=TFileDropper ©1999 Lloyd Kinsella Software
+CITATION=TFileDropper ©1999 Lloyd Kinsella Software
+HLP=.\Dropper.hlp
+
+[FILES]
+.\FileDrop.rtf

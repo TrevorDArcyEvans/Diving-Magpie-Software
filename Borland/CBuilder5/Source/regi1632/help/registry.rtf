@@ -1,0 +1,290 @@
+{\rtf1\ansi \deff0\deflang1024
+{\fonttbl
+{\f0\fswiss HELV;}
+{\f1\fswiss SYSTEM;}
+{\f2\froman TIMES NEW ROMAN;}}
+{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue127;
+\red0\green127\blue127;
+\red0\green127\blue0;
+\red127\green0\blue127;
+\red127\green0\blue0;
+\red127\green127\blue0;
+\red127\green127\blue127;
+\red192\green192\blue192;}
+{\stylesheet
+{\fs20 \sbasedon0\snext0 Normal;}
+{\s1 \sb240\sa60 \b\fs28 \sbasedon0\snext0 heading 1;}
+{\s2 \sb240\sa60 \b\i\fs24 \sbasedon0\snext0 heading 2;}
+{\s10 \fs24 \sbasedon0\snext0 Default Paragraph Font;}
+{\s15 \fi-202\li202 \tx20160 \fs18 \sbasedon0\snext0 index 1;}
+{\s16 \fi-202\li403 \tx40320 \fs18 \sbasedon0\snext0 index 2;}
+{\s17 \sb360\sa240\brdrt\brdrth \b\i\fs26 \sbasedon0\snext15 index heading;}
+{\s18 \sb360 \b\fs24 \sbasedon0\snext0 toc 1;}
+{\s19 \li202\sb240 \tx20160 \b\fs20 \sbasedon0\snext0 toc 2;}
+{\s20 \fs24 \sbasedon10\snext0 endnote reference;}
+{\s21 \fs24 \sbasedon10\snext0 footnote reference;}}
+{\info
+{\title REGISTRY.RTF}
+{\author The Help Magician}
+{\doccomm }
+{\creatim\yr1997\mo6\dy22\hr15\min12}
+{\revtim\yr1997\mo6\dy22\hr15\min12}
+{\version2}
+{\edmins873}
+{\nofpages13}
+{\nofwords65536}
+{\nofchars65536}
+{\vern16433}}
+\paperw14715\paperh16838\margl1800\margr1800\margt1440\margb1440\gutter0\widowctrl\ftnbj \sectd \linex0\endnhere 
+\s1\keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Regi1632 unit}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Regi1632_unit}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} Regi1632;Unit Regi1632;}}
+\plain\f2\fs28\cf2\b  Regi1632 unit\par 
+\pard \plain\f2\fs20\cf1\b0 Regi1632 gives you access to the Win95/NT registry from Delphi 1 and Delphi 2 program. It encapsulates the WinApi functions in a simple class. If you're running on a 16 bit system it will simply write/read the registry-entries from an Inifile; if you're running on a 32 bit system (even if it is a 16bit program) the registry will be used.\par 
+\par 
+\b Components \par 
+\b0 \par 
+\b  \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  \par 
+\par 
+Author:\par 
+\par 
+Hannes Danzl\b0   \par 
+http://www.priv.bus.at/~hdanzl/index.html\par 
+e9026733@stud3.tuwien.ac.at\par 
+\page \pard\plain \s1\keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Tregistry1632}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Tregistry1632}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} Registry1632;TRegistry1632;}}
+\plain\f2\fs28\b  \cf2 TRegistry1632 component\fs20\cf1  \par 
+\fs16\b0  \cf11 {\ul Properties}{\v Properties}\cf1 \cf1     \cf11 {\ul Methods}{\v Methods}\cf1 \cf1    \cf11 {\strike Example}{\v Example}\cf1\b \cf1\b  \par 
+\pard \plain\f2\fs20\cf1\b0 \par 
+\b Unit \par 
+\b0   \cf11 {\strike Regi1632}{\v Regi1632_unit}\cf1 \cf1  \par 
+\par 
+\b Description: \par 
+\b0 \par 
+Provides access to the registry or a Inifile in 16 bit and 32 bit Windows. Simply use the ReadUserstring, WriteUserstring and Readstring, Writestring functions. With the property RunningWin31 you can set the target to the registry or to a Inifile. On changing Inifilename property you can use your own Inifile. Errors on readin/writeing are reported by the read-only properties WasError and ErrorMessage.\par 
+\page \pard\plain \s1\keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Readstring}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Readstring}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} Readstring;}}
+\plain\f2\fs20    \fs28\cf2\b Methodname ReadString\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+  function \b0 ReadString(Path, Key: \b string\b0 ): \b string\b0 ;\par 
+\par 
+\b Description: \par 
+\par 
+\b0 Reads the value of a registry entry from the LOCAL_MACHINE part of the registry. This part of the registry is used for general values that are used for all users. Path is the complete path to the key (excluding "HKEY_LOCAL_MACHINE/"). Key is the name of the entry you want to read.\par 
+The result is either a string (if found) or "" (if not found). Accordingly the properties WasError and ErrorMessage are set.\par 
+\par 
+If RunningWin31 is set to true the above action is piped to an Inifile. The path is interpreted as a section where the key is read from. To avoid naming conflicts with ReadString "LM_" is added at the beginning of the path.\par 
+\par 
+\page \pard\plain \s1\keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Writestring}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Writestring}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} WriteString;}}
+\plain\f2\fs20    \fs28\cf2\b Methodname WriteString\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+  procedure \b0 WriteString(Path, Key, Value:\b String\b0 );\par 
+\par 
+\b Description: \par 
+\par 
+\b0 Sets the value of a key in the LOCAL_MACHINE part of the registry. This part of the registry is used for general values that are used for all users. Path ist the full path to the key you want to set. Key is of course the name of the entry and Value is the string it should be set to. If the does not exist, it is created. If an error occurs property WasError is set to true and ErrorMessage holds the complete Error string.\par 
+\par 
+If RunningWin31 is set to true the above action is piped to an Inifile. The path is interpreted as a section where the key is stored. To avoid naming conflicts with ReadString "LM_" is added at the beginning of the path.\par 
+\par 
+\page \pard\plain \s1\keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} ReadUserString}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} ReadUserString}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} ReadUserString;}}
+\plain\f2\fs20    \fs28\cf2\b Methodname ReadUserString\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+  function \b0 ReadUserString(Path, Key: \b string\b0 ): \b string\b0 ;\par 
+\par 
+\b Description: \par 
+\par 
+\b0 Reads the value of a registry entry from the CURRENT_USER part of the registry. This part of the registry is used for values that are only used for currently logged-in user. Path is the complete path to the key (excluding "HKEY_CURRENT_USER/"). Key is the name of the entry you want to read.\par 
+The result is either a string (if found) or "" (if not found). Accordingly the properties WasError and ErrorMessage are set.\par 
+\par 
+If RunningWin31 is set to true the above action is piped to an Inifile. The path is interpreted as a section where the key is read from. To avoid naming conflicts with ReadString "CU_" is added at the beginning of the path.\par 
+\page \pard\plain \s1\keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} WriteUserString}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} WriteUserString}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} WriteUserString;}}
+\plain\f2\fs20    \fs28\cf2\b Methodname WriteUserString\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+  procedure \b0 WriteUserString(Path, Key, Value:\b String\b0 );\par 
+\par 
+\b Description: \par 
+\par 
+\b0 Sets the value of a key in the CURRENT_USER part of the registry. This part of the registry is used for values that are only used for currently logged-in user. Path ist the full path to the key you want to set. Key is of course the name of the entry and Value is the string it should be set to. If the does not exist, it is created. If an error occurs property WasError is set to true and ErrorMessage holds the complete Error string.\par 
+\par 
+If RunningWin31 is set to true the above action is piped to an Inifile. The path is interpreted as a section where the key is stored. To avoid naming conflicts with ReadString "CU_" is added at the beginning of the path.\par 
+\par 
+\page \pard\plain \keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} RunningWin31}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} RunningWin31}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} RunningWin31;}}
+\plain\f1\fs20 \par 
+\s1\keepn \f2\fs28\cf2\b Property RunningWin31\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+\b0     \b property\b0  RunningWin31: Boolean;\par 
+\par 
+\b Description: \b0 Is used to set the target for all operations to IniFile (RunnningWin31=true) or the regsitry (RunningWin31=false). The initial value of this property is always set according to the OS the programm is started on. Use this carefully since trying to write to registry in a 16bit Windows will cause errors.\par 
+\par 
+\page \pard\plain \keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} IniFilename}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} IniFilename}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} IniFileName;}}
+\plain\f1\fs20 \par 
+\s1\keepn \f2\fs28\cf2\b Property IniFilename\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+\b0     \b property\b0  IniFilename: String;\par 
+\par 
+\b Description: \b0 Is the full path and filename of the Inifile where the function will write to if RunningWin31 is true. Be sure to set this value if you are using the component with a 16bit OS.\par 
+\par 
+\page \pard\plain \keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} WasError}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} WasError}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} WasError;}}
+\plain\f1\fs20 \par 
+\s1\keepn \f2\fs28\cf2\b Property WasError\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\f0\cf1 \f0\cf1  \f2 component\par 
+\par 
+\b Declaration\par 
+\b0     \b property\b0  WasError: Boolean; read-only;\par 
+\par 
+\b Description: \b0 Can be called to determine if the last function caused an error (=true) or not (=false). To get the full error message use the property ErrorMessage.\par 
+\par 
+\page \pard\plain \keepn \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} ErrorMessage}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} ErrorMessage}}
+{\plain \f0\fs16\up6\lang1033 K{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 K} ErrorMessage;}}
+\plain\f1\fs20 \par 
+\s1\keepn \f2\fs28\cf2\b Property ErrorMessage\par 
+\pard \plain\f2\fs20\cf2\b0 \par 
+\cf1 Applies to \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component\par 
+\par 
+\b Declaration\par 
+\b0     \b property\b0  ErrorMessage: String; read-only;\par 
+\par 
+\b Description: \b0 Holds the complete error message of the last error. Is NOT cleared if no error appears. So be sure to always use it in combination with WasError property.\par 
+\par 
+\page \pard\plain \pard \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Properties}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Properties}}
+\plain\f2\fs20   \b Key properties\par 
+\b0 \par 
+\cf11 {\strike RunningWin31}{\v RunningWin31}\cf1 \cf1  \par 
+\cf11 {\strike Inifilename}{\v IniFilename}\cf1 \cf1  \par 
+\cf11 {\strike WasError}{\v WasError}\cf1 \cf1  \par 
+\cf11 {\strike Errormessage}{\v ErrorMessage}\cf1 \cf1  \par 
+\page \pard\plain \pard \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Methods}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Methods}}
+\plain\f2\fs20   \b Key methods\par 
+\b0 \par 
+\cf11 {\strike ReadString}{\v Readstring}\cf1 \cf1  \par 
+\cf11 {\strike WriteString}{\v Writestring}\cf1 \cf1  \par 
+\cf11 {\strike ReadUserString}{\v ReadUserString}\cf1 \cf1  \par 
+\cf11 {\strike WriteUserString}{\v WriteUserString}\cf1 \cf1  \par 
+\page \pard\plain \pard \plain \f0\fs20 {\plain \f0\fs16\up6\lang1033 ${\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 $} Example}}
+{\plain \f0\fs16\up6\lang1033 #{\footnote \pard\plain \f0\fs20\lang1033 {\fs16\up6 #} Example}}
+\plain\f2\fs20\b  Example\par 
+\b0 \par 
+This example shows how to use \cf11 {\strike TRegistry1632}{\v Tregistry1632}\cf1 \cf1  component in your programs.\par 
+\par 
+unit Unit1;\par 
+\par 
+interface\par 
+\par 
+uses\par 
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,\par 
+  Forms, Dialogs, StdCtrls, Regi1632;\par 
+\par 
+type\par 
+  TForm1 = class(TForm)\par 
+    Button1: TButton;\par 
+    Edit1: TEdit;\par 
+    Edit2: TEdit;\par 
+    Label1: TLabel;\par 
+    Label2: TLabel;\par 
+    Label3: TLabel;\par 
+    Edit3: TEdit;\par 
+    Button2: TButton;\par 
+    Label4: TLabel;\par 
+    Label5: TLabel;\par 
+    Registry16321: TRegistry1632;\par 
+    CheckBox1: TCheckBox;\par 
+    procedure Button1Click(Sender: TObject);\par 
+    procedure Button2Click(Sender: TObject);\par 
+    procedure FormShow(Sender: TObject);\par 
+    procedure CheckBox1Click(Sender: TObject);\par 
+  private\par 
+    \{ Private-Deklarationen \}\par 
+  public\par 
+    \{ Public-Deklarationen \}\par 
+  end;\par 
+\par 
+var\par 
+  Form1: TForm1;\par 
+\par 
+implementation\par 
+\par 
+\{$R *.DFM\}\par 
+\par 
+procedure TForm1.Button1Click(Sender: TObject);\par 
+var value:string;\par 
+begin\par 
+  edit3.text:=Registry16321.ReadUserString(edit1.text, edit2.text);\par 
+  if Registry16321.WasError then\par 
+    messagedlg('Error: '+ Registry16321.ErrorMessage,mtinformation,[mbok],0);\par 
+end;\par 
+\par 
+procedure TForm1.Button2Click(Sender: TObject);\par 
+var value:string;\par 
+begin\par 
+  Registry16321.WriteUserString(edit1.text, edit2.text, edit3.text);\par 
+  if Registry16321.WasError then\par 
+    messagedlg('Error: '+ Registry16321.ErrorMessage,mtinformation,[mbok],0);\par 
+end;\par 
+\par 
+procedure TForm1.FormShow(Sender: TObject);\par 
+begin\par 
+  checkbox1.checked:=Registry16321.RunningWin31;\par 
+end;\par 
+\par 
+procedure TForm1.CheckBox1Click(Sender: TObject);\par 
+begin\par 
+  Registry16321.RunningWin31:=checkbox1.checked;\par 
+  if checkbox1.checked then\par 
+  begin\par 
+    label4.caption:='Reads the data path/key from inifile and sets the Result-field!';\par 
+    label5.caption:='Writes the data in the results field to the path/key to the inifile!';\par 
+  end\par 
+  else\par 
+  begin\par 
+    label4.caption:='Reads the data path/key from registry and sets the Result-field!';\par 
+    label5.caption:='Writes the data in the results field to the path/key in the registry!';\par 
+  end;\par 
+end;\par 
+\par 
+end.\par 
+}

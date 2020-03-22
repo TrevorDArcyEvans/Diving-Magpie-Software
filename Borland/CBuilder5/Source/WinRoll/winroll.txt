@@ -1,0 +1,10 @@
+TWinRoller Ver 1.0
+
+Provides Delphi 2.0 programmers with an component like the shareware 'WinShade' 
+to roller a window, and a new botton in the caption of window.
+All source code is provided and released to the public domain as freeware.
+
+Plaese report all bugs, suggestions and problems to:
+
+    Sean Hsieh
+    Mail: sean@mail.linkease.com.tw

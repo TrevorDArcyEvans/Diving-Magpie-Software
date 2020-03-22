@@ -1,0 +1,29 @@
+[DSP upload]
+Filename=SCapture.zip
+Replacements=
+Version=1.0
+FileURL=
+Description=Component which captures *ANY* window or desktop. Enclosed Demo is self-explaining. Source can be downloaded from our homepage (http://www.easycash.co.at/delphi).
+Delphi 1.0=N
+Delphi 2.0=N
+Delphi 3.0=Y
+C++Builder 1.0=N
+File Status=Freeware
+Full Source=NOT included
+Category=Invisible Components
+Note=
+Additional info=
+
+[DSP Support]
+DSP Support=Y
+
+[Versions available]
+Delphi 1.0=
+Delphi 2.0=
+Delphi 3.0=
+C++Builder 1.0=
+
+[Uploader]
+Author name=Alexander Halser
+Author E-mail=halser@easycash.co.at
+Author URL=http://www.easycash.co.at/delphi

@@ -1,0 +1,30 @@
+[OPTIONS]
+ROOT = .
+COMPRESS = FALSE
+WARNING = 3
+REPORT = 1
+ERRORLOG = REGISTRY.ERR
+BMROOT = .
+TITLE = REGISTRY.HLP
+MULTIKEY = M
+
+[WINDOWS]
+main="REGISTRY.HLP",(100,100,823,823),0,(255,255,255),(255,255,232),0
+
+[FILES]
+REGISTRY.RTF
+
+[MAP]
+Regi1632_unit    2; Regi1632 unit
+Tregistry1632    3; Tregistry1632
+Readstring    4; Readstring
+Writestring    5; Writestring
+ReadUserString    6; ReadUserString
+WriteUserString    7; WriteUserString
+RunningWin31    8; RunningWin31
+IniFilename    9; IniFilename
+WasError    10; WasError
+ErrorMessage    11; ErrorMessage
+Properties    12; Properties
+Methods    13; Methods
+Example    14; Example

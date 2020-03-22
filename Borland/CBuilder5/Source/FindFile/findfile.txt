@@ -1,0 +1,40 @@
+FindFile version 1.0
+
+Copyright (C) September 1997 Walter Dorawa
+
+Everyone is free to use this code as they wish, but
+if you use it commercially then I wouldn't mind a
+little something.
+
+OVERVIEW:
+=========
+
+This is a little utility component, which allows you to search a directory
+for any file or folder.
+
+It wraps the FindFirst/FindNext/FindClose functions, and supplies the
+ability to recurse directories.
+
+USAGE:
+======
+
+To activate the component use:
+
+FindFile1.Execute;
+
+The list of matched files/folders is returned in the 
+Files property (TStrings), and includes the full path and file name.
+
+You can use ExtractFileName to just get the file name then.
+
+The After and Before execute events are there....but not sure how useful
+they will be?
+
+If you find this component useful, have any suggestions or found bugs,
+please email me: walterd@gte.net
+
+INSTALLATION:
+=============
+Copy the files into a folder on your computer, select Component|Install
+in Delphi, click Add, enter the location of FileFind.pas, click okay.
+

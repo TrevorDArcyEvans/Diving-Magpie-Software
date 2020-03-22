@@ -1,0 +1,1481 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Portable Graphics Network</title>
+</head>
+
+<body topmargin="0" leftmargin="0" class="A" link="#000000" vlink="#000000" alink="#000000">
+
+<table border="0" width="640" height="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="162" valign="top">&nbsp;
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" width="100%">
+        <tr>
+          <td width="100%" align="right">
+            <b><font face="Terminal" size="5" color="#FFFFFF"> TPNGImage</font></b>
+          </td>
+        </tr>
+      </table>
+        <center>
+        <BR>
+        </center>
+        <font face="Verdana" size="1">(TPNGImage contains all the properties and
+        methods from the TBitmap)</font>
+        <center>
+        <table border="0" cellspacing="0" cellpadding="0" width="119" height="262">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="15" height="21">
+            </td>
+            <td width="84" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#1">TPNGImage</a></b></font></td>
+          </tr>
+        </center>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Methods</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">w</font></td>
+        <center>
+            <td width="15" height="21">
+        </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#2">LoadFromStream</a></font></td>
+          </tr>
+        </center>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">w</font></td>
+        <center>
+            <td width="15" height="21">
+        </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#3">SaveToStream</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="15" height="21">
+            </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#4">LoadFromFile</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="19">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="15" height="19">
+            </td>
+            <td width="84" height="19">
+              <font face="Verdana" size="2"><a href="#5">SaveToFile</a></font></td>
+          </tr>
+        </center>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">w</font></td>
+        <center>
+            <td width="15" height="21">
+            </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#20">RegisterChunkClass</a></font>
+            </td>
+          </tr>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="15" height="21">
+            </td>
+        </center>
+            <td width="84" height="21">
+              <p align="left">
+              <font face="Verdana" size="2"><a href="#6">Assign</a></font></p>
+            </td>
+          </tr>
+        <center>
+          <tr>
+            <td width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Properties</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="15" height="21">
+            </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#7">Chunks</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="15" height="21">
+            </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#8">Filter</a></font></td>
+          </tr>
+            <tr>
+            <td width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Events</b></font></td>
+            </tr>
+          <tr>
+            <td width="16" height="21">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="15" height="21">
+            </td>
+            <td width="84" height="21">
+              <font face="Verdana" size="2"><a href="#9">OnProgress</a></font></td>
+          </tr>
+        </table>
+        &nbsp;
+        <table border="0" cellspacing="0" cellpadding="0" width="119" height="182">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#10">TChunkList</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Methods</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#11">Add</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#12">Clear</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#13">IndexOf</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#14">Move</a></font></td>
+          </tr>
+          <tr>
+            <td width="115" colspan="3" height="17" align="right">
+              <p align="center"><font face="Verdana" size="2"><b>Properties</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#15">Count</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#16">Item</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#17">Owner</a></font></td>
+          </tr>
+        </table>
+        &nbsp;
+
+        <table border="0" cellspacing="0" cellpadding="0" width="119" height="182">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#18">TChunk</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Methods</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#21">Assign<br>
+              </a></font><font face="Verdana" size="1">virtual</font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#27">DoAction</a></font><font face="Verdana" size="1"><br>
+              </font><font face="Verdana" size="1">protected</font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#22">SaveToStream<br>
+              </a></font><font face="Verdana" size="1">virtual</font></td>
+          </tr>
+          <tr>
+            <td width="115" colspan="3" height="17" align="right">
+              <p align="center"><font face="Verdana" size="2"><b>Properties</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#23">ChunkType</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#24">Index</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#25">Size</a></font></td>
+          </tr>
+        
+        
+        </center>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+        <center>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#26">Stream</a> </font><font face="Verdana" size="1">protected</font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">Ÿ</font></td>
+            <td width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#28">Owner</a></font></td>
+          </tr>
+        </table>
+        <BR>
+        
+
+
+    <font face="Verdana" size="1"><b>Derivates from TChunk<br>
+      </b>(Contains all methods and properties from TChunk)
+      <br>
+      </font>
+        
+
+
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#29">TChunkGama</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Properties</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#30">Value</a></font></td>
+          </tr>
+        </table>
+        </center>
+  &nbsp;
+        
+
+
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#33">TChunkTEXT<br>
+              TChunkZTXT</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Proprieades</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#32">Keyword</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <p align="right"><font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#33">Value</a></font></td>
+          </tr>
+        </table>
+        <BR>
+
+        
+
+
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#34">TChunkPLTE</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Properties</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#35">Palette<br>
+              </a></font><font face="Verdana" size="1">Read-Only</font></td>
+          </tr>
+        </table>
+    <br>
+
+
+        
+
+
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" width="16" height="21">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="21">
+            </td>
+            <td width="97" height="21">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#36">TChunkIHDR</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="21">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="18">
+              <p align="center"><font face="Verdana" size="2"><b>Properties</b></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#37">BitDepth</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#38">ColorType</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#39">Compression</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#40">Filter</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#41">Height</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#42">Interlaced</a></font></td>
+          </tr>
+          <tr>
+            <td width="16" height="21" align="right">
+              <font face="Wingdings">w</font></td>
+            <td width="2" height="21">
+        </td>
+            <td width="97" height="21">
+              <font face="Verdana" size="2"><a href="#43">Width</a></font></td>
+          </tr>
+        </table>
+    <br>
+
+
+        
+
+
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" width="16" height="11">
+              <p align="center"><font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="11">
+            </td>
+            <td width="97" height="11">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#45">TChunkIDAT</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="11">
+              <hr align="center" noshade>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" width="16" height="10">
+              <font face="Wingdings">Ö</font></td>
+            <td align="left" width="2" height="10">
+            </td>
+            <td width="97" height="10">
+              <p align="center"><font face="Verdana" size="2"><b><a href="#45">TChunkIEND</a></b></font></td>
+          </tr>
+          <tr>
+            <td align="left" width="115" colspan="3" height="10">
+              <hr align="center" noshade>
+            </td>
+          </tr>
+        </table>
+    <p><br>
+    </td>
+    <td width="6" valign="top" bgcolor="#0099FF"><p align=justify>&nbsp;</p>
+    </td>
+    <td width="472" valign="top" bgcolor="#FFFFFF">&nbsp;
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font face="Terminal" size="5" color="#FFFFFF">help
+            page&nbsp;</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">release
+      notes for the PNG encoder and decoder for Delphi 5 version 1.2</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This is version 1.2 of
+        the encoder and decoder to the <i>Portable Graphics Network </i>format
+        for Delphi 5. This implementation is capable of reading and saving
+        images with <i>Gamma</i> correction and direct access to all the PNG
+        chunks. This implementation was all worked on Delphi 5 and it can show
+        images progressively, as it is being decoded.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">The unit was tested in
+        all the images Willem van Schaik <a href="http://www.schaik.com/pngsuite/pngsuite.html">test</a>
+        page, and, it worked with 100% of the images.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="1"></a>TPNGImage&gt;TBitmap&gt;TGraphic&gt;TObject&gt;TPersistent</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Component
+      to implement the PNG format</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This is the main
+        component that implements the decoder and encoder for PNGs. The
+        component is based on TBitmap meaning it have all TBitmap properties and
+        methods. It is possible to use the <a href="#7"> Assign</a>  procedure
+        to copy the contents from most of TGraphic descendents like TJPEGImage,
+        etc..</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="2"></a>TPNGImage.LoadFromStream</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      LoadFromStream(Stream: TStream)</font></b></p>
+      <blockquote>
+        <p align="justify"><b><font face="Verdana" size="1">Use the
+        LoadFromStream to load a PNG file from any class derivate from TStream
+        like TMemoryStream or TFileStream.</font></b></p>
+        <p align="justify"><b><font face="Verdana" size="1">The method will read
+        all the chunks until it find the IEND chunk. If the <a href="#9">OnProgress</a>
+        event is set, using additional code, the image may be displayed progressively
+        (with a loss of speed).</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Example
+      on how using the method.</font></b></p>
+      <blockquote>
+        <p><b><font face="Courier New" size="1"><font color="#000080">{The
+        method bellow opens the image X.PNG }<br>
+        {and put it on the background of the&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+        {current window. Note that this method&nbsp;&nbsp; }<br>
+        {makes the same work that LoadFromFile do}<br>
+        </font>var<br>
+        &nbsp; PNG: TPNGImage;<br>
+        &nbsp; FStream: TFileStream;<br>
+        begin<br>
+        &nbsp; PNG := TPNGImage.Create;<br>
+        &nbsp; try<br>
+        &nbsp; &nbsp; FStream := TFileStream.Create('X.PNG',fmOpenRead);<br>
+        &nbsp;&nbsp;&nbsp; PNG.LoadFromStream(FStream);<br>
+        &nbsp;&nbsp;&nbsp; Form1.Canvas.Draw(0, 0, PNG);<br>
+        &nbsp; finally<br>
+        &nbsp;&nbsp;&nbsp; PNG.Free;<br>
+        &nbsp;&nbsp;&nbsp; FStream.Free;<br>
+        &nbsp; end;<br>
+        end;</font>
+        </b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">See
+      also:</font></b></p>
+      <blockquote>
+        <p><b><font face="Verdana" size="1"><a href="#4">LoadFromFile</a><br>
+        <a href="#7">SaveToFile</a><br>
+        <a href="#3">SaveToStream</a></font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="3"></a>TPngImage.SaveToStream</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      SaveToStream(Stream: TStream)</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">SaveToStream saves the
+        current image from the TPNGImage object to a class derivate from TStream
+        like TFileStream or TMemoryStream.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">All the chunks from
+        the previous loaded image will be mantained, with modifications to the
+        necessary chunks.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Also, the filter
+        property is important to set which filters maybe used to save the image.</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">See
+      also:</font></b></p>
+      <blockquote>
+        <p><b><font face="Verdana" size="1"><a href="#3">SaveToStream</a><br>
+        <a href="#4">LoadFromFile</a><br>
+        <a href="#2">LoadFromStream</a><br>
+        </font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="4"></a>TPngImage.LoadFromFile</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      LoadFromFile(const FileName: String)</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">LoadFromFile loads a
+        png file from a file specified by the parameter. The image will be
+        readed until the IEND chunk is found or until the end of the file (some
+        applications like the current version of ACDSee for a bug does not add
+        the IEND chunk).</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">See
+      also:</font></b></p>
+      <blockquote>
+        <p><b><font face="Verdana" size="1"><a href="#3">SaveToStream</a><br>
+        <a href="#7">SaveToFile</a><br>
+        <a href="#2">LoadFromStream</a><br>
+        </font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="5"></a>TPNGImage.SaveToFile</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      SaveToFile(const FileName: String)</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">SaveToFile saves the
+        current image to a file. The method uses the <a href="#3">SaveToStream</a>
+        procedure to save the image.</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">See
+      also:</font></b></p>
+      <blockquote>
+        <p><b><font face="Verdana" size="1"><a href="#3">SaveToStream</a><br>
+        <a href="#4">LoadFromFile</a><br>
+        <a href="#2">LoadFromStream</a></font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="20" href="#19"></a>TPNGImage.RegisterChunkClass</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="1">&nbsp; TChunkType = Array[0..3] of
+      Char;<br>
+      &nbsp; TChunkClass = class of TChunk;<br>
+      &nbsp; procedure RegisterChunkClass(ChunkType: TChunkType;&nbsp;<br>
+      &nbsp;&nbsp;&nbsp; ChunkClass: TChunkClass)</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This procedure will
+        probably not be used. It is used mainly internally for upgrade reasons
+        to support new chunk types.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">When the method <a href="#19">TChunkList.Add(Stream:
+        TStream)</a> is called, the procedure look for registered chunk classes
+        by this method in an internal chunk list. If the chunk read is
+        registered, it will create a new chunk class based on the registered to
+        do special work when the class is being saved or readed.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">To create a new class
+        it is necessary to declare a class based on TChunk and in the ChunkType
+        field use a name with 4 letters.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">The <a href="http://www.libpng.org/pub/png/spec/PNG-Structure.html#Chunk-layout">Portable
+        Graphics Network</a>  have some conventions when naming new chunks:</font></b></p>
+        <table border="1" width="390">
+          <tr>
+            <td rowspan="2" valign="bottom" width="34">
+              <p align="right"><font face="Verdana" size="1"><b>Letter</b></font></td>
+            <td width="340" colspan="2"><font face="Verdana" size="1"><b>What
+              means if the letter case is:</b></font></td>
+          </tr>
+          <tr>
+            <td width="160">
+              <p align="center"><font face="Verdana" size="1"><b>Uppercase</b></font></td>
+            <td width="174">
+              <p align="center"><font face="Verdana" size="1"><b>Lowercase</b></font></td>
+          </tr>
+          <tr>
+            <td width="34">
+              <p align="right"><font face="Verdana" size="1"><b><i>1</i></b></font></td>
+            <td width="160">
+              <p align="left"><font face="Verdana" size="1">The chunk is
+              critical to the image be decoded</font></td>
+            <td width="174"><font face="Verdana" size="1">The chunk is not
+              critical to the image be decoded.</font></td>
+          </tr>
+          <tr>
+            <td width="34">
+              <p align="right"><font face="Verdana" size="1"><b><i>2</i></b></font></td>
+            <td width="160"><font face="Verdana" size="1">The chunk is public
+              and is in the PNG specification.</font></td>
+            <td width="174"><font face="Verdana" size="1">The chunk is private
+              and is used only by a specific application.</font></td>
+          </tr>
+          <tr>
+            <td width="34">
+              <p align="right"><font face="Verdana" size="1"><b><i>3</i></b></font></td>
+            <td width="160"><font face="Verdana" size="1">Must be in uppercase.</font></td>
+            <td width="174"><font face="Verdana" size="1">Can not be in
+              lowercase.</font></td>
+          </tr>
+          <tr>
+            <td width="34">
+              <p align="right"><font face="Verdana" size="1"><b><i>4</i></b></font></td>
+            <td width="160"><font face="Verdana" size="1">The chunk is safe to
+              be copied in case there is any modification in the image.</font></td>
+            <td width="174"><font face="Verdana" size="1">The chunk should be
+              removed in case there are any modifications in the image.</font></td>
+          </tr>
+        </table>
+        <BR>
+        <b><font face="Verdana" size="1">In the new class created it is possible
+        to modify the procedures <a href="#21">Assign</a>, <a href="#22">SaveToStream</a>
+        and <a href="#27">DoAction</a> using override in the declaration to add
+        specific actions when the chunk is copied, saved or readed.</font></b>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="6"></a>TPNGImage.Assign</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      Assign(Source: TPersistent)</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The Assign procedure
+        copies the content from another TPNGImage or derivates from TGraphic as
+        TBitmap, TJPEGImage.</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Example
+      on how using the procedure.</font></b></p>
+      <blockquote>
+        <p><b><font color="#000080" face="Courier New" size="1">{The method
+        bellow convert from TJPEGImage}<br>
+        {to TPNGImage and saves the file. Include }<br>
+        {jpeg in the application uses}<br>
+        </font><font face="Courier New" size="1">var<br>
+        &nbsp; JPEG:TJPEGImage;<br>
+        &nbsp; PNG :TPNGImage;</font><font color="#000080" face="Courier New" size="1"><br>
+        </font><font face="Courier New" size="1">begin<br>
+        &nbsp; JPEG := TJpegImage.Create;<br>
+        &nbsp; PNG := TPNGImage.Create;<br>
+        &nbsp; try<br>
+        &nbsp;&nbsp;&nbsp; JPEG.LoadFromFile('Picture.JPG');<br>
+        &nbsp;&nbsp;&nbsp; PNG.Assign(JPEG);<br>
+        &nbsp;&nbsp;&nbsp; PNG.SaveToFile('Picture.PNG');<br>
+        &nbsp; finally<br>
+        &nbsp;&nbsp;&nbsp; JPEG.Free;<br>
+        &nbsp;&nbsp;&nbsp; PNG.Free;<br>
+        &nbsp; end;<br>
+        end;</font>
+        </b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="7"></a>TPNGImage.Chunks</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Chunks: TChunkList;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">Use the Chunks
+        property to have direct access to all the chunks from the TPNGImage.
+        Chunks are &quot;pieces&quot; of essential and non essential information
+        for the image. For instance, the IHDR chunk contains information about the
+        image size, color type, interlace, type, etc...<br>
+        The IDAT chunk contains the image itself and will be decoded
+        automatically.<br>
+        The IEND chunk indicates the end of the file.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="8"></a>TPNGImage.Filter</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">TEncodeFilter
+      = (efNone, efSub, efUp, efAverage, efPaeth))<br>
+      &nbsp;&nbsp; TEncodeFilterSet = set of TEncodeFilter<br>
+      <br>
+      &nbsp;&nbsp;&nbsp; property Filter: TEncodeFilterSet;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The filter property
+        indicates which filters will be applied before the image is compressed.
+        It is allowed to set the property as Filter := [efNone, efSub,
+        efUp, efAverage, efPaeth] to always make sure to use the best filters to
+        each line (with a performace loose).</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Each line in the PNG
+        may use a different filter, and the encoder will test all the filters in
+        the property to test which one is better.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="9"></a>TPNGImage.OnProgress</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">TProgressStage
+      = (psStarting, psRunning, psEnding)<br>
+      &nbsp;&nbsp; TProgressEvent = procedure (Sender: TObject; Stage: TProgressStage;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; PercentDone: Byte; RedrawNow: Boolean; const R: TRect; const Msg: string)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; of object;</font><font face="Terminal" size="1"><br>
+      &nbsp;&nbsp; property OnProgress: TProgressEvent</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The OnProgress event
+        receives progress information as the image is being decoded. This event
+        is useful for displaying the image progressively.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">For more information
+        about this event, take a look on the Delphi Help (TGraphic.OnProgress).</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Example
+      on how using the event:</font></b></p>
+      <blockquote>
+        <p><b><font color="#000080" face="Courier New" size="1">{The method
+        bellow reads an images and&nbsp;&nbsp; }<br>
+        {display it as it is being
+        readed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></b></p>
+        <p><b><font face="Courier New" size="1">procedure TForm1.Progresso(</font></b><font face="Terminal" size="1"><b>Sender: TObject; Stage:TProgressStage;&nbsp;
+        PercentDone: Byte; RedrawNow: Boolean;</b></font>&nbsp; <b><font face="Terminal" size="1">const R: TRect; const Msg:
+        string</font><font color="#000080" face="Courier New" size="1"><br>
+        </font><font face="Courier New" size="1">var<br>
+        &nbsp; PNG: TPNGImage;</font></b><font face="Courier New" size="1"><b><br>
+        begin<br>
+        &nbsp;PNG := TPNGImage(Sender);<br>
+        &nbsp;<font color="#000080">{If it is a TPNG image we can show it progressive}<br>
+        </font>
+        <br>
+        &nbsp; if (PercentDone mod 5 = 0) and<br>
+        &nbsp; (TChunkIHDR(PNG.Chunks[0]).Interlaced = 0) then<br>
+    begin<br>
+      BitBlt(Canvas.Handle, (Width - PNG.Width) div 2,<br>
+        ((Height - PNG.Height) div 2) + LastPos,<br>
+        R.Right, R.Bottom - LastPos,<br>
+        PNG.Canvas.Handle, 0, LastPos, SRCCOPY);<br>
+      LastPos := R.Bottom;<br>
+    end<br>
+    else if (TChunkIHDR(PNG.Chunks[0]).Interlaced = 1) then<br>
+      Canvas.Draw((Width - PNG.Width) div 2,&nbsp;<br>
+      ((Height) - PNG.Height) div 2, PNG);<br>
+  end;<br>
+        <br>
+  Application.Processmessages;<br>
+        </b></font><b><font face="Courier New" size="1"><br>
+        end;
+        </font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="10"></a>TChunkList&gt;TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Mananges
+      all the chunks in the image
+      </font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The TChunkList
+        component allows access to all the chunks in the image. Using methods in
+        this component allows to access, add, remove and manage all the chunks.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1"> Chunks are &quot;pieces&quot;
+        of essential and not essential information for the image. For instance,
+        the chunk IHDR contains information about the image dimension, color
+        type, interlace type, etc...<br>
+        The chunk IDAT contains the image itself and it will be decoded
+        automatically.<br>
+        The IEND chunk indicates the end of the file.</font></b></p>
+      </blockquote>
+      <blockquote>
+        <p>&nbsp;</p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="11"></a>TChunkList.Add</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">function
+      Add(Item: TChunk): TChunk;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This Add declaration
+        add an existent chunk to the end of the list. Although this item must
+        exist. It will return the same item from the parameter.</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">function
+      Add(ChunkClass: TChunkClass): TChunk;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This declaration
+        creates a new item using the class from the parameter and add it to the
+        list. It will return the item created.
+        <br>
+        ex:<br>
+        <br>
+        </font><font face="Courier New" size="1">PNG.Chunks.Move(PNG.Chunks.Add(TChunkTEXT).Index,
+        PNG.Chunks.Count - 2);</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;<a name="19"></a></font><font face="Terminal" size="1">function
+      Add(Stream: TStream): TChunk;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This declaration of
+        the Add method is only used internally. It reads the chunk from the
+        Stream and add the item to the list. The function returns the chunk
+        created from the Stream.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF">
+        <tr>
+          <td width="100%"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="12"></a>TChunkList.Clear</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      Clear;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This method clears all
+        the items in the list. It is not recommended to call this method unless
+        you intend to create the essential chunks before saving the image.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="13"></a>TChunkList.IndexOf</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">function
+      IndexOf(Chunk: TChunk): Integer</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This declaration of
+        IndexOf returns the position of the chunk in the parameter. If it is not
+        in the list, it will return -1.</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">function
+      IndexOf(ChunkClass: TChunkClass): Integer</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This declaration of
+        IndexOf returns the position of the first chunk with the specified class
+        in the parameter. If none item is found, it returns -1.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="14"></a>TChunkList.Move</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      Move(Index1, Index2: Integer)</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The procedure Move
+        moves the position of a chunk in the list. Index1 is the position of the
+        chunk to move and index2 is the new position.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="15"></a>TChunkList.Count</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Count: Integer;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property chunk
+        returns the number of chunks in the list.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="16"></a>TChunkList.Item</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Item[Index: Integer]: TChunk</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property Item
+        returns a chunk from the list. As the property is <i>default</i>, it is
+        possible to access this property with TChunkList object, ex:
+        PNG.Chunks[0].Index.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Its also possible to
+        typecast the returned chunk to access it specific property in case there
+        is a known derived chunk class.</font></b></p>
+      </blockquote>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Exemplo
+      de uso do método.</font></b></p>
+      <blockquote>
+        <p><b><font color="#000080" face="Courier New" size="1">{The method
+        bellow, looks for the first&nbsp;&nbsp;&nbsp; }<br>
+        {TEXT chunk and shows it contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        }</font></b></p>
+        <p><font face="Courier New" size="1"><b>procedure Exibe(Arquivo:
+        String);<br>
+        var<br>
+        &nbsp; PNG: TPNGImage;<br>
+        &nbsp; POSI: Integer;<br>
+        &nbsp; TEXT: TChunkTEXT;<br>
+        begin<br>
+        &nbsp; PNG := TPNGImage.Create;<br>
+        &nbsp; PNG.LoadFromFile(Arquivo);<br>
+        &nbsp; POSI := PNG.Chunks.IndexOf(TChunkTEXT);<br>
+        <br>
+        &nbsp; If POSI = -1 THEN<br>
+        &nbsp; begin<br>
+        &nbsp;&nbsp; showmessage('There are no TEXT chunk in the image.');<br>
+        &nbsp; exit;<br>
+        &nbsp; end;<br>
+        &nbsp; TEXT := TChunkTEXT(PNG.Chunks[Posi]);<br>
+        &nbsp;&nbsp;<br>
+        &nbsp; showmessagefmt('Keyword: %s%s Valor: %s',<br>
+        &nbsp;&nbsp;&nbsp; [TEXT.Keyword, #13#10#13#10, TEXT.text]);<br>
+        &nbsp; PNG.Free;<br>
+        end;</b></font></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="17"></a>TChunkList.Owner</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Owner: TPNGImage</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property returns
+        the <a href="#1">TPNGImage</a>  owner that contains this TChunkList.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="18"></a>TChunk&gt;TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Class
+      for unknown chunks or base class for known</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This class contains
+        information for a chunk in the image.&nbsp; There are various classes
+        that derivates from TChunk like TChunkIHDR, TChunkIDAT, TChunkTEXT,
+        etc... that are implementations for known chunks. You may use typecast
+        the TChunk to access declared methods and properties from the derivate
+        classes.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">It is not necessary to
+        access the TChunk and derivates unless you need to access specifics
+        operations from the Portable Graphics Network format.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">All the data from the
+        stream are declared in the &quot;<a href="#26">Stream</a>&quot;, a
+        protected property that allows direct access to the data. Only
+        descendents classes may access this property and it is intended to be
+        used in the creation of new TChunk classes.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="21"></a>TChunk.Assign</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font></b><b><font face="Terminal" size="1">procedure
+      Assign(Source: TPersistent); virtual;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This method is used
+        internally to copy the contents from another chunk with the same class
+        into the current one.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">In case you are
+        creating a descendent class from TChunk is recommended to override this
+        class to copy additional properties that the class may store.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="27"></a>TChunk.DoAction</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      DoAction; virtual;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The DoAction method is
+        automatically for each chunk as soon as the decoder finishes reading all
+        the chunk. This procedure is declared as <i>protected</i> and may only
+        be accessed by TChunk descendent classes.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">When creating a new
+        TChunk class it is essential to override this method if the chunk
+        modifies the image.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="22"></a>TChunk.SaveToStream</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">procedure
+      SaveToStream(Stream: TStream); virtual;</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The method
+        SaveToStream saves the chunk content in a stream. This method is
+        normally used internally and may be overridden in descendents TChunk
+        classes to make additional operations (usually cleaning the Stream and writing
+        the code all over again). The method calculates and add the CRC code
+        automatically.&nbsp;</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="23"></a>TChunk.ChunkType</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">TChunkType
+      = Array[0..3] of Char<br>
+      &nbsp;&nbsp; property ChunkType: TChunkType</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property returns
+        the chunk kind for the current chunk.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="24"></a>TChunk.Index</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Index: Integer</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property index,
+        returns the position of the current chunk from the list in the <a href="#10">TChunkList</a>
+        owner.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="25"></a>TChunk.Size</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Size: Integer</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property size
+        returns the size of the stream (Stream.size), which is the chunk data.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="26"></a>TChunk.Stream</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Stream: TMemoryStream</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The stream property is
+        declared as protected in the TChunk declaration meaning it can't be
+        accessed directly, but only from descendents of TChunk.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">The property gives
+        direct access to the Chunk contents and may be modified normally as a
+        TMemoryStream (see Delphi Help).</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">This property is
+        important only to create new chunk types as it gives access to the data.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="28"></a>TChunk.Owner</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Owner: <a href="#10">TChunkList</a></font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The owner property
+        returns the TChunkList that contains the current chunk.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="29"></a>TChunkGamma
+            &gt; TChunk &gt; TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Controls
+      the image color intensity</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The chunk gamma (gAMA),
+        defines the intensity for the output. As in different operational
+        systems, or in different environments, the intensity of the same RGB
+        color may be different, the <a href="http://www.libpng.org/pub/png/spec/PNG-Chunks.html#C.gAMA">Portable
+        Graphics Network</a>  specification defines a chunk gAMA to correct the
+        intensity. The decoder already do all the work when it is decoding the
+        image, but it is possible to get the value calling the property <a href="#30">value</a>.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="30"></a>TChunkGamma.Value</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Value: Cardinal</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property Value,
+        returns the Gamma value from the chunk. To calculate the real value, you
+        should divide the value from this property by <span class="expr">100000
+        (using an appropriate variable kind like double, float, real...)</span></font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="31"></a>TChunkText
+            &gt; TChunk &gt; TObject<br>
+            TChunkZTXT &gt; TChunk &gt; TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Contain
+      additional text information about the image</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The difference between
+        the chunks TChunkText (tEXT) and TChunkZTXT (zTXT) is that the second
+        one is compressed meaning that, if the text is large, it will use less
+        memory.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Booth the chunks have
+        the same properties and they are used to add extra comments to the image
+        (like in GIF), such as the image creator, etc..</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="32"></a>TChunkText.Keyword<br>
+            TChunkZTXT.Keyword</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Keyword: String</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The property Keyword
+        indicates the meaning of the field <a href="#33">value</a>. For
+        instance, let's suppose you want to put a comment on how the image was
+        created. You could then put &quot;Image creation&quot; on the Keyword
+        field.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="33"></a>TChunkText.Value<br>
+            TChunkZTXT.Value</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Value: String</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The Value property
+        indicates the text value for the keyword. There are no limits for the
+        size, but it is recommended to use the TChunkZTXT in case the text is
+        big.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="34"></a>TChunkPLTE&gt;TChunk&gt;TObject&nbsp;</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Palette
+      for indexed mode or recommended palette</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The TChunkPLTE
+        (PLTE) palette is critical in case the color mode is indexed (each pixel
+        indicates a palette index). It contains the possible colors that the
+        pixels may use.<br>
+        In case the color mode is RGB, the palette is a recommended palette to
+        use.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="35"></a>TChunkPLTE.Palette</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Palette: HPalette</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This is a read-only
+        property. This property creates a palette using WIN32API and returns its
+        handle (hPalette).<br>
+        <br>
+        To modify the paletty being used by the current image, it is necessary
+        to change the property Palette from the TPNGImage. (what requeries
+        creating a new palette using WIN32API).</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">This method is used
+        main internaly and it does not always correspond to the current palette
+        used by the images. It is recommended to use the property Palette from
+        TPNGImage.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="36"></a>TChunkIHDR
+            &gt; TChunk &gt; TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Contains
+      important information about the image</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">TChunkIHDR (IHDR) is obligatorily
+        the first chunk in the image and contains information about the image
+        dimension, the color mode, interlace type, compression method, and set
+        of filters.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Although most of the
+        properties are transfered to the TPNGImage, some information from this
+        chunk may have some importance.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Modification in this
+        chunk does not modify the image and they will be overriden when the
+        image is saved.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="37"></a>TChunkIHDR.BitDepth</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      BitDepth: Byte</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This property
+        indicates how many bits each sample has.&nbsp;</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">If <a href="#40">ColorType</a>
+        value is Palette, this property can be 1, 2, 4 or 8. This means that
+        each pixel will have this number of bits.&nbsp;</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">In case the image is
+        Grayscale, this property may be 1, 2, 4, 8 or 16. If the value is 0, the
+        pixel color is black, if the value is 2^BitDepth, the color is white.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">In case the <a href="#40">ColorType</a>
+        is RGB, this property can be 8 or 16, and each pixel has 3 values with
+        the number of the bits corresponding the bitdepth. The values indicates
+        Red, Green, Blue, or known as RGB. The mix of these 3 values results in
+        almost any color.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">In case the image is
+        RGBALPHA or GRAYSCALEALPHA, the value can be 8 or 16. RGBALPHA works
+        like RGB, but with an extra value, alpha, indicating the transparency.
+        The same thing happens with GRAYSCALEALPHA and GRAYSCALE.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1"><u>Note</u>: In case
+        the bitdepth is 16, it will be reduced to 8 due to incompability with
+        windows and with current video adpters. This although doesn't affect
+        visually the image.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="38"></a>TChunkIHDR.ColorType</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      ColorType: Byte</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The colortype property
+        indicates the color mode being used in the current image. The supported
+        values are:</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">0 - (Grayscale) Means
+        that the image uses grayscale tons<br>
+        1 - (RGB) Each pixel in the image has 3 values RGB<br>
+        3 - (Palette) Each sample correspond to a palette color<br>
+        4 - (GrayscaleAlpha) Grayscale with an alpha value<br>
+        5 - (RGBAlpha) Pixel with 3 RGB values and one alpha</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="39"></a>TChunkIHDR.Compression</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Compression: Byte</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">There is currently
+        only one possible value for this property, 0. As in <a href="http://www.libpng.org/pub/png/spec/PNG-Chunks.html">Portable
+        Graphics Network</a> specification it means that the image uses ZLIB
+        compression method for compressing the images. It was added for future
+        expansions in PNG.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="40"></a>TChunkIHDR.Filter</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Filter: Byte</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">This property
+        indicates the set of filters, that are operations made to the image
+        bytes before it is compressed, to get a better compression.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">Currently, only the
+        value 0, adaptive filtering with 5 basic filters is supported by PNG
+        specification. In case the decoder finds any other value, it will report
+        an error.&nbsp;</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="41"></a>TChunkIHDR.Height</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Height: Cardinal</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">Returns the image
+        height (pixels). It is not recommended to use this value because it will
+        not be updated when the image is changed.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">To get the Height, use
+        the property TPNGImage.Height.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="42"></a>TChunkIHDR.Interlaced</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Interlaced: Byte</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The interlaced
+        property in the current PNG specification provides two values:</font></b></p>
+        <p align="justify"><b><font face="Verdana" size="1">0 - No interlacement
+        is used<br>
+        1 - ADAM7 interlacement</font></b></p>
+        <p align="justify"><b><font face="Verdana" size="1">Interlacing is a
+        technique used to show the image contents progressively in a better way
+        using a different transmission method.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="43"></a>TChunkIHDR.Width</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">property
+      Width: Cardinal</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">Returns the width
+        (pixels) from the readed image. It is not recommended to use this value
+        because it value will not be updated when the image is changed.</font></b></p>
+        <p align=justify><b><font face="Verdana" size="1">To get the Width, use
+        the TPNGImage.Width property.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="44"></a>TChunkIDAT
+            &gt; TChunk &gt; TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">Contain
+      the file image</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The TChunkIDAT (IDAT)
+        is the main chunk and contains the compressed image. This chunk is
+        decoded automatically by TPNGImage decoder.</font></b></p>
+      </blockquote>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="19">
+        <tr>
+          <td width="100%" height="19"><b><font color="#FFFFFF" face="Small Fonts" size="3"><a name="45"></a>TChunkIEND
+            &gt; TChunk &gt; TObject</font></b></td>
+        </tr>
+      </table>
+      <p><b><font face="Terminal" size="5">&nbsp;</font><font face="Terminal" size="1">End
+      of the file</font></b></p>
+      <blockquote>
+        <p align=justify><b><font face="Verdana" size="1">The IEND chunk
+        indicates the end of the PNG file.</font></b></p>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+This package is released as FREEWARE. Permission is granted 
+to anyone to freely use this software for any purpose, including 
+commercial software products. An acknowledgment is welcome 
+but not required.
+
+
+Copyrights
+----------
+
+This product is Copyright (C) 1997-98 Gleb Yourchenko
+Author retain full copyright in all the files included in this package.
+
+
+Redistribution
+--------------
+
+You may freely redistribute this package, on the following conditions:
+
+* the whole package is redistributed
+* no alteration is made to the package, or to any of the files in it.
+* no charge (other than charges for disk duplication and
+  handling) be made for any redistribution.
+
+
+Disclaimer
+----------
+The developer make no representations about the suitability of this 
+software or about any content or information made accessible by the 
+software, for any purpose. The software is provided 'as is' without 
+express or implied warranties, including warranties of merchantability 
+and fitness for a  particular purpose. The developer or suppliers shall 
+not be liable for  (a) incidental, consequential, special or indirect 
+damages of any sort, whether  arising in tort, contract or otherwise, 
+even if the developer has been informed of the possibility of such 
+damages, or (b) for any claim by any other party. This limitation of 
+liability shall not apply to liability for death or personal injury to 
+the extent applicable law prohibits such limitation. furthermore, some 
+states and/or countries do not allow the exclusion or limitation of 
+incidental or consequential damages, so this limitation and exclusion 
+may not apply to you.
+
+
+Support
+-------
+The developer will offer limited support for the software and is under 
+no obligation to issue updates to this software.
+
+
+Contact
+-------
+Gleb Yourchenko
+e-mail: eip__@hotmail.com

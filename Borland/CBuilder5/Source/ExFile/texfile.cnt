@@ -1,0 +1,37 @@
+; This contents file was created with HelpScribble 5.0.0
+; Registered to: Catoctin Software
+
+:BASE TExFile.hlp
+:TITLE TExFile Component
+:LINK DEL4VCL.HLP
+1 TExFile component
+2 About=Scribble1087
+2 TExFile component Reference=Scribble1010
+2 Component Tech. Info and Tips
+3 Tips=Scribble1089
+3 Component Logic Overview=Scribble1011
+2 Properties
+3 Priority=Scribble1020
+3 ProcFileName=Scribble1025
+3 ProcIdentifier=Scribble1030
+3 ProcParameters=Scribble1035
+3 TimeOutSec=Scribble1027
+3 UseEvent=Scribble1040
+3 Version=Scribble1045
+3 WaitUntilDone=Scribble1050
+3 WindowType=Scribble1055
+2 Methods
+3 Create=Scribble1060
+3 Destroy=Scribble1065
+3 CloseProcess=Scribble1070
+3 CloseThreads=Scribble1075
+3 Execute=Scribble1080
+3 ExErrorMessage=Scribble1072
+3 GetErrorCode=Scribble1085
+3 GetProcInfo=Scribble1090
+3 GetProcStatus=Scribble1095
+3 GetReturnCode=Scribble1100
+3 ResetProps=Scribble1105
+2 Events
+3 OnLaunchFailed=Scribble1110
+3 OnProcCompleted=Scribble1115

@@ -1,0 +1,16 @@
+TBmpToJpeg v1.1
+
+Author : Eric Pedrazzi
+E-Mail : epedrazzi@chez.com
+Web    : www.chez.com/epedrazzi (both english and french versions)
+
+Description:
+A VCL that allows you to perform translation of a image (Timage) or bitmap file
+into a jpeg file.
+
+Revision History:
+ 1.0:  + Initial release
+ 1.1:  * Rename of the methods
+       * Add Image property
+       * Add CopyImageToJpeg method
+

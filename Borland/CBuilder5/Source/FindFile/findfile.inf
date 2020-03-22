@@ -1,0 +1,29 @@
+[DSP upload]
+Filename=findfile.zip
+Replacements=findfile.zip
+Version=1.01
+FileURL=
+Description=A file search component.  Search recursively thru directories,  include directories.  Returns a list of matching files.
+Delphi 1.0=N
+Delphi 2.0=Y
+Delphi 3.0=Y
+C++Builder 1.0=N
+File Status=Freeware
+Full Source=Included
+Category=InVisible Components
+Note=Everyone is free to use this code as they wish, but if you use it commercially then I wouldn't mind a little something.  Please submit suggestions, bugs, or any improvements to walterd@gte.net
+Additional info=Text file ( extension txt )
+
+[DSP Support]
+DSP Support=Y
+
+[Versions available]
+Delphi 1.0=
+Delphi 2.0=
+Delphi 3.0=
+C++Builder 1.0=
+
+[Uploader]
+Author name=Walter Dorawa
+Author E-mail=walterd@gte.net
+Author URL=http://home1.gte.net/walterd/index.htm

@@ -1,0 +1,258 @@
+
+ReadDirectoryChangesW
+The ReadDirectoryChangesW function returns information describing 
+the changes occurring within a directory.
+
+BOOL ReadDirectoryChangesW(
+  HANDLE hDirectory,    // handle to the directory to be watched
+  LPVOID lpBuffer,      // pointer to the buffer to receive the read 
+                        // results
+  DWORD nBufferLength,  // length of lpBuffer
+  BOOL bWatchSubtree,   // flag for monitoring directory or 
+                        // directory tree
+  DWORD dwNotifyFilter, // filter conditions to watch for
+  LPDWORD lpBytesReturned,  // number of bytes returned
+  LPOVERLAPPED lpOverlapped,
+                        // pointer to structure needed for 
+                        // overlapped I/O
+  LPOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine
+                        // pointer to completion routine
+);
+ 
+Parameters
+
+hDirectory 
+
+Identifies the directory to be watched. This directory must be 
+opened with the FILE_LIST_DIRECTORY access right.
+
+lpBuffer 
+
+Specifies the address of the formatted buffer in which the read 
+results are to be returned. The structure of this buffer is defined 
+by the FILE_NOTIFY_INFORMATION structure. This buffer is filled 
+either synchronously or asynchronously, depending on how the 
+directory is opened and what value is given to the lpOverlapped 
+parameter. For more information, see the Remarks section.
+
+nBufferLength 
+
+Specifies the length of the buffer pointed to by the lpBuffer parameter.
+
+bWatchSubtree 
+
+Specifies whether the ReadDirectoryChangesW function will monitor the 
+directory or the directory tree. If TRUE is specified, the function 
+monitors the directory tree rooted at the specified directory. If 
+FALSE is specified, the function monitors only the directory specified 
+by the hDirectory parameter. 
+
+
+dwNotifyFilter 
+
+Specifies filter criteria the function checks to determine if the 
+wait operation has completed. This parameter can be one or more of 
+the following values:
+
+Value Meaning 
+
+FILE_NOTIFY_CHANGE_FILE_NAME 	Any filename change in the watched directory 
+				or subtree causes a change notification wait 
+				operation to return. Changes include renaming, 
+				creating, or deleting a file.  
+
+FILE_NOTIFY_CHANGE_DIR_NAME 	Any directory-name change in the watched 
+				directory or subtree causes a change notification 
+				wait operation to return. Changes include 
+				creating or deleting a directory. 
+
+FILE_NOTIFY_CHANGE_ATTRIBUTES 	Any attribute change in the watched directory 
+				or subtree causes a change notification wait 
+				operation to return. 
+
+FILE_NOTIFY_CHANGE_SIZE 	Any file-size change in the watched directory 
+				or subtree causes a change notification wait 
+				operation to return. The operating system 
+				detects a change in file size only when the 
+				file is written to the disk. For operating 
+				systems that use extensive caching, detection 
+				occurs only when the cache is sufficiently 
+				flushed. 
+
+FILE_NOTIFY_CHANGE_LAST_WRITE 	Any change to the last write-time of files 
+				in the watched directory or subtree causes 
+				a change notification wait operation 
+				to return. The operating system 
+				detects a change to the last write-time 
+				only when the file is written to the disk. 
+				For operating systems that use extensive 
+				caching, detection occurs only when the 
+				cache is sufficiently flushed. 
+
+FILE_NOTIFY_CHANGE_LAST_ACCESS 	Any change to the last access time of files 
+				in the watched directory or subtree causes 
+				a change notification wait operation to 
+				return. 
+
+FILE_NOTIFY_CHANGE_CREATION 	Any change to the creation time of files in 
+				the watched directory or subtree causes a 
+				change notification wait operation to return. 
+
+FILE_NOTIFY_CHANGE_SECURITY 	Any security-descriptor change in the watched 
+				directory or subtree causes a change 
+				notification wait operation to return. 
+
+
+
+lpBytesReturned 
+
+For synchronous calls, this parameter specifies the number of bytes 
+transferred into the lpBuffer parameter. For asynchronous calls, 
+this parameter is undefined. You must use an asynchronous notification 
+technique to retrieve the number of bytes transferred.
+
+lpOverlapped 
+
+Points to an OVERLAPPED structure that supplies data to be used during 
+asynchronous operation. Otherwise, this value is NULL. The Offset and 
+OffsetHigh members of this structure are not used.
+
+lpCompletionRoutine 
+
+Points to a completion routine to be called when the operation has been 
+completed or canceled and the calling thread is in an alertable wait state. 
+For more information about this completion routine, see 
+FileIOCompletionRoutine. 
+
+
+Return Value
+
+If the function succeeds, the return value is nonzero. For synchronous 
+calls, this means that the operation succeeded. For asynchronous calls, 
+this indicates that the operation was successfully queued.
+
+If the function fails, the return value is zero. To get extended error 
+information, call GetLastError.
+
+Remarks
+
+To obtain a handle to a directory, use the CreateFile function with 
+FILE_FLAG_BACKUP_SEMANTICS as follows:
+
+hDir = CreateFile (
+          DirName,                       // pointer to the file name
+          FILE_LIST_DIRECTORY,           // access (read-write) mode
+          FILE_SHARE_READ|FILE_SHARE_DELETE,  // share mode
+          NULL,                               // security descriptor
+          OPEN_EXISTING,                      // how to create
+          FILE_FLAG_BACKUP_SEMANTICS,         // file attributes
+          NULL                           // file with attributes to copy
+        );
+ 
+A call to ReadDirectoryChangesW can be completed synchronously or 
+asynchronously. To specify asynchronous completion, open the directory 
+with CreateFile as shown above, but additionally specify the 
+FILE_FLAG_OVERLAPPED attribute in the dwFlagsAndAttributes parameter. 
+Then specify an OVERLAPPED structure when you call ReadDirectoryChangesW. 
+
+Upon successful synchronous completion, the lpBuffer parameter is 
+a formatted buffer and the number of bytes written to the buffer 
+is available in lpBytesReturned. If the number of bytes transferred 
+is zero, the buffer was too small to provide detailed information on 
+all the changes that occurred in the directory or subtree. In this case, 
+you should compute the changes by enumerating the directory or subtree.
+
+For asynchronous completion, you can receive notification in one of 
+three ways: 
+
+Using the GetOverlappedResult function. To receive notification 
+through GetOverlappedResult, do not specify a completion routine 
+in the lpCompletionRoutine parameter. Be sure to set the hEvent 
+member of the OVERLAPPED structure to a unique event. 
+
+
+Using the GetQueuedCompletionStatus function. To receive notification 
+through GetQueuedCompletionStatus, do not specify a completion routine 
+in lpCompletionRoutine. Associate the directory handle hDirectory with 
+a completion port by calling the CreateIoCompletionPort function. 
+
+
+Using a completion routine. To receive notification through a completion 
+routine, do not associate the directory with a completion port. Specify 
+a completion routine in lpCompletionRoutine. This routine is called 
+whenever the operation has been completed or canceled while the thread 
+is in an alertable wait state. The hEvent member of the OVERLAPPED structure 
+is not used by the system, so you can use it yourself. 
+
+QuickInfo
+
+  Windows NT: Use version 4.0 and later.
+  Windows: Unsupported.
+  Windows CE: Unsupported.
+  Header: Declared in winbase.h.
+  Import Library: Link with kernel32.lib.
+
+
+
+------------------------------
+
+FILE_NOTIFY_INFORMATION
+
+The FIND_NOTIFY_INFORMATION structure describes the changes 
+found by the ReadDirectoryChangesW function.
+
+typedef struct _FILE_NOTIFY_INFORMATION {
+   DWORD NextEntryOffset;
+   DWORD Action;
+   DWORD FileNameLength;
+   WCHAR FileName[1];
+} FILE_NOTIFY_INFORMATION;
+
+Members
+
+NextEntryOffset 
+
+Specifies the number of bytes that must be skipped to get 
+to the next record. A value of zero indicates that this is 
+the last record.
+
+Action 
+
+Specifies the type of change that occurred. 
+
+Value Meaning 
+
+FILE_ACTION_ADDED 		The file was added to the directory. 
+
+FILE_ACTION_REMOVED 		The file was removed from the directory. 
+
+FILE_ACTION_MODIFIED 		The file was modified. This can be a change 
+				in the time stamp or attributes. 
+
+FILE_ACTION_RENAMED_OLD_NAME 	The file was renamed and this is the old name. 
+
+FILE_ACTION_RENAMED_NEW_NAME 	The file was renamed and this is the new name. 
+
+
+
+FileNameLength 
+
+Specifies the length, in bytes, of the filename portion of the record. 
+Note that this length does not include the terminating null character.
+
+FileName 
+
+This is a variable-length field that contains the filename relative 
+to the directory handle. The filename is in the Unicode character 
+format and is not null-terminated. 
+
+QuickInfo
+
+  Windows NT: Use version 4.0 and later.
+  Windows: Unsupported.
+  Windows CE: Unsupported.
+  Header: Declared in winnt.h.
+
+See Also
+
+Files Overview, File Structures, ReadDirectoryChangesW

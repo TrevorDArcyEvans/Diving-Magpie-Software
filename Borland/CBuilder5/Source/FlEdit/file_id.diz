@@ -1,0 +1,15 @@
+TFloatEdit component  Version 1.1 for Delphi 2.0
+
+What's diz ?
+ A Delphi component called TFloatEdit.
+ You can use it to get floating-point-values from the user of your apps.
+ You can set a specific range of the value and the number of the decimal digits.
+ ***Release 1.1:
+ Fixed (I hope!!!) a bug in range selection.
+ If the user press ESC, the value that was set at the time of entering the
+ control will be restored.   
+(C) 1996, by Markus Stephany. All rights reserved.
+You can use this component free of charge in your public domain, freeware and 
+shareware programs.
+
+For further details, see the readme.txt.

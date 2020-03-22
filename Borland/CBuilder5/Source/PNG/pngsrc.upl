@@ -1,0 +1,52 @@
+[DSP upload]
+File Name=http://www.overpower.com.br/png/release/english/PNGSrc.ZIP
+Replace File=
+File Status=Freeware
+Full Source Included=Y
+Delphi 1.0x=N
+Delphi 2.0x=N
+Delphi 3.0x=N
+Delphi 4.0x=N
+Delphi 5.0x=Y
+C++ Builder 1.0x=N
+C++ Builder 3.0x=N
+C++ Builder 4.0x=N
+C++ Builder 5.0x=N
+Version=1.2
+count=8
+1=PNG Delphi is a Portable Graphics Network implementation totally
+2=written in Delphi that allows users to use this powerful graphical
+3=format. It includes an encoder that allows saving images (including
+4=conversion from other formats) using always the best compression
+5=scheme (adaptive filters). The component was able to load any kind of
+6=PNG images (including with gamma correction). It allows direct access
+7=to most of the chunks inside the image including comments and
+8=additional information.
+Note=
+Additional info=
+Category=Multimedia
+Platform=
+Group=Component/Code
+
+[Versions available]
+Delphi 1.0x=
+Delphi 2.0x=
+Delphi 3.0x=
+Delphi 4.0x=
+Delphi 5.0x=
+C++ Builder 1.0x=
+C++ Builder 3.0x=
+C++ Builder 4.0x=
+C++ Builder 5.0x=
+
+[DSP Support]
+DSP Support=N
+
+[Uploader_1]
+Author name=Gustavo Daud
+Contact=
+Author E-mail=gustavodaud@uol.com.br
+Author URL=http://www.overpower.com.br/png/
+count=0
+Author Section=_Do Not Create Author Page!
+UpdateDSP=N
