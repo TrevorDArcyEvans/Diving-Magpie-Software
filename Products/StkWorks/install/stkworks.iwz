@@ -1,0 +1,171 @@
+
+[InstallShield Wizard]
+iDate=1
+iTime=1
+Flag=fe000000
+ISX.EXE Size=657920
+ISX.EXE Date=11:03:16  14/11/1998
+ISX.EXE Ver=2.1.1.3
+SETUP.EXE Size=45312
+SETUP.EXE Date=15:21:02  1/10/1998
+SETUP.EXE Ver=3.0.111.0
+SETUP.INS Size=70547
+SETUP.INS Date=16:49:22  12/11/1998
+SETUP.INS Ver=Not available
+_INST16.EX_ Size=282766
+_INST16.EX_ Date=15:20:56  1/10/1998
+_INST16.EX_ Ver=Not available
+_INST32I.EX_ Size=320411
+_INST32I.EX_ Date=15:20:56  1/10/1998
+_INST32I.EX_ Ver=Not available
+ISDEPEND.INI Size=320411
+ISDEPEND.INI Date=15:20:56  1/10/1998
+ISDEPEND.INI Ver=Not available
+SWDEPEND.INI Size=320411
+SWDEPEND.INI Date=15:20:56  1/10/1998
+SWDEPEND.INI Ver=Not available
+ICOMP.EXE Size=119808
+ICOMP.EXE Date=15:21:00  1/10/1998
+ICOMP.EXE Ver=3.00.062
+SPLIT.EXE Size=90624
+SPLIT.EXE Date=15:21:02  1/10/1998
+SPLIT.EXE Ver=3.00.060
+PACKLIST.EXE Size=87552
+PACKLIST.EXE Date=15:21:00  1/10/1998
+PACKLIST.EXE Ver=3.00.060
+Version=2.11
+DevTool=for Borland C++ 5.0
+Platform=Win32
+DisksDir=Stkworks\144MB\
+TabsVisit=1111111110000111100011
+LangNum=451
+LangDir=LANG\ENG\
+
+[VisualDesign]
+AppName=StickWorks
+AppExe=[Program Files]\StkWorks.exe
+AppExeFile=
+Version=2.0
+Company=SolidPartners
+Title=SolidPartners - StickWorks
+TitleType=1
+BackgrndBmp=C:\Wombat\SP_install.bmp
+BackgrndAlign=4
+Backgrnd=1
+BackgrndColor=5
+Uninstall=1
+Silent=1
+SmsMode=0
+
+[Types]
+Types=1
+Type1Components=1
+Type1Name=Complete
+Type1ComponentList=1 
+
+[Components]
+Components=1
+Component1Groups=2
+Component1Name=Application Files
+Component1Description=Application files needed to run the application
+Component1GroupList=1 2 
+
+[Groups]
+Groups=2
+Group1Size=684763
+Group1Files=5
+Group1Name=Program Files
+Group1Dir=<INSTALLDIR>
+Group1Update=0
+Group1TargetOS=-1
+Group1File1=C:\Wombat\Pro\StkWorks\StkWorks.exe
+Group1File2=C:\Wombat\Pro\StkWorks\install\Readme.txt
+Group1File3=C:\Wombat\Pro\StkWorks\install\License.txt
+Group1File4=C:\Wombat\Pro\StkWorks\help\Stkworks.cnt
+Group1File5=C:\Wombat\Pro\StkWorks\help\Stkworks.hlp
+Group2Size=1537
+Group2Files=1
+Group2Name=Ini Files
+Group2Dir=<WINDIR>
+Group2Update=2
+Group2TargetOS=-1
+Group2File1=C:\WINNT\stkworks.ini
+
+[Sequence]
+DestinationLocationDir=<ProgramFilesDir>\SolidPartners\StickWorks
+SelectProgramFolderName=StickWorks
+WelcomeMessage=1
+WelcomeMessageFile=
+LicenseAgreement=1
+LicenseAgreementFile=C:\Wombat\Pro\StkWorks\install\License.txt
+ReadMeFileBrowser=1
+ReadMeFileBrowserFile=C:\Wombat\Pro\StkWorks\install\Readme.txt
+DestinationLocation=1
+SelectProgramFolder=1
+BeginFileTransfer=1
+ProgressBar=1
+SetupComplete=1
+SetupCompleteExec=[Program Files]\StkWorks.exe
+SetupCompleteExecParam=
+SetupCompleteExecReadme=
+
+[RegEntries]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1Val1Type=0
+Reg1Val1Name=(Default)
+Reg1Val1Data=(value not set)
+Reg1Vals=1
+Reg2Path=HKEY_CURRENT_USER
+Reg2Val1Type=0
+Reg2Val1Name=(Default)
+Reg2Val1Data=(value not set)
+Reg2Vals=1
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3Val1Type=0
+Reg3Val1Name=(Default)
+Reg3Val1Data=(value not set)
+Reg3Vals=1
+Reg4Path=HKEY_USERS
+Reg4Val1Type=0
+Reg4Val1Name=(Default)
+Reg4Val1Data=(value not set)
+Reg4Vals=1
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5Val1Type=0
+Reg5Val1Name=(Default)
+Reg5Val1Data=(value not set)
+Reg5Vals=1
+Reg6Path=HKEY_DYN_DATA
+Reg6Val1Type=0
+Reg6Val1Name=(Default)
+Reg6Val1Data=(value not set)
+Reg6Vals=1
+Regs=6
+
+[Registry]
+
+[Icons]
+Icons=1
+Icon1Param=
+Icon1Cmd=[Program Files]\StkWorks.exe
+Icon1Description=StickWorks
+Icon1WorkingDir=[Program Files]
+Icon1IconFile=
+Icon1RealFile=C:\Wombat\Pro\StkWorks\StkWorks.exe
+Icon1WhichIcon=0
+Icon1KeyVirtual=0
+Icon1KeyFlags=0
+Icon1StartMenu=0
+Icon1Window=0
+
+[Autoexec]
+PathDir=
+ShareLocks=
+ShareFiles=
+Command=
+
+[CopyToFloppy]
+DriveOption=
+DestinationPath=
+DestinationPathOneFile=
+Password=

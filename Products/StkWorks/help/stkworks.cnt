@@ -1,0 +1,29 @@
+:Base STKWORKS.HLP
+:Title StickWorks v2.1
+1 Contents
+2 Enabled=Enabled
+2 Normal=Normal
+2 Normal + Modifier=Normal___Modifier
+2 Threshold=Threshold
+2 Opposite Sense=Opposite_Sense
+2 Polling Frequency=Polling_Frequency
+2 Start Minimised=Start_Minimised
+2 Auto Save=Auto_Save
+2 Auto Save Interval=Auto_Save_Interval
+2 Type=Type
+2 Calibrate=Calibrate
+2 Point of View Hat=Point_of_View_Hat
+2 Controllers=Controllers
+2 Axes=Axes
+2 Open=Open
+2 Save=Save
+2 Save As=Save_As
+2 Exit=Exit
+2 Install Uninstall=Install_Uninstall
+2 Machine ID=Machine_ID
+2 Code=Code
+2 Registration=Registration
+2 StickWorks as a Service=StickWorks_as_a_Service
+2 Known Bugs or Problems=Known_Bugs_or_Problems
+2 Issues=Issues
+2 About=About
