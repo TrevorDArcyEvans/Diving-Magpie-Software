@@ -1,0 +1,20 @@
+; --------------------------------------------------------------------
+;  StickWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "StickWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+    SW_Config           @2
+    SW_Calibrate        @3
+    SW_Help             @4
+    SW_Register         @5
+    SW_RegisterUpdate   @6
+    SW_About            @7
+
+; ---------------------------------
+;  End of StickWorks.def
+; ---------------------------------

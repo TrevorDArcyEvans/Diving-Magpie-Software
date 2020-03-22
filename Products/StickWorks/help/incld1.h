@@ -1,0 +1,17 @@
+#define KNQZKX 100
+#define 1FFMU. 110
+#define 1S0X0XC 120
+#define 44XE_QX 130
+#define 11DKJML 140
+#define MHTXD8 150
+#define PWTHVR 160
+#define TYPE 170
+#define MXG6IB 180
+#define OPEN 190
+#define SAVE 200
+#define 3LZU6D 210
+#define 1LIVYM4 250
+#define EXIT 220
+#define ABOUT 230
+#define QGFYFC 999
+#define ISSUES 240

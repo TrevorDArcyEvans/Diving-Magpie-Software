@@ -1,0 +1,23 @@
+[Options]
+Root=C:\WOMBAT,c:\wombat\pro\stkworks,c:\wombat\pro\stkworks\help,c:\wombat\pro\stickw~1\help,v:\
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=STKWORKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=StickWorks v3.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\STICKW~1\HELP\STKWORKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <STKWORKS.H>
+
+[Windows]
+main="StickWorks v3.x",,4,,

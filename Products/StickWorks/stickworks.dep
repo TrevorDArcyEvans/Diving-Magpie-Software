@@ -1,0 +1,118 @@
+# Microsoft Developer Studio Generated Dependency File, included by StickWorks.mak
+
+.\About.cpp : \
+	".\About.h"\
+	".\StdAfx.h"\
+	
+
+.\CcItem.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\Configure.cpp : \
+	".\Configure.h"\
+	".\StdAfx.h"\
+	".\StickWorks.h"\
+	
+
+.\crc_32.cpp : \
+	".\crc_32.h"\
+	".\StdAfx.h"\
+	
+
+.\ExampleApp.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\HandleEvents.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	
+
+.\JoyPanel.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\ExampleApp.h"\
+	".\JoyPanel.h"\
+	".\Register.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\StickWorks.h"\
+	".\timer.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\Register.cpp : \
+	".\crc_32.h"\
+	".\Register.h"\
+	".\StdAfx.h"\
+	".\StickWorks.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+.\StickWorks.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\About.h"\
+	".\Configure.h"\
+	".\ExampleApp.h"\
+	".\JoyPanel.h"\
+	".\Register.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\StickWorks.h"\
+	".\timer.h"\
+	".\utils.h"\
+	".\WinUtil.h"\
+	
+
+.\StickWorks.rc : \
+	".\res\StickWorks.rc2"\
+	
+
+.\timer.cpp : \
+	"..\..\..\sldworks\samples\appcomm\amapp.h"\
+	"..\..\..\sldworks\samples\appcomm\swconst.h"\
+	".\CcItem.h"\
+	".\ExampleApp.h"\
+	".\HandleEvents.h"\
+	".\SldWorks.h"\
+	".\StdAfx.h"\
+	".\StickWorks.h"\
+	".\timer.h"\
+	
+
+.\utils.cpp : \
+	".\crc_32.h"\
+	".\StdAfx.h"\
+	".\utils.h"\
+	
+
+.\WinUtil.cpp : \
+	".\StdAfx.h"\
+	".\WinUtil.h"\
+	
