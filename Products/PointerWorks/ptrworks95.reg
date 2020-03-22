@@ -1,0 +1,13 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\PointerWorks]
+"CLSID"="{c1b4f863-5a73-11d2-897d-08002b935393}"
+
+[HKEY_CLASSES_ROOT\CLSID\{c1b4f863-5a73-11d2-897d-08002b935393}]
+@="PointerWorks"
+
+[HKEY_CLASSES_ROOT\CLSID\{c1b4f863-5a73-11d2-897d-08002b935393}\InProcServer32]
+@="C:\\Program Files\\Diving Magpie Software\\PointerWorks\\PtrWorks95.dll"
+

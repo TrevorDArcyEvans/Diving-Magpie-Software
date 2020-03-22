@@ -1,0 +1,15 @@
+; --------------------------------------------------------------------
+;  PointerWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "PointerWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+	PW_About			@2
+
+; ---------------------------------
+;  End of PointerWorks.def
+; ---------------------------------
