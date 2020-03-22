@@ -1,0 +1,145 @@
+<p><a name="SECTION84"></a><title> FreeImage Documentation
+</title><center><table border=0 width=640><tr><td> FreeImage Documentation -
+<a href="1.html">Contents</a>   <a href="32.html">Previous</a>   
+<a href="41.html">Next</a>   <a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION37"></a><a name="_Toc498164867"></a>
+<a name="_Toc498165852"></a><a name="_Toc498166421"></a> Filetype functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="37.html#SECTION38">FreeImage_GetFileType</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="37.html#SECTION39">FreeImage_GetFileTypeFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="37.html#SECTION40">FreeImage_GetFileTypeFromExt</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION38"></a><a name="_Toc498164868"></a>
+<a name="_Toc498165853"></a><a name="_Toc498166422"></a> FreeImage_GetFileType</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ FREE_IMAGE_FORMAT FreeImage_GetFileType(FreeImageIO *io, fi_handle handle, int size);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Investigates the given bitmap and returns the type of it. FreeImage_GetFileType can return the following values:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Type
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Bitmap
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ FIF_BMP
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Windows/OS/2 Bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_ICO
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Windows Icon
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_JPEG
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ JPEG/JIF
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_KOALA
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ C64 KOALA
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_PBM
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Portable Bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_PCD
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Kodak PhotoCD
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_PCX
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ PCX
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_PGM
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Portable Greymap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_PNG
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Portable Network Graphics
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_PPM
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Portable Pixmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_RAS
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Sun Rasterfile
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_TARGA
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Targa
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIF_TIFF
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ TIFF
+</td></table></font></div><p><h3>
+<a name="SECTION39"></a><a name="_Toc498164869"></a>
+<a name="_Toc498165854"></a><a name="_Toc498166423"></a> FreeImage_GetFileTypeFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ FREE_IMAGE_FORMAT FreeImage_GetFileTypeFromHandle(const char *filename, int size);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Investigates the given bitmap and returns the type of it using an abstract i/o structure and a fi_handle.</font></div><p><h3>
+<a name="SECTION40"></a><a name="_Toc498164870"></a>
+<a name="_Toc498165855"></a><a name="_Toc498166424"></a> FreeImage_GetFileTypeFromExt</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ DLL_API FREE_IMAGE_FORMAT FreeImage_GetFileTypeFromExt(const char *ext);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Investigates the given file extension and returns the corresponding format. For example "bmp" would return FIF_BMP.
+<b><br></b></font></div><p>
+<a name="SECTION87"></a><hr> Copyright 2000 Floris van den Berg<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td>
+</table></center>

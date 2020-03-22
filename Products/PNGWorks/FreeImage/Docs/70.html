@@ -1,0 +1,388 @@
+<p>
+<a name="SECTION93"></a><title> FreeImage Documentation</title><center>
+<table border=0 width=640><tr><td> FreeImage Documentation -<a href="1.html">Contents</a>   
+<a href="63.html">Previous</a>   <a href="85.html">Next</a>   
+<a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION70"></a><a name="_Toc498164897"></a>
+<a name="_Toc498165882"></a><a name="_Toc498166451"></a>
+<a name="_Toc498229336"></a> Effect functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION71">FreeImage_Clone</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION72">FreeImage_Blur</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION73">FreeImage_Brighten</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION74">FreeImage_Darken</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION75">FreeImage_MaskCombine24</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION76">FreeImage_MaskCombine24Ex</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION77">FreeImage_MaskCombine32</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION78">FreeImage_MaskCombine32Ex</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION79">FreeImage_AddAlphaMask</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION80">FreeImage_Crop</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION81">FreeImage_Flip</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION82">FreeImage_Mirror</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION83">FreeImage_Invert</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="70.html#SECTION84">FreeImage_Rotate</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION71"></a><a name="_Toc498165883"></a>
+<a name="_Toc498166452"></a><a name="_Toc498229337"></a> FreeImage_Clone</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_Clone(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Makes an exact duplicate of the given image.</font></div><p><h3>
+<a name="SECTION72"></a><a name="_Toc498165884"></a>
+<a name="_Toc498166453"></a><a name="_Toc498229338"></a> FreeImage_Blur</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_Blur(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Applies an averaging filter on the bitmap.</font></div><p><h3>
+<a name="SECTION73"></a><a name="_Toc498165885"></a>
+<a name="_Toc498166454"></a><a name="_Toc498229339"></a> FreeImage_Brighten</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_Brighten(void *dib, double factor);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Brightens the bitmap with the given factor.</font></div><p><h3>
+<a name="SECTION74"></a><a name="_Toc498165886"></a>
+<a name="_Toc498166455"></a><a name="_Toc498229340"></a> FreeImage_Darken</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_Darken(void *dib, double factor);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Darkens the bitmap with the given factor.</font></div><p><h3>
+<a name="SECTION75"></a><a name="_Toc498165887"></a>
+<a name="_Toc498166456"></a><a name="_Toc498229341"></a> FreeImage_MaskCombine24</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_MaskCombine24(void *dib1, void *dib2, void *mask, int x, int y);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Combines two images using the given alpha mask. The parameters mean the following:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Parameter
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Description
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ dib1
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ dib2
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Source bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ mask
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Alpha mask (8-bit grayscale image)
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ x
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ x-position, where the source bitmap will be stored in the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ y
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ y-position, where the source bitmap will be stored in the target bitmap
+</td></table></font></div><p><h3>
+<a name="SECTION76"></a><a name="_Toc498165888"></a>
+<a name="_Toc498166457"></a><a name="_Toc498229342"></a> FreeImage_MaskCombine24Ex</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_MaskCombine24Ex(void *pdst, int dstx, int dsty, unsigned int width, unsigned int height, void *psrc, void *pmask, int srcx, int srcy);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Combines two images using the given alpha mask. The parameters mean the following:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Parameter
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Description
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ pdst
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ dstx
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ x-position, where the source bitmap will be stored in the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ dsty
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ y-position, where the source bitmap will be stored in the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ width
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Width of the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ height
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Height of the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ psrc
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Source bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ pmask
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Alpha mask (8-bit grayscale image)
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ srcx
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Clip rectangle left
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ srcy
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Clip rectangle top
+</td></table></font></div><p><h3>
+<a name="SECTION77"></a><a name="_Toc498165889"></a>
+<a name="_Toc498166458"></a><a name="_Toc498229343"></a> FreeImage_MaskCombine32</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_MaskCombine32(void *dib1, void *dib2, int x, int y);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Combines two images using the alpha mask stored in the source bitmap. The parameters mean the following:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Parameter
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Description
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ dib1
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ dib2
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Source bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ x
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ x-position, where the source bitmap will be stored in the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ y
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ y-position, where the source bitmap will be stored in the target bitmap
+</td></table></font></div><p><h3>
+<a name="SECTION78"></a><a name="_Toc498165890"></a>
+<a name="_Toc498166459"></a><a name="_Toc498229344"></a> FreeImage_MaskCombine32Ex</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_MaskCombine32Ex(void *pdst, int dstx, int dsty, unsigned int width, unsigned int height, void *pSrc, int srcx, int srcy);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Combines two images using the alpha mask stored in the source bitmap. The parameters mean the following:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Parameter
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Description
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ pdst
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ dstx
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ x-position, where the source bitmap will be stored in the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ dsty
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ y-position, where the source bitmap will be stored in the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ width
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Width of the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ height
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Height of the target bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ psrc
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Source bitmap
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ srcx
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Clip rectangle left
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ srcy
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Clip rectangle top
+</td></table></font></div><p><h3>
+<a name="SECTION79"></a><a name="_Toc498165891"></a>
+<a name="_Toc498166460"></a><a name="_Toc498229345"></a> FreeImage_AddAlphaMask</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_AddAlphaMask(void *dib, void *mask);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given alpha mask into the 32-bit bitmap.</font></div><p><h3>
+<a name="SECTION80"></a><a name="_Toc498165892"></a>
+<a name="_Toc498166461"></a><a name="_Toc498229346"></a> FreeImage_Crop</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_Crop(void *dib, int left, int top, int right, int bottom);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Copies the bitmapdata in the given rectangle into a new bitmap and returns it.</font></div><p><h3>
+<a name="SECTION81"></a><a name="_Toc498165893"></a>
+<a name="_Toc498166462"></a><a name="_Toc498229347"></a> FreeImage_Flip</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_Flip(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Flips the given bitmap. E.g. turns it upside down.</font></div><p><h3>
+<a name="SECTION82"></a><a name="_Toc498165894"></a>
+<a name="_Toc498166463"></a><a name="_Toc498229348"></a> FreeImage_Mirror</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_Mirror(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Mirrors the given bitmap.</font></div><p><h3>
+<a name="SECTION83"></a><a name="_Toc498165895"></a>
+<a name="_Toc498166464"></a><a name="_Toc498229349"></a> FreeImage_Invert</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_Invert(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Inverts the colors of the given bitmap.</font></div><p><h3>
+<a name="SECTION84"></a><a name="_Toc498166465"></a>
+<a name="_Toc498229350"></a> FreeImage_Rotate</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_Rotate(void *dib, int angle);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Rotates the given bitmap on the given angle. The result is a new bitmap, with the same size as the source bitmap but with the bitmap content rotated.</font></div><p><a name="SECTION96"></a><hr> Copyright 2000 Floris van den Berg
+<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td></table></center>

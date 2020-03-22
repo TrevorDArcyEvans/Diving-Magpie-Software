@@ -1,0 +1,80 @@
+<p>
+<a name="SECTION84"></a><title> FreeImage Documentation</title><center>
+<table border=0 width=640><tr><td> FreeImage Documentation -<a href="1.html">Contents</a>   
+<a href="27.html">Previous</a>   <a href="37.html">Next</a>   
+<a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION32"></a><a name="_Toc497898309"></a>
+<a name="_Toc497899395"></a><a name="_Toc498164862"></a>
+<a name="_Toc498165847"></a><a name="_Toc498166416"></a> Advanced save functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saving bitmaps using the SaveToHandle functions is almost identical to loading bitmap via the LoadFromHandle functions.</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="32.html#SECTION33">FreeImage_SaveBMPToHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="32.html#SECTION34">FreeImage_SavePNGToHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="32.html#SECTION35">FreeImage_SavePNMToHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="32.html#SECTION36">FreeImage_SaveTIFFToHandle</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION33"></a><a name="_Toc497898199"></a>
+<a name="_Toc497898310"></a><a name="_Toc497899396"></a>
+<a name="_Toc498164863"></a><a name="_Toc498165848"></a>
+<a name="_Toc498166417"></a> FreeImage_SaveBMPToHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SaveBMPToHandle(void *dib, FreeImageIO *io, fi_handle handle, BMPFlags flags = BMP_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a Windows Bitmap file. The BMP file is always saved in the Windows format. No compression is used.</font></div><p><h3>
+<a name="SECTION34"></a><a name="_Toc497898200"></a>
+<a name="_Toc497898311"></a><a name="_Toc497899397"></a>
+<a name="_Toc498164864"></a><a name="_Toc498165849"></a>
+<a name="_Toc498166418"></a> FreeImage_SavePNGToHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SavePNGToHandle(void *dib, FreeImageIO *io, fi_handle handle, PNGFlags flags = PNG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a PNG file.</font></div><p><h3>
+<a name="SECTION35"></a><a name="_Toc497898201"></a>
+<a name="_Toc497898312"></a><a name="_Toc497899398"></a>
+<a name="_Toc498164865"></a><a name="_Toc498165850"></a>
+<a name="_Toc498166419"></a> FreeImage_SavePNMToHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SavePNMToHandle(void *dib, FreeImageIO *io, fi_handle handle, PNMFlags flags = PNM_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a PNM file. PNM is a descriptive name for a collection of ASCII based bitmap types: PBM, PGM and PPM. If the bitmap has a bitdepth of 1, the file is saved as a PBM file. If the bitmap has a bitdepth of 8, the file is saved as a PGM file. If the bitmap has a bitdepth of 24, the file is saved as a PPM file. Other bitdepths are not supported.</font></div><p><h3>
+<a name="SECTION36"></a><a name="_Toc497898202"></a>
+<a name="_Toc497898313"></a><a name="_Toc497899399"></a>
+<a name="_Toc498164866"></a><a name="_Toc498165851"></a>
+<a name="_Toc498166420"></a> FreeImage_SaveTIFFToHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SaveTIFFToHandle(void *dib, FreeImageIO *io, fi_handle handle, TIFFFlags flags = TIFF_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a TIFF file.
+<b><br></b></font></div><p><a name="SECTION87"></a><hr> Copyright 2000 Floris van den Berg
+<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td></table></center>

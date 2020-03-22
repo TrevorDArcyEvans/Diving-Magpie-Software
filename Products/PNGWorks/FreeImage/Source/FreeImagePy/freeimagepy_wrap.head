@@ -1,0 +1,92 @@
+#define SWIG_init    initFreeImagePy
+
+#define SWIG_name    "FreeImagePy"
+
+/* Put header files here (optional) */
+#include <Windows.H>
+#include "..\FreeImage.H"
+#pragma warning(disable : 4273)		// inconsistent dll linkage.  dllexport assumed.
+extern const char *FreeImage_GetVersion();
+extern const char *FreeImage_GetVersion();
+extern const char *FreeImage_GetCopyrightMessage();
+extern void FreeImage_EnableMMX();
+extern void FreeImage_DisableMMX();
+extern void *FreeImage_Allocate(int ,int ,int );
+extern void FreeImage_Free(void *);
+extern void FreeImage_Unload(void *);
+extern void *FreeImage_LoadBMP(const char *,BMPFlags );
+extern void *FreeImage_LoadBMPFromHandle(FreeImageIO *,fi_handle ,BMPFlags );
+extern void *FreeImage_LoadICO(const char *,ICOFlags );
+extern void *FreeImage_LoadICOFromHandle(FreeImageIO *,fi_handle ,ICOFlags );
+extern void *FreeImage_LoadJPEG(const char *,JPEGFlags );
+extern void *FreeImage_LoadJPEGFromHandle(FreeImageIO *,fi_handle ,JPEGFlags );
+extern void *FreeImage_LoadKOALA(const char *,KOALAFlags );
+extern void *FreeImage_LoadKOALAFromHandle(FreeImageIO *,fi_handle ,KOALAFlags );
+extern void *FreeImage_LoadPCD(const char *,PCDFlags );
+extern void *FreeImage_LoadPCDFromHandle(FreeImageIO *,fi_handle ,PCDFlags );
+extern void *FreeImage_LoadPCX(const char *,PCXFlags );
+extern void *FreeImage_LoadPCXFromHandle(FreeImageIO *,fi_handle ,PCXFlags );
+extern void *FreeImage_LoadPNM(const char *,PNMFlags );
+extern void *FreeImage_LoadPNMFromHandle(FreeImageIO *,fi_handle ,PNMFlags );
+extern void *FreeImage_LoadPNG(const char *,PNGFlags );
+extern void *FreeImage_LoadPNGFromHandle(FreeImageIO *,fi_handle ,PNGFlags );
+extern void *FreeImage_LoadRAS(const char *,RASFlags );
+extern void *FreeImage_LoadRASFromHandle(FreeImageIO *,fi_handle ,RASFlags );
+extern void *FreeImage_LoadTARGA(const char *,TARGAFlags );
+extern void *FreeImage_LoadTARGAFromHandle(FreeImageIO *,fi_handle ,TARGAFlags );
+extern void *FreeImage_LoadTIFF(const char *,TIFFFlags );
+extern void *FreeImage_LoadTIFFFromHandle(FreeImageIO *,fi_handle ,TIFFFlags );
+extern BOOL FreeImage_SaveBMP(void *,const char *,BMPFlags );
+extern BOOL FreeImage_SaveBMPToHandle(void *,FreeImageIO *,fi_handle ,BMPFlags );
+extern BOOL FreeImage_SaveJPEG(void *,const char *,JPEGFlags );
+extern BOOL FreeImage_SaveJPEGToHandle(void *,FreeImageIO *,fi_handle ,JPEGFlags );
+extern BOOL FreeImage_SavePNG(void *,const char *,PNGFlags );
+extern BOOL FreeImage_SavePNGToHandle(void *,FreeImageIO *,fi_handle ,PNGFlags );
+extern BOOL FreeImage_SavePNM(void *,const char *,PNMFlags );
+extern BOOL FreeImage_SavePNMToHandle(void *,FreeImageIO *,fi_handle ,PNMFlags );
+extern BOOL FreeImage_SaveTIFF(void *,const char *,TIFFFlags );
+extern BOOL FreeImage_SaveTIFFToHandle(void *,FreeImageIO *,fi_handle ,TIFFFlags );
+extern FREE_IMAGE_FORMAT FreeImage_GetFileType(const char *,int );
+extern FREE_IMAGE_FORMAT FreeImage_GetFileTypeFromHandle(FreeImageIO *,fi_handle ,int );
+extern FREE_IMAGE_FORMAT FreeImage_GetFileTypeFromExt(const char *);
+extern const char *FreeImage_GetFileTypeFromFormat(FREE_IMAGE_FORMAT );
+extern unsigned FreeImage_GetTransparencyCount(void *);
+extern BYTE *FreeImage_GetTransparencyTable(void *);
+extern void FreeImage_SetTransparencyTable(void *,BYTE *,BYTE );
+extern unsigned FreeImage_GetColorsUsed(void *);
+extern BYTE *FreeImage_GetBits(void *);
+extern BYTE *FreeImage_GetBitsRowCol(void *,int ,int );
+extern BYTE *FreeImage_GetScanLine(void *,int );
+extern unsigned FreeImage_GetBPP(void *);
+extern unsigned FreeImage_GetWidth(void *);
+extern unsigned FreeImage_GetHeight(void *);
+extern unsigned FreeImage_GetLine(void *);
+extern unsigned FreeImage_GetPitch(void *);
+extern unsigned FreeImage_GetDIBSize(void *);
+extern RGBQUAD *FreeImage_GetPalette(void *);
+extern unsigned FreeImage_GetDotsPerMeterX(void *);
+extern unsigned FreeImage_GetDotsPerMeterY(void *);
+extern BITMAPINFOHEADER *FreeImage_GetInfoHeader(void *);
+extern BITMAPINFO *FreeImage_GetInfo(void *);
+extern FREE_IMAGE_COLOR_TYPE FreeImage_GetColorType(void *);
+extern void FreeImage_ConvertToGreyscale(void *);
+extern void *FreeImage_ConvertTo8Bits(void *,BOOL );
+extern void *FreeImage_ConvertTo16Bits(void *,BOOL );
+extern void *FreeImage_ConvertTo24Bits(void *,BOOL );
+extern void *FreeImage_ConvertTo32Bits(void *,BOOL );
+extern void *FreeImage_ColorQuantize(void *,FREE_IMAGE_QUANTIZE );
+extern void *FreeImage_Clone(void *);
+extern void FreeImage_Blur(void *);
+extern void FreeImage_Brighten(void *,double );
+extern void FreeImage_Combine(void *,void *,int ,int ,unsigned int );
+extern void FreeImage_Darken(void *,double );
+extern void FreeImage_MaskCombine24(void *,void *,void *,int ,int );
+extern void FreeImage_MaskCombine24Ex(void *,int ,int ,unsigned int ,unsigned int ,void *,void *,int ,int );
+extern void FreeImage_MaskCombine32(void *,void *,int ,int );
+extern void FreeImage_MaskCombine32Ex(void *,int ,int ,unsigned int ,unsigned int ,void *,int ,int );
+extern void FreeImage_AddAlphaMask(void *,void *);
+extern void *FreeImage_Crop(void *,int ,int ,int ,int );
+extern void FreeImage_Flip(void *);
+extern void FreeImage_Mirror(void *);
+extern void FreeImage_Invert(void *);
+extern void *FreeImage_Rotate(void *,double );

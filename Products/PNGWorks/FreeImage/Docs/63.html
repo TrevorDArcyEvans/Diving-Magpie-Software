@@ -1,0 +1,101 @@
+<p><a name="SECTION93"></a><title> FreeImage Documentation
+</title><center><table border=0 width=640><tr><td> FreeImage Documentation -
+<a href="1.html">Contents</a>   <a href="48.html">Previous</a>   
+<a href="70.html">Next</a>   <a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION63"></a><a name="_Toc498164890"></a>
+<a name="_Toc498165875"></a><a name="_Toc498166444"></a>
+<a name="_Toc498229329"></a> Conversion functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Bitmaps in FreeImage are always loaded in their default bitdepth. If you want the bitmap to be stored in another bitdepth, the library provides several functions to do the conversion.</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="63.html#SECTION64">FreeImage_ConvertToGreyscale</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="63.html#SECTION65">FreeImage_ConvertTo8Bits</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="63.html#SECTION66">FreeImage_ConvertTo16Bits</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="63.html#SECTION67">FreeImage_ConvertTo24Bits</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="63.html#SECTION68">FreeImage_ConvertTo32Bits</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="63.html#SECTION69">FreeImage_ColorQuantize</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION64"></a><a name="_Toc498164891"></a>
+<a name="_Toc498165876"></a><a name="_Toc498166445"></a>
+<a name="_Toc498229330"></a> FreeImage_ConvertToGreyscale</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_ConvertToGreyscale(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Grays out the given bitmap.</font></div><p><h3>
+<a name="SECTION65"></a><a name="_Toc498164892"></a>
+<a name="_Toc498165877"></a><a name="_Toc498166446"></a>
+<a name="_Toc498229331"></a> FreeImage_ConvertTo8Bits</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_ConvertTo8Bits(void *dib, bool type555 = false);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Converts the given bitmap to 8 bits. If the bitmap is 24 or 32 bit RGB, the color values are converted to grayscale. If the bitmap is 16-bit, the second parameter specifies how the bitmap is treated. If type555 is true, a colour representation of 5-5-5 (5 bits for red, 5 bits for green, 5 bits for blue) is assumed. Otherwise a 5-6-5 (5 bits for red, 6 bits for green, 5 bits for blue) is used.</font></div><p><h3>
+<a name="SECTION66"></a><a name="_Toc498164893"></a>
+<a name="_Toc498165878"></a><a name="_Toc498166447"></a>
+<a name="_Toc498229332"></a> FreeImage_ConvertTo16Bits</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_ConvertTo16Bits(void *dib, bool type555 = false);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Converts the given bitmap to 16 bits. If type555 is true, the bits are ordened in a 5-5-5 style manager, otherwise 5-6-5 is used.</font></div><p><h3>
+<a name="SECTION67"></a><a name="_Toc498164894"></a>
+<a name="_Toc498165879"></a><a name="_Toc498166448"></a>
+<a name="_Toc498229333"></a> FreeImage_ConvertTo24Bits</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_ConvertTo24Bits(void *dib, bool type555 = false);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Converts the given bitmap to 24 bits. If the bitmap is 16-bit, the second parameter specifies how the bitmap is treated. If type555 is true, a colour representation of 5-5-5 (5 bits for red, 5 bits for green, 5 bits for blue) is assumed. Otherwise a 5-6-5 (5 bits for red, 6 bits for green, 5 bits for blue) is used.</font></div><p><h3>
+<a name="SECTION68"></a><a name="_Toc498164895"></a>
+<a name="_Toc498165880"></a><a name="_Toc498166449"></a>
+<a name="_Toc498229334"></a> FreeImage_ConvertTo32Bits</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_ConvertTo32Bits(void *dib, bool type555 = false);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Converts the given bitmap to 32 bits. If the bitmap is 16-bit, the second parameter specifies how the bitmap is treated. If type555 is true, a colour representation of 5-5-5 (5 bits for red, 5 bits for green, 5 bits for blue) is assumed. Otherwise a 5-6-5 (5 bits for red, 6 bits for green, 5 bits for blue) is used.</font></div><p><h3>
+<a name="SECTION69"></a><a name="_Toc498164896"></a>
+<a name="_Toc498165881"></a><a name="_Toc498166450"></a>
+<a name="_Toc498229335"></a> FreeImage_ColorQuantize</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_ColorQuantize(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Quantizes a 24-bit bitmap to an 8-bit bitmap using Wu's octree algorithm.</font></div><p>
+<a name="SECTION96"></a><hr> Copyright 2000 Floris van den Berg<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td>
+</table></center>

@@ -1,0 +1,224 @@
+<p><a name="SECTION84"></a><title> FreeImage Documentation
+</title><center><table border=0 width=640><tr><td> FreeImage Documentation -
+<a href="1.html">Contents</a>   <a href="41.html">Previous</a>   
+<a href="60.html">Next</a>   <a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION45"></a><a name="_Toc498164875"></a>
+<a name="_Toc498165860"></a><a name="_Toc498166429"></a> DIB information functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION46">FreeImage_GetColorsUsed</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION47">FreeImage_GetBits</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION48">FreeImage_GetScanLine</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION49">FreeImage_GetBPP</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION50">FreeImage_GetWidth</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION51">FreeImage_GetHeight</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION52">FreeImage_GetLine</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION53">FreeImage_GetPitch</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION54">FreeImage_GetDIBSize</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION55">FreeImage_GetPalette</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION56">FreeImage_WritePaletteEntry</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION57">FreeImage_GetInfoHeader</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION58">FreeImage_GetInfo</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="45.html#SECTION59">FreeImage_GetColorType</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION46"></a><a name="_Toc498164876"></a>
+<a name="_Toc498165861"></a><a name="_Toc498166430"></a> FreeImage_GetColorsUsed</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetColorsUsed(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Retrieves the number of colors used in the bitmap. If the bitmap is non-palletized, 0 is returned.</font></div><p><h3>
+<a name="SECTION47"></a><a name="_Toc498164877"></a>
+<a name="_Toc498165862"></a><a name="_Toc498166431"></a> FreeImage_GetBits</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ BYTE * FreeImage_GetBits(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns a pointer to the bitmap bits.</font></div><p><h3>
+<a name="SECTION48"></a><a name="_Toc498164878"></a>
+<a name="_Toc498165863"></a><a name="_Toc498166432"></a> FreeImage_GetScanLine</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ BYTE * FreeImage_GetScanLine(void *dib, int scanline);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns a pointer to the beginning of the bits of the given scanline.
+<b><br></b></font></div><p><h3>
+<a name="SECTION49"></a><a name="_Toc498164879"></a>
+<a name="_Toc498165864"></a><a name="_Toc498166433"></a> FreeImage_GetBPP</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetBPP(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the bitdepth of the bitmap.</font></div><p><h3>
+<a name="SECTION50"></a><a name="_Toc498164880"></a>
+<a name="_Toc498165865"></a><a name="_Toc498166434"></a> FreeImage_GetWidth</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetWidth(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the width of the bitmap in pixels.</font></div><p><h3>
+<a name="SECTION51"></a><a name="_Toc498164881"></a>
+<a name="_Toc498165866"></a><a name="_Toc498166435"></a> FreeImage_GetHeight</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetHeight(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the height of the bitmap in pixels.</font></div><p><h3>
+<a name="SECTION52"></a><a name="_Toc498164882"></a>
+<a name="_Toc498165867"></a><a name="_Toc498166436"></a> FreeImage_GetLine</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetLine(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the width of the bitmap in bytes.</font></div><p><h3>
+<a name="SECTION53"></a><a name="_Toc498164883"></a>
+<a name="_Toc498165868"></a><a name="_Toc498166437"></a> FreeImage_GetPitch</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetPitch(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the width of the bitmap in bytes rounded to the nearest DWORD.</font></div><p><h3>
+<a name="SECTION54"></a><a name="_Toc498164884"></a>
+<a name="_Toc498165869"></a><a name="_Toc498166438"></a> FreeImage_GetDIBSize</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned FreeImage_GetDIBSize(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the size of the bitmap in bytes. The size of the bitmap is the BITMAPINFOHEADER + the size of the palette + the size of the bitmap data.</font></div><p><h3>
+<a name="SECTION55"></a><a name="_Toc498164885"></a>
+<a name="_Toc498165870"></a><a name="_Toc498166439"></a> FreeImage_GetPalette</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ RGBQUAD *FreeImage_GetPalette(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns a pointer to the bitmap's palette. If the bitmap doesn't have a palette, FreeImage_GetPalette returns NULL.</font></div><p><h3>
+<a name="SECTION56"></a><a name="_Toc498164886"></a>
+<a name="_Toc498165871"></a><a name="_Toc498166440"></a> FreeImage_WritePaletteEntry</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_WritePaletteEntry(void *dib, int entry, int r, int g, int b);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+
+<i> This function is subject to be deleted.</i><b><br></b></font></div><p><h3>
+<a name="SECTION57"></a><a name="_Toc498164887"></a>
+<a name="_Toc498165872"></a><a name="_Toc498166441"></a> FreeImage_GetInfoHeader</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ BITMAPINFOHEADER *FreeImage_GetInfoHeader(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns a pointer to the bitmap's BITMAPINFOHEADER.</font></div><p><h3>
+<a name="SECTION58"></a><a name="_Toc498164888"></a>
+<a name="_Toc498165873"></a><a name="_Toc498166442"></a> FreeImage_GetInfo</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ BITMAPINFO *FreeImage_GetInfo(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns a pointer to the bitmap's BITMAPINFO header.</font></div><p><h3>
+<a name="SECTION59"></a><a name="_Toc498164889"></a>
+<a name="_Toc498165874"></a><a name="_Toc498166443"></a> FreeImage_GetColorType</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ FREE_IMAGE_COLOR_TYPE FreeImage_GetColorType(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Investigates the color type of the bitmap and returns one one of the following values:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Value
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Description
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ FIC_MINISWHITE
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 1-bit bitmap. The min value is white
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIC_MINISBLACK
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 1-bit bitmap. The min value is black
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIC_RGB
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 24/32-bit RGB
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ FIC_PALETTE
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 4/8-bit palletized
+</td></table></font></div><p>
+<a name="SECTION87"></a><hr> Copyright 2000 Floris van den Berg<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td>
+</table></center>

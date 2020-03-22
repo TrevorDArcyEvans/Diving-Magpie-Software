@@ -1,0 +1,143 @@
+[PackageForTheWeb]
+Version=2.0
+
+[Options]
+Title=PNGWorks
+Company=SolidPartners
+CompanyEMail=sales@SolidPartners.com
+BasePath=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1
+ImportPath=
+UseRTF=1
+SaveFiles=0
+SubFolders=1
+ApplicationName=PNGWorks
+Description=SolidPartners - PNGWorks
+Comments=
+Notice=
+Version=1.0
+OutputSpec=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\PNGWorks.exe
+GUIDs=0
+Type=2
+Compress=1
+Sign=0
+Transfer=0
+Files=14
+
+[Engine]
+Setup=SETUP.EXE
+
+[Web Page]
+Generate=1
+Template=
+MSClient=
+NClient=
+
+[Runtime]
+Welcome=
+License=
+Prompt=
+Password=
+DefaultPath=
+Language=English
+WindowStyle=0
+Options=32
+Execute=SETUP.EXE
+CmdLine=/SMS
+
+[Extension]
+Server=
+Calls=0
+
+[Code Signing]
+CompanyURL=
+SpecFile=
+KeyFile=
+Method=0
+
+; ~~~~~~~~~~ File Section ~~~~~~~~~~~
+[SubFolders]
+Count=0
+
+[File 1]
+Name=DISK1.ID
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=1
+Disk=0
+
+[File 2]
+Name=SETUP.EXE
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=589825
+Disk=0
+
+[File 3]
+Name=SETUP.INI
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=1
+Disk=0
+
+[File 4]
+Name=SETUP.INS
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=2097153
+Disk=0
+
+[File 5]
+Name=SETUP.ISS
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=1
+Disk=0
+
+[File 6]
+Name=SETUP.PKG
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=1
+Disk=0
+
+[File 7]
+Name=SPUpdate95.dll
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=131089
+Disk=0
+
+[File 8]
+Name=SPUpdateNT.dll
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=131089
+Disk=0
+
+[File 9]
+Name=SPWU_Inst.dll
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=131089
+Disk=0
+
+[File 10]
+Name=_INST32I.EX_
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=524289
+Disk=0
+
+[File 11]
+Name=_ISDEL.EXE
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=589825
+Disk=0
+
+[File 12]
+Name=_SETUP.1
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=2097153
+Disk=0
+
+[File 13]
+Name=_SETUP.DLL
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=655377
+Disk=0
+
+[File 14]
+Name=_SETUP.LIB
+Path=C:\Wombat\Pro\PNGWorks\install\PNGWorks\650MB\DISK1\
+Flags=2097153
+Disk=0

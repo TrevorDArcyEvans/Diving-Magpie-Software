@@ -1,0 +1,269 @@
+<p><a name="SECTION93"></a><title> FreeImage Documentation
+</title><center><table border=0 width=640><tr><td> FreeImage Documentation -
+<a href="1.html">Contents</a>   <a href="6.html">Previous</a>   
+<a href="30.html">Next</a>   <a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION18"></a><a name="_Toc497898292"></a>
+<a name="_Toc497899378"></a><a name="_Toc498164845"></a>
+<a name="_Toc498165830"></a><a name="_Toc498166399"></a>
+<a name="_Toc498229284"></a> Advanced load functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ FreeImage_LoadFromHandle functions are slightly more advanced than the simple load functions, but still quite easy to use. The idea of  these functions is that FreeImage doesn't care how it gets its data as long as it gets it. It shouldn't matter if the bitmap is loaded from file, memory or the internet since data is data not matter where it comes from.</font><p>
+<font face="Times New Roman" size=3 color="">
+ To make this idea of data abstraction work a new, abstract file I/O system is used:
+<i> FreeImageIO</i> . FreeImageIO is a structure containing pointers to 4 functions: a read function, write function, seek function and tell function. All these functions have to be implemented so that data is delivered. The handle representing the data is made abstract as well and is named<i> fi_handle</i> .</font><p>
+<font face="Times New Roman" size=3 color="">
+ Loading a bitmap using the FromHandle functions involves four things. First the 4 file i/o functions are implemented and a FreeImageIO structure is filled with the pointers. Then the file is opened (that is, if we are in fact dealing with a file). After that one of the LoadFromHandle functions can be called. If the bitmap is succesfully loaded the file has to be closed.</font><p>
+<font face="Times New Roman" size=3 color="">
+ Example:</font><p>
+<font face="Times New Roman" size=3 color="">
+  </font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ _ReadProc(void *buffer, unsigned s, unsigned c, fi_handle handle) {</font><br>
+<font face="Courier New, Courier" size=2 color="">
+    return fread(buffer, s, c, (FILE *)handle);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ }</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+ unsigned</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ _WriteProc(void *buffer, unsigned s, unsigned c, fi_handle handle){</font><br>
+<font face="Courier New, Courier" size=2 color="">
+    return fwrite(buffer, s, c, (FILE *)handle);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ }</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+ int</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ _SeekProc(fi_handle handle, long offset, int origin) {</font><br>
+<font face="Courier New, Courier" size=2 color="">
+    return fseek((FILE *)handle, offset, origin);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ }</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+ long</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ _TellProc(fi_handle handle) {</font><br>
+<font face="Courier New, Courier" size=2 color="">
+    return ftell((FILE *)handle);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ }</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+ FreeImageIO io;</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ io.read_proc = _ReadProc;</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ io.write_proc = _WriteProc;</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ io.seek_proc = _SeekProc;</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ io.tell_proc = _TellProc;</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+ FILE *file = fopen("test.bmp", "rb");</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+ if (file != NULL) {</font><br>
+<font face="Courier New, Courier" size=2 color="">
+    void *dib = FreeImage_LoadBMPFromHandle(&io, (fi_handle)file);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+    FreeImage_Free(dib);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+  </font><br>
+<font face="Courier New, Courier" size=2 color="">
+    fclose(file);</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ }</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION19">FreeImage_LoadBMPFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION20">FreeImage_LoadICOFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION21">FreeImage_LoadJPEGFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION22">FreeImage_LoadKOALAFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION23">FreeImage_LoadPCDFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION24">FreeImage_LoadPCXFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION25">FreeImage_LoadPNMFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION26">FreeImage_LoadPNGFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION27">FreeImage_LoadRASFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION28">FreeImage_LoadTARGAFromHandle</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="18.html#SECTION29">FreeImage_LoadTIFFFromHandle</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION19"></a><a name="_Toc497895637"></a>
+<a name="_Toc497896574"></a><a name="_Toc497898182"></a>
+<a name="_Toc497898293"></a><a name="_Toc497899379"></a>
+<a name="_Toc498164846"></a><a name="_Toc498165831"></a>
+<a name="_Toc498166400"></a><a name="_Toc498229285"></a> FreeImage_LoadBMPFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadBMPFromHandle(FreeImageIO *io, fi_handle handle, BMPFlags flags = BMP_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given BMP file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadBMPFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION20"></a><a name="_Toc497896575"></a>
+<a name="_Toc497898183"></a><a name="_Toc497898294"></a>
+<a name="_Toc497899380"></a><a name="_Toc498164847"></a>
+<a name="_Toc498165832"></a><a name="_Toc498166401"></a>
+<a name="_Toc498229286"></a> FreeImage_LoadICOFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadICOFromHandle(FreeImageIO *io, fi_handle handle, ICOFlags flags = ICO_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given ICO file into a FreeImage bitmap using the given FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadICOFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION21"></a><a name="_Toc497896576"></a>
+<a name="_Toc497898184"></a><a name="_Toc497898295"></a>
+<a name="_Toc497899381"></a><a name="_Toc498164848"></a>
+<a name="_Toc498165833"></a><a name="_Toc498166402"></a>
+<a name="_Toc498229287"></a> FreeImage_LoadJPEGFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadJPEGFromHandle(FreeImageIO *io, fi_handle handle, JPEGFlags flags = JPEG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given JPEG file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadJPEGFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION22"></a><a name="_Toc497896577"></a>
+<a name="_Toc497898185"></a><a name="_Toc497898296"></a>
+<a name="_Toc497899382"></a><a name="_Toc498164849"></a>
+<a name="_Toc498165834"></a><a name="_Toc498166403"></a>
+<a name="_Toc498229288"></a> FreeImage_LoadKOALAFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadKOALAFromHandle(FreeImageIO *io, fi_handle handle, KOALAFlags flags = KOALA_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given KOALA file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadKOALAFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION23"></a><a name="_Toc497896578"></a>
+<a name="_Toc497898186"></a><a name="_Toc497898297"></a>
+<a name="_Toc497899383"></a><a name="_Toc498164850"></a>
+<a name="_Toc498165835"></a><a name="_Toc498166404"></a>
+<a name="_Toc498229289"></a> FreeImage_LoadPCDFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadJPEGFromHandle(FreeImageIO *io, fi_handle handle, JPEGFlags flags = JPEG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given Kodak PhotoCD file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPCDFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION24"></a><a name="_Toc497896579"></a>
+<a name="_Toc497898187"></a><a name="_Toc497898298"></a>
+<a name="_Toc497899384"></a><a name="_Toc498164851"></a>
+<a name="_Toc498165836"></a><a name="_Toc498166405"></a>
+<a name="_Toc498229290"></a> FreeImage_LoadPCXFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPCXFromHandle(FreeImageIO *io, fi_handle handle, PCXFlags flags = PCX_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given PCX file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPCXFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION25"></a><a name="_Toc497896580"></a>
+<a name="_Toc497898188"></a><a name="_Toc497898299"></a>
+<a name="_Toc497899385"></a><a name="_Toc498164852"></a>
+<a name="_Toc498165837"></a><a name="_Toc498166406"></a>
+<a name="_Toc498229291"></a> FreeImage_LoadPNMFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPNMFromHandle(FreeImageIO *io, fi_handle handle, PNMFlags flags = PNM_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given PBM, PGM or PPM file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPNMFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION26"></a><a name="_Toc497896581"></a>
+<a name="_Toc497898189"></a><a name="_Toc497898300"></a>
+<a name="_Toc497899386"></a><a name="_Toc498164853"></a>
+<a name="_Toc498165838"></a><a name="_Toc498166407"></a>
+<a name="_Toc498229292"></a> FreeImage_LoadPNGFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPNGFromHandle(FreeImageIO *io, fi_handle handle, PNGFlags flags = PNG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given PNG file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPNGFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION27"></a><a name="_Toc497896582"></a>
+<a name="_Toc497898190"></a><a name="_Toc497898301"></a>
+<a name="_Toc497899387"></a><a name="_Toc498164854"></a>
+<a name="_Toc498165839"></a><a name="_Toc498166408"></a>
+<a name="_Toc498229293"></a> FreeImage_LoadRASFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadRASFromHandle(FreeImageIO *io, fi_handle handle, RASFlags flags = RAS_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given Sun Rasterfile into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadRASFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION28"></a><a name="_Toc497896583"></a>
+<a name="_Toc497898191"></a><a name="_Toc497898302"></a>
+<a name="_Toc497899388"></a><a name="_Toc498164855"></a>
+<a name="_Toc498165840"></a><a name="_Toc498166409"></a>
+<a name="_Toc498229294"></a> FreeImage_LoadTARGAFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadTARGAFromHandle(FreeImageIO *io, fi_handle handle, TARGAFlags flags = TARGA_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given TARGA file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadTARGAFromHandle returns NULL.</font></div><p><h3>
+<a name="SECTION29"></a><a name="_Toc497896584"></a>
+<a name="_Toc497898192"></a><a name="_Toc497898303"></a>
+<a name="_Toc497899389"></a><a name="_Toc498164856"></a>
+<a name="_Toc498165841"></a><a name="_Toc498166410"></a>
+<a name="_Toc498229295"></a> FreeImage_LoadTIFFFromHandle</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadTIFFFromHandle(FreeImageIO *io, fi_handle handle, TIFFFlags flags = TIFF_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given TIFF file into a FreeImage bitmap using the specified FreeImageIO struct and fi_handle. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadTIFFFromHandle returns NULL.</font></div><p>
+<a name="SECTION96"></a><hr> Copyright 2000 Floris van den Berg<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td>
+</table></center>

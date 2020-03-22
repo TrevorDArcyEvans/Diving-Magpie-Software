@@ -1,0 +1,59 @@
+<p><a name="SECTION93"></a><title> FreeImage Documentation
+</title><center><table border=0 width=640><tr><td> FreeImage Documentation -
+<a href="1.html">Contents</a>   <a href="40.html">Previous</a>   
+<a href="48.html">Next</a>   <a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION44"></a><a name="_Toc498164871"></a>
+<a name="_Toc498165856"></a><a name="_Toc498166425"></a>
+<a name="_Toc498229310"></a> FreeImage bitmap information functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="44.html#SECTION45">FreeImage_GetTransparencyCount</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="44.html#SECTION46">FreeImage_GetTransparencyTable</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="44.html#SECTION47">FreeImage_SetTransparencyTable</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION45"></a><a name="_Toc498164872"></a>
+<a name="_Toc498165857"></a><a name="_Toc498166426"></a>
+<a name="_Toc498229311"></a> FreeImage_GetTransparencyCount</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ BYTE FreeImage_GetTransparencyCount(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the number of transparent palette colors stored into the transparency color table of the given bitmap. Every palettized bitmap includes a transparency table containing up to 256 alpha values. At this moment only FreeImageQt uses the alpha values.</font></div><p><h3>
+<a name="SECTION46"></a><a name="_Toc498164873"></a>
+<a name="_Toc498165858"></a><a name="_Toc498166427"></a>
+<a name="_Toc498229312"></a> FreeImage_GetTransparencyTable</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ BYTE *FreeImage_GetTransparencyTable(void *dib);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Returns the transparency table assigned to this bitmap. If the bitmap doesn't contain a transparency table, NULL is returned.</font></div><p><h3>
+<a name="SECTION47"></a><a name="_Toc498164874"></a>
+<a name="_Toc498165859"></a><a name="_Toc498166428"></a>
+<a name="_Toc498229313"></a> FreeImage_SetTransparencyTable</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void FreeImage_SetTransparencyTable(void *dib, BYTE *table, BYTE count);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Assigns a new transparency table to the bitmap. The transparency table consists of up to 256 bytes in an array.</font></div><p>
+<a name="SECTION96"></a><hr> Copyright 2000 Floris van den Berg<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td>
+</table></center>

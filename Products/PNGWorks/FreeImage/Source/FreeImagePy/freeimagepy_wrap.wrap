@@ -1,0 +1,1346 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+static PyObject *_wrap_fiGetVersion(PyObject *self, PyObject *args) {
+    PyObject  *_resultobj;
+    char  *_result;
+    self = self;
+    if(!PyArg_ParseTuple(args,":fiGetVersion")) 
+        return NULL;
+    _result = (char *)FreeImage_GetVersion();
+    _resultobj = Py_BuildValue("s", _result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetVersion(PyObject *self, PyObject *args) {
+    PyObject  *_resultobj;
+    char  *_result;
+    self = self;
+    if(!PyArg_ParseTuple(args,":GetVersion")) 
+        return NULL;
+    _result = (char *)FreeImage_GetVersion();
+    _resultobj = Py_BuildValue("s", _result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetCopyrightMessage(PyObject *self, PyObject *args) {
+    PyObject  *_resultobj;
+    char  *_result;
+    self = self;
+    if(!PyArg_ParseTuple(args,":GetCopyrightMessage")) 
+        return NULL;
+    _result = (char *)FreeImage_GetCopyrightMessage();
+    _resultobj = Py_BuildValue("s", _result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_EnableMMX(PyObject *self, PyObject *args) {
+    PyObject  *_resultobj;
+    self = self;
+    if(!PyArg_ParseTuple(args,":EnableMMX")) 
+        return NULL;
+    FreeImage_EnableMMX();
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_DisableMMX(PyObject *self, PyObject *args) {
+    PyObject  *_resultobj;
+    self = self;
+    if(!PyArg_ParseTuple(args,":DisableMMX")) 
+        return NULL;
+    FreeImage_DisableMMX();
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Allocate(PyObject *self, PyObject *args) {
+    void  *_result;
+    int  _arg0,_arg1,_arg2;
+    PyObject  *_resultobj;
+    self = self;
+    if(!PyArg_ParseTuple(args,"iii:Allocate",&_arg0,&_arg1,&_arg2)) 
+        return NULL;
+    _result = (void *)FreeImage_Allocate(_arg0,_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_Free(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Free",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Free(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Unload(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Unload",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Unload(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadBMP(PyObject *self, PyObject *args) {
+    void  *_result;
+    BMPFlags  _arg1=(BMPFlags ) BMP_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadBMP",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadBMP(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadBMPFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    BMPFlags  _arg2=(BMPFlags ) BMP_DEFAULT;
+    FreeImageIO  *_arg0;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadBMPFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadBMPFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadICO(PyObject *self, PyObject *args) {
+    void  *_result;
+    ICOFlags  _arg1=(ICOFlags ) ICO_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadICO",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadICO(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadICOFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    ICOFlags  _arg2=(ICOFlags ) ICO_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadICOFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadICOFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadJPEG(PyObject *self, PyObject *args) {
+    void  *_result;
+    JPEGFlags  _arg1=(JPEGFlags ) JPEG_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadJPEG",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadJPEG(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadJPEGFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    JPEGFlags  _arg2=(JPEGFlags ) JPEG_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadJPEGFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadJPEGFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadKOALA(PyObject *self, PyObject *args) {
+    void  *_result;
+    KOALAFlags  _arg1=(KOALAFlags ) KOALA_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadKOALA",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadKOALA(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadKOALAFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    KOALAFlags  _arg2=(KOALAFlags ) KOALA_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadKOALAFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadKOALAFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPCD(PyObject *self, PyObject *args) {
+    void  *_result;
+    PCDFlags  _arg1=(PCDFlags ) PCD_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadPCD",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadPCD(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPCDFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    PCDFlags  _arg2=(PCDFlags ) PCD_DEFAULT;
+    FreeImageIO  *_arg0;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadPCDFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadPCDFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPCX(PyObject *self, PyObject *args) {
+    void  *_result;
+    PCXFlags  _arg1=(PCXFlags ) PCX_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadPCX",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadPCX(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPCXFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    PCXFlags  _arg2=(PCXFlags ) PCX_DEFAULT;
+    FreeImageIO  *_arg0;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadPCXFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadPCXFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPNM(PyObject *self, PyObject *args) {
+    void  *_result;
+    PNMFlags  _arg1=(PNMFlags ) PNM_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadPNM",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadPNM(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPNMFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    PNMFlags  _arg2=(PNMFlags ) PNM_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadPNMFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadPNMFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPNG(PyObject *self, PyObject *args) {
+    void  *_result;
+    PNGFlags  _arg1=(PNGFlags ) PNG_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadPNG",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadPNG(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadPNGFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    PNGFlags  _arg2=(PNGFlags ) PNG_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadPNGFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadPNGFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadRAS(PyObject *self, PyObject *args) {
+    void  *_result;
+    RASFlags  _arg1=(RASFlags ) RAS_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadRAS",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadRAS(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadRASFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    RASFlags  _arg2=(RASFlags ) RAS_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadRASFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadRASFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadTARGA(PyObject *self, PyObject *args) {
+    void  *_result;
+    TARGAFlags  _arg1=(TARGAFlags ) TARGA_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadTARGA",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadTARGA(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadTARGAFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    FreeImageIO  *_arg0;
+    TARGAFlags  _arg2=(TARGAFlags ) TARGA_DEFAULT;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadTARGAFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadTARGAFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadTIFF(PyObject *self, PyObject *args) {
+    void  *_result;
+    TIFFFlags  _arg1=(TIFFFlags ) TIFF_DEFAULT;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s|i:LoadTIFF",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (void *)FreeImage_LoadTIFF(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_LoadTIFFFromHandle(PyObject *self, PyObject *args) {
+    void  *_result;
+    TIFFFlags  _arg2=(TIFFFlags ) TIFF_DEFAULT;
+    FreeImageIO  *_arg0;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO|i:LoadTIFFFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (void *)FreeImage_LoadTIFFFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SaveBMP(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BMPFlags  _arg2=(BMPFlags ) BMP_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0;
+    char  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Os|i:SaveBMP",&_argo0,&_arg1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SaveBMP(_arg0,_arg1,_arg2);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SaveBMPToHandle(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BMPFlags  _arg3=(BMPFlags ) BMP_DEFAULT;
+    FreeImageIO  *_arg1;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    fi_handle  *_arg2;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOO|i:SaveBMPToHandle",&_argo0,&_argo1,&_argo2,&_arg3)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SaveBMPToHandle(_arg0,_arg1,*_arg2,_arg3);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SaveJPEG(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    JPEGFlags  _arg2=(JPEGFlags ) JPEG_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0;
+    char  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Os|i:SaveJPEG",&_argo0,&_arg1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SaveJPEG(_arg0,_arg1,_arg2);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SaveJPEGToHandle(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    FreeImageIO  *_arg1;
+    JPEGFlags  _arg3=(JPEGFlags ) JPEG_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    fi_handle  *_arg2;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOO|i:SaveJPEGToHandle",&_argo0,&_argo1,&_argo2,&_arg3)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SaveJPEGToHandle(_arg0,_arg1,*_arg2,_arg3);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SavePNG(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PNGFlags  _arg2=(PNGFlags ) PNG_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0;
+    char  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Os|i:SavePNG",&_argo0,&_arg1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SavePNG(_arg0,_arg1,_arg2);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SavePNGToHandle(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    FreeImageIO  *_arg1;
+    PNGFlags  _arg3=(PNGFlags ) PNG_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    fi_handle  *_arg2;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOO|i:SavePNGToHandle",&_argo0,&_argo1,&_argo2,&_arg3)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SavePNGToHandle(_arg0,_arg1,*_arg2,_arg3);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SavePNM(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PNMFlags  _arg2=(PNMFlags ) PNM_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0;
+    char  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Os|i:SavePNM",&_argo0,&_arg1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SavePNM(_arg0,_arg1,_arg2);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SavePNMToHandle(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    FreeImageIO  *_arg1;
+    PNMFlags  _arg3=(PNMFlags ) PNM_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    fi_handle  *_arg2;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOO|i:SavePNMToHandle",&_argo0,&_argo1,&_argo2,&_arg3)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SavePNMToHandle(_arg0,_arg1,*_arg2,_arg3);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SaveTIFF(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    TIFFFlags  _arg2=(TIFFFlags ) TIFF_DEFAULT;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0;
+    char  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Os|i:SaveTIFF",&_argo0,&_arg1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SaveTIFF(_arg0,_arg1,_arg2);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SaveTIFFToHandle(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    TIFFFlags  _arg3=(TIFFFlags ) TIFF_DEFAULT;
+    FreeImageIO  *_arg1;
+    BOOL  _result;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    fi_handle  *_arg2;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOO|i:SaveTIFFToHandle",&_argo0,&_argo1,&_argo2,&_arg3)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (BOOL )FreeImage_SaveTIFFToHandle(_arg0,_arg1,*_arg2,_arg3);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetFileType(PyObject *self, PyObject *args) {
+    FREE_IMAGE_FORMAT  _result;
+    int  _arg1;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"si:GetFileType",&_arg0,&_arg1)) 
+        return NULL;
+    _result = (FREE_IMAGE_FORMAT )FreeImage_GetFileType(_arg0,_arg1);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetFileTypeFromHandle(PyObject *self, PyObject *args) {
+    FreeImageIO  *_arg0;
+    FREE_IMAGE_FORMAT  _result;
+    int  _arg2;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    fi_handle  *_arg1;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOi:GetFileTypeFromHandle",&_argo0,&_argo1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,SWIGTYPE_FreeImageIO_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_fi_handle_p,1)) == -1) return NULL;
+    _result = (FREE_IMAGE_FORMAT )FreeImage_GetFileTypeFromHandle(_arg0,*_arg1,_arg2);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetFileTypeFromExt(PyObject *self, PyObject *args) {
+    FREE_IMAGE_FORMAT  _result;
+    PyObject  *_resultobj;
+    char  *_arg0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"s:GetFileTypeFromExt",&_arg0)) 
+        return NULL;
+    _result = (FREE_IMAGE_FORMAT )FreeImage_GetFileTypeFromExt(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetFileTypeFromFormat(PyObject *self, PyObject *args) {
+    FREE_IMAGE_FORMAT  _arg0;
+    PyObject  *_resultobj;
+    char  *_result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"i:GetFileTypeFromFormat",&_arg0)) 
+        return NULL;
+    _result = (char *)FreeImage_GetFileTypeFromFormat(_arg0);
+    _resultobj = Py_BuildValue("s", _result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetTransparencyCount(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetTransparencyCount",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetTransparencyCount(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetTransparencyTable(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BYTE  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetTransparencyTable",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BYTE *)FreeImage_GetTransparencyTable(_arg0);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_BYTE_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_SetTransparencyTable(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BYTE  *_arg1,*_arg2;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOO:SetTransparencyTable",&_argo0,&_argo1,&_argo2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,SWIGTYPE_BYTE_p,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,SWIGTYPE_BYTE_p,1)) == -1) return NULL;
+    FreeImage_SetTransparencyTable(_arg0,_arg1,*_arg2);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetColorsUsed(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetColorsUsed",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetColorsUsed(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetBits(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BYTE  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetBits",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BYTE *)FreeImage_GetBits(_arg0);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_BYTE_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetBitsRowCol(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    int  _arg1,_arg2;
+    BYTE  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Oii:GetBitsRowCol",&_argo0,&_arg1,&_arg2)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BYTE *)FreeImage_GetBitsRowCol(_arg0,_arg1,_arg2);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_BYTE_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetScanLine(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    int  _arg1;
+    BYTE  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Oi:GetScanLine",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BYTE *)FreeImage_GetScanLine(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_BYTE_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetBPP(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetBPP",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetBPP(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetWidth(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetWidth",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetWidth(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetHeight(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetHeight",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetHeight(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetLine(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetLine",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetLine(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetPitch(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetPitch",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetPitch(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetDIBSize(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetDIBSize",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetDIBSize(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetPalette(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    RGBQUAD  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetPalette",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (RGBQUAD *)FreeImage_GetPalette(_arg0);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_RGBQUAD_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetDotsPerMeterX(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetDotsPerMeterX",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetDotsPerMeterX(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetDotsPerMeterY(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    unsigned  _result;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetDotsPerMeterY",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (unsigned )FreeImage_GetDotsPerMeterY(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetInfoHeader(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BITMAPINFOHEADER  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetInfoHeader",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BITMAPINFOHEADER *)FreeImage_GetInfoHeader(_arg0);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_BITMAPINFOHEADER_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetInfo(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    BITMAPINFO  *_result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetInfo",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (BITMAPINFO *)FreeImage_GetInfo(_arg0);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_BITMAPINFO_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_GetColorType(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    FREE_IMAGE_COLOR_TYPE  _result;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:GetColorType",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (FREE_IMAGE_COLOR_TYPE )FreeImage_GetColorType(_arg0);
+    _resultobj = Py_BuildValue("i",_result);
+    return _resultobj;
+}
+
+static PyObject *_wrap_ConvertToGreyscale(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:ConvertToGreyscale",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_ConvertToGreyscale(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_ConvertTo8Bits(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    BOOL  _arg1=(BOOL ) FALSE;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O|i:ConvertTo8Bits",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_ConvertTo8Bits(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_ConvertTo16Bits(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    BOOL  _arg1=(BOOL ) FALSE;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O|i:ConvertTo16Bits",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_ConvertTo16Bits(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_ConvertTo24Bits(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    BOOL  _arg1=(BOOL ) FALSE;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O|i:ConvertTo24Bits",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_ConvertTo24Bits(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_ConvertTo32Bits(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    BOOL  _arg1=(BOOL ) FALSE;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O|i:ConvertTo32Bits",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_ConvertTo32Bits(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_ColorQuantize(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    FREE_IMAGE_QUANTIZE  _arg1;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Oi:ColorQuantize",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_ColorQuantize(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_Clone(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Clone",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_Clone(_arg0);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_Blur(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Blur",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Blur(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Brighten(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    double  _arg1;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Od:Brighten",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Brighten(_arg0,_arg1);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Combine(PyObject *self, PyObject *args) {
+    void  *_arg0,*_arg1;
+    int  _arg2,_arg3;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    unsigned int  _arg4=(unsigned int ) 256;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOii|i:Combine",&_argo0,&_argo1,&_arg2,&_arg3,&_arg4)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,0,1)) == -1) return NULL;
+    FreeImage_Combine(_arg0,_arg1,_arg2,_arg3,_arg4);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Darken(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    double  _arg1;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Od:Darken",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Darken(_arg0,_arg1);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_MaskCombine24(PyObject *self, PyObject *args) {
+    void  *_arg0,*_arg1,*_arg2;
+    int  _arg3,_arg4;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0,*_argo2=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOOii:MaskCombine24",&_argo0,&_argo1,&_argo2,&_arg3,&_arg4)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo2,(void **) &_arg2,0,1)) == -1) return NULL;
+    FreeImage_MaskCombine24(_arg0,_arg1,_arg2,_arg3,_arg4);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_MaskCombine24Ex(PyObject *self, PyObject *args) {
+    void  *_arg0,*_arg5,*_arg6;
+    int  _arg1,_arg2,_arg7,_arg8;
+    PyObject  *_resultobj,*_argo0=0,*_argo5=0,*_argo6=0;
+    unsigned int  _arg3,_arg4;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OiiiiOOii:MaskCombine24Ex",&_argo0,&_arg1,&_arg2,&_arg3,&_arg4,&_argo5,&_argo6,&_arg7,&_arg8)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo5,(void **) &_arg5,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo6,(void **) &_arg6,0,1)) == -1) return NULL;
+    FreeImage_MaskCombine24Ex(_arg0,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7,_arg8);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_MaskCombine32(PyObject *self, PyObject *args) {
+    void  *_arg0,*_arg1;
+    int  _arg2,_arg3;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OOii:MaskCombine32",&_argo0,&_argo1,&_arg2,&_arg3)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,0,1)) == -1) return NULL;
+    FreeImage_MaskCombine32(_arg0,_arg1,_arg2,_arg3);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_MaskCombine32Ex(PyObject *self, PyObject *args) {
+    void  *_arg0,*_arg5;
+    int  _arg1,_arg2,_arg6,_arg7;
+    PyObject  *_resultobj,*_argo0=0,*_argo5=0;
+    unsigned int  _arg3,_arg4;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OiiiiOii:MaskCombine32Ex",&_argo0,&_arg1,&_arg2,&_arg3,&_arg4,&_argo5,&_arg6,&_arg7)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo5,(void **) &_arg5,0,1)) == -1) return NULL;
+    FreeImage_MaskCombine32Ex(_arg0,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_AddAlphaMask(PyObject *self, PyObject *args) {
+    void  *_arg0,*_arg1;
+    PyObject  *_resultobj,*_argo0=0,*_argo1=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"OO:AddAlphaMask",&_argo0,&_argo1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    if ((SWIG_ConvertPtr(_argo1,(void **) &_arg1,0,1)) == -1) return NULL;
+    FreeImage_AddAlphaMask(_arg0,_arg1);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Crop(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    int  _arg1,_arg2,_arg3,_arg4;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Oiiii:Crop",&_argo0,&_arg1,&_arg2,&_arg3,&_arg4)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_Crop(_arg0,_arg1,_arg2,_arg3,_arg4);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyObject *_wrap_Flip(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Flip",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Flip(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Mirror(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Mirror",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Mirror(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Invert(PyObject *self, PyObject *args) {
+    void  *_arg0;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"O:Invert",&_argo0)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    FreeImage_Invert(_arg0);
+    Py_INCREF(Py_None);
+    _resultobj = Py_None;
+    return _resultobj;
+}
+
+static PyObject *_wrap_Rotate(PyObject *self, PyObject *args) {
+    void  *_result,*_arg0;
+    double  _arg1;
+    PyObject  *_resultobj,*_argo0=0;
+    self = self;
+    if(!PyArg_ParseTuple(args,"Od:Rotate",&_argo0,&_arg1)) 
+        return NULL;
+    if ((SWIG_ConvertPtr(_argo0,(void **) &_arg0,0,1)) == -1) return NULL;
+    _result = (void *)FreeImage_Rotate(_arg0,_arg1);
+    _resultobj = SWIG_NewPointerObj((void *) _result, SWIGTYPE_void_p);
+    return _resultobj;
+}
+
+static PyMethodDef FreeImagePyMethods[] = {
+	 { "Rotate", _wrap_Rotate, METH_VARARGS },
+	 { "Invert", _wrap_Invert, METH_VARARGS },
+	 { "Mirror", _wrap_Mirror, METH_VARARGS },
+	 { "Flip", _wrap_Flip, METH_VARARGS },
+	 { "Crop", _wrap_Crop, METH_VARARGS },
+	 { "AddAlphaMask", _wrap_AddAlphaMask, METH_VARARGS },
+	 { "MaskCombine32Ex", _wrap_MaskCombine32Ex, METH_VARARGS },
+	 { "MaskCombine32", _wrap_MaskCombine32, METH_VARARGS },
+	 { "MaskCombine24Ex", _wrap_MaskCombine24Ex, METH_VARARGS },
+	 { "MaskCombine24", _wrap_MaskCombine24, METH_VARARGS },
+	 { "Darken", _wrap_Darken, METH_VARARGS },
+	 { "Combine", _wrap_Combine, METH_VARARGS },
+	 { "Brighten", _wrap_Brighten, METH_VARARGS },
+	 { "Blur", _wrap_Blur, METH_VARARGS },
+	 { "Clone", _wrap_Clone, METH_VARARGS },
+	 { "ColorQuantize", _wrap_ColorQuantize, METH_VARARGS },
+	 { "ConvertTo32Bits", _wrap_ConvertTo32Bits, METH_VARARGS },
+	 { "ConvertTo24Bits", _wrap_ConvertTo24Bits, METH_VARARGS },
+	 { "ConvertTo16Bits", _wrap_ConvertTo16Bits, METH_VARARGS },
+	 { "ConvertTo8Bits", _wrap_ConvertTo8Bits, METH_VARARGS },
+	 { "ConvertToGreyscale", _wrap_ConvertToGreyscale, METH_VARARGS },
+	 { "GetColorType", _wrap_GetColorType, METH_VARARGS },
+	 { "GetInfo", _wrap_GetInfo, METH_VARARGS },
+	 { "GetInfoHeader", _wrap_GetInfoHeader, METH_VARARGS },
+	 { "GetDotsPerMeterY", _wrap_GetDotsPerMeterY, METH_VARARGS },
+	 { "GetDotsPerMeterX", _wrap_GetDotsPerMeterX, METH_VARARGS },
+	 { "GetPalette", _wrap_GetPalette, METH_VARARGS },
+	 { "GetDIBSize", _wrap_GetDIBSize, METH_VARARGS },
+	 { "GetPitch", _wrap_GetPitch, METH_VARARGS },
+	 { "GetLine", _wrap_GetLine, METH_VARARGS },
+	 { "GetHeight", _wrap_GetHeight, METH_VARARGS },
+	 { "GetWidth", _wrap_GetWidth, METH_VARARGS },
+	 { "GetBPP", _wrap_GetBPP, METH_VARARGS },
+	 { "GetScanLine", _wrap_GetScanLine, METH_VARARGS },
+	 { "GetBitsRowCol", _wrap_GetBitsRowCol, METH_VARARGS },
+	 { "GetBits", _wrap_GetBits, METH_VARARGS },
+	 { "GetColorsUsed", _wrap_GetColorsUsed, METH_VARARGS },
+	 { "SetTransparencyTable", _wrap_SetTransparencyTable, METH_VARARGS },
+	 { "GetTransparencyTable", _wrap_GetTransparencyTable, METH_VARARGS },
+	 { "GetTransparencyCount", _wrap_GetTransparencyCount, METH_VARARGS },
+	 { "GetFileTypeFromFormat", _wrap_GetFileTypeFromFormat, METH_VARARGS },
+	 { "GetFileTypeFromExt", _wrap_GetFileTypeFromExt, METH_VARARGS },
+	 { "GetFileTypeFromHandle", _wrap_GetFileTypeFromHandle, METH_VARARGS },
+	 { "GetFileType", _wrap_GetFileType, METH_VARARGS },
+	 { "SaveTIFFToHandle", _wrap_SaveTIFFToHandle, METH_VARARGS },
+	 { "SaveTIFF", _wrap_SaveTIFF, METH_VARARGS },
+	 { "SavePNMToHandle", _wrap_SavePNMToHandle, METH_VARARGS },
+	 { "SavePNM", _wrap_SavePNM, METH_VARARGS },
+	 { "SavePNGToHandle", _wrap_SavePNGToHandle, METH_VARARGS },
+	 { "SavePNG", _wrap_SavePNG, METH_VARARGS },
+	 { "SaveJPEGToHandle", _wrap_SaveJPEGToHandle, METH_VARARGS },
+	 { "SaveJPEG", _wrap_SaveJPEG, METH_VARARGS },
+	 { "SaveBMPToHandle", _wrap_SaveBMPToHandle, METH_VARARGS },
+	 { "SaveBMP", _wrap_SaveBMP, METH_VARARGS },
+	 { "LoadTIFFFromHandle", _wrap_LoadTIFFFromHandle, METH_VARARGS },
+	 { "LoadTIFF", _wrap_LoadTIFF, METH_VARARGS },
+	 { "LoadTARGAFromHandle", _wrap_LoadTARGAFromHandle, METH_VARARGS },
+	 { "LoadTARGA", _wrap_LoadTARGA, METH_VARARGS },
+	 { "LoadRASFromHandle", _wrap_LoadRASFromHandle, METH_VARARGS },
+	 { "LoadRAS", _wrap_LoadRAS, METH_VARARGS },
+	 { "LoadPNGFromHandle", _wrap_LoadPNGFromHandle, METH_VARARGS },
+	 { "LoadPNG", _wrap_LoadPNG, METH_VARARGS },
+	 { "LoadPNMFromHandle", _wrap_LoadPNMFromHandle, METH_VARARGS },
+	 { "LoadPNM", _wrap_LoadPNM, METH_VARARGS },
+	 { "LoadPCXFromHandle", _wrap_LoadPCXFromHandle, METH_VARARGS },
+	 { "LoadPCX", _wrap_LoadPCX, METH_VARARGS },
+	 { "LoadPCDFromHandle", _wrap_LoadPCDFromHandle, METH_VARARGS },
+	 { "LoadPCD", _wrap_LoadPCD, METH_VARARGS },
+	 { "LoadKOALAFromHandle", _wrap_LoadKOALAFromHandle, METH_VARARGS },
+	 { "LoadKOALA", _wrap_LoadKOALA, METH_VARARGS },
+	 { "LoadJPEGFromHandle", _wrap_LoadJPEGFromHandle, METH_VARARGS },
+	 { "LoadJPEG", _wrap_LoadJPEG, METH_VARARGS },
+	 { "LoadICOFromHandle", _wrap_LoadICOFromHandle, METH_VARARGS },
+	 { "LoadICO", _wrap_LoadICO, METH_VARARGS },
+	 { "LoadBMPFromHandle", _wrap_LoadBMPFromHandle, METH_VARARGS },
+	 { "LoadBMP", _wrap_LoadBMP, METH_VARARGS },
+	 { "Unload", _wrap_Unload, METH_VARARGS },
+	 { "Free", _wrap_Free, METH_VARARGS },
+	 { "Allocate", _wrap_Allocate, METH_VARARGS },
+	 { "DisableMMX", _wrap_DisableMMX, METH_VARARGS },
+	 { "EnableMMX", _wrap_EnableMMX, METH_VARARGS },
+	 { "GetCopyrightMessage", _wrap_GetCopyrightMessage, METH_VARARGS },
+	 { "GetVersion", _wrap_GetVersion, METH_VARARGS },
+	 { "fiGetVersion", _wrap_fiGetVersion, METH_VARARGS },
+	 { NULL, NULL }
+};
+#ifdef __cplusplus
+}
+#endif
+static _swig_type_info _swigt__FreeImageIO_p[] = {{"_FreeImageIO_p",0},{"_FreeImageIO_p",0},{0}};
+static _swig_type_info _swigt__BITMAPINFO_p[] = {{"_BITMAPINFO_p",0},{"_BITMAPINFO_p",0},{0}};
+static _swig_type_info _swigt__RGBQUAD_p[] = {{"_RGBQUAD_p",0},{"_RGBQUAD_p",0},{0}};
+static _swig_type_info _swigt__BYTE_p[] = {{"_BYTE_p",0},{"_BYTE_p",0},{0}};
+static _swig_type_info _swigt__void_p[] = {{"_void_p",0},{"_void_p",0},{0}};
+static _swig_type_info _swigt__fi_handle_p[] = {{"_fi_handle_p",0},{"_fi_handle_p",0},{0}};
+static _swig_type_info _swigt__BITMAPINFOHEADER_p[] = {{"_BITMAPINFOHEADER_p",0},{"_BITMAPINFOHEADER_p",0},{0}};
+
+static _swig_type_info *_swig_types_initial[] = {
+_swigt__FreeImageIO_p, 
+_swigt__BITMAPINFO_p, 
+_swigt__RGBQUAD_p, 
+_swigt__BYTE_p, 
+_swigt__void_p, 
+_swigt__fi_handle_p, 
+_swigt__BITMAPINFOHEADER_p, 
+0
+};
+
+static _swig_const_info _swig_const_table[] = {
+    { SWIG_PY_INT,     "FALSE", (long) FALSE, 0, 0, 0},
+    { SWIG_PY_INT,     "TRUE", (long) TRUE, 0, 0, 0},
+    { SWIG_PY_INT,     "FIC_MINISWHITE", (long) FIC_MINISWHITE, 0, 0, 0},
+    { SWIG_PY_INT,     "FIC_MINISBLACK", (long) FIC_MINISBLACK, 0, 0, 0},
+    { SWIG_PY_INT,     "FIC_RGB", (long) FIC_RGB, 0, 0, 0},
+    { SWIG_PY_INT,     "FIC_PALETTE", (long) FIC_PALETTE, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_UNKNOWN", (long) FIF_UNKNOWN, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_BMP", (long) FIF_BMP, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_ICO", (long) FIF_ICO, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_JPEG", (long) FIF_JPEG, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_KOALA", (long) FIF_KOALA, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_PBM", (long) FIF_PBM, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_PCD", (long) FIF_PCD, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_PCX", (long) FIF_PCX, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_PGM", (long) FIF_PGM, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_PNG", (long) FIF_PNG, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_PPM", (long) FIF_PPM, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_RAS", (long) FIF_RAS, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_TARGA", (long) FIF_TARGA, 0, 0, 0},
+    { SWIG_PY_INT,     "FIF_TIFF", (long) FIF_TIFF, 0, 0, 0},
+    { SWIG_PY_INT,     "FIQ_WUQUANT", (long) FIQ_WUQUANT, 0, 0, 0},
+    { SWIG_PY_INT,     "BMP_DEFAULT", (long) BMP_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "ICO_DEFAULT", (long) ICO_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "ICO_FIRST", (long) ICO_FIRST, 0, 0, 0},
+    { SWIG_PY_INT,     "ICO_SECOND", (long) ICO_SECOND, 0, 0, 0},
+    { SWIG_PY_INT,     "ICO_THIRD", (long) ICO_THIRD, 0, 0, 0},
+    { SWIG_PY_INT,     "KOALA_DEFAULT", (long) KOALA_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_DEFAULT", (long) JPEG_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_FAST", (long) JPEG_FAST, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_ACCURATE", (long) JPEG_ACCURATE, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_QUALITYSUPERB", (long) JPEG_QUALITYSUPERB, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_QUALITYGOOD", (long) JPEG_QUALITYGOOD, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_QUALITYNORMAL", (long) JPEG_QUALITYNORMAL, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_QUALITYAVERAGE", (long) JPEG_QUALITYAVERAGE, 0, 0, 0},
+    { SWIG_PY_INT,     "JPEG_QUALITYBAD", (long) JPEG_QUALITYBAD, 0, 0, 0},
+    { SWIG_PY_INT,     "PCD_DEFAULT", (long) PCD_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "PCD_BASE", (long) PCD_BASE, 0, 0, 0},
+    { SWIG_PY_INT,     "PCD_BASEDIV4", (long) PCD_BASEDIV4, 0, 0, 0},
+    { SWIG_PY_INT,     "PCD_BASEDIV16", (long) PCD_BASEDIV16, 0, 0, 0},
+    { SWIG_PY_INT,     "PCX_DEFAULT", (long) PCX_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "PNG_DEFAULT", (long) PNG_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "PNM_DEFAULT", (long) PNM_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "PNM_SAVE_RAW", (long) PNM_SAVE_RAW, 0, 0, 0},
+    { SWIG_PY_INT,     "PNM_SAVE_ASCII", (long) PNM_SAVE_ASCII, 0, 0, 0},
+    { SWIG_PY_INT,     "RAS_DEFAULT", (long) RAS_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "TARGA_DEFAULT", (long) TARGA_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "TARGA_LOAD_RGB888", (long) TARGA_LOAD_RGB888, 0, 0, 0},
+    { SWIG_PY_INT,     "TARGA_LOAD_RGB555", (long) TARGA_LOAD_RGB555, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DEFAULT", (long) TIFF_DEFAULT, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY0", (long) TIFF_DIRECTORY0, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY1", (long) TIFF_DIRECTORY1, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY2", (long) TIFF_DIRECTORY2, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY3", (long) TIFF_DIRECTORY3, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY4", (long) TIFF_DIRECTORY4, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY5", (long) TIFF_DIRECTORY5, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY6", (long) TIFF_DIRECTORY6, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY7", (long) TIFF_DIRECTORY7, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY8", (long) TIFF_DIRECTORY8, 0, 0, 0},
+    { SWIG_PY_INT,     "TIFF_DIRECTORY9", (long) TIFF_DIRECTORY9, 0, 0, 0},
+{0}};
+

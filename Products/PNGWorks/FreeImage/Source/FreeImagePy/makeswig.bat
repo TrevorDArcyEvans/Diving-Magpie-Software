@@ -1,0 +1,1 @@
+c:\temp\swig\swig -python -Ic:\temp\swig\lib\python FreeImagePy.i

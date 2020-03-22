@@ -1,0 +1,215 @@
+Whats New for FreeImage
+
+* : fixed
+- : removed
+! : changed
++ : added
+
+December 2th 2000 - 1.4.4
+* fixed small bug related to TIFFSetDirectory in FreeImage_LoadTIFF
+* fixed FreeImage_Rotate sometimes clipping too much pixels
+* fixed other small bug in FreeImage_Rotate
+* fixed FreeImage_Clone not taking the FREEIMAGEHEADER in account
+* fixed bug in FreeImageQt where 1-bit images are not correctly allocated
+* fixed FreeImage_Crop not copying the palette
+* fixed message function pointer crash bug
+* fixed bug where the palette wasn't copied when saving in FreeImageQt
+* fixed FreeImage_Clone not copying the transparency table
+- removed FreeImage_WritePaletteEntry
+! [Adam Gates] rewrote parts of FreeImage so that c compilers can handle it better
+! FreeImageQt doesn't statically link with the FreeImage lib anymore
+! FreeImageQt now uses atexit() to automatically unregister
+! rewrote parts of FreeImage_LoadBMP to increase speed
++ [Markus Loibl] added metrics handling code to LoadBMP, LoadJPEG, LoadTIFF and LoadPCX
++ added metrics handling code to FreeImageQt
++ added functions FIQT_IsLoaded, FIQT_GetVersion and FIQT_GetCopyrightMessage
++ added conversion 1 -> 16
++ added FreeImage_SaveJPEG and JPEG quality settings
++ added FreeImage_GetBitsRowCol
++ added function FIQT_SetOutputMessage to FreeImageQt
++ added function FIQT_GetFormatFromExtension to FreeImageQt
++ added FreeImage_GetFileTypeFromFormat and FIQT_GetFileTypeFromFormat
++ added project FreeImagePy: python bindings for FreeImage
+
+November 7th 2000 - 1.4.3
+* fixed FreeImage_SavePNG crash bug
+* fixed slighly corrupt size filter in FreeImage_Combine
+* fixed FreeImage_SaveTIFF not saving 4-bit images
+* [Herve Drolon] fixed bug in FreeImage_LoadTIFF
+* [Herve Drolon] fixed bug in FreeImage_GetColorType
+- removed fclose from FreeImage_SavePNM (who put it there?)
+! rewrote FreeImage_Rotate
+! FreeImageQt now automatically detects which formats are supported by Qt and which not
+! FreeImage_Allocate now returns a void pointer
+! FreeImage_Unload is now called FreeImage_Free
++ added 16-bit 5-5-5 support to FreeImage_LoadBMP
++ added RLE_DELTA support to FreeImage_LoadBMP
++ added directory support to FreeImage_LoadTIFF
++ added functions dealing with transparency
++ added transparency support to 8-bit PNG's in Qt
++ added FREE_IMAGE_QUANTIZE parameter to FreeImage_ColorQuantize
++ added custom FREEIMAGEHEADER header prepended to internal bitmaps
++ added new documentation
+
+October 18th 2000 - 1.4.2
+* fixed FreeImage_SaveBMP storing an incorrect bfSize value in the BITMAPFILEHEADER
+* fixed bug where JPEG and PNG wouldn't load in FreeImageQt
+* fixed FreeImage_Mirror mirroring one pixel less than needed
+! FreeImage_MaskedCombine24 is now called FreeImage_MaskedCombine24Ex
+! FreeImage_MaskedCombine32 is now called FreeImage_MaskedCombine32Ex
++ added 16-bit bitmap support to FreeImage_Mirror
++ added 16-bit bitmap support to FreeImage_ConvertTo8Bits
++ added simple version of FreeImage_MaskedCombine24
++ added simple version of FreeImage_MaskedCombine32
+
+October 17th 2000 - 1.4.1
+* [Herve Drolon] fixed bug in FreeImage_ConvertTo8Bits
+* fixed bug in conversion with 16 -> 24 and 16 -> 32
+- removed static library support
+- removed all unnecessary files from LibTIFF, LibPNG, LibJPEG and ZLib
+- removed all absolute seeks from the library
+! FreeImageQt now makes use of the DLL distro
+! rebuilt the entire directory structure
+! improved handling of BMP
+! renamed FreeImage_MaskedCombine to FreeImage_MaskedCombine32
++ [Alexander Dymerets] added 24-bit masked alpha blending with a seperate alpha mask
++ added FreeImage_Rotate (known bug in degrees 76 to 106)
++ added 4-bit bitmap support to FreeImage_ConvertTo16Bits
++ added 8-bit bitmap support to FreeImage_ConvertTo16Bits
++ added 32-bit bitmap support to FreeImage_ConvertTo16Bits
++ added 32-bit bitmap support to FreeImage_Mirror
++ added 16-bit 5-5-5 support to FreeImage_ConvertTo24Bits
++ added 16-bit 5-5-5 support to FreeImage_ConvertTo32Bits
+
+October 2th 2000 - 1.4.0
+* [Jani Kajala] fixed bug in conversion with 4 -> 24 and 8 -> 32
+* [Jani Kajala] fixed bug in FreeImage_Flip
+* [Jani Kajala] fixed minor bug in FreeImage_LoadBMP
+- [Herve Drolon] removed PBMFlags, PGMFlags and PPMFlags
+- [Herve Drolon] removed FI_LoadGeneric
+- removed FreeImage_Win32.h
+! [Herve Drolon] changed FI_GetFileType
+! [Herve Drolon] replaced FI_LoadPBM, FI_LoadPGM and FI_LoadPPM with FI_LoadPNM
+! [Herve Drolon] improved FreeImage_LoadPNG
+! FreeImage_WritePaletteEntry is now exported
++ [Herve Drolon] added FreeImage_SavePNG
++ [Herve Drolon] added FreeImage_SavePNM and PNMFlags
++ [Herve Drolon] added XXXFlags parameter to save functions
++ [Herve Drolon] added FreeImage_LoadRAS and FIF_RAS
++ added FreeImage_GetFileTypeFromExt
+
+September 7th 2000 - 1.3.5
++ added conversion 4 -> 8 to FI_ConvertTo8Bits
++ added simple version of FI_GetFileType
++ added project FreeImageQt; a port of the library to the TrollTech library
+
+August 31th 2000 - 1.3.4
+* fixed 'ice effect' bug in new 24 bit PCX code
+* fixed some bugs with the conversion 16 -> 24 and 16 -> 32
+! FI_Blur now returns void
+! A debug build of the library now produces FreeImaged.dll and FreeImaged.lib
+! TARGA_LOAD_ARGB8888 is now called TARGA_LOAD_RGB888
+Alpha channels are now automatically loaded unless TARGA_LOAD_RGB888 is specified
+! cleaned up the code a lot
++ added 32-bit bitmap support to FreeImage_ConvertToGreyscale
++ added support for 32-bit bottom-left TARGA images
++ added internal functions FreeImage_WritePaletteEntry() and FreeImage_GetScanLine()
++ added FreeImage_Win32.h, containing Windows functions needed to create DIBs
++ added documentation through Doxygen
+
+July 30th 2000 - 1.3.3
+* [Jani Kajala] fixed some bugs with the conversion 4 -> 24 and 8 -> 24
+* [Jani Kajala] fixed some bugs with the conversion 4 -> 32 and 8 -> 32
+* fixed bug in FI_LoadPNM's ASCII number loader
+! [Herve Drolon] improved FI_LoadPNG
+! [Herve Drolon] changed FI_ConvertToGreyScale (added changeable macro for conversion)
+! improved FI_ConvertTo24Bits
+! improved FI_ConvertTo32Bits
+! freeImage now uses LibPNG 1.0.8
++ [Herve Drolon] added FI_ColorQuantize, based on Wu's color quantizer
++ added the conversion 1 -> 24
++ added the conversion 1 -> 32
++ added FI_ConvertTo8Bits
++ added FI_Invert (very useful for image processing)
++ added FI_GetColorType and 'enum FREE_IMAGE_COLOR_TYPE'
+
+June 30th 2000 - 1.3.2
+- removed color reduction functions from the project
+! [Herve Drolon] Improved FI_LoadTIFF code
+! renamed FI_ToGrayscale to FI_ConvertToGreyScale
+! renamed FI_IncreaseColors to FI_ConvertTo24Bits
+! LoadBMP now supports 32-bit bitmaps
+! [Jani Kajala] Improved FI_LoadTARGA and FI_LoadPCX code
++ added FI_ConvertTo32Bits to convert a bitmap to 32-bit
++ added FI_MaskCombine to combine two 32-bit bitmaps using a alpha mask
++ added FI_AddAlphaMask to enrich a 32-bit bitmap with an alpha mask
++ added FI_SaveTIFF
++ added 16-bit bitmap (565) support to the ConvertToXXX functions.
++ added FI_ConvertTo16Bits (555 and 565)
+
+June 1th 2000 - 1.3.1
+- removed Standard Template Library (STL) code
+* [Jani Kajala] fixed minor bug in FI_LoadTARGA
+* [Jani Kajala] fixed some minor bugs in FI_LoadPCX
+! streamlined FI_LoadJPEG a little
+! FreeImage now uses LibPNG 1.0.6
+! FreeImage now uses LibTIFF 3.5.5
+! FreeImage now uses malloc and free instead of new and delete
++ introduced compiler flags to disable certain features in the DLL
++ added experimental nearest color reduction (FI_ReduceColorsNearestColor)
+
+April 13th 2000 - 1.3.0
+* fixed some 8 bit PCX files loading incorrectly
+* fixed tiny bug in internally used CalculateUsedColors function
+- removed FI_SaveXPM. Only BMP is supported now.
+- removed Windows dependencies for easier porting
+! optimized FI_LoadKOALA a little
+! optimized FI_Combine using MMX technology
+! FI_Combine now receives an 'unsigned integer' as alpha blend parameter
+! FI_InCreaseColors and FI_ReduceColors don't dispose the old bitmap anymore
++ added PNM support (PGM, PPM and PBM; both binary and ascii)
++ [Alexander Dymerets] added FI_EnableMMX and FI_DisableMMX
++ added various effect functions (FI_Blur, FI_Brighten and FI_Crop)
+
+March 1st 2000 - 1.2.1
+* fixed some 24 bit PCX files loading incorrectly
+
+February 8th 2000 - 1.2.0
+* fixed last bitmap data block in JPEG files being truncated
+* fixed 4/8 bit BMP's incorrectly loading when the palette is smaller than the bitcount predicts
+- removed FI_Load. There is no reliable way to identify all image formats
+- removed FI_SetJpegDecodeMode.
+   Mode selection is now done using the 'DataEnum data' parameter of FI_LoadJPEG
+! read_proc/write_proc/tell_proc in FreeImageIO now are same as fread/fwrite/ftell
++ added a 'DataEnum data' parameter to all FI_LoadXXX functions.
++ added 16 bit TARGA support
++ added RLE support for TARGA images
++ added FI_GetDIBSize to get the size of a DIB in bytes
++ added Kodak PhotoCD support (Base, Base/4 and Base/16 encoding)
++ added KOALA support
++ added FI_GetFileType. Note: there is no reliable way to identify TARGA, ICO and PCD. Therefore they have been excluded
+In KOALA files only the files converted by a C64 emulator can be identified.
++ added FI_Combine to combine two 24-bit bitmaps with (optional) alpha blending
+
+January 15th 2000 - 1.1.1
+! FI_Copy is now called FI_Clone
++ added FI_ToGrayscale to convert a color bitmap to grayscale
++ added 32 bit TARGA support
++ added FI_IncreaseColors to increase the bitmap bitdepth from 4/8 bit to 24 bit
+
+January 14th 2000 - 1.1.0
+* FI_MIRROR: fixed nibbles not being mirrored in 4 bit images
+* FI_MIRROR: fixed bits not being mirrored in 1 bit images
+* fixed improper loading of 1, 4 and 8 bit OS/2 BMP's
+* fixed some inconsistensies in the calculation of lines and pitches
+* fixed incorrectly loading of Huffman and FAX encoded TIFFs
+* fixed LoadTGA accepting 16 bit TGA's and returning corrupt DIB's
+- removed LZW support for TIFFs
+! FreeImage now uses LibTIFF 3.5.4
++ added ICO support
++ added overridable file I/O support in the form of FreeImageIO and fi_handle
++ added FI_Load for generic image loading
++ added FI_ReduceColors for color reduction
++ added FI_Copy to copy a bitmap in memory
+
+January 5th 2000 - 1.0.0

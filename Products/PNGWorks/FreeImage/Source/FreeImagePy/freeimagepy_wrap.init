@@ -1,0 +1,18 @@
+static PyObject *SWIG_globals;
+#ifdef __cplusplus
+extern "C" 
+#endif
+SWIGEXPORT(void) initFreeImagePy(void) {
+	 PyObject *m, *d;
+	 SWIG_globals = SWIG_newvarlink();
+	 m = Py_InitModule("FreeImagePy", FreeImagePyMethods);
+	 d = PyModule_GetDict(m);
+    {
+        int i;
+        for (i = 0; _swig_types_initial[i]; i++) {
+            _swig_types[i] = SWIG_TypeRegister(_swig_types_initial[i]);
+        }
+    }
+    SWIG_InstallConstants(d,_swig_const_table);
+
+}

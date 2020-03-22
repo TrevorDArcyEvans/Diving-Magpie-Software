@@ -1,0 +1,100 @@
+<p>
+<a name="SECTION93"></a><title> FreeImage Documentation</title><center>
+<table border=0 width=640><tr><td> FreeImage Documentation -<a href="1.html">Contents</a>   
+<a href="18.html">Previous</a>   <a href="35.html">Next</a>   
+<a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION30"></a><a name="_Toc497898304"></a>
+<a name="_Toc497899390"></a><a name="_Toc498164857"></a>
+<a name="_Toc498165842"></a><a name="_Toc498166411"></a>
+<a name="_Toc498229296"></a> Simple save functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="30.html#SECTION31">FreeImage_SaveBMP</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="30.html#SECTION32">FreeImage_SavePNG</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="30.html#SECTION33">FreeImage_SavePNM</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="30.html#SECTION34">FreeImage_SaveTIFF</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION31"></a><a name="_Toc497898194"></a>
+<a name="_Toc497898305"></a><a name="_Toc497899391"></a>
+<a name="_Toc498164858"></a><a name="_Toc498165843"></a>
+<a name="_Toc498166412"></a><a name="_Toc498229297"></a> FreeImage_SaveBMP</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SaveBMP(void *dib, const char *filename, BMPFlags flags = BMP_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a Windows Bitmap file. The BMP file is always saved in the Windows format. No compression is used.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497898195"></a><a name="_Toc497898306"></a>
+<a name="_Toc497899392"></a><a name="_Toc498164859"></a>
+<a name="_Toc498165844"></a><a name="_Toc498166413"></a>
+<a name="_Toc498229298"></a> void *dib = FreeImage_LoadBMP("test.bmp");<br><br> if (dib != NULL) {<br>    FreeImage_SaveBMP("saved.bmp");<br>    FreeImage_Free(dib);<br> }</font></div><p><h3>
+<a name="SECTION32"></a> FreeImage_SavePNG</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SavePNG(void *dib, const char *filename, PNGFlags flags = PNG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a PNG file.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497898196"></a><a name="_Toc497898307"></a>
+<a name="_Toc497899393"></a><a name="_Toc498164860"></a>
+<a name="_Toc498165845"></a><a name="_Toc498166414"></a>
+<a name="_Toc498229299"></a> void *dib = FreeImage_LoadBMP("test.bmp");<br><br> if (dib != NULL) {<br>    FreeImage_SavePNG("saved.png");<br>    FreeImage_Free(dib);<br> }</font></div><p><h3>
+<a name="SECTION33"></a> FreeImage_SavePNM</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SavePNM(void *dib, const char *filename, PNMFlags flags = PNM_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a PNM file. PNM is a descriptive name for a collection of ASCII based bitmap types: PBM, PGM and PPM. If the bitmap has a bitdepth of 1, the file is saved as a PBM file. If the bitmap has a bitdepth of 8, the file is saved as a PGM file. If the bitmap has a bitdepth of 24, the file is saved as a PPM file. Other bitdepths are not supported.</font><p>
+<font face="Times New Roman" size=3 color="">
+  </font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497898197"></a><a name="_Toc497898308"></a>
+<a name="_Toc497899394"></a><a name="_Toc498164861"></a>
+<a name="_Toc498165846"></a><a name="_Toc498166415"></a>
+<a name="_Toc498229300"></a> void *dib = FreeImage_LoadBMP("test.bmp");</font><br>
+<font face="Courier New, Courier" size=2 color="">
+ if (dib != NULL) {
+<br>    switch(FreeImage_GetBPP(dib)) {<br>        case 1 :<br>            FreeImage_SavePNM("saved.pbm");<br>            break;<br>        case 8 :<br>            FreeImage_SavePNM("saved.pgm");<br>           break;<br>        case 24 :<br>            FreeImage_SavePNM("saved.ppm");<br>            break;<br>    }<br><br>    FreeImage_Free(dib);<br> }</font></div><p><h3>
+<a name="SECTION34"></a> FreeImage_SaveTIFF</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ bool FreeImage_SaveTIFF(void *dib, const char *filename, TIFFFlags flags = TIFF_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Saves the FreeImage DIB to a TIFF file.</font><p>
+<font face="Times New Roman" size=3 color="">
+  </font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *dib = FreeImage_LoadBMP("test.bmp");
+<br><br> if (dib != NULL) {<br>    FreeImage_SaveTIFF("saved.tiff");<br>    FreeImage_Free(dib);<br> }</font></div><p><a name="SECTION96"></a><hr> Copyright 2000 Floris van den Berg
+<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td></table></center>

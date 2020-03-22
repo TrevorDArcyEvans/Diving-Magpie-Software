@@ -1,0 +1,18 @@
+; --------------------------------------------------------------------
+;  PNGWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "PNGWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3            @1
+    PNG_SaveAs              @2
+    PNG_Configure           @3
+    PNG_Help                @4
+    PNG_About               @5
+
+; ---------------------------------
+;  End of PNGWorks.def
+; ---------------------------------

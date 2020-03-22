@@ -1,0 +1,452 @@
+<p>
+<a name="SECTION93"></a><title> FreeImage Documentation</title><center>
+<table border=0 width=640><tr><td> FreeImage Documentation -<a href="1.html">Contents</a>   
+<a href="3.html">Previous</a>   <a href="18.html">Next</a>   
+<a href="2.html">Up</a></td><tr><td><hr><p><h2>
+<a name="SECTION6"></a> Simple load functions</h2><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div>
+<p><h3><b>Subsections</b></h3>
+<ul>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION7">FreeImage_LoadBMP</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION8">FreeImage_LoadICO</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION9">FreeImage_LoadJPEG</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION10">FreeImage_LoadKOALA</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION11">FreeImage_LoadPCD</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION12">FreeImage_LoadPCX</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION13">FreeImage_LoadPNM</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION14">FreeImage_LoadPNG</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION15">FreeImage_LoadRAS</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION16">FreeImage_LoadTARGA</a></font>
+    <li><font face="Times New Roman" size=3 color=""><a href="6.html#SECTION17">FreeImage_LoadTIFF</a></font></div>
+</ul>
+
+
+<hr>
+<p><h3>
+<a name="SECTION7"></a><a name="_Toc497895625"></a>
+<a name="_Toc497896562"></a><a name="_Toc497898170"></a>
+<a name="_Toc497898281"></a><a name="_Toc497899367"></a>
+<a name="_Toc498164834"></a><a name="_Toc498165819"></a>
+<a name="_Toc498166388"></a><a name="_Toc498229273"></a> FreeImage_LoadBMP</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadBMP(const char *filename, BMPFlags flags = BMP_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given Windows Bitmap file or OS/2 Bitmap file into a FreeImage bitmap. If the bitmap is loaded succesfully, memory for it is allocated and a void pointer is returned. If the bitmap couldn't be loaded, FreeImage_LoadBMP returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ BMPFlags defaults to BMP_DEFAULT. No other values exist at this time. Example:</font><p>
+<font face="Times New Roman" size=3 color="">
+  </font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *dib = FreeImage_LoadBMP("test.bmp");</font></div><p><h3>
+<a name="SECTION8"></a><a name="_Toc497895626"></a>
+<a name="_Toc497896563"></a><a name="_Toc497898171"></a>
+<a name="_Toc497898282"></a><a name="_Toc497899368"></a>
+<a name="_Toc498164835"></a><a name="_Toc498165820"></a>
+<a name="_Toc498166389"></a><a name="_Toc498229274"></a> FreeImage_LoadICO</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadICO(const char *filename, ICOFlags flags = ICO_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given Windows ICON file into a FreeImage bitmap. If the icon is loaded succesfully, memory for it is allocated and a void pointer is returned. If the bitmap couldn't be loaded, FreeImage_LoadICO returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ ICOFlags defaults to ICO_DEFAULT. The following parameters can be passed to change the behaviour of the load routine:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Value
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Meaning
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ ICO_FIRST
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Loads the first icon in the cabinet
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ ICO_SECOND
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Loads the second icon in the cabinet
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ ICO_THIRD
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Loads the third icon in the cabinet
+</td></table></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+
+<a name="_Toc497895627"></a><a name="_Toc497896564"></a>
+<a name="_Toc497898172"></a><a name="_Toc497898283"></a>
+<a name="_Toc497899369"></a><a name="_Toc498164836"></a>
+<a name="_Toc498165821"></a><a name="_Toc498166390"></a>
+<a name="_Toc498229275"></a>  </font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *dib = FreeImage_LoadICO("test.ico");
+<br> void *dib = FreeImage_LoadICO("test.ico", ICO_SECOND);</font></div><p><h3>
+<a name="SECTION9"></a> FreeImage_LoadJPEG</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadJPEG(const char *filename, JPEGFlags flags = JPEG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given JPEG or JIF file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadJPEG returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ JPEGFlags defaults to JPEG_DEFAULT. The following parameters can be passed to change the behaviour of the load routine:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Value
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Meaning
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ JPEG_FAST
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Loads the file as fast as possible, sacrifing some quality.
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ JPEG_ACCURATE
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Loads the file as accurate as possible, sacrifcing some speed.
+</td></table></font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895628"></a><a name="_Toc497896565"></a>
+<a name="_Toc497898173"></a><a name="_Toc497898284"></a>
+<a name="_Toc497899370"></a><a name="_Toc498164837"></a>
+<a name="_Toc498165822"></a><a name="_Toc498166391"></a>
+<a name="_Toc498229276"></a> void *dib = FreeImage_LoadJPEG("test.jpg");<br> void *dib = FreeImage_LoadJPEG("test.jpg", JPEG_ACCURATE);</font></div><p><h3>
+<a name="SECTION10"></a> FreeImage_LoadKOALA</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadKOALA(const char *filename, KOALAFlags flags = KOALA_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given KOALA file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadKOALA returns NULL</font><p>
+<font face="Times New Roman" size=3 color="">
+ KOALA is a 4-bit bitmap format developed for and supported by ancient commodore 64 computers and emulators. The format is supported for nostalgic reasons of the author.</font><p>
+<font face="Times New Roman" size=3 color="">
+ KOALAflags defaults to KOALA_DEFAULT. No other values exist at this time.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895629"></a><a name="_Toc497896566"></a>
+<a name="_Toc497898174"></a><a name="_Toc497898285"></a>
+<a name="_Toc497899371"></a><a name="_Toc498164838"></a>
+<a name="_Toc498165823"></a><a name="_Toc498166392"></a>
+<a name="_Toc498229277"></a> void *dib = FreeImage_LoadKOALA("test.koa");</font></div><p><h3>
+<a name="SECTION11"></a> FreeImage_LoadPCD</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPCD(const char *filename, PCDFlags flags = PCD_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given Kodak PhotoCD file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPCD returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ PhotoCD images are so called cabinet files, where several versions of the same image exist in one file. By default FreeImage loads the base image. By using the PCDFlags the other image versions can be obtained:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Value
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Meaning
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ PCD_BASE
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 24-bit, 768 x 512 pixels
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ PCD_BASEDIV4
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 24-bit, 192 x 128 pixels
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ PCD_BASEDIV16
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ 24-bit. 384 x 256 pixels
+</td></table></font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895630"></a><a name="_Toc497896567"></a>
+<a name="_Toc497898175"></a><a name="_Toc497898286"></a>
+<a name="_Toc497899372"></a><a name="_Toc498164839"></a>
+<a name="_Toc498165824"></a><a name="_Toc498166393"></a>
+<a name="_Toc498229278"></a> void *dib = FreeImage_LoadPCD("test.pcd");<br> void *dib = FreeImage_LoadPCX("test.pcd", PCD_BASEDIV16);</font></div><p><h3>
+<a name="SECTION12"></a> FreeImage_LoadPCX</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPCX(const char *filename, PCXFlags flags = PCX_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given PCX file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPCX returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ PCXflags defaults to PCX_DEFAULT. No other values exist at this time.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895631"></a><a name="_Toc497896568"></a>
+<a name="_Toc497898176"></a><a name="_Toc497898287"></a>
+<a name="_Toc497899373"></a><a name="_Toc498164840"></a>
+<a name="_Toc498165825"></a><a name="_Toc498166394"></a>
+<a name="_Toc498229279"></a> void *dib = FreeImage_LoadPCX("test.pcx");</font></div><p><h3>
+<a name="SECTION13"></a> FreeImage_LoadPNM</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPNM(const char *filename, PNMFlags flags = PNM_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads one of the PNM supported bitmap files into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPNM returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ PNM is a descriptive name for a collection of ASCII based bitmap types: PBM, PGM and PPM. PBM (Portable Bitmap format) is a 1-bit, black and white bitmap type, PGM (Portable Greymap format) is a 8-bit grayscale bitmap type and PPM (Portable Pixelmap format) is a 24-bit full color bitmap. FreeImage automatically detects if you have a PBM, PGM or PPM bitmap and loads it in the default bitdepth of that particular image.</font><p>
+<font face="Times New Roman" size=3 color="">
+ PNMflags defaults to PNM_DEFAULT. No other values exist at this time.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895632"></a><a name="_Toc497896569"></a>
+<a name="_Toc497898177"></a><a name="_Toc497898288"></a>
+<a name="_Toc497899374"></a><a name="_Toc498164841"></a>
+<a name="_Toc498165826"></a><a name="_Toc498166395"></a>
+<a name="_Toc498229280"></a> void *dib = FreeImage_LoadPNM("test.ppm");<br> void *dib = FreeImage_LoadPNM("test.pgm");<br> void *dib = FreeImage_LoadPNM("test.pbm");</font></div><p><h3>
+<a name="SECTION14"></a> FreeImage_LoadPNG</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadPNG(const char *filename, PNGFlags flags = PNG_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given PNG file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadPNG returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ PNGflags defaults to PNG_DEFAULT. No other values exist at this time.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895633"></a><a name="_Toc497896570"></a>
+<a name="_Toc497898178"></a><a name="_Toc497898289"></a>
+<a name="_Toc497899375"></a><a name="_Toc498164842"></a>
+<a name="_Toc498165827"></a><a name="_Toc498166396"></a>
+<a name="_Toc498229281"></a> void *dib = FreeImage_LoadPNG("test.png");</font></div><p><h3>
+<a name="SECTION15"></a> FreeImage_LoadRAS</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadRAS(const char *filename, RASFlags flags = RAS_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given Sun rasterfile into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadRAS returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ RASflags defaults to RAS_DEFAULT. No other values exist at this time.</font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895634"></a><a name="_Toc497896571"></a>
+<a name="_Toc497898179"></a><a name="_Toc497898290"></a>
+<a name="_Toc497899376"></a><a name="_Toc498164843"></a>
+<a name="_Toc498165828"></a><a name="_Toc498166397"></a>
+<a name="_Toc498229282"></a> void *dib = FreeImage_LoadRAS("test.ras");</font></div><p><h3>
+<a name="SECTION16"></a> FreeImage_LoadTARGA</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadTARGA(const char *filename, TARGAFlags flags = TARGA_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given TARGA file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadTARGA returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ TARGAFlags defaults to TARGA_DEFAULT. The following parameters can be passed to change the behaviour of the load routine:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Value
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Meaning
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TARGA_LOAD_RGB888
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ If the TARGA file is 32-bit, it is automatically converted to 24-bit.
+</td><tr><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ TARGA_LOAD_RGB555
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ If the TARGA file is 16-bit, it is not automatically converted to 24-bit
+</td></table></font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+
+<a name="_Toc497895635"></a><a name="_Toc497896572"></a>
+<a name="_Toc497898180"></a><a name="_Toc497898291"></a>
+<a name="_Toc497899377"></a><a name="_Toc498164844"></a>
+<a name="_Toc498165829"></a><a name="_Toc498166398"></a>
+<a name="_Toc498229283"></a> void *dib = FreeImage_LoadTARGA("test.tga");<br> void *dib = FreeImage_LoadTARGA("test.tga", TARGA_LOAD_RGB888);</font></div><p><h3>
+<a name="SECTION17"></a> FreeImage_LoadTIFF</h3><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+</font></div><p>
+<div style='border-left:none 1px; border-top:solid 1px; border-right:none 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *FreeImage_LoadTIFF(const char *filename, TIFFFlags flags = TIFF_DEFAULT);</font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Loads the given TIFF file into a FreeImage bitmap. If the file is loaded succesfully, memory for it is allocated and a void pointer is returned. If the file couldn't be loaded, FreeImage_LoadTIFF returns NULL.</font><p>
+<font face="Times New Roman" size=3 color="">
+ TIFFFlags defaults to TIFF_DEFAULT. The following parameters can be passed to change the behaviour of the load routine:</font><p>
+<font face="Times New Roman" size=3 color="">
+  
+<table border=1 width=100%><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ Value
+</td><td></font><p>
+<font face="Times New Roman" size=3 color="">
+ Meaning
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY0
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ If the file is a multi-directory file, the first image is loaded.
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY1
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ If the file is a multi-directory file, the second image is loaded.
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY2
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ etc
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY3
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY4
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY5
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY6
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY7
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY8
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td><tr><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+ TIFF_DIRECTORY9
+</td><td></font></div><p>
+<div style='border-left:none 1px; border-top:none 1px; border-right:none 1px; border-bottom:none 1px'>
+<font face="Times New Roman" size=3 color="">
+  
+</td></table></font></div><br>
+<div style='border-left:solid 1px; border-top:solid 1px; border-right:solid 1px; border-bottom:solid 1px'>
+<font face="Courier New, Courier" size=2 color="">
+ void *dib = FreeImage_LoadTIFF("test.tiff");
+<br> void *dib = FreeImage_LoadTIFF("test.tiff", TIFF_DIRECTORY1);</font></div><p><a name="SECTION96"></a><hr> Copyright 2000 Floris van den Berg
+<a href="mailto:freeimage@wxs.nl"> (freeimage@wxs.nl)</a></td></table></center>
