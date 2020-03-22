@@ -1,0 +1,44 @@
+// DMS_WinError.idl : IDL source for DMS_WinError.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DMS_WinError.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+    [
+        object,
+        uuid(0E5F7DEF-702F-11D4-8E3C-0020AFCC5695),
+    
+        helpstring("IDMS_WinErrorMsg Interface"),
+        pointer_default(unique)
+    ]
+    interface IDMS_WinErrorMsg : IUnknown
+    {
+        [helpstring("method GetErrorString")] 
+        HRESULT     GetErrorString
+            (
+            int             nErrorCode, 
+            BSTR*           sErrorString
+            );
+    };
+
+[
+    uuid(0E5F7DE3-702F-11D4-8E3C-0020AFCC5695),
+    version(1.0),
+    helpstring("DMS_WinError 1.0 Type Library")
+]
+library DMS_WINERRORLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    [
+        uuid(0E5F7DF0-702F-11D4-8E3C-0020AFCC5695),
+        helpstring("DMS_WinErrorMsg Class")
+    ]
+    coclass DMS_WinErrorMsg
+    {
+        [default] interface IDMS_WinErrorMsg;
+    };
+};

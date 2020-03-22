@@ -1,0 +1,25 @@
+HKCR
+{
+	DMS_CustProps.DMS_CustomProperties.1 = s 'DMS_CustomProperties Class'
+	{
+		CLSID = s '{CA621305-D053-11D4-8E94-0020AFCC5695}'
+	}
+	DMS_CustProps.DMS_CustomProperties = s 'DMS_CustomProperties Class'
+	{
+		CLSID = s '{CA621305-D053-11D4-8E94-0020AFCC5695}'
+		CurVer = s 'DMS_CustProps.DMS_CustomProperties.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CA621305-D053-11D4-8E94-0020AFCC5695} = s 'DMS_CustomProperties Class'
+		{
+			ProgID = s 'DMS_CustProps.DMS_CustomProperties.1'
+			VersionIndependentProgID = s 'DMS_CustProps.DMS_CustomProperties'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CA6212F8-D053-11D4-8E94-0020AFCC5695}'
+		}
+	}
+}

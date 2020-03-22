@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="DMS_PDFWks.dll"/>
+    <OBJFILES value="obj\DMS_PDFWks.obj obj\DMS_PDFWks_ATL.obj obj\DMS_PDFWks_TLB.obj 
+      obj\DMS_PDFWorksImpl.obj obj\configure.obj obj\jpg2pdf.obj"/>
+    <RESFILES value="DMS_PDFWks.res DMS_PDFWks.tlb"/>
+    <IDLFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) configure.dfm"/>
+    <LIBFILES value="pdflib.lib"/>
+    <LIBRARIES value="vclnp50.lib vcljpg50.lib DCLUSR50.lib vclx50.lib rxctl5.lib vcl50.lib"/>
+    <SPARELIBS value="vcl50.lib rxctl5.lib vclx50.lib DCLUSR50.lib vcljpg50.lib"/>
+    <PACKAGES value="vcl50.bpi vclx50.bpi vcljpg50.bpi bcbsmp50.bpi qrpt50.bpi vcldb50.bpi 
+      vclbde50.bpi ibsmp50.bpi vcldbx50.bpi teeui50.bpi teedb50.bpi tee50.bpi 
+      nmfast50.bpi OE.bpi scrb4.bpi scrgl.bpi dclocx50.bpi traypkg.bpi 
+      XView3D.bpi ZipPack.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;USING_ATLVCL;_ATL_NO_SECURITY;_ATL_COINIT_MULTITHREADED;_ATL_BOTH_THREADED;INC_ATL_HEADERS"/>
+    <MAINSOURCE value="DMS_PDFWks.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl;$(BCB)\include\source;&quot;C:\RX5\Units\&quot;"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\lib\source;&quot;C:\RX5\Units\&quot;"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-WD -Od -H=v:\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tWM"/>
+    <PFLAGS value="-N2obj -N0obj -$Y+ -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-l&quot;C:\Wombat\Pro\DMS_PDFWorks\obj\&quot; -Iobj -D&quot;&quot; -aa -Tpd -x -Gn -Gi -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Deployment]
+DeployDir=
+DeployURL=
+HTMLDir=
+CABCompress=0
+CodeSign=0
+IncludeVerInfo=1
+AutoIncRelease=0
+DeployPackages=1
+DeployFiles=0
+CompanyURL=
+Description=
+CredFile=
+PrivKey=
+CryptoType=0
+Timestamping=0
+TimestampServer=
+
+[HistoryLists\hlIncludePath]
+Count=8
+Item0=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl;$(BCB)\include\source;..\..\..\RX5\Units
+Item1=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl;$(BCB)\include\source;..\..\..\RX4\Units
+Item2=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl;$(BCB)\include\source;..\..\..\RX\Units
+Item3=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl;$(BCB)\include\atl\source;..\..\..\RX\Units
+Item4=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl;c:\rx\units
+Item5=$(BCB)\include;$(BCB)\include\vcl;..\..\rx\units;$(BCB)\include\atl
+Item6=$(BCB)\include;$(BCB)\include\vcl;\rx\units
+Item7=..\Imports;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=7
+Item0=$(BCB)\Projects\Lib;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\lib\source;..\..\..\RX5\Units
+Item1=$(BCB)\Projects\Lib;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\lib\source;..\..\..\RX4\Units
+Item2=$(BCB)\Projects\Lib;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\lib\source;..\..\..\RX\Units
+Item3=$(BCB)\Projects\Lib;$(BCB)\lib;$(BCB)\lib\obj;c:\rx\units
+Item4=$(BCB)\lib;$(BCB)\lib\obj;..\..\rx\units
+Item5=$(BCB)\lib;$(BCB)\lib\obj;\rx\units
+Item6=..\Imports;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=obj
+
+[HistoryLists\hlHostApplication]
+Count=2
+Item0=C:\SldWorks\sldworks.exe
+Item1=C:\Wombat\Pro\DMS_PDFWorks\test\DMS_PDFWorks_test.exe
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=obj
+
+[HistoryLists\hIBPIOutputDir]
+Count=13
+Item0=C:\Wombat\Pro\DMS_PDFWorks\obj\
+Item1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=C:\Wombat\Pro\DMS_PDFWorks\objItem1=obj
+Item2=
+Item3=
+Item4=
+Item5=
+Item6=
+Item7=
+Item8=
+Item9=
+Item10=
+Item11=c:\wombat\pro\objItem1=obj
+Item12=
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=C:\Wombat\Pro\DMS_PDFWorks\test\DMS_PDFWorks_test.exe
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

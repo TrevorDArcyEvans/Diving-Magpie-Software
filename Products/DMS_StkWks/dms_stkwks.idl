@@ -1,0 +1,53 @@
+[
+  uuid(52357E4C-4AAB-11D4-8A05-0020AFCC5695), 
+  version(1.0), 
+  helpstring("DMS_StkWks Library")
+    
+]
+library DMS_StkWks
+{
+
+  importlib("Stdole2.tlb");
+  importlib("STDVCL40.DLL");
+
+  [
+    uuid(52357E4D-4AAB-11D4-8A05-0020AFCC5695), 
+    version(1.10), 
+    helpstring("Dispatch interface for DMS_StickWorks Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_StickWorks: IDispatch
+  {
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall Configure( void );
+    [
+    propget, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Name([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Name([in] BSTR Value );
+    [
+    propput, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall Icon([in] long Value );
+  };
+
+  [
+    uuid(52357E4F-4AAB-11D4-8A05-0020AFCC5695), 
+    version(1.0), 
+    helpstring("DMS_StickWorks Object")
+  ]
+  coclass DMS_StickWorks
+  {
+    [default] interface IDMS_StickWorks;
+  };
+
+}; 

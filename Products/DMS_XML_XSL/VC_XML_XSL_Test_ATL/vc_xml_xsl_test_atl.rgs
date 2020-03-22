@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{BD7293B9-52AB-11D4-8A11-0020AFCC5695} = s 'VC_XML_XSL_Test_ATL'
+		'VC_XML_XSL_Test_ATL.EXE'
+		{
+			val AppID = s {BD7293B9-52AB-11D4-8A11-0020AFCC5695}
+		}
+	}
+}

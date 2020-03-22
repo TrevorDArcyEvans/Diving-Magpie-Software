@@ -1,0 +1,110 @@
+[
+  uuid(66DDC6D0-AA5D-11D4-83E2-00104BB2580C), 
+  version(1.0), 
+  helpstring("ProgPipe Library")
+    
+]
+library ProgPipe
+{
+
+  importlib("stdole2.tlb");
+  importlib("STDVCL40.DLL");
+
+  [
+    uuid(66DDC6D1-AA5D-11D4-83E2-00104BB2580C), 
+    version(1.0), 
+    helpstring("Dispatch interface for DMS_ProgPipe Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_ProgPipe: IDispatch
+  {
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall Show( void );
+    [
+    id(0x00000003)
+    ]
+    HRESULT _stdcall Hide( void );
+    [
+    id(0x00000004)
+    ]
+    HRESULT _stdcall Step( void );
+    [
+    propget, 
+    id(0x00000005)
+    ]
+    HRESULT _stdcall TotalSteps([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000005)
+    ]
+    HRESULT _stdcall TotalSteps([in] long Value );
+    [
+    propget, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall Title([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall Title([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000007)
+    ]
+    HRESULT _stdcall Text([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000007)
+    ]
+    HRESULT _stdcall Text([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000008)
+    ]
+    HRESULT _stdcall CurrentStep([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000008)
+    ]
+    HRESULT _stdcall CurrentStep([in] long Value );
+    [
+    propget, 
+    id(0x00000009)
+    ]
+    HRESULT _stdcall Icon([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000009)
+    ]
+    HRESULT _stdcall Icon([in] long Value );
+    [
+    id(0x0000000A)
+    ]
+    HRESULT _stdcall Reset( void );
+    [
+    propget, 
+    id(0x0000000B)
+    ]
+    HRESULT _stdcall Message([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x0000000B)
+    ]
+    HRESULT _stdcall Message([in] BSTR Value );
+  };
+
+  [
+    uuid(66DDC6D3-AA5D-11D4-83E2-00104BB2580C), 
+    version(1.0), 
+    helpstring("DMS_ProgPipe Object")
+  ]
+  coclass DMS_ProgPipe
+  {
+    [default] interface IDMS_ProgPipe;
+  };
+
+}; 

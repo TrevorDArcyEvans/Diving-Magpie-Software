@@ -1,0 +1,42 @@
+[
+  uuid(49F6D445-D82F-11D4-8E9E-0020AFCC5695), 
+  version(1.0), 
+  helpstring("DMS_JPGWks Library")
+    
+]
+library DMS_JPGWks
+{
+
+  importlib("Stdole2.tlb");
+  importlib("STDVCL40.DLL");
+
+  [
+    uuid(49F6D446-D82F-11D4-8E9E-0020AFCC5695), 
+    version(1.0), 
+    helpstring("Dispatch interface for DMS_JPGWorks Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_JPGWorks: IDispatch
+  {
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall SaveAsJPEG([in] BSTR FileName, [in] long Handle );
+    [
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Configure( void );
+  };
+
+  [
+    uuid(49F6D448-D82F-11D4-8E9E-0020AFCC5695), 
+    version(1.0), 
+    helpstring("DMS_JPGWorks Object")
+  ]
+  coclass DMS_JPGWorks
+  {
+    [default] interface IDMS_JPGWorks;
+  };
+
+}; 

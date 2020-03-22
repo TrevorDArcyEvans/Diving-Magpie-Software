@@ -1,0 +1,53 @@
+// DMS_PSWks.idl : IDL source for DMS_PSWks.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DMS_PSWks.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(CAFC120B-DB67-11D4-8EA3-0020AFCC5695),
+		dual,
+		helpstring("IDMS_PSWorks Interface"),
+		pointer_default(unique)
+	]
+	interface IDMS_PSWorks : IDispatch
+	{
+		[id(1), helpstring("method ExtractConfig")]
+        HRESULT ExtractConfig
+            (
+            [in]            BSTR                sSW_FileName,
+            [in]            BSTR                sConfigBodyName,
+            [in]            BSTR                sParasolid_FileName,
+            [out, retval]   int*                nRetVal
+            );
+
+		[id(2), helpstring("method GetConfigList")]
+        HRESULT GetConfigList
+            (
+            [in]            BSTR                sSW_FileName, 
+            [out, retval]   BSTR*               sConfigList
+            );
+	};
+
+[
+	uuid(CAFC11FE-DB67-11D4-8EA3-0020AFCC5695),
+	version(1.0),
+	helpstring("DMS_PSWks 1.0 Type Library")
+]
+library DMS_PSWKSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(CAFC120C-DB67-11D4-8EA3-0020AFCC5695),
+		helpstring("DMS_PSWorks Class")
+	]
+	coclass DMS_PSWorks
+	{
+		[default] interface IDMS_PSWorks;
+	};
+};

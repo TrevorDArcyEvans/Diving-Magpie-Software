@@ -1,0 +1,218 @@
+<HTML>
+  <HEAD>
+    <STYLE>
+      BODY { font-family:Verdana; font-size:9pt; margin:0px; color:teal; }
+      .instructions { font-style:italic; text-align:right; color:gray; margin-left:.5em; }
+      .headline { background-color:teal; color:white; font-family:Arial Black; font-size:16pt;
+                  text-align:center; padding-top:1em; }
+      .group { font-family:Arial Black; font-size:14pt; margin-top:.5em; margin-left:.5em;
+               margin-bottom:.5em; }
+      .button { font-family:Verdana; font-size:10pt; font-weight:bold; text-align:right;
+                color:gray; cursor:hand; }
+      .arrow { font-family:Webdings; }
+    </STYLE>
+  </HEAD>
+
+
+  <BODY>
+ <!-- TOOLBAR_START --><!-- TOOLBAR_EXEMPT --><!-- TOOLBAR_END -->
+  <SCRIPT language="VBScript">
+    dim source, style, sourceURL, styleURL, viewingSrc, test
+
+    ' ----- Scripts to control XSL Processing ------
+    sub update()
+	  ' Do style and source yet exist? If so, we'll do something with them.
+	  on error resume next 
+	  Err.clear
+	  test = style.documentElement AND source.documentElement
+	  on error goto 0
+      if Err.number <> 0 then
+		exit sub
+	  end if
+	  ' Are style and source loaded? If not, we'd better not display them. 
+	  if (source.documentElement is nothing) or (style.documentElement is nothing) then
+		exit sub
+	  end if
+	  parent.results.display(source.transformNode(style))
+    end sub
+
+    '=========================
+    ' 
+    sub changeXML(xmldoc)
+      if viewingSrc then
+        styleURL = sourceURL
+      end if
+      sourceURL = xmldoc
+
+      source.load(sourceURL)
+      if (viewingSrc) then
+        viewingSrc = false
+        style.load(styleURL) 
+      end if
+      update()
+    end sub
+
+    sub changeXSL(xsldoc)
+      if not viewingSrc then
+        styleURL = xsldoc
+        style.load(styleURL)
+      else
+        sourceURL = xsldoc
+        source.load(sourceURL)
+	  end if
+      update()
+    end sub
+
+    sub viewXSL()
+      if not viewingSrc then
+        changeXML(styleURL)
+        changeXSL("raw-xml.xsl")
+        viewingSrc = true
+      end if
+    end sub
+
+    ' ----- Scripts to activate buttons ------
+    dim oldXMLitem , oldXSLitem
+
+    sub over(item)
+      item.style.color = "black"
+    end sub
+
+    sub out(item) 
+      item.style.color = "gray"
+    end sub
+
+    sub itemSelect(group, item)
+    ' Erase the underline from the XML or XSL item that had it before-
+    ' Attach an underline to the new XML or XSL element.  
+      if (group = "xml") then
+        oldXMLitem.style.textDecoration = ""
+        set oldXMLitem = item
+      else 
+        oldXSLitem.style.textDecoration = ""
+        set oldXSLitem = item
+      end if
+      item.style.textDecoration = "underline"
+    end sub
+
+    ' called by parent frame when the whole frameset is ready
+    ' create the source and style object, and set their initial values
+    ' with calls to changeXML and changeXSL
+    sub init()
+
+      set oldXMLitem = document.all.item("first-XML-item")
+      itemSelect "xml", oldXMLitem
+      set oldXSLitem = document.all.item("first-XSL-item")
+      itemSelect "xsl", oldXSLitem
+    
+      set source = createObject("Microsoft.XMLDOM")
+      set style = createObject("Microsoft.XMLDOM")
+      
+      source.async = false
+      style.async = false
+    
+      changeXML("auction1.xml")
+      changeXSL("raw-xml.xsl")
+    end sub
+    
+  </SCRIPT>
+  
+    <DIV CLASS="headline">XML\XSL Viewer</DIV>
+    <DIV CLASS="instructions">
+      Select an <B>XML data file</B> and an <B>XSL stylesheet</B>
+      with which to view it.  The results will appear in the frame at left.
+    </DIV>
+    <DIV CLASS="group">XML data files
+      <DIV CLASS="button" ID="first-XML-item"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXML("auction1.xml") : itemSelect "xml", me '>
+        auction1.xml<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXML("auction2.xml"): itemSelect "xml",me '>
+        auction2.xml<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXML("auction3.xml"): itemSelect "xml",me '>
+        auction3.xml<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+    </DIV>
+
+    <DIV CLASS="instructions">
+      The XML data displayed here is a fragment from the <B>Auction Demo</B>
+      available with the Microsoft MSXML Parser.
+    </DIV>
+
+     <DIV CLASS="group">XSL Stylesheets
+      <DIV CLASS="button" ID="first-XSL-item"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("raw-xml.xsl"): itemSelect "xsl",me '>
+        raw-xml.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("bids-table.xsl"): itemSelect "xsl",me '>
+        bids-table.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("sort-bidder.xsl"): itemSelect "xsl",me '>
+        sort-bidder.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("sort-bidder-.xsl"): itemSelect "xsl",me '>
+        sort-bidder-.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("sort-bidder-price.xsl"): itemSelect "xsl",me '>
+        sort-bidder-price.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("sort-bidder-price-.xsl"): itemSelect "xsl",me '>
+        sort-bidder-price-.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("summary.xsl"): itemSelect "xsl",me '>
+        summary.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='changeXSL("price-graph.xsl"): itemSelect "xsl",me '>
+        price-graph.xsl<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+    </DIV>
+
+    <DIV CLASS="instructions">
+      Stylesheet source can be viewed with the "raw-xml" stylesheet by clicking here.
+      Click on a data file to resume viewing XML data.
+    </DIV>
+
+    <DIV CLASS="group">
+      <DIV CLASS="button"
+           onMouseOver="over(me)"
+           onMouseOut="out(me)"
+           onClick='viewXSL(): itemSelect "xml",me '>
+        view xsl stylesheet<SPAN CLASS="arrow">4</SPAN>
+      </DIV>
+    </DIV>
+
+  <P><HR><font color="black" face="ms sans serif" size="1">&copy;<a href="http://msdn.microsoft.com/isapi/gomscom.asp?TARGET=/misc/cpyright.htm" target="_top"> 2000 Microsoft Corporation.  All rights reserved.  Terms of use.</a></font>
+</body>
+</html>

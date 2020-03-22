@@ -1,0 +1,25 @@
+HKCR
+{
+	DMS_WinError.DMS_WinErrorMsg.1 = s 'DMS_WinErrorMsg Class'
+	{
+		CLSID = s '{0E5F7DF0-702F-11D4-8E3C-0020AFCC5695}'
+	}
+	DMS_WinError.DMS_WinErrorMsg = s 'DMS_WinErrorMsg Class'
+	{
+		CLSID = s '{0E5F7DF0-702F-11D4-8E3C-0020AFCC5695}'
+		CurVer = s 'DMS_WinError.DMS_WinErrorMsg.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0E5F7DF0-702F-11D4-8E3C-0020AFCC5695} = s 'DMS_WinErrorMsg Class'
+		{
+			ProgID = s 'DMS_WinError.DMS_WinErrorMsg.1'
+			VersionIndependentProgID = s 'DMS_WinError.DMS_WinErrorMsg'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{0E5F7DE3-702F-11D4-8E3C-0020AFCC5695}'
+		}
+	}
+}

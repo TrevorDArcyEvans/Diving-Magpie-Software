@@ -1,0 +1,20 @@
+<!--TOOLBAR_START--><!--TOOLBAR_EXEMPT--><!--TOOLBAR_END-->
+<HTML>
+  <SCRIPT language="VBScript">
+    sub display(xslHTML)
+      document.all.item("xslresult").innerHTML = xslHTML
+      ' Include the following line to view the HTML source as well
+      ' document.all.item("xsldebug").innerHTML = "<XMP>" & xslHTML & "</XMP>";
+    end sub
+  </SCRIPT>
+
+  <BODY>
+    <DIV id="xslresult">
+      <!-- resulting HTML will be inserted here -->
+    </DIV>
+    <DIV id="xsldebug">
+      <!-- resulting HTML source will be inserted here -->
+    </DIV>
+  <P><HR><font color="black" face="ms sans serif" size="1">&copy;<a href="http://msdn.microsoft.com/isapi/gomscom.asp?TARGET=/misc/cpyright.htm" target="_top"> 2000 Microsoft Corporation.  All rights reserved.  Terms of use.</a></font>
+</body>
+</html>

@@ -1,0 +1,116 @@
+[
+  uuid(FC99C7B2-4A88-11D4-8A03-0020AFCC5695), 
+  version(1.0), 
+  helpstring("DMS_Comm Library"), 
+  custom(DE77BA63-517C-11D1-A2DA-0000F8773CE9, 968690804), 
+  custom(DE77BA64-517C-11D1-A2DA-0000F8773CE9, 83951780)
+    
+]
+library DMS_Comm
+{
+
+  importlib("Stdole2.tlb");
+  importlib("STDVCL40.DLL");
+
+  [
+    uuid(FC99C7B3-4A88-11D4-8A03-0020AFCC5695), 
+    version(1.23), 
+    helpstring("Dispatch interface for DMS_Common Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_Common: IDispatch
+  {
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall About( void );
+    [
+    propput, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Icon([in] long Param1 );
+    [
+    propput, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall ProductName([in] BSTR sProductName );
+    [
+    propget, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall ProductName([out, retval] BSTR * sProductName );
+    [
+    propput, 
+    id(0x00000004)
+    ]
+    HRESULT _stdcall ProductCode([in] BSTR sProductCode );
+    [
+    propget, 
+    id(0x00000004)
+    ]
+    HRESULT _stdcall ProductCode([out, retval] BSTR * sProductCode );
+    [
+    propput, 
+    id(0x00000005)
+    ]
+    HRESULT _stdcall AuthCode([in] BSTR Param1 );
+    [
+    propget, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall IsRegistered([out, retval] int * bIsRegistered );
+    [
+    id(0x00000007)
+    ]
+    HRESULT _stdcall Register( void );
+    [
+    id(0x00000008)
+    ]
+    HRESULT _stdcall IsSolidWorksFile([in] BSTR sFileName, [out, retval] int * bIsSolidWorksFile );
+    [
+    propget, 
+    id(0x00000009)
+    ]
+    HRESULT _stdcall Commercial([out, retval] int * Value );
+    [
+    propput, 
+    id(0x00000009)
+    ]
+    HRESULT _stdcall Commercial([in] int Value );
+    [
+    id(0x0000000A)
+    ]
+    HRESULT _stdcall IsSolidWorksRunning([out, retval] int * bIsSolidWorksRunning );
+    [
+    id(0x0000000B)
+    ]
+    HRESULT _stdcall GetMachineID([out, retval] BSTR * sMachineID );
+    [
+    propget, 
+    id(0x0000000C)
+    ]
+    HRESULT _stdcall IniFileName([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x0000000C)
+    ]
+    HRESULT _stdcall IniFileName([in] BSTR Value );
+    [
+    propput, 
+    id(0x0000000D)
+    ]
+    HRESULT _stdcall SolidWorks([in]  IDispatch * Value );
+  };
+
+  [
+    uuid(FC99C7B5-4A88-11D4-8A03-0020AFCC5695), 
+    version(1.0), 
+    helpstring("DMS_Common Object")
+  ]
+  coclass DMS_Common
+  {
+    [default] interface IDMS_Common;
+  };
+
+};

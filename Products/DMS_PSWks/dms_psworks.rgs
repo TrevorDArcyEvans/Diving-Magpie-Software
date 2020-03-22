@@ -1,0 +1,26 @@
+HKCR
+{
+	DMS_PSWks.DMS_PSWorks.1 = s 'DMS_PSWorks Class'
+	{
+		CLSID = s '{CAFC120C-DB67-11D4-8EA3-0020AFCC5695}'
+	}
+	DMS_PSWks.DMS_PSWorks = s 'DMS_PSWorks Class'
+	{
+		CLSID = s '{CAFC120C-DB67-11D4-8EA3-0020AFCC5695}'
+		CurVer = s 'DMS_PSWks.DMS_PSWorks.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {CAFC120C-DB67-11D4-8EA3-0020AFCC5695} = s 'DMS_PSWorks Class'
+		{
+			ProgID = s 'DMS_PSWks.DMS_PSWorks.1'
+			VersionIndependentProgID = s 'DMS_PSWks.DMS_PSWorks'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CAFC11FE-DB67-11D4-8EA3-0020AFCC5695}'
+		}
+	}
+}

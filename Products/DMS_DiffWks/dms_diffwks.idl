@@ -1,0 +1,61 @@
+[
+  uuid(29A450B8-D6AE-11D4-8E9C-0020AFCC5695), 
+  version(1.0), 
+  helpstring("DMS_DiffWks Library")
+    
+]
+library DMS_DiffWks
+{
+
+  importlib("Stdole2.tlb");
+  importlib("STDVCL40.DLL");
+
+  [
+    uuid(29A450B9-D6AE-11D4-8E9C-0020AFCC5695), 
+    version(1.0), 
+    helpstring("Dispatch interface for DMS_DiffWorks Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_DiffWorks: IDispatch
+  {
+    [
+    propput, 
+    id(0x00000001)
+    ]
+    HRESULT _stdcall Icon([in] long hIcon );
+    [
+    id(0x00000002)
+    ]
+    HRESULT _stdcall GetCompareInfo(
+        [out] BSTR * OriginalName, 
+        [out] BSTR * ChangedName, 
+        [out] BSTR * DisplayName, 
+        [out] double * Transparency, 
+        [out] long * Colour );
+    [
+    id(0x00000003)
+    ]
+    HRESULT _stdcall ShowCompareResults(
+        [in] BSTR OriginalName, 
+        [in] BSTR ChangedName, 
+        [in] double OriginalMass, 
+        [in] double ChangedMass, 
+        [in] double OriginalVolume, 
+        [in] double ChangedVolume,
+        [in] double OriginalArea,
+        [in] double ChangedArea
+        );
+  };
+
+  [
+    uuid(29A450BB-D6AE-11D4-8E9C-0020AFCC5695), 
+    version(1.0), 
+    helpstring("DMS_DiffWorks Object")
+  ]
+  coclass DMS_DiffWorks
+  {
+    [default] interface IDMS_DiffWorks;
+  };
+
+}; 

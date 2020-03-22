@@ -1,0 +1,20 @@
+// VC_XML_XSL_Test_ATL.idl : IDL source for VC_XML_XSL_Test_ATL.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (VC_XML_XSL_Test_ATL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(BD7293B8-52AB-11D4-8A11-0020AFCC5695),
+	version(1.0),
+	helpstring("VC_XML_XSL_Test_ATL 1.0 Type Library")
+]
+library VC_XML_XSL_TEST_ATLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

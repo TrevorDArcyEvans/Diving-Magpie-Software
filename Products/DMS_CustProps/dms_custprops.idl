@@ -1,0 +1,120 @@
+// DMS_CustProps.idl : IDL source for DMS_CustProps.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DMS_CustProps.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+    [
+        object,
+        uuid(CA621304-D053-11D4-8E94-0020AFCC5695),
+    
+        helpstring("IDMS_CustomProperties Interface"),
+        pointer_default(unique)
+    ]
+    interface IDMS_CustomProperties : IUnknown
+    {
+        [helpstring("method AddCustomInfo3")]
+        HRESULT AddCustomInfo3
+            (
+            [in]            BSTR                Configuration, 
+            [in]            BSTR                FieldName, 
+            [in]            long                FieldType, 
+            [in]            BSTR                FieldValue, 
+            [out, retval]   BOOL*               RetVal
+            );
+
+        [propget, helpstring("property CustomInfo2")] 
+        HRESULT CustomInfo2
+            (
+            [in]            BSTR                Configuration, 
+            [in]            BSTR                FieldName, 
+            [out, retval]   BSTR*               pVal);
+
+        [propput, helpstring("property CustomInfo2")] 
+        HRESULT CustomInfo2
+            (
+            [in]            BSTR                Configuration, 
+            [in]            BSTR                FieldName, 
+            [in]            BSTR                newVal);
+
+        [helpstring("method DeleteCustomInfo2")] 
+        HRESULT DeleteCustomInfo2
+            (
+            [in]            BSTR                Configuration, 
+            [in]            BSTR                FieldName, 
+            [out, retval]   BOOL*               RetVal
+            );
+
+        [helpstring("method GetCustomInfoCount2")] 
+        HRESULT GetCustomInfoCount2
+            (
+            [in]            BSTR                Configuration, 
+            [out, retval]   long*               Count
+            );
+
+        [helpstring("method GetCustomInfoNames2")] 
+        HRESULT GetCustomInfoNames2
+            (
+            [in]            BSTR                Configuration, 
+            [out, retval]   BSTR**              RetVal
+            );
+
+        [helpstring("method GetCustomInfoType3")] 
+        HRESULT GetCustomInfoType3
+            (
+            [in]            BSTR                Configuration, 
+            [in]            BSTR                FieldName,
+            [out, retval]   long*               Type 
+            );
+
+        [propget, helpstring("property SummaryInfo")] 
+        HRESULT SummaryInfo
+            (
+            [in]            long                FieldID, 
+            [out, retval]   BSTR*               pVal
+            );
+
+        [propput, helpstring("property SummaryInfo")] 
+        HRESULT SummaryInfo
+            (
+            [in]            long                FieldID, 
+            [in]            BSTR                newVal
+            );
+
+        [helpstring("method LoadFile")] 
+        HRESULT LoadFile
+            (
+            [in]            BSTR                FileName
+            );
+    };
+
+[
+    uuid(CA6212F8-D053-11D4-8E94-0020AFCC5695),
+    version(1.0),
+    helpstring("DMS_CustProps 1.0 Type Library")
+]
+library DMS_CUSTPROPSLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    enum swCustomInfoType_e
+    {
+        swCustomInfoUnknown     = 0,
+        swCustomInfoText        = 30, // VT_LPSTR
+        swCustomInfoDate        = 64, // VT_FILETIME
+        swCustomInfoNumber      = 3, // VT_I4
+        swCustomInfoYesOrNo     = 11 // VT_BOOL
+    };
+
+    [
+        uuid(CA621305-D053-11D4-8E94-0020AFCC5695),
+        helpstring("DMS_CustomProperties Class")
+    ]
+    coclass DMS_CustomProperties
+    {
+        [default] interface IDMS_CustomProperties;
+    };
+};

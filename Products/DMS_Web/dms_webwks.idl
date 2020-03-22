@@ -1,0 +1,70 @@
+[
+  uuid(4E584868-BC0C-11D4-8E81-0020AFCC5695), 
+  version(1.0), 
+  helpstring("DMS_WebWks Library")
+    
+]
+library DMS_WebWks
+{
+
+  importlib("Stdole2.tlb");
+  importlib("STDVCL40.DLL");
+
+  [
+    uuid(4E584869-BC0C-11D4-8E81-0020AFCC5695), 
+    version(1.13), 
+    helpstring("Dispatch interface for DMS_WebWorks Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_WebWorks: IDispatch
+  {
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall Configure( void );
+    [
+    propput, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall SolidWorks([in]  IDispatch * Param1 );
+    [
+    id(0x00000004)
+    ]
+    HRESULT _stdcall SaveAsHTML([in] BSTR sFileName, [in, defaultvalue(0)] long bKeepXML );
+    [
+    id(0x00000005)
+    ]
+    HRESULT _stdcall SaveAsXML([in] BSTR sFileName );
+    [
+    propget, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall XSL_FileName([out, retval] BSTR * sFileName );
+    [
+    propput, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall XSL_FileName([in] BSTR sFileName );
+    [
+    propput, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Icon([in] long Value );
+    [
+    id(0x00000007)
+    ]
+    HRESULT _stdcall LoadSettings( void );
+  };
+
+  [
+    uuid(4E58486B-BC0C-11D4-8E81-0020AFCC5695), 
+    version(1.0), 
+    helpstring("DMS_WebWorks Object")
+  ]
+  coclass DMS_WebWorks
+  {
+    [default] interface IDMS_WebWorks;
+  };
+
+}; 

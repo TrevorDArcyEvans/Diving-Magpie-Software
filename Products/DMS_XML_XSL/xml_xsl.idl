@@ -1,0 +1,85 @@
+// XML_XSL.idl : IDL source for XML_XSL.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (XML_XSL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+    [
+        object,
+        uuid(730AD102-51D3-11D4-8A10-0020AFCC5695),
+    
+        helpstring("IXML2XSL Interface"),
+        pointer_default(unique)
+    ]
+    interface IDMS_XML2XSL : IUnknown
+    {
+        [propget, helpstring("get XML_FileName")]
+        HRESULT     XML_FileName
+            (
+            [out, retval]
+            BSTR*            pVal
+            );
+
+        [propput, helpstring("put XML_FileName")]
+        HRESULT     XML_FileName
+            (
+            [in]
+            BSTR            newVal
+            );
+
+        [propget, helpstring("get XSL_FileName")]
+        HRESULT     XSL_FileName
+            (
+            [out, retval]
+            BSTR*            pVal
+            );
+
+        [propput, helpstring("put XSL_FileName")]
+        HRESULT     XSL_FileName
+            (
+            [in]
+            BSTR            newVal
+            );
+
+        [propget, helpstring("get Output_FileName")]
+        HRESULT     Output_FileName
+            (
+            [out, retval]
+            BSTR*            pVal
+            );
+
+        [propput, helpstring("put Output_FileName")]
+        HRESULT     Output_FileName
+            (
+            [in]
+            BSTR            newVal
+            );
+
+        [helpstring("apply style sheet to XML data & output to file")]
+        HRESULT     Apply_XSL_XML();
+
+        [helpstring("print output file to default printer")]
+        HRESULT     Print();
+    };
+
+[
+    uuid(730AD0F6-51D3-11D4-8A10-0020AFCC5695),
+    version(1.0),
+    helpstring("XML_XSL 1.0 Type Library")
+]
+library XML_XSLLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    [
+        uuid(730AD103-51D3-11D4-8A10-0020AFCC5695),
+        helpstring("XML2XSL Class")
+    ]
+    coclass DMS_XML2XSL
+    {
+        [default] interface IDMS_XML2XSL;
+    };
+};

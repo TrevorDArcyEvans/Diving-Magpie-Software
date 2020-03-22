@@ -1,0 +1,25 @@
+HKCR
+{
+    XML_XSL.XML2XSL.1 = s 'XML2XSL Class'
+    {
+        CLSID = s '{730AD103-51D3-11D4-8A10-0020AFCC5695}'
+    }
+    XML_XSL.XML2XSL = s 'XML2XSL Class'
+    {
+        CLSID = s '{730AD103-51D3-11D4-8A10-0020AFCC5695}'
+        CurVer = s 'XML_XSL.XML2XSL.1'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {730AD103-51D3-11D4-8A10-0020AFCC5695} = s 'XML2XSL Class'
+        {
+            ProgID = s 'XML_XSL.XML2XSL.1'
+            VersionIndependentProgID = s 'XML_XSL.XML2XSL'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+            'TypeLib' = s '{730AD0F6-51D3-11D4-8A10-0020AFCC5695}'
+        }
+    }
+}

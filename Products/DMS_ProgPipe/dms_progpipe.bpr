@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="DMS_ProgPipe.dll"/>
+    <OBJFILES value="DMS_ProgPipe.obj DMS_ProgPipe_ATL.obj DMS_ProgPipe_TLB.obj 
+      DMS_ProgPipeImpl.obj DMS_ProgDlg.obj"/>
+    <RESFILES value="DMS_ProgPipe.res DMS_ProgPipe.tlb"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) DMS_ProgDlg.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vclnp50.lib Vcldb50.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib Vcldb50.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi bcbsmp50.bpi Qrpt50.bpi Vcldb50.bpi Vclbde50.bpi 
+      ibsmp50.bpi vcldbx50.bpi TeeUI50.bpi TeeDB50.bpi Tee50.bpi TeeQR50.bpi 
+      VCLIB50.bpi bcbie50.bpi vclie50.bpi Inetdb50.bpi Inet50.bpi NMFast50.bpi 
+      dclocx50.bpi bcb2kaxserver50.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_ATL_APARTMENT_THREADED;USING_ATLVCL;_ATL_NO_SECURITY;INC_ATL_HEADERS"/>
+    <MAINSOURCE value="DMS_ProgPipe.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl"/>
+    <LIBPATH value="$(BCB)\lib;$(BCB)\lib\obj"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-WD -Od -H=v:\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpd -x -Gn -Gi -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2057
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Deployment]
+DeployDir=
+DeployURL=
+HTMLDir=
+CABCompress=0
+CodeSign=0
+IncludeVerInfo=1
+AutoIncRelease=0
+DeployPackages=1
+DeployFiles=0
+CompanyURL=
+Description=
+CredFile=
+PrivKey=
+CryptoType=0
+Timestamping=0
+TimestampServer=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl
+Item1=C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\ocx\dmx;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\include\atl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=$(BCB)\lib;$(BCB)\lib\obj
+Item1=C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;$(BCB)\ocx\dmx;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=C:\Wombat\Pro\DMS_ProgPipe\VB_Test\Project1.exe
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

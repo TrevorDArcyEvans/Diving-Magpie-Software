@@ -1,0 +1,347 @@
+[
+  uuid(B147E1AA-33C6-11D4-89E8-0020AFCC5695), 
+  version(1.0), 
+  helpstring("DMS_PDFWks Library")
+    
+]
+library DMS_PDFWks
+{
+  importlib("STDOLE2.TLB");
+  importlib("STDVCL40.DLL");
+
+  typedef enum tagPDF_PAPER_SIZE
+  {
+    PAPER_SIZE_A0 = 0, 
+    PAPER_SIZE_A1 = 1, 
+    PAPER_SIZE_A2 = 2, 
+    PAPER_SIZE_A3 = 3, 
+    PAPER_SIZE_A4 = 4, 
+    PAPER_SIZE_A5 = 5, 
+    PAPER_SIZE_A6 = 6, 
+    PAPER_SIZE_B5 = 7, 
+    PAPER_SIZE_LETTER = 8, 
+    PAPER_SIZE_LEGAL = 9, 
+    PAPER_SIZE_LEDGER = 10, 
+    PAPER_SIZE_P11x17 = 11, 
+    PAPER_SIZE_USER = 12
+  } PDF_PAPER_SIZE;
+
+  typedef enum tagPDF_UNITS
+  {
+    UNITS_MILLIMETERS = 0, 
+    UNITS_INCHES = 1, 
+    UNITS_POINTS = 2
+  } PDF_UNITS;
+
+  typedef struct tagPDF_Info
+  {
+    BSTR InfoSubject;
+    BSTR InfoTitle;
+    BSTR InfoCreator;
+    BSTR InfoAuthor;
+    BSTR InfoKeyWords;
+  } PDF_Info;
+
+  typedef struct tagPDF_ImageSetup
+  {
+    long JPGQuality;
+    long ImageHeight;
+    long ImageWidth;
+    long Stretch;
+  } PDF_ImageSetup;
+
+  typedef struct tagPDF_PageSetup
+  {
+    long MarginTop;
+    long MarginBottom;
+    long MarginLeft;
+    long MarginRight;
+    PDF_PAPER_SIZE PaperSize;
+    long PaperHeight;
+    long PaperWidth;
+    long Landscape;
+    long ScaleToFit;
+    long KeepAspectRatio;
+    double Scale;
+    long CentreOnPage;
+  } PDF_PageSetup;
+
+  typedef struct tagPDF_Setup
+  {
+    PDF_PageSetup PageSetup;
+    PDF_Info Info;
+    PDF_ImageSetup ImageSetup;
+    PDF_UNITS Units;
+  } PDF_Setup;
+
+  [
+    uuid(B147E1AD-33C6-11D4-89E8-0020AFCC5695), 
+    version(1.0), 
+    helpstring("DMS_PDFWorks Object")
+  ]
+  coclass DMS_PDFWorks
+  {
+    [default] interface IDMS_PDFWorks;
+  };
+
+  [
+    uuid(B147E1AB-33C6-11D4-89E8-0020AFCC5695), 
+    version(1.0), 
+    helpstring("Dispatch interface for DMS_PDFWorks Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IDMS_PDFWorks: IDispatch
+  {
+    [
+    id(0x00000001)
+    ]
+    HRESULT _stdcall Configure([in] BSTR sTitle, [out] long * bOK, [in, out] PDF_Setup * pPDF_Setup );
+    [
+    propput, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall Icon([in] long Param1 );
+    [
+    id(0x00000003)
+    ]
+    HRESULT _stdcall ClipBoardToJPGFile([in] BSTR sFileName );
+    [
+    id(0x00000004)
+    ]
+    HRESULT _stdcall ClipBoardToBMPFile([in] BSTR sFileName );
+    [
+    id(0x00000005)
+    ]
+    HRESULT _stdcall ClipBoardToGIFFile([in] BSTR sFileName );
+    [
+    id(0x00000006)
+    ]
+    HRESULT _stdcall ClipBoardToPDFFile([in] BSTR sFileName );
+    [
+    propget, 
+    id(0x00000008)
+    ]
+    HRESULT _stdcall JPGQuality([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000008)
+    ]
+    HRESULT _stdcall JPGQuality([in] long Value );
+    [
+    propget, 
+    id(0x00000009)
+    ]
+    HRESULT _stdcall MarginTop([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000009)
+    ]
+    HRESULT _stdcall MarginTop([in] long Value );
+    [
+    propget, 
+    id(0x0000000A)
+    ]
+    HRESULT _stdcall MarginBottom([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000000A)
+    ]
+    HRESULT _stdcall MarginBottom([in] long Value );
+    [
+    propget, 
+    id(0x0000000B)
+    ]
+    HRESULT _stdcall PaperSize([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000000B)
+    ]
+    HRESULT _stdcall PaperSize([in] long Value );
+    [
+    propget, 
+    id(0x0000000C)
+    ]
+    HRESULT _stdcall PaperWidth([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000000C)
+    ]
+    HRESULT _stdcall PaperWidth([in] long Value );
+    [
+    propget, 
+    id(0x0000000D)
+    ]
+    HRESULT _stdcall PaperHeight([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000000D)
+    ]
+    HRESULT _stdcall PaperHeight([in] long Value );
+    [
+    propget, 
+    id(0x0000000E)
+    ]
+    HRESULT _stdcall Landscape([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000000E)
+    ]
+    HRESULT _stdcall Landscape([in] long Value );
+    [
+    propget, 
+    id(0x0000000F)
+    ]
+    HRESULT _stdcall ScaleToFit([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000000F)
+    ]
+    HRESULT _stdcall ScaleToFit([in] long Value );
+    [
+    propget, 
+    id(0x00000010)
+    ]
+    HRESULT _stdcall CentreOnPage([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000010)
+    ]
+    HRESULT _stdcall CentreOnPage([in] long Value );
+    [
+    propget, 
+    id(0x00000011)
+    ]
+    HRESULT _stdcall InfoSubject([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000011)
+    ]
+    HRESULT _stdcall InfoSubject([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000012)
+    ]
+    HRESULT _stdcall InfoTitle([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000012)
+    ]
+    HRESULT _stdcall InfoTitle([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000013)
+    ]
+    HRESULT _stdcall InfoCreator([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000013)
+    ]
+    HRESULT _stdcall InfoCreator([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000014)
+    ]
+    HRESULT _stdcall InfoAuthor([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000014)
+    ]
+    HRESULT _stdcall InfoAuthor([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000015)
+    ]
+    HRESULT _stdcall Units([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000015)
+    ]
+    HRESULT _stdcall Units([in] long Value );
+    [
+    propget, 
+    id(0x00000007)
+    ]
+    HRESULT _stdcall Scale([out, retval] double * Value );
+    [
+    propput, 
+    id(0x00000007)
+    ]
+    HRESULT _stdcall Scale([in] double Value );
+    [
+    propget, 
+    id(0x00000016)
+    ]
+    HRESULT _stdcall MarginLeft([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000016)
+    ]
+    HRESULT _stdcall MarginLeft([in] long Value );
+    [
+    propget, 
+    id(0x00000017)
+    ]
+    HRESULT _stdcall MarginRight([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000017)
+    ]
+    HRESULT _stdcall MarginRight([in] long Value );
+    [
+    propget, 
+    id(0x00000018)
+    ]
+    HRESULT _stdcall ImageHeight([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000018)
+    ]
+    HRESULT _stdcall ImageHeight([in] long Value );
+    [
+    propget, 
+    id(0x00000019)
+    ]
+    HRESULT _stdcall ImageWidth([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000019)
+    ]
+    HRESULT _stdcall ImageWidth([in] long Value );
+    [
+    propget, 
+    id(0x0000001B)
+    ]
+    HRESULT _stdcall Stretch([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000001B)
+    ]
+    HRESULT _stdcall Stretch([in] long Value );
+    [
+    propget, 
+    id(0x0000001C)
+    ]
+    HRESULT _stdcall InfoKeyWords([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x0000001C)
+    ]
+    HRESULT _stdcall InfoKeyWords([in] BSTR Value );
+    [
+    id(0x0000001A)
+    ]
+    HRESULT _stdcall Initialise([in] PDF_Setup PDF_Init );
+    [
+    propget, 
+    id(0x0000001D)
+    ]
+    HRESULT _stdcall KeepAspectRatio([out, retval] long * Value );
+    [
+    propput, 
+    id(0x0000001D)
+    ]
+    HRESULT _stdcall KeepAspectRatio([in] long Value );
+  };
+
+}; 
