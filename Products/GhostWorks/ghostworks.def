@@ -1,0 +1,16 @@
+; --------------------------------------------------------------------
+;  GhostWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "GhostWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3            @1
+    Ghost_Help              @2
+    Ghost_About             @3
+
+; ---------------------------------
+;  End of GhostWorks.def
+; ---------------------------------
