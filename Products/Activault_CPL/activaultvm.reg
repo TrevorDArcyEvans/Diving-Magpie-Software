@@ -1,0 +1,55 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ActivaultVM]
+"Driver"="C:\\WINNT\\System32\\odbcjt32.dll"
+"DBQ"="C:\\Program Files\\Activault\\Database\\AgileVM.mdb"
+"Description"="Activault data base for SolidWorks"
+"DriverId"=dword:00000019
+"FIL"="MS Access;"
+"SafeTransactions"=dword:00000000
+"SystemDB"="C:\\Program Files\\Activault\\Database\\AgileVM.mdw"
+"UID"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ActivaultVM\Engines]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ActivaultVM\Engines\Jet]
+"ImplicitCommitSync"="Yes"
+"MaxBufferSize"=dword:00000200
+"PageTimeout"=dword:00000005
+"Threads"=dword:00000003
+"UserCommitSync"="Yes"
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidPartners\Activault]
+"APPSERVERNAME"="perth"
+"APPSERVERPORT"="9015"
+"RootDirectory"="c:\\Sandbox"
+"FileServerHost"="perth"
+"FileServerPort"="9016"
+"ChangeLabel"=dword:00000001
+"DeleteObject"=dword:00000001
+"ExportInLineEdit"=dword:00000001
+"KeepOpenFromAgileSize"=dword:00000001
+"AutoSizeHistTableColumns"=dword:00000001
+"AutoSizeFileTableColumns"=dword:00000000
+"Demo"=dword:00000000
+"UnsecureIcon"=dword:00000001
+"ReloadAfterChkin"=dword:00000001
+"RelLockInLineEdit"=dword:00000001
+"RelLockClickEdit"=dword:00000001
+"PreviewDir"="C:\\Program Files\\Activault\\AgTemp"
+"HelpFile"="C:\\Program Files\\Activault\\Activault.pdf"
+"StartDoc"="C:\\Program Files\\Activault\\StartDoc.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidPartners\Activault\1.00.000]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidPartners\Activault\FileServer]
+"Host"="perth"
+"Port"="9016"
+"password"="AGILE"
+"StorDirs"="C:\\Program Files\\Activault\\ActivaultFileMgr\\Files"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidPartners\Activault\UserInfo]
+"CompanyName"="SolidPartners"
+
