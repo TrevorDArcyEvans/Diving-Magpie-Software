@@ -1,0 +1,93 @@
+{\rtf1\ansi\deff11
+{\fonttbl
+\f0\fswiss System;
+\f1\fmodern Terminal;
+\f2\fmodern Fixedsys;
+\f3\fmodern Courier;
+\f4\fswiss MS Sans Serif;
+\f5\froman MS Serif;
+\f6\froman Roman;
+\f7\fscript Script;
+\f8\fmodern Modern;
+\f9\fswiss Small Fonts;
+\f10\fnil Marlett;
+\f11\fswiss Arial;
+\f12\fmodern Courier New;
+\f13\fmodern Lucida Console;
+\f14\fswiss Lucida Sans Unicode;
+\f15\froman Times New Roman;
+\f16\fnil Wingdings;
+\f17\froman Symbol;
+\f18\fswiss Arial Black;
+\f19\fscript Comic Sans MS;
+\f20\fswiss Impact;
+\f21\fswiss Verdana;
+\f22\froman Webdings;
+\f23\fswiss Century Gothic;
+\f24\fmodern Arial Alternative Symbol;
+\f25\fmodern Arial Alternative;
+\f26\fswiss Tahoma;
+}
+{\colortbl;
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red128\green128\blue128;
+\red192\green192\blue192;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+${\footnote $ Contents}
+#{\footnote # Contents}
+K{\footnote K Contents}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Contents\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \f15 \uldb \cf0 Getting Started\uldb0 \v Getting_Started\v0 \par \uldb Install Uninstall\uldb0 \v Install_Uninstall\v0 \par \uldb Known Bugs or Problems\uldb0 \v Known_Bugs_or_Problems\v0 \par \uldb Issues\uldb0 \v Issues\v0 \par \uldb About\uldb0 \v About\v0 \par \par \page 
+${\footnote $ Getting Started}
+#{\footnote # Getting_Started}
++{\footnote + A:00001}
+K{\footnote K Getting Started}
+K{\footnote K overwrite }
+K{\footnote K batch mode}
+K{\footnote K addin}
+K{\footnote K file size}
+K{\footnote K standard SolidWorks}
+K{\footnote K SolidWorks Viewer}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Getting Started\par \b0 \pard \f15 \fs28 \pard \cf0 BMPWorks allows you to directly copy the SolidWorks bitmap preview to the Windows clipboard.  SolidWorks is not required.\par \par BMPWorks adds a context sensitive menu to the right mouse button of Windows Explorer:\par \par \par \pard \fs0 \{bml RMB.BMP\}\fs28 \par \pard \par \par Figure 1:  Right mouse button menu in Windows Explorer\par \par \par see also:\tab \b \uldb Issues\b0 \uldb0 \v Issues\v0 \par \par \par \page 
+${\footnote $ Install Uninstall}
+#{\footnote # Install_Uninstall}
++{\footnote + A:00002}
+K{\footnote K Install Uninstall}
+K{\footnote K Install}
+K{\footnote K Uninstall}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Install Uninstall\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \f15 \b \cf0 Installation:\b0 \par Several entries have to be made in the registry. It is highly recommended that this be left to the installation program.\par \par For the brave of heart attempting a manual installation, please read the Manual Install section next.\par \par \b Manual Install\b0 \par 1) The following files are required:\par     Windows NT & 95:\par \tab BMPWorks.dll\tab \tab BMPWorks\par \tab BMPWorks.hlp\tab \tab help file\par \tab SldAsm.reg\tab \tab \tab registry file\par \tab SldDrw.reg\tab \tab \tab registry file\par \tab SldPrt.reg\tab \tab \tab registry file\par \par 2) Place all the BMPWorks files, except for BMPWorks.dll, in the:\par \par     C:\\Program Files\\SolidPartners\\BMPWorks\par \par directory.  If this directory does not exist, create it.\par \par Place BMPWorks.dll in your Windows directory, usually C:\\WinNT (Windows NT) or C:\\Windows (Windows 95).\par \par 3) Double click on the registry settings files to install them to the Windows registry.\par \par \par \b Manual Uninstall\b0 \par 1) use the registry editor and remove the following\par keys:\par \par \tab [HKEY_CLASSES_ROOT\\SldAssem.Document\\shell\\Copy &bitmap] \tab [HKEY_CLASSES_ROOT\\SldDraw.Document\\shell\\Copy &bitmap] \tab [HKEY_CLASSES_ROOT\\SldPart.Document\\shell\\Copy &bitmap]\par \par 2) delete BMPWorks.dll and help files\par \par 3) delete the installation directory\par \f4 \fs24 \par \page 
+${\footnote $ Known Bugs or Problems}
+#{\footnote # Known_Bugs_or_Problems}
++{\footnote + A:00003}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Known Bugs or Problems\par \b0 \pard \page 
+${\footnote $ Issues}
+#{\footnote # Issues}
++{\footnote + A:00004}
+K{\footnote K Issues}
+K{\footnote K limitations }
+K{\footnote K timestamp }
+K{\footnote K datestamp }
+K{\footnote K configuration}
+K{\footnote K limitations }
+K{\footnote K overwrite }
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 Issues\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \cf0 Quite often, the SolidWorks bitmap is pasted with black or blotchy areas at the top and bottom:\par \par \par \pard \fs0 \{bml BLOTCHY.BMP\}\fs28 \par \pard \par \par Figure 2:  Black or boltchy areas at top and bottom of SolidWorks bitmap\par \par \par We believe this is a problem with the way in which SolidWorks stores the bitmaps and we are working on a fix for this.\par \par ------------------------------------------------------------------------------------------\par \par \page 
+${\footnote $ About}
+#{\footnote # About}
++{\footnote + A:00005}
+K{\footnote K About}
+K{\footnote K email}
+K{\footnote K web}
+\keepn \f15 \cf13 \fs36 \b \pard \keepn \f15 About\f4 \cf1 \fs24 \b0 \par \pard \f15 \fs28 \pard \cf0 Freeware Version\par \par Support:\par \tab \cf10 Solid\cf1 Partners, Inc.\par \tab 2155  Las Positas Ct, Suite D\par  \tab Livermore, California  94550\par  \tab USA\par \par \tab tel:    925-373-3443\par \tab fax:   925-373-3445\par \tab email:  sales@\cf10 Solid\cf1 Partners.com \tab \par \tab web:    www.\cf10 Solid\cf1 Partners.com\par \par \page 
+}

@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\SldPart.Document\shell\Copy &bitmap]
+
+[HKEY_CLASSES_ROOT\SldPart.Document\shell\Copy &bitmap\command]
+@="rundll32.exe BMPWorks,Copy_SW_Bitmap_to_Clipboard \"%1\""
+

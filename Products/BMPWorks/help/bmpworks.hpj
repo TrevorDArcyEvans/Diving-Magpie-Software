@@ -1,0 +1,23 @@
+[Options]
+Root=C:\WOMBAT,c:\wombat\pro\stkworks,c:\wombat\pro\stkworks\help,c:\wombat\pro\stickw~1\help,v:\,c:\wombat\pro\viewwo~1\help,c:\wombat\pro\bmpworks\help
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=BMPWORKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=BMPWorks v1.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\BMPWORKS\HELP\BMPWORKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <BMPWORKS.H>
+
+[Windows]
+main="BMPWorks v1.x",,4,,

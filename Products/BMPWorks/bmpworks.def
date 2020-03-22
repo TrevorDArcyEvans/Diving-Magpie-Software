@@ -1,0 +1,8 @@
+; BMPWorks.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BMPWorks"
+DESCRIPTION  'BMPWorks Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    Copy_SW_Bitmap_to_Clipboard		@1
