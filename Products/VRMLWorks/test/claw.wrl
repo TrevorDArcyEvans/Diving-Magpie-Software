@@ -1,0 +1,3958 @@
+#VRML V1.0 ascii
+#date 11 October 1996
+
+
+
+Separator {
+   ##DirectionalLight { direction 0 0 -1 }
+   Separator {                 # Object Separator
+      Material { diffuseColor 0.3 0.8 0.2 }
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.193171978	 -7.635859013	 -4.124897003,
+                       -1.005172014	 -7.499837875	 -4.102746964,
+                       -1.005172014	 -7.499837875	 -4.102746964,
+                       -1.193171978	 -7.635859013	 -4.124897003,
+                       -1.005172014	 -7.635859013	 -4.124897003
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -9.284752846	 -5.191683769,
+                       -1.255172014	 -9.293143272	 -5.198980808,
+                       -1.296671987	 -8.956631660	 -5.568960190,
+                       -1.296671987	 -8.956631660	 -5.568960190,
+                       -1.255172014	 -9.293143272	 -5.198980808,
+                       -1.255172014	 -8.965022087	 -5.576257229
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.005172014	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -7.381003857	 -4.032957077,
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.005172014	 -7.499837875	 -4.102746964
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.296671987	 -8.956631660	 -5.568960190,
+                       -1.255172014	 -8.965022087	 -5.576257229
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.255172014	 -8.965022087	 -5.576257229,
+                       -1.213672996	 -8.956631660	 -5.568960190
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -8.965022087	 -5.576257229,
+                       -1.255172014	 -9.293143272	 -5.198980808,
+                       -1.213672996	 -8.956631660	 -5.568960190,
+                       -1.213672996	 -8.956631660	 -5.568960190,
+                       -1.255172014	 -9.293143272	 -5.198980808,
+                       -1.213672996	 -9.284752846	 -5.191683769
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -8.933708191	 -5.549023151,
+                       -1.327051997	 -9.261829376	 -5.171747208,
+                       -1.296671987	 -8.956631660	 -5.568960190,
+                       -1.296671987	 -8.956631660	 -5.568960190,
+                       -1.327051997	 -9.261829376	 -5.171747208,
+                       -1.296671987	 -9.284752846	 -5.191683769
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -9.293143272	 -5.198980808,
+                       -1.321571946	 -9.317295074	 -5.219985962,
+                       -1.255172014	 -9.330719948	 -5.231661797
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -9.284752846	 -5.191683769,
+                       -1.321571946	 -9.317295074	 -5.219985962,
+                       -1.255172014	 -9.293143272	 -5.198980808
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -8.951548576	 -6.227184772,
+                       -1.505172014	 -8.668592453	 -5.981094837,
+                       -1.005172014	 -8.668592453	 -5.981094837
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.255172014	 -8.965022087	 -5.576257229,
+                       -1.005172014	 -8.996713638	 -5.603818893
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.770695210	 -4.096415997,
+                       -1.005172014	 -7.770695210	 -4.096415997,
+                       -1.193171978	 -7.635859013	 -4.124897003,
+                       -1.193171978	 -7.635859013	 -4.124897003,
+                       -1.005172014	 -7.770695210	 -4.096415997,
+                       -1.005172014	 -7.635859013	 -4.124897003
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.295406818	 -3.924951077,
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -7.381003857	 -4.032957077
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -8.933708191	 -5.549023151,
+                       -1.296671987	 -8.956631660	 -5.568960190,
+                       -1.505172014	 -8.996713638	 -5.603818893
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.683447838	 -4.558699131,
+                       -1.370172024	 -7.683447838	 -4.558699131,
+                       -1.005172014	 -7.589332104	 -4.584333897,
+                       -1.005172014	 -7.589332104	 -4.584333897,
+                       -1.370172024	 -7.683447838	 -4.558699131,
+                       -1.370172024	 -7.589332104	 -4.584333897
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.213672996	 -8.956631660	 -5.568960190,
+                       -1.183292031	 -8.933708191	 -5.549023151
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -9.293143272	 -5.198980808,
+                       -1.255172014	 -9.330719948	 -5.231661797,
+                       -1.213672996	 -9.284752846	 -5.191683769
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -9.261829376	 -5.171747208,
+                       -1.370180011	 -9.280617714	 -5.188087940,
+                       -1.296671987	 -9.284752846	 -5.191683769
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -8.933708191	 -5.549023151,
+                       -1.338171959	 -9.230514526	 -5.144514084,
+                       -1.327051997	 -9.261829376	 -5.171747208
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -9.284752846	 -5.191683769,
+                       -1.370180011	 -9.280617714	 -5.188087940,
+                       -1.321571946	 -9.317295074	 -5.219985962
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -8.951548576	 -6.227184772,
+                       -1.505172014	 -9.045867920	 -6.309216022,
+                       -1.505172014	 -8.668592453	 -5.981094837
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.045867920	 -6.309216022,
+                       -1.505172014	 -9.045867920	 -6.309216022,
+                       -1.005172014	 -8.951548576	 -6.227184772
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.784139633	 -5.460346222,
+                       -1.005172014	 -8.951548576	 -6.227184772,
+                       -1.005172014	 -9.689821243	 -5.378315926
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -8.668592453	 -5.981094837,
+                       -1.505172014	 -8.668592453	 -5.981094837,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.505172014	 -8.668592453	 -5.981094837,
+                       -1.505172014	 -8.996713638	 -5.603818893
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.338171959	 -8.902394295	 -5.521789074,
+                       -1.327051997	 -8.933708191	 -5.549023151
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.780210018	 -4.571033001,
+                       -1.370172024	 -7.780210018	 -4.571033001,
+                       -1.005172014	 -7.683447838	 -4.558699131,
+                       -1.005172014	 -7.683447838	 -4.558699131,
+                       -1.370172024	 -7.780210018	 -4.571033001,
+                       -1.370172024	 -7.683447838	 -4.558699131
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.449796200	 -3.811001062,
+                       -1.505172014	 -7.449796200	 -3.811001062,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.505172014	 -7.449796200	 -3.811001062,
+                       -1.505172014	 -7.504049778	 -3.891478062
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.321571946	 -9.645415306	 -4.842710972,
+                       -1.255172014	 -9.658840179	 -4.854386806,
+                       -1.321571946	 -9.317295074	 -5.219985962,
+                       -1.321571946	 -9.317295074	 -5.219985962,
+                       -1.255172014	 -9.658840179	 -4.854386806,
+                       -1.255172014	 -9.330719948	 -5.231661797
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -8.933708191	 -5.549023151,
+                       -1.172173023	 -8.902394295	 -5.521789074,
+                       -1.005172014	 -8.996713638	 -5.603818893
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -9.284752846	 -5.191683769,
+                       -1.183292031	 -9.261829376	 -5.171747208,
+                       -1.213672996	 -8.956631660	 -5.568960190,
+                       -1.213672996	 -8.956631660	 -5.568960190,
+                       -1.183292031	 -9.261829376	 -5.171747208,
+                       -1.183292031	 -8.933708191	 -5.549023151
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -9.284752846	 -5.191683769,
+                       -1.255172014	 -9.330719948	 -5.231661797,
+                       -1.188771963	 -9.317295074	 -5.219985962
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -9.261829376	 -5.171747208,
+                       -1.387971997	 -9.230514526	 -5.144514084,
+                       -1.370180011	 -9.280617714	 -5.188087940
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.338171959	 -8.902394295	 -5.521789074,
+                       -1.338171959	 -9.230514526	 -5.144514084,
+                       -1.327051997	 -8.933708191	 -5.549023151
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.338171959	 -9.230514526	 -5.144514084,
+                       -1.387971997	 -9.230514526	 -5.144514084,
+                       -1.327051997	 -9.261829376	 -5.171747208
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -8.871080399	 -5.494554996,
+                       -1.327051997	 -9.199201584	 -5.117280006,
+                       -1.338171959	 -8.902394295	 -5.521789074
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.045867920	 -6.309216022,
+                       -1.005172014	 -8.951548576	 -6.227184772,
+                       -1.130172014	 -9.784139633	 -5.460346222
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370180011	 -9.280617714	 -5.188087940,
+                       -1.370180011	 -9.608737946	 -4.810812950,
+                       -1.321571946	 -9.317295074	 -5.219985962,
+                       -1.321571946	 -9.317295074	 -5.219985962,
+                       -1.370180011	 -9.608737946	 -4.810812950,
+                       -1.321571946	 -9.645415306	 -4.842710972
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.784139633	 -5.460346222,
+                       -1.005172014	 -9.689821243	 -5.378315926,
+                       -1.130172014	 -9.846337318	 -5.360863209
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.886137962	 -4.021149158,
+                       -1.005172014	 -7.886137962	 -4.021149158,
+                       -1.193171978	 -7.770695210	 -4.096415997,
+                       -1.193171978	 -7.770695210	 -4.096415997,
+                       -1.005172014	 -7.886137962	 -4.021149158,
+                       -1.005172014	 -7.770695210	 -4.096415997
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.254604816	 -3.793317080,
+                       -1.193171978	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.254604816	 -3.793317080,
+                       -1.005172014	 -7.254604816	 -3.793317080,
+                       -1.193171978	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.295406818	 -3.924951077
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.875896931	 -6.780008793,
+                       -1.005172014	 -4.880393982	 -6.844557762,
+                       -1.370172024	 -4.875896931	 -6.780008793,
+                       -1.370172024	 -4.875896931	 -6.780008793,
+                       -1.005172014	 -4.880393982	 -6.844557762,
+                       -1.370172024	 -4.880393982	 -6.844557762
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.512188911	 -4.644033909,
+                       -1.005172014	 -7.589332104	 -4.584333897,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.005172014	 -7.589332104	 -4.584333897,
+                       -1.370172024	 -7.589332104	 -4.584333897
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.505172014	 -7.688096046	 -3.927299023,
+                       -1.505172014	 -7.688096046	 -3.927299023,
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.505172014	 -7.591273785	 -3.934046984
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.505172014	 -7.591273785	 -3.934046984,
+                       -1.505172014	 -7.591273785	 -3.934046984,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.505172014	 -7.504049778	 -3.891478062
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.327051997	 -8.871080399	 -5.494554996,
+                       -1.338171959	 -8.902394295	 -5.521789074
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.780210018	 -4.571033001,
+                       -1.005172014	 -7.864887238	 -4.619456768,
+                       -1.370172024	 -7.780210018	 -4.571033001,
+                       -1.370172024	 -7.780210018	 -4.571033001,
+                       -1.005172014	 -7.864887238	 -4.619456768,
+                       -1.370172024	 -7.864887238	 -4.619456768
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.443048000	 -3.714179039,
+                       -1.505172014	 -7.443048000	 -3.714179039,
+                       -1.193171978	 -7.449796200	 -3.811001062,
+                       -1.193171978	 -7.449796200	 -3.811001062,
+                       -1.505172014	 -7.443048000	 -3.714179039,
+                       -1.505172014	 -7.449796200	 -3.811001062
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -9.330719948	 -5.231661797,
+                       -1.255172014	 -9.658840179	 -4.854386806,
+                       -1.188771963	 -9.317295074	 -5.219985962,
+                       -1.188771963	 -9.317295074	 -5.219985962,
+                       -1.255172014	 -9.658840179	 -4.854386806,
+                       -1.188771963	 -9.645415306	 -4.842710972
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.255172014	 -9.658840179	 -4.854386806,
+                       -1.321571946	 -9.645415306	 -4.842710972
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -8.848156929	 -5.474617958,
+                       -1.327051997	 -8.871080399	 -5.494554996,
+                       -1.370172024	 -7.864887238	 -4.619456768
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.864887238	 -4.619456768,
+                       -1.213672996	 -8.848156929	 -5.474617958,
+                       -1.370172024	 -7.864887238	 -4.619456768
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.172173023	 -8.902394295	 -5.521789074,
+                       -1.005172014	 -7.864887238	 -4.619456768
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -8.933708191	 -5.549023151,
+                       -1.183292031	 -9.261829376	 -5.171747208,
+                       -1.172173023	 -8.902394295	 -5.521789074
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -9.284752846	 -5.191683769,
+                       -1.188771963	 -9.317295074	 -5.219985962,
+                       -1.183292031	 -9.261829376	 -5.171747208
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.387971997	 -9.230514526	 -5.144514084,
+                       -1.387971997	 -9.558636665	 -4.767239094,
+                       -1.370180011	 -9.280617714	 -5.188087940
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.338171959	 -8.902394295	 -5.521789074,
+                       -1.327051997	 -9.199201584	 -5.117280006,
+                       -1.338171959	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.338171959	 -9.230514526	 -5.144514084,
+                       -1.370180011	 -9.180413246	 -5.100938797,
+                       -1.387971997	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -8.871080399	 -5.494554996,
+                       -1.296671987	 -9.176278114	 -5.097342968,
+                       -1.327051997	 -9.199201584	 -5.117280006
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -8.848156929	 -5.474617958,
+                       -1.296671987	 -9.176278114	 -5.097342968,
+                       -1.327051997	 -8.871080399	 -5.494554996
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.784139633	 -5.460346222,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.130172014	 -9.045867920	 -6.309216022,
+                       -1.130172014	 -9.045867920	 -6.309216022,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.505172014	 -9.045867920	 -6.309216022
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.321571946	 -9.645415306	 -4.842710972,
+                       -1.370180011	 -9.608737946	 -4.810812950,
+                       -1.505172014	 -9.747274399	 -4.931299210
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370180011	 -9.280617714	 -5.188087940,
+                       -1.387971997	 -9.558636665	 -4.767239094,
+                       -1.370180011	 -9.608737946	 -4.810812950
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.822668076	 -5.021193981,
+                       -1.505172014	 -9.822668076	 -5.021193981,
+                       -1.130172014	 -9.866592407	 -5.129986763,
+                       -1.130172014	 -9.866592407	 -5.129986763,
+                       -1.505172014	 -9.822668076	 -5.021193981,
+                       -1.505172014	 -9.866592407	 -5.129986763
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.866592407	 -5.129986763,
+                       -1.505172014	 -9.866592407	 -5.129986763,
+                       -1.130172014	 -9.874748230	 -5.247028828,
+                       -1.130172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -9.866592407	 -5.129986763,
+                       -1.505172014	 -9.874748230	 -5.247028828
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.846337318	 -5.360863209,
+                       -1.005172014	 -9.689821243	 -5.378315926,
+                       -1.005172014	 -9.731286049	 -5.311994076
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.839726925	 -6.726357937,
+                       -1.005172014	 -4.875896931	 -6.780008793,
+                       -1.370172024	 -4.839726925	 -6.726357937,
+                       -1.370172024	 -4.839726925	 -6.726357937,
+                       -1.005172014	 -4.875896931	 -6.780008793,
+                       -1.370172024	 -4.875896931	 -6.780008793
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.880393982	 -6.844557762,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.370172024	 -4.880393982	 -6.844557762,
+                       -1.370172024	 -4.880393982	 -6.844557762,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.370172024	 -4.852015972	 -6.902707100
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.798365116	 -6.938877106,
+                       -1.370172024	 -4.798365116	 -6.938877106,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.370172024	 -4.798365116	 -6.938877106,
+                       -1.370172024	 -4.852015972	 -6.902707100
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -7.864887238	 -4.619456768,
+                       -1.327051997	 -8.871080399	 -5.494554996,
+                       -1.505172014	 -8.996713638	 -5.603818893
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.188771963	 -9.645415306	 -4.842710972,
+                       -1.255172014	 -9.658840179	 -4.854386806
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.188771963	 -9.645415306	 -4.842710972,
+                       -1.140164018	 -9.608737946	 -4.810812950,
+                       -1.188771963	 -9.317295074	 -5.219985962,
+                       -1.188771963	 -9.317295074	 -5.219985962,
+                       -1.140164018	 -9.608737946	 -4.810812950,
+                       -1.140164018	 -9.280617714	 -5.188087940
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.255172014	 -9.658840179	 -4.854386806,
+                       -1.505172014	 -9.747274399	 -4.931299210
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -7.864887238	 -4.619456768,
+                       -1.255172014	 -8.839767456	 -5.467320919,
+                       -1.296671987	 -8.848156929	 -5.474617958
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -7.864887238	 -4.619456768,
+                       -1.213672996	 -8.848156929	 -5.474617958,
+                       -1.255172014	 -8.839767456	 -5.467320919
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.864887238	 -4.619456768,
+                       -1.183292031	 -8.871080399	 -5.494554996,
+                       -1.213672996	 -8.848156929	 -5.474617958
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.172173023	 -8.902394295	 -5.521789074,
+                       -1.183292031	 -8.871080399	 -5.494554996,
+                       -1.005172014	 -7.864887238	 -4.619456768
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.172173023	 -8.902394295	 -5.521789074,
+                       -1.183292031	 -9.261829376	 -5.171747208,
+                       -1.172173023	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -9.261829376	 -5.171747208,
+                       -1.188771963	 -9.317295074	 -5.219985962,
+                       -1.140164018	 -9.280617714	 -5.188087940
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.387971997	 -9.230514526	 -5.144514084,
+                       -1.370180011	 -9.508534431	 -4.723663807,
+                       -1.387971997	 -9.558636665	 -4.767239094
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -9.199201584	 -5.117280006,
+                       -1.370180011	 -9.180413246	 -5.100938797,
+                       -1.338171959	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370180011	 -9.180413246	 -5.100938797,
+                       -1.370180011	 -9.508534431	 -4.723663807,
+                       -1.387971997	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -9.176278114	 -5.097342968,
+                       -1.321571946	 -9.143735886	 -5.069039822,
+                       -1.327051997	 -9.199201584	 -5.117280006
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -8.848156929	 -5.474617958,
+                       -1.255172014	 -9.167887688	 -5.090044975,
+                       -1.296671987	 -9.176278114	 -5.097342968
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.784139633	 -5.460346222,
+                       -1.130172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.130172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -9.846337318	 -5.360863209
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.846337318	 -5.360863209,
+                       -1.130172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.130172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -9.874748230	 -5.247028828
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.370180011	 -9.608737946	 -4.810812950,
+                       -1.387971997	 -9.558636665	 -4.767239094
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.768572807	 -3.873044968,
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.505172014	 -7.768572807	 -3.873044968,
+                       -1.505172014	 -7.768572807	 -3.873044968,
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.505172014	 -7.688096046	 -3.927299023
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.866592407	 -5.129986763,
+                       -1.005172014	 -9.744789124	 -5.158076763,
+                       -1.130172014	 -9.822668076	 -5.021193981
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.874748230	 -5.247028828,
+                       -1.005172014	 -9.750226974	 -5.236104012,
+                       -1.130172014	 -9.866592407	 -5.129986763
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.846337318	 -5.360863209,
+                       -1.005172014	 -9.731286049	 -5.311994076,
+                       -1.130172014	 -9.874748230	 -5.247028828
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.966596127	 -3.909261942,
+                       -1.005172014	 -7.966596127	 -3.909261942,
+                       -1.193171978	 -7.886137962	 -4.021149158,
+                       -1.193171978	 -7.886137962	 -4.021149158,
+                       -1.005172014	 -7.966596127	 -3.909261942,
+                       -1.005172014	 -7.886137962	 -4.021149158
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.505172014	 -7.485617161	 -3.626955032,
+                       -1.193171978	 -7.443048000	 -3.714179039,
+                       -1.193171978	 -7.443048000	 -3.714179039,
+                       -1.505172014	 -7.485617161	 -3.626955032,
+                       -1.505172014	 -7.443048000	 -3.714179039
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.264111042	 -3.655833006,
+                       -1.193171978	 -7.254604816	 -3.793317080,
+                       -1.005172014	 -7.264111042	 -3.655833006,
+                       -1.005172014	 -7.264111042	 -3.655833006,
+                       -1.193171978	 -7.254604816	 -3.793317080,
+                       -1.005172014	 -7.254604816	 -3.793317080
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -6.153389931	 -6.206388950
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.733816147	 -6.943374157,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.005172014	 -4.798365116	 -6.938877106,
+                       -1.005172014	 -4.798365116	 -6.938877106,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.370172024	 -4.798365116	 -6.938877106
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -7.864887238	 -4.619456768
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.140164018	 -9.608737946	 -4.810812950,
+                       -1.188771963	 -9.645415306	 -4.842710972,
+                       -1.130172014	 -9.747274399	 -4.931299210
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.140164018	 -9.280617714	 -5.188087940,
+                       -1.140164018	 -9.608737946	 -4.810812950,
+                       -1.130172014	 -9.592472076	 -4.796666145
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.130172014	 -9.822668076	 -5.021193981,
+                       -1.130172014	 -9.822668076	 -5.021193981,
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.505172014	 -9.822668076	 -5.021193981
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.822668076	 -5.021193981,
+                       -1.005172014	 -9.744789124	 -5.158076763,
+                       -1.005172014	 -9.715506554	 -5.085547924
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -8.839767456	 -5.467320919,
+                       -1.255172014	 -9.167887688	 -5.090044975,
+                       -1.296671987	 -8.848156929	 -5.474617958
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -8.848156929	 -5.474617958,
+                       -1.213672996	 -9.176278114	 -5.097342968,
+                       -1.255172014	 -8.839767456	 -5.467320919
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -8.871080399	 -5.494554996,
+                       -1.183292031	 -9.199201584	 -5.117280006,
+                       -1.213672996	 -8.848156929	 -5.474617958
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.172173023	 -8.902394295	 -5.521789074,
+                       -1.172173023	 -9.230514526	 -5.144514084,
+                       -1.183292031	 -8.871080399	 -5.494554996
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -9.261829376	 -5.171747208,
+                       -1.140164018	 -9.280617714	 -5.188087940,
+                       -1.172173023	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.387971997	 -9.558636665	 -4.767239094,
+                       -1.370180011	 -9.508534431	 -4.723663807,
+                       -1.505172014	 -7.577939987	 -3.044604063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.327051997	 -9.199201584	 -5.117280006,
+                       -1.321571946	 -9.143735886	 -5.069039822,
+                       -1.370180011	 -9.180413246	 -5.100938797
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.296671987	 -9.176278114	 -5.097342968,
+                       -1.255172014	 -9.167887688	 -5.090044975,
+                       -1.321571946	 -9.143735886	 -5.069039822
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.387971997	 -9.558636665	 -4.767239094,
+                       -1.505172014	 -7.577939987	 -3.044604063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.866592407	 -5.129986763,
+                       -1.005172014	 -9.750226974	 -5.236104012,
+                       -1.005172014	 -9.744789124	 -5.158076763
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.874748230	 -5.247028828,
+                       -1.005172014	 -9.731286049	 -5.311994076,
+                       -1.005172014	 -9.750226974	 -5.236104012
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.781578064	 -6.697978973,
+                       -1.005172014	 -4.839726925	 -6.726357937,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.005172014	 -4.839726925	 -6.726357937,
+                       -1.370172024	 -4.839726925	 -6.726357937
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.634998798	 -6.796795845,
+                       -1.370172024	 -4.634998798	 -6.796795845,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.370172024	 -4.634998798	 -6.796795845,
+                       -1.370172024	 -4.639498234	 -6.861343861
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.733816147	 -6.943374157,
+                       -1.005172014	 -4.675666809	 -6.914996147,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.005172014	 -4.675666809	 -6.914996147,
+                       -1.370172024	 -4.675666809	 -6.914996147
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.675666809	 -6.914996147,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.370172024	 -4.675666809	 -6.914996147,
+                       -1.370172024	 -4.675666809	 -6.914996147,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.370172024	 -4.639498234	 -6.861343861
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.634998798	 -6.796795845,
+                       -1.005172014	 -4.663377762	 -6.738646984,
+                       -1.370172024	 -4.634998798	 -6.796795845,
+                       -1.370172024	 -4.634998798	 -6.796795845,
+                       -1.005172014	 -4.663377762	 -6.738646984,
+                       -1.370172024	 -4.663377762	 -6.738646984
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -8.996713638	 -5.603818893
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.592472076	 -4.796666145,
+                       -1.122372985	 -9.230514526	 -5.144514084,
+                       -1.140164018	 -9.280617714	 -5.188087940
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.130172014	 -9.592472076	 -4.796666145,
+                       -1.140164018	 -9.608737946	 -4.810812950
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.822668076	 -5.021193981,
+                       -1.005172014	 -9.715506554	 -5.085547924,
+                       -1.130172014	 -9.747274399	 -4.931299210
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -8.839767456	 -5.467320919,
+                       -1.213672996	 -9.176278114	 -5.097342968,
+                       -1.255172014	 -9.167887688	 -5.090044975
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -8.848156929	 -5.474617958,
+                       -1.183292031	 -9.199201584	 -5.117280006,
+                       -1.213672996	 -9.176278114	 -5.097342968
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -8.871080399	 -5.494554996,
+                       -1.172173023	 -9.230514526	 -5.144514084,
+                       -1.183292031	 -9.199201584	 -5.117280006
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.172173023	 -9.230514526	 -5.144514084,
+                       -1.140164018	 -9.280617714	 -5.188087940,
+                       -1.122372985	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.370180011	 -9.508534431	 -4.723663807,
+                       -1.321571946	 -9.471857071	 -4.691764832
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.321571946	 -9.471857071	 -4.691764832,
+                       -1.370180011	 -9.508534431	 -4.723663807,
+                       -1.321571946	 -9.143735886	 -5.069039822,
+                       -1.321571946	 -9.143735886	 -5.069039822,
+                       -1.370180011	 -9.508534431	 -4.723663807,
+                       -1.370180011	 -9.180413246	 -5.100938797
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -9.167887688	 -5.090044975,
+                       -1.255172014	 -9.130311012	 -5.057363987,
+                       -1.321571946	 -9.143735886	 -5.069039822
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.193171978	 -7.768572807	 -3.873044968,
+                       -1.505172014	 -7.811141014	 -3.785820961,
+                       -1.505172014	 -7.811141014	 -3.785820961,
+                       -1.193171978	 -7.768572807	 -3.873044968,
+                       -1.505172014	 -7.768572807	 -3.873044968
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -8.001201630	 -3.775865078,
+                       -1.005172014	 -8.001201630	 -3.775865078,
+                       -1.193171978	 -7.966596127	 -3.909261942,
+                       -1.193171978	 -7.966596127	 -3.909261942,
+                       -1.005172014	 -8.001201630	 -3.775865078,
+                       -1.005172014	 -7.966596127	 -3.909261942
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.566093922	 -3.572700977,
+                       -1.505172014	 -7.566093922	 -3.572700977,
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.505172014	 -7.566093922	 -3.572700977,
+                       -1.505172014	 -7.485617161	 -3.626955032
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.322638988	 -3.531066895,
+                       -1.193171978	 -7.264111042	 -3.655833006,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.193171978	 -7.264111042	 -3.655833006,
+                       -1.005172014	 -7.264111042	 -3.655833006
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.781578064	 -6.697978973,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.005172014	 -4.717030048	 -6.702476978,
+                       -1.005172014	 -4.717030048	 -6.702476978,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.370172024	 -4.717030048	 -6.702476978
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.717030048	 -6.702476978,
+                       -1.370172024	 -4.717030048	 -6.702476978,
+                       -1.005172014	 -4.663377762	 -6.738646984,
+                       -1.005172014	 -4.663377762	 -6.738646984,
+                       -1.370172024	 -4.717030048	 -6.702476978,
+                       -1.370172024	 -4.663377762	 -6.738646984
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -6.153389931	 -6.206388950
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.123234034	 -9.553982735	 -4.772387981,
+                       -1.122372985	 -9.230514526	 -5.144514084,
+                       -1.130172014	 -9.592472076	 -4.796666145
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.592472076	 -4.796666145,
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.123234034	 -9.553982735	 -4.772387981
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.005172014	 -9.715506554	 -5.085547924,
+                       -1.005172014	 -9.665244102	 -5.025618076
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -9.176278114	 -5.097342968,
+                       -1.188771963	 -9.143735886	 -5.069039822,
+                       -1.255172014	 -9.167887688	 -5.090044975
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -9.199201584	 -5.117280006,
+                       -1.140164018	 -9.180413246	 -5.100938797,
+                       -1.213672996	 -9.176278114	 -5.097342968
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.172173023	 -9.230514526	 -5.144514084,
+                       -1.122372985	 -9.230514526	 -5.144514084,
+                       -1.183292031	 -9.199201584	 -5.117280006
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -9.167887688	 -5.090044975,
+                       -1.188771963	 -9.143735886	 -5.069039822,
+                       -1.255172014	 -9.130311012	 -5.057363987
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.321571946	 -9.471857071	 -4.691764832,
+                       -1.130172014	 -7.577939987	 -3.044604063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.321571946	 -9.143735886	 -5.069039822,
+                       -1.255172014	 -9.130311012	 -5.057363987,
+                       -1.321571946	 -9.471857071	 -4.691764832,
+                       -1.321571946	 -9.471857071	 -4.691764832,
+                       -1.255172014	 -9.130311012	 -5.057363987,
+                       -1.255172014	 -9.458432198	 -4.680088997
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -8.668592453	 -5.981094837,
+                       -1.505172014	 -9.045867920	 -6.309216022,
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.505172014	 -9.045867920	 -6.309216022,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.505172014	 -8.996713638	 -5.603818893,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -9.784139633	 -5.460346222,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -7.591273785	 -3.934046984,
+                       -1.505172014	 -7.591273785	 -3.934046984,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -7.688096046	 -3.927299023,
+                       -1.505172014	 -7.504049778	 -3.891478062,
+                       -1.505172014	 -7.449796200	 -3.811001062,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -7.449796200	 -3.811001062,
+                       -1.505172014	 -7.443048000	 -3.714179039,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -7.443048000	 -3.714179039,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.505172014	 -7.443048000	 -3.714179039,
+                       -1.505172014	 -7.485617161	 -3.626955032,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.505172014	 -7.485617161	 -3.626955032,
+                       -1.505172014	 -7.566093922	 -3.572700977,
+                       -1.505172014	 -7.804395199	 -3.688998938,
+                       -1.505172014	 -7.811141014	 -3.785820961,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -7.811141014	 -3.785820961,
+                       -1.505172014	 -7.768572807	 -3.873044968,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -7.768572807	 -3.873044968,
+                       -1.505172014	 -7.688096046	 -3.927299023,
+                       -1.505172014	 -7.566093922	 -3.572700977,
+                       -1.505172014	 -7.662916183	 -3.565953016,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.505172014	 -7.662916183	 -3.565953016,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -9.747274399	 -4.931299210,
+                       -1.505172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -9.822668076	 -5.021193981,
+                       -1.505172014	 -9.822668076	 -5.021193981,
+                       -1.505172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -9.866592407	 -5.129986763,
+                       -1.505172014	 -7.804395199	 -3.688998938,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -9.846337318	 -5.360863209,
+                       -1.505172014	 -9.874748230	 -5.247028828,
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -7.591273785	 -3.934046984,
+                       -1.505172014	 -7.504049778	 -3.891478062
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1,
+                            6,  7,   8, -1,
+                            9,  10,   11, -1,
+                            12,  13,   14, -1,
+                            15,  16,   17, -1,
+                            18,  19,   20, -1,
+                            21,  22,   23, -1,
+                            24,  25,   26, -1,
+                            27,  28,   29, -1,
+                            30,  31,   32, -1,
+                            33,  34,   35, -1,
+                            36,  37,   38, -1,
+                            39,  40,   41, -1,
+                            42,  43,   44, -1,
+                            45,  46,   47, -1,
+                            48,  49,   50, -1,
+                            51,  52,   53, -1,
+                            54,  55,   56, -1,
+                            57,  58,   59, -1,
+                            60,  61,   62, -1,
+                            63,  64,   65, -1,
+                            66,  67,   68, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.662916183	 -3.565953016,
+                       -1.505172014	 -7.662916183	 -3.565953016,
+                       -1.193171978	 -7.566093922	 -3.572700977,
+                       -1.193171978	 -7.566093922	 -3.572700977,
+                       -1.505172014	 -7.662916183	 -3.565953016,
+                       -1.505172014	 -7.566093922	 -3.572700977
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -7.344139099	 -3.503909111
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -4.852015972	 -6.902707100,
+                       -1.370172024	 -4.798365116	 -6.938877106,
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -4.798365116	 -6.938877106,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.733816147	 -6.943374157,
+                       -1.370172024	 -4.675666809	 -6.914996147,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.675666809	 -6.914996147,
+                       -1.370172024	 -4.639498234	 -6.861343861,
+                       -1.370172024	 -4.634998798	 -6.796795845,
+                       -1.370172024	 -4.663377762	 -6.738646984,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.663377762	 -6.738646984,
+                       -1.370172024	 -4.717030048	 -6.702476978,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.717030048	 -6.702476978,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -4.717030048	 -6.702476978,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -4.781578064	 -6.697978973,
+                       -1.370172024	 -4.839726925	 -6.726357937,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -4.839726925	 -6.726357937,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -4.839726925	 -6.726357937,
+                       -1.370172024	 -4.875896931	 -6.780008793,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -4.875896931	 -6.780008793,
+                       -1.370172024	 -4.880393982	 -6.844557762,
+                       -1.370172024	 -7.589332104	 -4.584333897,
+                       -1.370172024	 -7.683447838	 -4.558699131,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -7.683447838	 -4.558699131,
+                       -1.370172024	 -7.780210018	 -4.571033001,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -7.780210018	 -4.571033001,
+                       -1.370172024	 -7.864887238	 -4.619456768,
+                       -1.370172024	 -4.880393982	 -6.844557762,
+                       -1.370172024	 -4.852015972	 -6.902707100,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -6.153389931	 -6.206388950,
+                       -1.370172024	 -4.852015972	 -6.902707100,
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -4.639498234	 -6.861343861,
+                       -1.370172024	 -4.634998798	 -6.796795845,
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -7.512188911	 -4.644033909,
+                       -1.370172024	 -7.589332104	 -4.584333897,
+                       -1.370172024	 -6.921699047	 -3.799154997
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1,
+                            6,  7,   8, -1,
+                            9,  10,   11, -1,
+                            12,  13,   14, -1,
+                            15,  16,   17, -1,
+                            18,  19,   20, -1,
+                            21,  22,   23, -1,
+                            24,  25,   26, -1,
+                            27,  28,   29, -1,
+                            30,  31,   32, -1,
+                            33,  34,   35, -1,
+                            36,  37,   38, -1,
+                            39,  40,   41, -1,
+                            42,  43,   44, -1,
+                            45,  46,   47, -1,
+                            48,  49,   50, -1,
+                            51,  52,   53, -1,
+                            54,  55,   56, -1,
+                            57,  58,   59, -1,
+                            60,  61,   62, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.505172014	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.505172014	 -7.577939987	 -3.044604063,
+                       -1.130172014	 -7.577939987	 -3.044604063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.123234034	 -9.553982735	 -4.772387981,
+                       -1.122470021	 -9.549747467	 -4.769714832,
+                       -1.122372985	 -9.230514526	 -5.144514084
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.123234034	 -9.553982735	 -4.772387981,
+                       -1.130172014	 -9.747274399	 -4.931299210,
+                       -1.005172014	 -9.665244102	 -5.025618076
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.213672996	 -9.176278114	 -5.097342968,
+                       -1.140164018	 -9.180413246	 -5.100938797,
+                       -1.188771963	 -9.143735886	 -5.069039822
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.183292031	 -9.199201584	 -5.117280006,
+                       -1.122372985	 -9.230514526	 -5.144514084,
+                       -1.140164018	 -9.180413246	 -5.100938797
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.321571946	 -9.471857071	 -4.691764832,
+                       -1.255172014	 -9.458432198	 -4.680088997
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.255172014	 -9.458432198	 -4.680088997,
+                       -1.255172014	 -9.130311012	 -5.057363987,
+                       -1.188771963	 -9.471857071	 -4.691764832,
+                       -1.188771963	 -9.471857071	 -4.691764832,
+                       -1.255172014	 -9.130311012	 -5.057363987,
+                       -1.188771963	 -9.143735886	 -5.069039822
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.804395199	 -3.688998938,
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.505172014	 -7.804395199	 -3.688998938,
+                       -1.505172014	 -7.804395199	 -3.688998938,
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.505172014	 -7.811141014	 -3.785820961
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.985282898	 -3.638976097,
+                       -1.005172014	 -7.985282898	 -3.638976097,
+                       -1.193171978	 -8.001201630	 -3.775865078,
+                       -1.193171978	 -8.001201630	 -3.775865078,
+                       -1.005172014	 -7.985282898	 -3.638976097,
+                       -1.005172014	 -8.001201630	 -3.775865078
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.193171978	 -7.422286034	 -3.435868979
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.130172014	 -4.296731949	 -6.817357063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.130172014	 -4.296731949	 -6.817357063,
+                       -1.130172014	 -4.296731949	 -6.817357063,
+                       -1.370172024	 -4.711734772	 -7.178289890,
+                       -1.370172024	 -4.296731949	 -6.817357063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -6.921699047	 -3.799154997,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.370172024	 -4.296731949	 -6.817357063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.122372985	 -9.230514526	 -5.144514084,
+                       -1.122470021	 -9.549747467	 -4.769714832,
+                       -1.130172014	 -9.524800301	 -4.737811089
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.123234034	 -9.553982735	 -4.772387981,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.122470021	 -9.549747467	 -4.769714832
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.122372985	 -9.230514526	 -5.144514084,
+                       -1.130172014	 -9.524800301	 -4.737811089,
+                       -1.140164018	 -9.180413246	 -5.100938797
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.140164018	 -9.180413246	 -5.100938797,
+                       -1.140164018	 -9.508534431	 -4.723663807,
+                       -1.188771963	 -9.143735886	 -5.069039822,
+                       -1.188771963	 -9.143735886	 -5.069039822,
+                       -1.140164018	 -9.508534431	 -4.723663807,
+                       -1.188771963	 -9.471857071	 -4.691764832
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.255172014	 -9.458432198	 -4.680088997,
+                       -1.188771963	 -9.471857071	 -4.691764832
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.804395199	 -3.688998938,
+                       -1.505172014	 -7.804395199	 -3.688998938,
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -7.804395199	 -3.688998938,
+                       -1.505172014	 -7.750141144	 -3.608521938
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.193171978	 -7.662916183	 -3.565953016,
+                       -1.193171978	 -7.662916183	 -3.565953016,
+                       -1.505172014	 -7.750141144	 -3.608521938,
+                       -1.505172014	 -7.662916183	 -3.565953016
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.422286034	 -3.435868979,
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.005172014	 -7.422286034	 -3.435868979
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.130172014	 -4.296731949	 -6.817357063,
+                       -1.005172014	 -7.344139099	 -3.503909111
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.370172024	 -4.296731949	 -6.817357063,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.130172014	 -4.296731949	 -6.817357063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.122470021	 -9.549747467	 -4.769714832,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.130172014	 -9.524800301	 -4.737811089
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.140164018	 -9.180413246	 -5.100938797,
+                       -1.130172014	 -9.524800301	 -4.737811089,
+                       -1.140164018	 -9.508534431	 -4.723663807
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.140164018	 -9.508534431	 -4.723663807,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.188771963	 -9.471857071	 -4.691764832
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.920989037	 -3.517081022,
+                       -1.005172014	 -7.920989037	 -3.517081022,
+                       -1.193171978	 -7.985282898	 -3.638976097,
+                       -1.193171978	 -7.985282898	 -3.638976097,
+                       -1.005172014	 -7.920989037	 -3.517081022,
+                       -1.005172014	 -7.985282898	 -3.638976097
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.683447838	 -4.558699131,
+                       -1.005172014	 -7.589332104	 -4.584333897,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.589332104	 -4.584333897,
+                       -1.005172014	 -7.512188911	 -4.644033909,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.512188911	 -4.644033909,
+                       -1.005172014	 -7.254604816	 -3.793317080,
+                       -1.005172014	 -7.254604816	 -3.793317080,
+                       -1.005172014	 -7.512188911	 -4.644033909,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -7.254604816	 -3.793317080,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -7.264111042	 -3.655833006,
+                       -1.005172014	 -7.264111042	 -3.655833006,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.005172014	 -7.264111042	 -3.655833006,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.005172014	 -4.880393982	 -6.844557762,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -4.880393982	 -6.844557762,
+                       -1.005172014	 -4.875896931	 -6.780008793,
+                       -1.005172014	 -4.675666809	 -6.914996147,
+                       -1.005172014	 -4.733816147	 -6.943374157,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -4.733816147	 -6.943374157,
+                       -1.005172014	 -4.798365116	 -6.938877106,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -4.798365116	 -6.938877106,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -6.153389931	 -6.206388950,
+                       -1.005172014	 -4.798365116	 -6.938877106,
+                       -1.005172014	 -4.852015972	 -6.902707100,
+                       -1.005172014	 -7.683447838	 -4.558699131,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.780210018	 -4.571033001,
+                       -1.005172014	 -7.780210018	 -4.571033001,
+                       -1.005172014	 -7.295406818	 -3.924951077,
+                       -1.005172014	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -7.780210018	 -4.571033001,
+                       -1.005172014	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -7.864887238	 -4.619456768,
+                       -1.005172014	 -7.864887238	 -4.619456768,
+                       -1.005172014	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -8.001201630	 -3.775865078,
+                       -1.005172014	 -7.985282898	 -3.638976097,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -7.985282898	 -3.638976097,
+                       -1.005172014	 -7.920989037	 -3.517081022,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -7.920989037	 -3.517081022,
+                       -1.005172014	 -7.873186111	 -3.467042923,
+                       -1.005172014	 -7.635859013	 -4.124897003,
+                       -1.005172014	 -7.770695210	 -4.096415997,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -7.770695210	 -4.096415997,
+                       -1.005172014	 -7.886137962	 -4.021149158,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -7.886137962	 -4.021149158,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -7.886137962	 -4.021149158,
+                       -1.005172014	 -7.966596127	 -3.909261942,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -7.966596127	 -3.909261942,
+                       -1.005172014	 -8.001201630	 -3.775865078,
+                       -1.005172014	 -4.875896931	 -6.780008793,
+                       -1.005172014	 -4.839726925	 -6.726357937,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -4.839726925	 -6.726357937,
+                       -1.005172014	 -4.781578064	 -6.697978973,
+                       -1.005172014	 -7.322638988	 -3.531066895,
+                       -1.005172014	 -4.781578064	 -6.697978973,
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.005172014	 -4.781578064	 -6.697978973,
+                       -1.005172014	 -4.717030048	 -6.702476978,
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.005172014	 -4.717030048	 -6.702476978,
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.005172014	 -4.717030048	 -6.702476978,
+                       -1.005172014	 -4.663377762	 -6.738646984,
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.005172014	 -4.663377762	 -6.738646984,
+                       -1.005172014	 -4.634998798	 -6.796795845,
+                       -1.005172014	 -4.675666809	 -6.914996147,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.005172014	 -4.711734772	 -7.178289890,
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.005172014	 -4.639498234	 -6.861343861,
+                       -1.005172014	 -4.391050816	 -6.899386883,
+                       -1.005172014	 -4.634998798	 -6.796795845,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -8.668592453	 -5.981094837,
+                       -1.005172014	 -8.668592453	 -5.981094837,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -9.689821243	 -5.378315926,
+                       -1.005172014	 -8.668592453	 -5.981094837,
+                       -1.005172014	 -9.689821243	 -5.378315926,
+                       -1.005172014	 -8.951548576	 -6.227184772,
+                       -1.005172014	 -9.689821243	 -5.378315926,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -9.731286049	 -5.311994076,
+                       -1.005172014	 -9.731286049	 -5.311994076,
+                       -1.005172014	 -9.665244102	 -5.025618076,
+                       -1.005172014	 -9.715506554	 -5.085547924,
+                       -1.005172014	 -9.731286049	 -5.311994076,
+                       -1.005172014	 -9.715506554	 -5.085547924,
+                       -1.005172014	 -9.750226974	 -5.236104012,
+                       -1.005172014	 -9.750226974	 -5.236104012,
+                       -1.005172014	 -9.715506554	 -5.085547924,
+                       -1.005172014	 -9.744789124	 -5.158076763,
+                       -1.005172014	 -7.381003857	 -4.032957077,
+                       -1.005172014	 -7.499837875	 -4.102746964,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -8.996713638	 -5.603818893,
+                       -1.005172014	 -7.499837875	 -4.102746964,
+                       -1.005172014	 -7.635859013	 -4.124897003
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1,
+                            6,  7,   8, -1,
+                            9,  10,   11, -1,
+                            12,  13,   14, -1,
+                            15,  16,   17, -1,
+                            18,  19,   20, -1,
+                            21,  22,   23, -1,
+                            24,  25,   26, -1,
+                            27,  28,   29, -1,
+                            30,  31,   32, -1,
+                            33,  34,   35, -1,
+                            36,  37,   38, -1,
+                            39,  40,   41, -1,
+                            42,  43,   44, -1,
+                            45,  46,   47, -1,
+                            48,  49,   50, -1,
+                            51,  52,   53, -1,
+                            54,  55,   56, -1,
+                            57,  58,   59, -1,
+                            60,  61,   62, -1,
+                            63,  64,   65, -1,
+                            66,  67,   68, -1,
+                            69,  70,   71, -1,
+                            72,  73,   74, -1,
+                            75,  76,   77, -1,
+                            78,  79,   80, -1,
+                            81,  82,   83, -1,
+                            84,  85,   86, -1,
+                            87,  88,   89, -1,
+                            90,  91,   92, -1,
+                            93,  94,   95, -1,
+                            96,  97,   98, -1,
+                            99,  100,   101, -1,
+                            102,  103,   104, -1,
+                            105,  106,   107, -1,
+                            108,  109,   110, -1,
+                            111,  112,   113, -1,
+                            114,  115,   116, -1,
+                            117,  118,   119, -1,
+                            120,  121,   122, -1,
+                            123,  124,   125, -1,
+                            126,  127,   128, -1,
+                            129,  130,   131, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.549593925	 -3.383095980,
+                       -1.193171978	 -7.422286034	 -3.435868979,
+                       -1.005172014	 -7.549593925	 -3.383095980,
+                       -1.005172014	 -7.549593925	 -3.383095980,
+                       -1.193171978	 -7.422286034	 -3.435868979,
+                       -1.005172014	 -7.422286034	 -3.435868979
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.130172014	 -4.296731949	 -6.817357063,
+                       -1.130172014	 -7.577939987	 -3.044604063
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.873186111	 -3.467042923,
+                       -1.130172014	 -9.524800301	 -4.737811089,
+                       -1.005172014	 -9.665244102	 -5.025618076
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.130172014	 -9.524800301	 -4.737811089,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.140164018	 -9.508534431	 -4.723663807
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.422286034	 -3.435868979,
+                       -1.193171978	 -7.549593925	 -3.383095980,
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.193171978	 -7.549593925	 -3.383095980,
+                       -1.193171978	 -7.687367916	 -3.379874945,
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.193171978	 -7.687367916	 -3.379874945,
+                       -1.193171978	 -7.804395199	 -3.688998938,
+                       -1.193171978	 -7.804395199	 -3.688998938,
+                       -1.193171978	 -7.687367916	 -3.379874945,
+                       -1.193171978	 -7.817001820	 -3.426641941,
+                       -1.193171978	 -7.804395199	 -3.688998938,
+                       -1.193171978	 -7.817001820	 -3.426641941,
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.193171978	 -7.817001820	 -3.426641941,
+                       -1.193171978	 -7.920989037	 -3.517081022,
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.193171978	 -7.920989037	 -3.517081022,
+                       -1.193171978	 -7.985282898	 -3.638976097,
+                       -1.193171978	 -7.811141014	 -3.785820961,
+                       -1.193171978	 -7.985282898	 -3.638976097,
+                       -1.193171978	 -7.768572807	 -3.873044968,
+                       -1.193171978	 -7.768572807	 -3.873044968,
+                       -1.193171978	 -7.985282898	 -3.638976097,
+                       -1.193171978	 -8.001201630	 -3.775865078,
+                       -1.193171978	 -7.768572807	 -3.873044968,
+                       -1.193171978	 -8.001201630	 -3.775865078,
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.193171978	 -8.001201630	 -3.775865078,
+                       -1.193171978	 -7.966596127	 -3.909261942,
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.193171978	 -7.966596127	 -3.909261942,
+                       -1.193171978	 -7.886137962	 -4.021149158,
+                       -1.193171978	 -7.688096046	 -3.927299023,
+                       -1.193171978	 -7.886137962	 -4.021149158,
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.193171978	 -7.886137962	 -4.021149158,
+                       -1.193171978	 -7.770695210	 -4.096415997,
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.193171978	 -7.770695210	 -4.096415997,
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.193171978	 -7.770695210	 -4.096415997,
+                       -1.193171978	 -7.635859013	 -4.124897003,
+                       -1.193171978	 -7.295406818	 -3.924951077,
+                       -1.193171978	 -7.254604816	 -3.793317080,
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.193171978	 -7.254604816	 -3.793317080,
+                       -1.193171978	 -7.264111042	 -3.655833006,
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.193171978	 -7.264111042	 -3.655833006,
+                       -1.193171978	 -7.566093922	 -3.572700977,
+                       -1.193171978	 -7.566093922	 -3.572700977,
+                       -1.193171978	 -7.264111042	 -3.655833006,
+                       -1.193171978	 -7.322638988	 -3.531066895,
+                       -1.193171978	 -7.566093922	 -3.572700977,
+                       -1.193171978	 -7.322638988	 -3.531066895,
+                       -1.193171978	 -7.662916183	 -3.565953016,
+                       -1.193171978	 -7.662916183	 -3.565953016,
+                       -1.193171978	 -7.322638988	 -3.531066895,
+                       -1.193171978	 -7.422286034	 -3.435868979,
+                       -1.193171978	 -7.662916183	 -3.565953016,
+                       -1.193171978	 -7.422286034	 -3.435868979,
+                       -1.193171978	 -7.750141144	 -3.608521938,
+                       -1.193171978	 -7.449796200	 -3.811001062,
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.193171978	 -7.443048000	 -3.714179039,
+                       -1.193171978	 -7.443048000	 -3.714179039,
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.193171978	 -7.295406818	 -3.924951077,
+                       -1.193171978	 -7.443048000	 -3.714179039,
+                       -1.193171978	 -7.295406818	 -3.924951077,
+                       -1.193171978	 -7.485617161	 -3.626955032,
+                       -1.193171978	 -7.591273785	 -3.934046984,
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.193171978	 -7.499837875	 -4.102746964,
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.193171978	 -7.504049778	 -3.891478062,
+                       -1.193171978	 -7.381003857	 -4.032957077,
+                       -1.193171978	 -7.449796200	 -3.811001062
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1,
+                            6,  7,   8, -1,
+                            9,  10,   11, -1,
+                            12,  13,   14, -1,
+                            15,  16,   17, -1,
+                            18,  19,   20, -1,
+                            21,  22,   23, -1,
+                            24,  25,   26, -1,
+                            27,  28,   29, -1,
+                            30,  31,   32, -1,
+                            33,  34,   35, -1,
+                            36,  37,   38, -1,
+                            39,  40,   41, -1,
+                            42,  43,   44, -1,
+                            45,  46,   47, -1,
+                            48,  49,   50, -1,
+                            51,  52,   53, -1,
+                            54,  55,   56, -1,
+                            57,  58,   59, -1,
+                            60,  61,   62, -1,
+                            63,  64,   65, -1,
+                            66,  67,   68, -1,
+                            69,  70,   71, -1,
+                            72,  73,   74, -1,
+                            75,  76,   77, -1,
+                            78,  79,   80, -1,
+                            81,  82,   83, -1,
+                            84,  85,   86, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.920989037	 -3.517081022,
+                       -1.005172014	 -7.873186111	 -3.467042923,
+                       -1.005172014	 -7.920989037	 -3.517081022
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.687367916	 -3.379874945,
+                       -1.193171978	 -7.549593925	 -3.383095980,
+                       -1.005172014	 -7.687367916	 -3.379874945,
+                       -1.005172014	 -7.687367916	 -3.379874945,
+                       -1.193171978	 -7.549593925	 -3.383095980,
+                       -1.005172014	 -7.549593925	 -3.383095980
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.005172014	 -7.590229034	 -3.220952988
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.873186111	 -3.467042923,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.130172014	 -9.524800301	 -4.737811089
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.817001820	 -3.426641941,
+                       -1.005172014	 -7.873186111	 -3.467042923,
+                       -1.193171978	 -7.920989037	 -3.517081022
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.817001820	 -3.426641941,
+                       -1.193171978	 -7.687367916	 -3.379874945,
+                       -1.005172014	 -7.817001820	 -3.426641941,
+                       -1.005172014	 -7.817001820	 -3.426641941,
+                       -1.193171978	 -7.687367916	 -3.379874945,
+                       -1.005172014	 -7.687367916	 -3.379874945
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.590229034	 -3.220952988,
+                       -1.130172014	 -7.577939987	 -3.044604063,
+                       -1.005172014	 -7.873186111	 -3.467042923
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.193171978	 -7.817001820	 -3.426641941,
+                       -1.005172014	 -7.817001820	 -3.426641941,
+                       -1.005172014	 -7.873186111	 -3.467042923
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -1.005172014	 -7.687367916	 -3.379874945,
+                       -1.005172014	 -7.549593925	 -3.383095980,
+                       -1.005172014	 -7.590229034	 -3.220952988,
+                       -1.005172014	 -7.590229034	 -3.220952988,
+                       -1.005172014	 -7.549593925	 -3.383095980,
+                       -1.005172014	 -7.422286034	 -3.435868979,
+                       -1.005172014	 -7.590229034	 -3.220952988,
+                       -1.005172014	 -7.422286034	 -3.435868979,
+                       -1.005172014	 -7.344139099	 -3.503909111,
+                       -1.005172014	 -7.687367916	 -3.379874945,
+                       -1.005172014	 -7.590229034	 -3.220952988,
+                       -1.005172014	 -7.817001820	 -3.426641941,
+                       -1.005172014	 -7.817001820	 -3.426641941,
+                       -1.005172014	 -7.590229034	 -3.220952988,
+                       -1.005172014	 -7.873186111	 -3.467042923
+                      ]           # End of points
+               }              # End of coords
+      IndexedFaceSet
+                {
+                coordIndex [
+
+                            0,  1,   2, -1,
+                            3,  4,   5, -1,
+                            6,  7,   8, -1,
+                            9,  10,   11, -1,
+                            12,  13,   14, -1
+                           ]   # End of coord index
+                }              # End of indexedfaceset
+
+             }                 # End of object separator
+
+          }                    # End of main separator

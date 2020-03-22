@@ -1,0 +1,137 @@
+NHCAD VRML fix 
+
+
+
+      HOME 
+      Whats NEW 
+      VRML fix 
+      VRML 2.0! 
+      SolidWorks API Tutorials 
+
+        QueryPT 
+        Excel Solver 
+        SendKeys 
+        Animation Macro
+
+        Animation PhotoWorks 
+        Notifications 
+        Macros/Examples 
+        Collaboration/Winsock 
+      DOWNLOADS 
+      PHOTORENDERING 
+      LINKS 
+      Purchase NEW HAMPSHIRE CAD
+            Mechanical Design & Custom Programming
+            8 Maple Hill Rd Lebanon,NH 03766
+            phone:603.448.3805 fax:603.448.3857
+            email: joe@nhcad.com
+
+
+
+
+
+      Fixing VRML Files Created by SolidWorks 
+      How convienient for SolidWorks to include a slick little VRML export 
+      function in their software. Well it kind of works. Though I've tried it in 
+      the past as a tool to convey information to co-workers it has typically 
+      left me un-impressed. The recent availability of e-drawings 
+      http://www.solidworks.com/edrawings/ has made VRML rather antiquated. None 
+      the less, I have been looking into VRML files lately and thought I would 
+      share my findings. This article is only intended to show you how to fix 
+      some of the shortcomings of a SolidWorks VRML file. It is not my intention 
+      to introduce you to the whole notion of 3D worlds or how to use a VRML 
+      viewer. 
+      In a nut shell, to make a VRML file from a SolidWorks model you can simply 
+      SAVE AS and specify a .wrl file type. 
+
+
+
+
+      After saving the file you will need some special software to view it with. 
+      Typically a VRML plug-in is used in conjuction with your web browser. I 
+      use Cortona but also feel that Cosmo Player is an excellent product too. 
+      If you have no idea what I am talking about I urge you to go to 
+      http://www.vrml.org to learn more about getting and setting up the 
+      software. 
+      When I open the file the first thing I see is nothing. But WAIT! There is 
+      a small spec in the center of the screen. What is that? 
+
+
+      View the actual vrml file results.wrl (101Kb) 
+      Lucky thing I have a FIT button on the bottom right hand side of my viewer.
+      Well thats a little better. Things are still looking quite pasty. Thats 
+      when I started looking into the actual code that SolidWorks generates for 
+      my .wrl file. First off, it is VMRL 1.0 which is dated now. VRML 2.0 
+      replaced it with some nifty enhancements. Then VRML 2.0 was adopted as an 
+      ISO/IEC standard and renamed to VRML97. Anyway, back to the project at 
+      hand. The actual file xxxx.wrl is simply an ASCII file. You can manually 
+      edit it and make changes to it with any text editor such as notepad.
+
+      The following is a snippet of top of my file: 
+      SolidWorks Output
+#VRML V1.0 ascii
+#date 11 October 1996 
+
+Separator { 
+   DirectionalLight { direction 0 0 -1 }
+   Separator {                 # Object Separator 
+      Material { emissiveColor 0.3 0.8 0.2 }
+      Material { emissiveColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -0.097583362	 -0.073422551	 -0.011430000,
+                       -0.096528735	 -0.048022552	 -0.011381241,
+                       -0.096528735	 -0.073422551	 -0.011381241,
+       *** and a lot of other stuff below here ***
+
+
+
+
+      How to Fix This Mess 
+        Comment out the DirectionalLight 
+        Search and Replace emissive with diffuse for the entire document 
+      Modified .wrl file
+#VRML V1.0 ascii
+#date 11 October 1996 
+
+Separator { 
+   #DirectionalLight { direction 0 0 -1 }
+   Separator {                 # Object Separator 
+      Material { diffuseColor 0.3 0.8 0.2 }
+      Material { diffuseColor 0.752941 0.752941 0.752941 }
+      Coordinate3
+                {
+                point [
+
+                       -0.097583362	 -0.073422551	 -0.011430000,
+                       -0.096528735	 -0.048022552	 -0.011381241,
+                       -0.096528735	 -0.073422551	 -0.011381241,
+       *** and a lot of other stuff below here ***
+
+      Now when you view the file and FIT it, you will get something that look 
+      much more like a 3D model should. TURN ON HEADLIGHT! Because we deleted 
+      the Directional Light you will not have ANY light in the model without the 
+      head light. Personally I like this as it gives you a sense of depth when 
+      viewing the model. If you don't have the headlight turned on then you will 
+      just have a black screen. You will not find the model no matter how hard 
+      you look. The head light is usually a toggle that is an option with your 
+      viewer program. After I open the VRML file I can RIGHT-CLICK on the 
+      browser window and toggle the headlight on and off. 
+
+      View the actual vrml file modified.wrl (101Kb) 
+
+
+
+      One final word on the quality of your VRML files. The SolidWorks 
+      PERFORMANCE settings have everything to do with the quality of your VRML 
+      files. Rounded surfaces get faceted. The size of the flats is dictated by 
+      the resolution you use in SolidWorks. Use Tools, Options, Performance to 
+      adjust the amount of detail in your VRML file. Higher settings will make 
+      bigger VRML files too. For the purposes here I used the coarsest settings 
+      I could. Using better detail settings looked much nicer when viewing the 
+      VRML file, but it was 3 times as big too. 
+
+      View the actual vrml file hires.wrl (302Kb) 
+

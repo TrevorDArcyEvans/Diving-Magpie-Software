@@ -1,0 +1,19 @@
+; --------------------------------------------------------------------
+;  VRMLWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "VRMLWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3                @1
+    VRML_OpenFile               @2
+    VRML_Register               @3
+    VRML_RegisterUpdate         @4
+    VRML_Help                   @5
+    VRML_About                  @6
+
+; ---------------------------------
+;  End of VRMLWorks.def
+; ---------------------------------
