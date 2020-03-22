@@ -1,0 +1,19 @@
+; --------------------------------------------------------------------
+;  ViewWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "ViewWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3		@1
+	VW_SaveAsView		@2
+    VW_OpenView         @3
+    VW_Help             @4
+    VW_Register         @5
+    VW_RegisterUpdate   @6
+    VW_About            @7
+; ---------------------------------
+;  End of ViewWorks.def
+; ---------------------------------

@@ -1,0 +1,23 @@
+[Options]
+Root=C:\WOMBAT,c:\wombat\pro\stkworks,c:\wombat\pro\stkworks\help,c:\wombat\pro\stickw~1\help,v:\,c:\wombat\pro\viewwo~1\help
+Compress=Off
+Contents=QGFYFC
+Copyright=Trevor D'Arcy-Evans
+Errorlog=VWORKS.ERR
+DBCS=No
+Optcdrom=Off
+Report=On
+Title=ViewWorks v1.x
+Warning=3
+[Files]
+C:\WOMBAT\PRO\VIEWWO~1\HELP\VWORKS.RTF
+[Config]
+CreateButton(`btn_contents',`&Contents',`Contents()')
+CreateButton(`btn_index',`&Search',`Search()')
+CreateButton(`btn_back',`&Back',`Back()')
+BrowseButtons()
+[Map]
+#include <VWORKS.H>
+
+[Windows]
+main="ViewWorks v1.x",,4,,

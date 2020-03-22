@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.VEWPRT]
+@="ViewPart.Document"
+
+[HKEY_CLASSES_ROOT\ViewPart.Document]
+@="SolidWorks 99 Part View Only Document"
+
+[HKEY_CLASSES_ROOT\ViewPart.Document\DefaultIcon]
+@="C:\\Program Files\\SolidPartners\\ViewWorks\\ViewIco.dll,2"

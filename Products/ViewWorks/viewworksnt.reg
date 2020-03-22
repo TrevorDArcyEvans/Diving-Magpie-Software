@@ -1,0 +1,15 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\ViewWorks]
+"CLSID"="{08388733-bad7-11d3-8be2-000000000000}"
+
+[HKEY_CLASSES_ROOT\CLSID\{08388733-bad7-11d3-8be2-000000000000}]
+@="ViewWorks"
+
+[HKEY_CLASSES_ROOT\CLSID\{08388733-bad7-11d3-8be2-000000000000}\InProcServer32]
+@="C:\\Program Files\\SolidPartners\\ViewWorks\\ViewWorksNT.dll"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\Startup\Applications\ViewWorks]
+@="{08388733-bad7-11d3-8be2-000000000000}"

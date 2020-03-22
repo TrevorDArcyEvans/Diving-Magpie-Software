@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.VEWDRW]
+@="ViewDraw.Document"
+
+[HKEY_CLASSES_ROOT\ViewDraw.Document]
+@="SolidWorks 99 Drawing View Only Document"
+
+[HKEY_CLASSES_ROOT\ViewDraw.Document\DefaultIcon]
+@="C:\\Program Files\\SolidPartners\\ViewWorks\\ViewIco.dll,1"

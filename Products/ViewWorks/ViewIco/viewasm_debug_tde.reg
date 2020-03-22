@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.VEWASM]
+@="ViewAssem.Document"
+
+[HKEY_CLASSES_ROOT\ViewAssem.Document]
+@="SolidWorks 99 Assembly View Only Document"
+
+[HKEY_CLASSES_ROOT\ViewAssem.Document\DefaultIcon]
+@="C:\\Wombat\\Pro\\ViewWorks\\DebugUNICODE\\ViewWorksNT.dll,1"
