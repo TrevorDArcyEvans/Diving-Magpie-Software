@@ -1,0 +1,22 @@
+:Base MENUWKS.HLP
+:Title MenuWorks v2.x
+1 Contents
+2 Getting Started=Getting_Started
+2 Configuration=Configuration
+2 Read=Read
+2 Write=Write
+2 Read All=Read_All
+2 Write All=Write_All
+2 Main Menu=Main_Menu
+2 Path To Program=Path_To_Program
+2 Browse=Browse
+2 Menu Text=Menu_Text
+2 Hint Text=Hint_Text
+2 Machine ID=Machine_ID
+2 Dual Boot=Dual_Boot
+2 Install Uninstall=Install_Uninstall
+2 Code=Code
+2 Registration=Registration
+2 Known Bugs or Problems=Known_Bugs_or_Problems
+2 About=About
+2 Issues=Issues

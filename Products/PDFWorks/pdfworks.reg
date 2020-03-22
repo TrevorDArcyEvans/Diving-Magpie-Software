@@ -1,0 +1,15 @@
+REGEDIT4
+
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\SolidWorks\Applications\PDFWorks]
+"CLSID"="{65d6de9d-3496-11d4-89e9-0020afcc5695}"
+
+[HKEY_CLASSES_ROOT\CLSID\{65d6de9d-3496-11d4-89e9-0020afcc5695}]
+@="PDF output for SolidWorks"
+
+[HKEY_CLASSES_ROOT\CLSID\{65d6de9d-3496-11d4-89e9-0020afcc5695}\InProcServer32]
+@="C:\\Wombat\\Pro\\PDFWorks\\Release\\PDFWorks.dll"
+
+[HKEY_CURRENT_USER\Software\SolidWorks\Startup\Applications\PDFWorks]
+@="{65d6de9d-3496-11d4-89e9-0020afcc5695}"

@@ -1,0 +1,21 @@
+; --------------------------------------------------------------------
+;  PDFWorks.def : Declares the module parameters for the DLL.
+; --------------------------------------------------------------------
+
+LIBRARY      "PDFWorks"
+DESCRIPTION  Feature Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    InitUserDLL3            @1
+    PDF_SaveAsPDF           @2
+    PDF_Configure           @3
+    PDF_Help                @4
+    PDF_Register            @5
+    PDF_RegisterUpdate      @6
+    PDF_About               @7
+    Amyuni_SaveAsPDF        @8
+
+; ---------------------------------
+;  End of PDFWorks.def
+; ---------------------------------
