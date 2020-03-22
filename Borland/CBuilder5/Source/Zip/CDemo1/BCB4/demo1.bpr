@@ -1,0 +1,140 @@
+# ---------------------------------------------------------------------------
+VERSION = BCB.04.04
+# ---------------------------------------------------------------------------
+!ifndef BCB
+BCB = $(MAKEDIR)\..
+!endif
+# ---------------------------------------------------------------------------
+PROJECT = Demo1.exe
+OBJFILES = Demo1.obj Main.obj AddFiles.obj ExtractFiles.obj Message.obj SFX.obj Rename.obj
+RESFILES = Demo1.res ZipMsgUS.res
+RESDEPEN = $(RESFILES) Main.dfm AddFiles.dfm ExtractFiles.dfm Message.dfm SFX.dfm Rename.dfm
+LIBFILES =
+LIBRARIES = ZipPack.lib vclx40.lib
+SPARELIBS = vcl40.lib vclx40.lib ZipPack.lib
+PACKAGES = vcl40.bpi
+PATHASM = .;
+PATHCPP = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+SYSDEFINES = NO_STRICT;USEPACKAGES
+USERDEFINES =
+DEFFILE =
+# ---------------------------------------------------------------------------
+CFLAG1 = -I..\..;..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp \
+  -Od -Hc -H=$(BCB)\lib\vcl40.csm -w -Ve -f- -r- -a8 -d -k -y -v -vi- -D$(SYSDEFINES);$(USERDEFINES) -c -b- -w-par -w-inl \
+  -Vx -tWM
+CFLAG2 =
+CFLAG3 =
+PFLAGS = -U..\..;$(BCB)\projects\lib;..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp;$(RELEASELIBPATH) \
+  -I..\..;..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp \
+  -AWinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE -$YD -$W -$R -$Q -$O- -JPHNV -M -JPHNE
+RFLAGS = -i..\..;..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp
+AFLAGS = /i..\..\..\bin /i$(BCB)\include /i$(BCB)\include\vcl /i$(BCB)\projects /i$(BCB)\projects\zipbuilder \
+  /i$(BCB)\projects\zipbuilder\SortGrid /i$(BCB)\NewComp /mx /w2 /zi /dUSEPACKAGES
+LFLAGS = -L..\..;$(BCB)\projects\lib;..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp;$(RELEASELIBPATH) \
+  -D"Free BCB Zip package" -aa -Tpe -x -w -v
+IFLAGS =
+LINKER = ilink32
+# ---------------------------------------------------------------------------
+ALLOBJ = c0w32.obj $(PACKAGES) sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+# ---------------------------------------------------------------------------
+.autodepend
+
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=6
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1043
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.6.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp
+Item1=..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+Item2=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=$(BCB)\projects\lib;..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(BCB)\NewComp
+Item1=..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+Item2=..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+Item3=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=USEPACKAGES
+Item1=_RTLDLL;USEPACKAGES
+
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+InMemoryExe=0
+ShowInfoMsgs=0
+
+!endif
+
+$(PROJECT): $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES)
+!
+
+.pas.hpp:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.pas.obj:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.cpp.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $*
+
+.c.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $**
+
+.rc.res:
+    $(BCB)\BIN\brcc32 $(RFLAGS) $<
+#-----------------------------------------------------------------------------
+

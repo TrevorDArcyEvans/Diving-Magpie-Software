@@ -1,0 +1,177 @@
+TZipBuilder, for Borland C++ Builder version 1, 3 and 4
+Version 1.6
+by Chris Vleghert, cvleghrt@worldonline.nl
+
+
+TZipBuilder is a translation and extended version of TZipMaster
+from Delphi to C++. Its functional identical in every way possible.
+but it has been coded in C++ to make it easier for C++ users to
+understand and modify.
+
+I am going to use the term "BCB" to mean "Borland C++ Builder".
+----------------------------------------------------------------------
+
+Before You Start
+----------------
+If you have an version of ZipMaster.pas installed in C++, you 
+don't have to remove it, since this component has a different name.
+
+If you have an older version of SortGrid.pas installed please remove
+it first or don't include it into you new ZipPack package.
+
+
+You need to copy the redistributable modules to your desired
+directory on your development computer.  
+
+Copy \ZipBeta\dll\*.DLL to your Windows System directory.
+Copy \ZipBeta\sfx\*.BIN to your Windows System directory.
+
+
+Installation
+------------
+This is one of the biggest freeware software releases for C++ Builder
+and Delphi.  To get going quickly and correctly, please follow these
+instructions.  Read them over once before starting.  If you don't
+understand a step, get help before you start the install!
+
+
+1.  You MUST install this package on a computer that has BCB.
+    
+2.  The VCLs included with this release are:
+      TZipBuilder - the main ZIP support VCL
+                    (used by CDemo1)
+      TSortGrid   - a very handy descendant from TStringGrid
+                    (used by CDemo1)
+
+    The files required to support these VCLs are located in the
+    VCL subdirectory.  You have two choices for how to proceed
+    (option A is recommended):
+
+      A) add the directory C:\ZipBeta\VCL to your VCL search path
+                             or
+      B) copy the files in C:\ZipBeta\VCL to another directory already
+         in your VCL search path
+
+    If you want to use option A, the instructions for this are
+    included below.  If you want option B, then please copy those
+    files now.
+  
+
+3.  Install the two VCLs in C++ Builder:
+
+    This procedure will install the VCLs into the IDE.  After
+    this, you will be able to see them on the "Components" tab.
+
+    a) Choose Component|Install Component... from the menu
+
+    b) Select the Tab 'Into New Package' and fill in:
+       At 'Unit file name':    Browse and Select ZipBuilder.cpp from the
+                               directory where you installed it.
+       At 'Package file name': ZipPack
+       At 'Description':       Free BCB Zip Package (or anything else you like)
+       Select Ok
+
+    c) You will be asked to confirm building the package; Answer: NO
+
+    d) Choose Component|Install Component... from the menu
+
+    e) Select the Tab 'Into existing package' (if not already there) and fill in:
+       At 'Unit file name':    Browse and Select 'SortGrid.pas' from the
+                               directory where you installed it.
+       At 'Package file name': Should still be 'ZipPack'
+       Select Ok
+
+    f) Answer YES on the confirm build question.
+
+    g) Save the file (ZipPack.bpk) in the 'Lib' sub directory of CBuilder.
+
+    h) When compilation is ready:
+       Choose Menu|File|Save all
+       Choose Menu|File|Close all
+
+   At this stage all the neccessary library files are present and you
+   only need the IDE to know about them.
+
+   i) Choose Menu|Component|Install Packages...
+       Select Add, goto the Lib subdirectory and select ZipPack.bpl
+       Select Ok.
+
+   Now the new components 'ZipBuilder' and 'SortGrid' should be visible
+   under the (new) component tab of the IDE.
+
+   j) If you want the use run time libraries at some time in your
+       project(s) then you will have to copy ZipPack.bpl into a
+       directory which is in the PATH of your computer.
+       (i.e. Windows\System or the Bin directory of CBuilder.)
+
+If you want to know more about installing packages:
+  Look for 'Packages' in the CBuilder help system.
+  i.e. Creating a Package and Installing component packages.
+
+
+                       C++ BUILDER HELP
+
+See the 'ZipHelp.hlp' file in the Help subdirectory.
+
+
+                       C++ BUILDER DEMO's
+Installation
+------------
+1.  The CDemo directory has two sub directories one for BCB1
+    specific files and one for BCB3. The files that are common
+    to both environments are in the CDemoX directory.
+    To install a demo you have to copy the files from the sub
+    directory BCB3 to the CDemoX directory. Sometimes you will
+    be asked to overwrite an existing file this is NOT an error
+    and you should confirm the question.
+
+2.  Important:
+    a) You must set the include and library path in your project,
+       not only for the demo's but also for new projects.
+       This can be accomplished by choosing from the menu:
+       Project|Options... and then the tab Directories/conditionals.
+
+    b) The ZipBuilder component uses a language resource file for
+       error and warning messages. This file must be linked into
+       your project. (i.e. in your project source file.)
+       This file must contain a statement like:
+          USERC( "..\ZipMsgUS.rc" );
+       Where ..\ is the path to this resource file.
+       (normally the directory which also contains ZipBuilder.h etc.)
+
+
+                    DESCRIPTION OF DEMO PROJECTS
+
+    Demo1 is a native C++ Builder port of the Delphi Zip Demo 1.
+    This is a very complete File Manager type of program that lets
+    you create archives, view archives, extract files, etc.  It can
+    also turn .zip files into .exe files (and vice-versa).
+
+
+                  Deployment of Your Programs
+
+Any program you write using this package will require the two 
+DLLs: ZIPDLL.DLL and UNZDLL.DLL to be present on each user's
+hard disk.  You should have your install procedures put these
+files into the WINDOWS SYSTEM directory (which is named differently
+on some systems - especially WinNT systems).  If that isn't 
+possible, then you should put them into the same directory as 
+your .EXE program that uses them.
+
+Also, the ZIPSFX.BIN module must be installed into the same
+directory as the DLLs.  This module is only needed if your
+application program needs to make .EXE archives.
+
+IMPORTANT: Any .EXE archives you make with this package do
+NOT need any supporting files on the end-user's computer!
+This is very handy!
+
+Of course, there are no distribution fees for the DLLs, or
+any other part of the package.  This whole package is 
+freeware, but does have some minor distribution restrictions
+(mainly that you can't profit from the ZIP DLLs, and you need
+to document where users can get source code).  Please see 
+ZipBeta\README.TXT for these restrictions.
+    
+
+Chris Vleghert, cvleghrt@worldonline.nl

@@ -1,0 +1,22 @@
+
+1) Copy ZipHelp.hlp, ZipHelp.cnt and ZipHelp.toc to BCB's help directory.
+
+2) Start BCB3 and Choose menu Help, item Customize...
+   (The OpenHelp program is now started.)
+
+3) To see ZipBuilder component keywords in the index of the helpsystem:
+   Select the tab 'Index', rightclick en select AddFiles...
+   Choose ZipHelp.hlp and click Ok.
+
+4) To activate the context sensitive help system (F1 key):
+   Select the tab 'Link', rightclick en select AddFiles...
+   Choose ZipHelp.hlp and click Ok.
+ 
+5) To see the ZipBuilder component in the contents overview:
+   Select the tab 'Contents', rightclick en select AddFiles...
+   Choose ZipHelp.toc and click Ok.
+
+6) Choose Save Project from the Help menu of OpenHelp.
+   (If you forget this last step and exit, your changes are removed!)
+
+7) Exit the program and it is ready to use.

@@ -1,0 +1,135 @@
+# ---------------------------------------------------------------------------
+VERSION = BCB.04.04
+# ---------------------------------------------------------------------------
+!ifndef BCB
+BCB = $(MAKEDIR)\..
+!endif
+# ---------------------------------------------------------------------------
+PROJECT = DiskSpanDemo.exe
+OBJFILES = DiskSpanDemo.obj Message.obj AddFiles.obj Main.obj ExtractFiles.obj
+RESFILES = DiskSpanDemo.res ZipMsgUS.res
+RESDEPEN = $(RESFILES) Message.dfm AddFiles.dfm Main.dfm ExtractFiles.dfm
+LIBFILES =
+LIBRARIES = ZipPack.lib vclx40.lib vcl40.lib
+SPARELIBS = vcl40.lib vclx40.lib ZipPack.lib
+PACKAGES = vcl40.bpi
+PATHASM = .;
+PATHCPP = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+SYSDEFINES = NO_STRICT
+USERDEFINES =
+DEFFILE =
+# ---------------------------------------------------------------------------
+CFLAG1 = -I$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp -O2 -Hc \
+  -H=$(BCB)\lib\vcl40.csm -w -Ve -f- -a8 -d -k- -vi -D$(SYSDEFINES);$(USERDEFINES) -c -b- -w-par -w-inl -Vx -tWM
+CFLAG2 =
+CFLAG3 =
+PFLAGS = -U$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp;$(BCB)\projects\Lib;$(RELEASELIBPATH) \
+  -I$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp \
+  -AWinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE -$Y- -$L- -$I- -$D- -$C- -JPHNV -M -JPHNE
+RFLAGS = -i$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp
+AFLAGS = /i$(BCB)\include /i$(BCB)\include\vcl /i$(BCB)\projects /i$(BCB)\projects\zipbuilder /i$(BCB)\NewComp /mx /w2 /zn \
+  /d_RTLDLL /dUSEPACKAGES
+LFLAGS = -L$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp;$(BCB)\projects\Lib;$(RELEASELIBPATH) \
+  -D"Free BCB Zip package" -aa -Tpe -x -w
+IFLAGS =
+LINKER = ilink32
+# ---------------------------------------------------------------------------
+ALLOBJ = c0w32.obj sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+# ---------------------------------------------------------------------------
+.autodepend
+
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=5
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1043
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.5.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp;$(BCB)\projects\Lib
+Item1=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\NewComp
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_RTLDLL;USEPACKAGES
+Item1=USEPACKAGES
+
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+InMemoryExe=0
+ShowInfoMsgs=0
+
+!endif
+
+$(PROJECT): $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES)
+!
+
+.pas.hpp:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.pas.obj:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.cpp.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $*
+
+.c.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $**
+
+.rc.res:
+    $(BCB)\BIN\brcc32 $(RFLAGS) $<
+#-----------------------------------------------------------------------------
+

@@ -1,0 +1,15 @@
+
+1) Copy ZipHelp.hlp and ZipHelp.cnt to BCB's help directory.
+
+2) Edit BCB.cnt and add the following lines:
+    :Index ZipBuilder Component Help=ZipHelp.hlp
+    :include ZipHelp.cnt
+
+3) Optional; to see ZipBuilder component help in the bookshelf.
+    Edit BCBMain.cnt and add the following line:
+    :include ZipHelp.cnt
+
+4) Delete all .GID files from BCB's help directory.
+
+5) Delete all .FTS files from BCB's help directory.
+

@@ -1,0 +1,212 @@
+TZipBuilder, for Borland C++ Builder version 1, 3 and 4
+Version 1.60
+by Chris Vleghert, cvleghrt@worldonline.nl
+
+
+TZipBuilder is a translation of TZipMaster from Delphi to C++.
+It is functionally identical in every way possible, but it has 
+been coded in C++ to make it easier for C++ users to understand 
+and modify.
+
+I am going to use the term "BCB" to mean "Borland C++ Builder".
+
+----------------------------------------------------------------------
+
+Before You Start
+----------------
+You need to copy the redistributable modules to your desired
+directory on your development computer.  
+
+Copy \ZipBeta\dll\*.DLL to your Windows System directory.
+Copy \ZipBeta\sfx\*.BIN to your Windows System directory.
+
+
+Installation
+------------
+
+This is one of the biggest freeware software releases for C++Buider and
+Delphi.  To get going quickly and correctly, please follow these
+instructions.  Read them over once before starting.  If you don't
+understand a step, get help before you start the install!
+
+
+1.  You MUST install this package on a computer that has BCB.
+    
+2.  The VCLs included with this release are:
+      TZipBuilder - the main ZIP support VCL
+                    (used by CDemo1)
+      TSortGrid   - a very handy descendant from TStringGrid
+                    (used by CDemo1)
+
+    The files required to support these VCLs are located in the
+    VCL subdirectory.  You have two choices for how to proceed
+    (option A is recommended):
+
+      A) add the directory C:\ZipBeta\VCL to your VCL search path
+                             or
+      B) copy the files in C:\ZipBeta\VCL to another directory
+         already in your VCL search path
+
+    If you want to use option A, the instructions for this are
+    included below.  If you want option B, then please copy those
+    files now.
+  
+
+3.  Install the two VCLs in C++ Builder:
+
+    This procedure will install the VCLs into the IDE.  After
+    this, you will be able to see them on the "Components" tab.
+
+      a) Select the "Component...Install" choice from the menu.
+
+      b) Click on the Add button.
+      c) Click on the Browse button.
+      d) Select the path and filename of where the ZipBuilder.cpp 
+         file is located. 
+      e) Add the path where ZipBuilder.cpp is located to the
+         Searchpath       (eg:  ;$(BCB)\YourPath  )
+      f) Click on OK.  The component library will rebuild.
+         If you have "warnings" enabled, you can get lots
+         of warning messages not related to this new package.
+         Ignore these.
+
+      g) Click on the Add button.
+      h) Click on the Browse button.
+      i) Select the path and filename of where the SORTGRID.PAS 
+         file is located.
+      j) Click on OK.  The component library will rebuild.
+         If you have "warnings" enabled, you can get lots
+         of warning messages.  Ignore these.
+
+
+   If something went wrong:
+
+     There is some instability in the code that builds
+     the VCL library for version 1 of CBuilder. This is a
+     manageable problem as long as you are aware of it.
+
+     You must always keep a good copy of your component
+     library on a floppy disk (or another hard disk directory)
+     for safe keeping.  Sometimes, problems during the build
+     of the VCL library can cause it to be corrupted, which
+     then prevents CBuilder from even starting.
+
+     The Component Library file is named 'CMPLIB32.CCL' and
+     the Options file 'CMPLIB32.OPT'. These are in the 'bin'
+     subdirectory under the main CBuilder directory.
+  
+     If the component library becomes corrupted, restore
+     the automatic copy made by BCB of "CMPLIB32.CCL", named
+     CMPLIB32.~CC and delete the temporary files in that
+     directory: CMPLIB32.I* and CMPLIB32.TDS.  Now, go back
+     into CBuilder and fix the problem that caused the library
+     to become corrupted. (Just recompiling will probably enough).
+     Sometimes it is also neccesary to restore the old version
+     of 'CMPLIB32.OPT' Named: 'CMPLIB32.~OP'.
+ 
+     If you have corrupted the automatic backup files BCB make
+     you should restore them with your own saved versions.
+
+
+
+                       C++ BUILDER HELP
+
+Installation
+------------
+1) Copy ZipHelp.hlp and ZipHelp.cnt from \ZipBeta\Help
+   to BCB's help directory.
+
+2) In BCB's HELP subdirectory, edit BCB.cnt and add the
+   following two lines to the appropriate sections in this 
+   small file:
+   :Index ZipBuilder Component Help=ZipHelp.hlp
+   :include ZipHelp.cnt
+
+3) If you want to see the component in the bookshelf, then:
+   Edit BCBMain.cnt and add the following line:
+   :include ZipHelp.cnt
+
+4) Delete the *.FTS and *.GID files from the BCB Help
+   subdirectory. This can be done easily from Explorer. 
+   Make sure BCB is NOT running when you do this.
+   If you want to do it from an MS-DOS prompt:
+   C> del *.GID
+   C> del *.FTS
+
+5) The next time you use BCB's Help feature, it'll say
+   "preparing help file for first use".  This is when it
+   is rebuilding the .GID files to include the new Help topics.
+   The next time you do a full text search in Help, it'll rebuild
+   *.FTS files.
+
+You now have context-sensitive help on the TZipBuilder
+component inside the BCB IDE!
+
+
+                       C++ BUILDER DEMO
+
+Installation
+------------
+1.  The CDemo directory has two sub directories one for BCB1
+    specific files and one for BCB3. The files that are common
+    to both environments are in the CDemoX directory.
+    To install a demo you have to copy the files from the sub
+    directory BCB1 to the CDemoX directory. Sometimes you will
+    be asked to overwrite an existing file this is NOT an error
+    and you should confirm the question.
+
+2.  Important:
+    a) You have to set the include and library path in your project,
+       not only for the demo's but also for new projects.
+       1) Open a project.
+       2) Select the "Options...Project" choice from the menu.
+       3) Select the Directories/Conditionals tab.
+       4) Add to 'include path': The path where ZipBuilder.h is located.
+       5) Add to 'Library path': the path where ZipBuilder.obj is located.
+       6) Click on the Ok button.
+       7) Save your project.
+
+    b) The ZipBuilder component uses a language resource file for
+       error and warning messages. This file must be linked into
+       your project. (i.e. in your project source file.)
+       This file must contain a statement like:
+          USERC( "..\ZipMsgUS.rc" );
+       Where ..\ is the path to this resource file.
+       (normaly the directory which also contains ZipBuilder.h etc.)
+    	
+
+                    DESCRIPTION OF DEMO PROJECT
+
+    Demo1 is a native C++ Builder port of the Delphi Zip Demo 1.
+    This is a very complete File Manager type of program that lets
+    you create archives, view archives, extract files, etc.  It can
+    also turn .zip files into .exe files (and vice-versa).
+
+
+                  Deployment of Your Programs
+
+Any program you write using this package will require the two 
+DLLs: ZIPDLL.DLL and UNZDLL.DLL to be present of each user's
+hard disk.  You should have your install procedures put these
+files into the WINDOWS SYSTEM directory (which is named differently
+on some systems - especially WinNT systems).  If that isn't 
+possible, then you should put them into the same directory as 
+your .EXE program that uses them.
+
+Also, the ZipSFX.BIN module must be installed into the same
+directory as the DLLs.  This module is only needed if your
+application program needs to make .EXE archives.
+
+IMPORTANT: Any .EXE archives you make with this package do
+NOT need any supporting files on the end-user's computer!
+This is very handy!
+
+Of course, there are no distribution fees for the DLLs, or
+any other part of the package.  This whole package is 
+freeware, but does have some minor distribution restrictions
+(mainly that you can't profit from the ZIP DLLs, and you need
+to document where users can get source code).  Please see 
+\zip\README.TXT for these restrictions.
+    
+
+Chris Vleghert, cvleghrt@worldonline.nl

@@ -1,0 +1,119 @@
+# ---------------------------------------------------------------------------
+VERSION = BCB.04.04
+# ---------------------------------------------------------------------------
+!ifndef BCB
+BCB = $(MAKEDIR)\..
+!endif
+# ---------------------------------------------------------------------------
+PROJECT = Cdemo3.exe
+OBJFILES = Cdemo3.obj Unit3.obj
+RESFILES = Cdemo3.res ZipMsgUS.res
+RESDEPEN = $(RESFILES) Unit3.dfm
+LIBFILES =
+LIBRARIES = ZipPack.lib vclx40.lib vcl40.lib
+SPARELIBS = vcl40.lib vclx40.lib ZipPack.lib
+PACKAGES = vcl40.bpi vclx40.bpi ZipPack.bpi
+PATHASM = .;
+PATHCPP = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+SYSDEFINES = NO_STRICT
+USERDEFINES =
+DEFFILE =
+# ---------------------------------------------------------------------------
+CFLAG1 = -I..\..\zipbuilder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\ZipBuilder -O2 -Hc \
+  -H=$(BCB)\lib\vcl.csm -w -Ve -f- -a8 -d -k- -vi -D$(SYSDEFINES);$(USERDEFINES) -c -b- -w-par -w-inl -Vx -tWM
+CFLAG2 =
+CFLAG3 =
+PFLAGS = -U..\..\zipbuilder;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\ZipBuilder;$(BCB)\projects\Lib;$(RELEASELIBPATH) \
+  -I..\..\zipbuilder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\ZipBuilder \
+  -AWinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE -$Y- -$L- -$D- -JPHNV -M -JPHNE
+RFLAGS = -i..\..\zipbuilder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\ZipBuilder
+AFLAGS = /i..\..\zipbuilder /i$(BCB)\include /i$(BCB)\include\vcl /i$(BCB)\projects /i$(BCB)\projects\ZipBuilder /mx /w2 /zn \
+  /d_RTLDLL /dUSEPACKAGES
+LFLAGS = -L..\..\zipbuilder;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\ZipBuilder;$(BCB)\projects\Lib;$(RELEASELIBPATH) \
+  -aa -Tpe -x
+IFLAGS =
+LINKER = ilink32
+# ---------------------------------------------------------------------------
+ALLOBJ = c0w32.obj sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+# ---------------------------------------------------------------------------
+.autodepend
+
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=5
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1043
+CodePage=1252
+
+[Version Info Keys]
+FileVersion=1.5.0.0
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=..\..\zipbuilder;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\ZipBuilder
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=..\..\zipbuilder;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\ZipBuilder;$(BCB)\projects\Lib
+
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+InMemoryExe=0
+ShowInfoMsgs=0
+
+!endif
+
+$(PROJECT): $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES) 
+!
+
+.pas.hpp:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.pas.obj:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.cpp.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $* 
+
+.c.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $**
+
+.rc.res:
+    $(BCB)\BIN\brcc32 $(RFLAGS) $<
+#-----------------------------------------------------------------------------

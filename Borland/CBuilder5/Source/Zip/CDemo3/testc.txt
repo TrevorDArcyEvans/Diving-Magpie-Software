@@ -1,0 +1,40 @@
+ 
+
+Question and Answer Database
+
+Q: Why does BCB give me underscores on references to
+functions in a DLL that don't have underscores? Then 
+I get undefined symbols when linking.Answer:
+
+A: Microsoft handles the cdecl ( __cdecl ) calling convention
+differently than Borland does in that they do not prepend 
+underscores. There are a couple of possible resolutions like:
+
+(a) turning off "generate underscores" 
+(Options | Compiler | Compiler output) will cause the
+compiler to cease prepending underscors, but then calls
+into the run-time library will have to be modified to 
+have an explicit underscore. This can be accomplished 
+during pre-processing:
+#define sprintf  _sprintf
+#define strlen   _strlen
+
+(b) using aliases in the IMPORTS section of the DEF file 
+for the executable.
+
+IMPORTS
+_SQLDebug = NTWDBLIB.SQLDebug
+
+
+To get the symbols exactly as they are exported run
+IMPDEF on the DLL. Copy and paste these exported
+symbols into thr IMPORTS section of your executable's 
+DEF file, adding the DLL name and the alias. Then 
+link with your DEF file in place of the import library.
+
+For more information on this technique, consult the
+chapter on module definition files in Petzold's
+Programming Windows 3.1 book.
+
+
+

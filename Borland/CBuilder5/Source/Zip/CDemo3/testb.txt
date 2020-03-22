@@ -1,0 +1,79 @@
+                            Sets in BCB
+
+     Sets in BCB are an emulation of Pascal sets. They are 
+     implemented as a class template. Therefore this is easier 
+     to understand if you are familiar with both Pascal sets 
+     and C++ templates - but it's not essential.
+     
+     A set type is declared like this:
+     
+     typedef Set <element_type, minval, maxval> set_type;
+     
+     I will no doubt be shot down in flames for saying this, but
+     you can think of this as using a kind of super-macro which sets
+     up a class 'set_type', an instance of which can hold elements
+     of type 'element_type' between 'minval' and 'maxval'. That
+     falls a long way short of describing C++ templates but it's
+     good enough!
+     
+     Then you can declare instances of this set type as needed:
+     
+     set_type mySet;
+     
+     Borland have used overloaded stream operators << and >> to
+     permit adding elements to a set and removing them - the
+     analogy with streams is imperfect but does make sense.
+     
+     The following is a trivial console app which demonstrates
+     the basic use of Sets:
+     
+     //---------------------------------------------------------------------------
+     #include <vcl\condefs.h>
+     #include <stdio.h>
+     #include <stdlib.h>
+     #include <string.h>
+     
+     #include <vcl\sysdefs.h>       // needed for sets
+     #include <iostream.h>
+     #include <conio.h>
+     
+     #pragma hdrstop
+     //---------------------------------------------------------------------------
+     USERES("Project1.res");
+     //---------------------------------------------------------------------------
+     
+     typedef enum {apples, oranges, bananas, pears} fruit_t;
+     typedef Set < fruit_t, apples, pears > fruit_set;
+     
+     void ShowFruit(const fruit_set &fs);
+     
+     int main(int argc, char **argv)
+     {
+         fruit_set FruitBowl;                            // create the set
+         FruitBowl << apples << bananas << pears;        // initialise it
+         ShowFruit(FruitBowl);
+         FruitBowl >> apples;                            // take out apples
+         FruitBowl << oranges;                           // add oranges
+         ShowFruit(FruitBowl);
+         FruitBowl.Clear();                              // empty the bowl
+         ShowFruit(FruitBowl);
+     
+         getch();     //pause
+         return 0;
+     }
+     
+     void ShowFruit(const fruit_set &fs)
+     {
+     cout << "[ ";
+     if (fs.Contains(apples)) cout << "apples ";
+     if (fs.Contains(oranges)) cout << "oranges ";
+     if (fs.Contains(bananas)) cout << "bananas ";
+     if (fs.Contains(pears)) cout << "pears ";
+     cout << "]" << endl << endl;
+     }
+     
+     //=========================================
+     
+     The rest of the syntax for sets is in the online help. Good luck!
+     
+     Steve Balcombe

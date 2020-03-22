@@ -1,0 +1,139 @@
+# ---------------------------------------------------------------------------
+VERSION = BCB.03
+# ---------------------------------------------------------------------------
+!ifndef BCB
+BCB = $(MAKEDIR)\..
+!endif
+# ---------------------------------------------------------------------------
+PROJECT = Demo1.exe
+OBJFILES = Demo1.obj Main.obj AddFiles.obj ExtractFiles.obj Message.obj SFX.obj Rename.obj
+RESFILES = Demo1.res ZipMsgUS.res
+RESDEPEN = $(RESFILES) Main.dfm AddFiles.dfm ExtractFiles.dfm Message.dfm SFX.dfm Rename.dfm
+LIBFILES =
+LIBRARIES = ZipPack.lib VCLX35.lib
+SPARELIBS = vcl35.lib VCLX35.lib ZipPack.lib
+PACKAGES = VCL35.bpi
+PATHASM = .;
+PATHCPP = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+DEFFILE =
+# ---------------------------------------------------------------------------
+CFLAG1 = -O2 -Hc -w -Ve -d -k- -vi -c -b- -w-par -w-inl -Vx
+CFLAG2 = -DUSEPACKAGES \
+  -I..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid \
+  -H=$(BCB)\lib\vcl35.csm
+CFLAG3 = -f-
+PFLAGS = -AWinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE -DUSEPACKAGES \
+  -U..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(RELEASELIBPATH) \
+  -I..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid \
+  -H -W -$L- -$D- -JPHNV -M
+RFLAGS = -DUSEPACKAGES \
+  -i..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+AFLAGS = /i..\..\..\bin /i$(BCB)\include /i$(BCB)\include\vcl /i$(BCB)\projects /i$(BCB)\projects\zipbuilder \
+  /i$(BCB)\projects\zipbuilder\SortGrid /dUSEPACKAGES /mx /w2 /zn
+LFLAGS = -L..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid;$(RELEASELIBPATH) \
+  -D"Free BCB Zip package" -aa -Tpe -x -w
+IFLAGS =
+LINKER = ilink32
+# ---------------------------------------------------------------------------
+ALLOBJ = c0w32.obj $(PACKAGES) sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+# ---------------------------------------------------------------------------
+.autodepend
+
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=6
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1043
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.6.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=
+Comments=
+
+[Excluded Packages]
+F:\program files\CBuilder3\Lib\GenUser.bpl=General components
+C:\WFW311\SYSTEM\ibsmp35.bpl=Borland C++ InterBase Alerter Component
+F:\program files\CBuilder3\Bin\dcldb35.bpl=Borland Database Components
+F:\program files\CBuilder3\Bin\dcltee35.bpl=Borland TeeChart Components
+F:\program files\CBuilder3\NewComp\RX\Units\Dclrxctl.bpl=RX Library Controls and Tools
+F:\program files\CBuilder3\NewComp\RX\Units\Dclrxdb.bpl=RX Library Database Components
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=..\..\..\bin;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+Item1=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=..\..\..\lib\release;..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+Item1=..\..\..\bin;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+Item2=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\projects;$(BCB)\projects\zipbuilder;$(BCB)\projects\zipbuilder\SortGrid
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=USEPACKAGES
+Item1=_RTLDLL;USEPACKAGES
+
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=
+
+!endif
+
+$(PROJECT): $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES)
+!
+
+.pas.hpp:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.pas.obj:
+    $(BCB)\BIN\dcc32 $(PFLAGS) { $** }
+
+.cpp.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $*
+
+.c.obj:
+    $(BCB)\BIN\bcc32 $(CFLAG1) $(CFLAG2) -o$* $**
+
+.rc.res:
+    $(BCB)\BIN\brcc32 $(RFLAGS) $<
+#-----------------------------------------------------------------------------
+

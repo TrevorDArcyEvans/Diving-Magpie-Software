@@ -1,0 +1,20 @@
+ 
+
+Question and Answer Database
+
+Q:If I link to a .lib created with BC5 or BC5's implib, I 
+get an error message complaining about "Invalid OMF record."
+What am I doing wrong?
+
+A: There is a difference in the object file format between
+BC5 and C++Builder. This difference was deliberately
+introduced to prevent problems when statically linking,
+and was necessitated by changes in the exception handling
+mechanism.
+
+If you have a .DLL, you need to use C++Builder's implib
+to create a new .lib, which you can link to. If you have
+a static .LIB, you must recompile the source with C++Builder
+or wrap the .LIB inside of a .DLL, and then run the new
+implib on the .DLL.
+
